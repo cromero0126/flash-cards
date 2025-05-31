@@ -1,0 +1,1954 @@
+[
+  {
+    "question": "What was the first OS to support networking functions?",
+    "choices": ["Unix", "MS-DOS", "Windows NT", "Linux"],
+    "correctIndex": 0,
+    "explanation": "Correct answer is a. Unix was the first operating system to support networking capabilities, enabling communication between different machines through protocols like TCP/IP."
+  },
+  {
+    "question": "Virtual memory allows an operating system to use disk space as an extension of RAM.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Correct answer is a. Virtual memory lets the OS use part of the hard disk as additional RAM, which helps run large programs or multiple processes by swapping data in and out of physical memory."
+  },
+  {
+    "question": "Which system call is used to create a new process?",
+    "choices": ["create()", "fork()", "spawn()", "exec()"],
+    "correctIndex": 1,
+    "explanation": "Correct answer is b. The fork() system call creates a new process by duplicating the calling process. It is widely used in Unix-based operating systems."
+  },
+  {
+    "question": "To be able to manage the execution of multiple processes, which OS function can be used by a developer?",
+    "choices": ["Memory management", "Process scheduling", "Device management", "File system management"],
+    "correctIndex": 1,
+    "explanation": "Correct answer is b. Process scheduling determines which process runs at a given time, allowing efficient CPU use and smooth multitasking."
+  },
+  {
+    "question": "Why is process synchronization required in an OS?",
+    "choices": ["To secure files", "To ensure multiple processes execute smoothly", "To manage hardware devices", "To allocate memory to applications"],
+    "correctIndex": 1,
+    "explanation": "Correct answer is b. Process synchronization is needed to avoid conflicts when multiple processes access shared resources, ensuring consistent and predictable execution."
+  },
+    {
+    "question": "An API is the interface through which applications directly interact with the hardware.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "APIs allow applications to interact with the operating system, not directly with the hardware. Hardware interactions are typically handled by the OS kernel and device drivers."
+  },
+  {
+    "question": "Which of the following is not an example of an early operating system?",
+    "choices": ["MS-DOS", "Windows 95", "Unix", "Android"],
+    "correctIndex": 3,
+    "explanation": "Android is a modern OS developed in the 2000s, while the others were developed in the earlier days of personal computing."
+  },
+  {
+    "question": "Which service of the OS handles input/output operations?",
+    "choices": ["File management", "Device management", "I/O management", "Security management"],
+    "correctIndex": 2,
+    "explanation": "I/O management is responsible for managing input and output devices and their data flow."
+  },
+  {
+    "question": "Which service ensures that critical processes get more CPU time?",
+    "choices": ["Process scheduling", "Security management", "File system management", "Virtual memory"],
+    "correctIndex": 0,
+    "explanation": "Process scheduling allocates CPU time to processes based on priority and scheduling algorithms."
+  },
+  {
+    "question": "System calls are used by applications to request services from the kernel.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "System calls are the interface through which applications request OS-level services such as file access or memory allocation."
+  },
+  {
+    "question": "What is the main purpose of system calls in operating systems?",
+    "choices": ["To manage the hardware", "To provide services to application programs", "To handle user input", "To interface with the shell"],
+    "correctIndex": 1,
+    "explanation": "System calls provide a controlled way for user programs to access OS services like file manipulation, process control, and device handling."
+  },
+  {
+    "question": "The method of protecting processes from one another is called:",
+    "choices": ["File system management", "Memory protection", "Process isolation", "Device management"],
+    "correctIndex": 2,
+    "explanation": "Process isolation ensures that each process operates in its own memory space to prevent interference."
+  },
+  {
+    "question": "Virtual memory is a technique used to _________.",
+    "choices": ["Manage user authentication", "Increase the size of memory available", "Secure files", "Manage network connections"],
+    "correctIndex": 1,
+    "explanation": "Virtual memory allows the OS to use disk space as if it were additional RAM, enabling more programs to run simultaneously."
+  },
+  {
+    "question": "Which OS development marked the transition to multitasking?",
+    "choices": ["Unix", "Windows XP", "MS-DOS", "MacOS"],
+    "correctIndex": 0,
+    "explanation": "Unix was one of the first operating systems to support multitasking, allowing multiple processes to run concurrently."
+  },
+  {
+    "question": "The main role of an operating system is to manage __________.",
+    "choices": ["Software only", "Hardware and software", "User input", "Files only"],
+    "correctIndex": 1,
+    "explanation": "The OS manages both hardware resources (like CPU and memory) and software tasks (like applications and processes)."
+  },
+  {
+    "question": "Which OS function handles multiple devices at once?",
+    "choices": ["I/O management", "Process management", "File management", "Security management"],
+    "correctIndex": 0,
+    "explanation": "I/O management coordinates input and output devices like keyboards, printers, and drives simultaneously."
+  },
+  {
+    "question": "The file system in an OS handles:",
+    "choices": ["Memory allocation", "User permissions", "Data storage and retrieval", "Process scheduling"],
+    "correctIndex": 2,
+    "explanation": "The file system is responsible for organizing, storing, and accessing data on storage devices."
+  },
+  {
+    "question": "In which OS component do processes communicate with each other?",
+    "choices": ["Kernel", "Shell", "API", "Inter-process communication"],
+    "correctIndex": 3,
+    "explanation": "Inter-process communication (IPC) allows processes to exchange data and signals to coordinate actions."
+  },
+  {
+    "question": "The interface through which applications interact with the OS is called __________.",
+    "choices": ["API", "Kernel", "Command-line interface", "User interface"],
+    "correctIndex": 0,
+    "explanation": "The Application Programming Interface (API) provides routines and protocols for apps to request services from the OS."
+  },
+  {
+    "question": "What does the kernel manage in an operating system?",
+    "choices": ["User interactions", "Hardware resources", "Software updates", "Application software"],
+    "correctIndex": 1,
+    "explanation": "The kernel is the OS core that directly manages CPU, memory, and I/O devices."
+  },
+  {
+    "question": "The shell is a type of system call that manages device communication.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "The shell is a command interpreter, not a system call. It lets users interact with the OS but doesn’t manage devices directly."
+  },
+  {
+    "question": "Which was the first widely used operating system?",
+    "choices": ["Unix", "MS-DOS", "Windows 3.1", "Linux"],
+    "correctIndex": 0,
+    "explanation": "Unix was widely adopted in the 1970s and 80s in universities and businesses, influencing many later OS designs."
+  },
+  {
+    "question": "MS-DOS was the first operating system to feature a graphical user interface (GUI).",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "MS-DOS used a command-line interface. GUIs were introduced later with systems like MacOS and Windows."
+  },
+  {
+    "question": "Which OS introduced the graphical user interface (GUI)?",
+    "choices": ["Windows 95", "Unix", "MacOS", "MS-DOS"],
+    "correctIndex": 2,
+    "explanation": "Apple's MacOS was the first widely used OS with a GUI, released in 1984."
+  },
+  {
+    "question": "Operating systems can ensure that processes do not interfere with each other through process isolation.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Process isolation keeps processes in separate memory spaces to prevent data leaks and interference."
+  },
+  {
+    "question": "Which OS function is responsible for loading and managing programs?",
+    "choices": ["Process management", "Device management", "File management", "Network management"],
+    "correctIndex": 0,
+    "explanation": "Process management handles creating, executing, and terminating programs."
+  },
+  {
+    "question": "What is the function of system calls?",
+    "choices": ["To interface with the user", "To request services from the kernel", "To manage network connections", "To process data"],
+    "correctIndex": 1,
+    "explanation": "System calls allow applications to request functions from the kernel, such as file access or memory operations."
+  },
+  {
+    "question": "The primary role of an operating system is to manage hardware resources and provide services for application software.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "This is a fundamental OS role, ensuring smooth interaction between hardware and software."
+  },
+  {
+    "question": "Which company developed the MS-DOS operating system?",
+    "choices": ["Apple", "Microsoft", "IBM", "Linux Foundation"],
+    "correctIndex": 1,
+    "explanation": "Microsoft developed MS-DOS, which became a widely used OS in the early PC era."
+  },
+  {
+    "question": "What was the main limitation of early operating systems?",
+    "choices": ["Limited user interfaces", "Lack of network support", "Limited hardware interaction", "Single-user capability"],
+    "correctIndex": 3,
+    "explanation": "Early OSs often supported only one user at a time, limiting system use and resource sharing."
+  },
+  {
+    "question": "Virtual memory allows an operating system to use disk space as an extension of RAM.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Virtual memory maps disk storage to RAM addresses, allowing more programs to run than physically fit in RAM."
+  },
+    {
+    "question": "Context switching between threads is faster than between processes because threads share the same memory space.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Threads share the same memory space, so switching between them is faster than switching between processes which have separate memory spaces."
+  },
+  {
+    "question": "Context switching has no impact on system performance and is executed seamlessly.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "Context switching introduces overhead because saving and loading states takes time, so it impacts system performance."
+  },
+  {
+    "question": "Which of the following is NOT saved during a context switch?",
+    "choices": ["Program counter", "Stack pointer", "Memory mapping", "I/O buffer data"],
+    "correctIndex": 3,
+    "explanation": "I/O buffer data is not saved during a context switch as it is managed separately from CPU state."
+  },
+  {
+    "question": "In which scheduling method does the CPU run the current process to completion before moving to the next process?",
+    "choices": ["Pre-emptive scheduling", "Non-pre-emptive scheduling", "Shortest Job Next scheduling", "Priority scheduling"],
+    "correctIndex": 1,
+    "explanation": "Non-pre-emptive scheduling allows the current process to run until completion without interruption."
+  },
+  {
+    "question": "In a multithreaded process, what best describes a thread?",
+    "choices": ["An independent process that operates on its own", "A lightweight unit of execution within a process", "A separate operating system instance", "A module that handles I/O operations"],
+    "correctIndex": 1,
+    "explanation": "A thread is a lightweight execution unit within a process, sharing resources but capable of independent execution."
+  },
+  {
+    "question": "The main purpose of a context switch in process scheduling is to ___________.",
+    "choices": ["handle I/O operations", "switch the CPU from one process to another", "manage memory allocation", "increase process execution time."],
+    "correctIndex": 1,
+    "explanation": "Context switching switches the CPU's control from one process to another to allow multitasking."
+  },
+  {
+    "question": "In multithreading, which of the following can be shared between threads?",
+    "choices": ["Program counter", "Stack", "Registers", "Heap"],
+    "correctIndex": 3,
+    "explanation": "Threads share the heap for dynamic memory but have separate stacks, program counters, and registers."
+  },
+  {
+    "question": "A real-time system requires immediate attention to high-priority tasks. Which scheduling algorithm is ideal for Real Time Systems?",
+    "choices": ["Shortest Job First (SJF)", "Round-Robin", "Pre-emptive Priority Scheduling", "Non-pre-emptive Priority Scheduling"],
+    "correctIndex": 2,
+    "explanation": "Pre-emptive priority scheduling ensures higher priority tasks interrupt lower priority ones immediately."
+  },
+  {
+    "question": "Which of the following best describes the relationship between context switching and process scheduling?",
+    "choices": ["Context switching is used to handle user inputs in scheduling.", "Context switching is the mechanism that enables process scheduling.", "Process scheduling directly impacts the size of context switches.", "Context switching is unrelated to process scheduling"],
+    "correctIndex": 1,
+    "explanation": "Context switching is the mechanism by which the scheduler switches the CPU from one process to another."
+  },
+  {
+    "question": "What role does the scheduler play in context switching?",
+    "choices": ["Determine when context switches occur.", "Save the state of processes.", "Handle user input.", "Allocate memory to processes."],
+    "correctIndex": 0,
+    "explanation": "The scheduler decides the timing of context switches to manage CPU allocation."
+  },
+  {
+    "question": "In priority-based scheduling, what happens when two processes have the same priority?",
+    "choices": ["They are scheduled based on their arrival time.", "The process with the larger execution time is chosen.", "They are executed in a random order.", "The scheduler will pick the one with the smaller ID"],
+    "correctIndex": 0,
+    "explanation": "Processes with equal priority are typically scheduled according to their arrival time."
+  },
+  {
+    "question": "Which of the following is NOT stored in the PCB?",
+    "choices": ["Process state.", "Process ID.", "CPU scheduling information.", "Device driver details"],
+    "correctIndex": 3,
+    "explanation": "Device driver details are not stored in the Process Control Block; the PCB holds process-specific information."
+  },
+  {
+    "question": "Which of the following would typically trigger a context switch?",
+    "choices": ["A process completing execution", "A high-priority process entering the Ready queue", "Disk I/O finishing", "A user logging out"],
+    "correctIndex": 1,
+    "explanation": "A high-priority process becoming ready triggers a context switch to give it CPU time."
+  },
+  {
+    "question": "A thread in a process represents ________",
+    "choices": ["the memory allocation.", "a single execution path within a process.", "a collection of processes.", "the process priority."],
+    "correctIndex": 1,
+    "explanation": "A thread represents a single path of execution within a process."
+  },
+  {
+    "question": "Which scheduling algorithm can result in the convoy effect?",
+    "choices": ["Round-Robin", "Shortest Job First", "First-Come, First-Served", "Pre-emptive Priority Scheduling"],
+    "correctIndex": 2,
+    "explanation": "First-Come, First-Served scheduling can cause the convoy effect, where short jobs wait behind long jobs."
+  },
+  {
+    "question": "The CPU ___________ scheduling method allows a process to be interrupted and moved to a waiting state if a higher-priority process arrives?",
+    "choices": ["Non-pre-emptive", "Pre-emptive", "First-Come-First-Served", "Round-Robin"],
+    "correctIndex": 1,
+    "explanation": "Pre-emptive scheduling allows interruption of processes when a higher priority process arrives."
+  },
+  {
+    "question": "What is the role of the kernel during context switching?",
+    "choices": ["Handling memory management", "Scheduling the next process for execution", "Performing I/O operations", "Allocating process IDs"],
+    "correctIndex": 1,
+    "explanation": "The kernel schedules the next process during a context switch."
+  },
+  {
+    "question": "In a time-sharing system, the time quantum is used to define how long a process can run before it is pre-empted.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "The time quantum defines the maximum time a process can use the CPU before being pre-empted."
+  },
+  {
+    "question": "Non-pre-emptive scheduling methods generally lead to less overhead compared to pre-emptive scheduling methods.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Non-pre-emptive methods cause fewer context switches, reducing overhead."
+  },
+  {
+    "question": "When a process is created, which data structure is initialized to manage the process?",
+    "choices": ["File descriptor table", "Process Control Block", "Device driver", "Memory table"],
+    "correctIndex": 1,
+    "explanation": "The Process Control Block (PCB) is initialized to manage a new process."
+  },
+  {
+    "question": "A high frequency of context switching improves CPU performance.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "High context switching frequency adds overhead and degrades CPU performance."
+  },
+  {
+    "question": "Which scheduling algorithm allocates a fixed time slice to each process for execution?",
+    "choices": ["Round Robin", "First-Come-First-Served", "Priority Scheduling", "Shortest Job First"],
+    "correctIndex": 0,
+    "explanation": "Round Robin scheduling uses fixed time slices (time quanta) for each process."
+  },
+  {
+    "question": "In a pre-emptive scheduling system, a process may be moved to the ready state if a higher-priority process arrives.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Pre-emptive scheduling moves lower priority processes to ready state when higher priority ones arrive."
+  },
+  {
+    "question": "How does context switching contribute to multitasking?",
+    "choices": ["It allows multiple processes to run simultaneously.", "It ensures that only one process is active at a time.", "It eliminates the need for process synchronization.", "It speeds up individual process execution"],
+    "correctIndex": 0,
+    "explanation": "Context switching enables multitasking by switching CPU control among multiple processes."
+  },
+  {
+    "question": "Which scheduling algorithm is an example of a pre-emptive scheduling method?",
+    "choices": ["First-Come-First-Served", "Shortest Job First", "Round-Robin", "Priority Scheduling"],
+    "correctIndex": 2,
+    "explanation": "Round-Robin is a pre-emptive scheduling algorithm that uses time slices to switch processes."
+  },
+  {
+    "question": "What is the main difference between a process and a thread?",
+    "choices": ["Processes share resources, while threads do not", "Threads are lighter weight and share resources within a process", "Processes are always in the foreground, while threads are in the background", "Threads are independent, while processes are dependent"],
+    "correctIndex": 1,
+    "explanation": "Threads are lightweight and share the process's resources, unlike independent processes."
+  },
+  {
+    "question": "A process can move directly from the Waiting state to the Running state.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "Processes must move to the Ready state before running; they cannot jump directly from Waiting to Running."
+  },
+  {
+    "question": "Threads in a process can run independently without sharing any resources with other threads in the same process.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "Threads share many resources such as memory and file handles within the same process."
+  },
+  {
+    "question": "Which of the following statements is true about multithreading?",
+    "choices": ["Multiple processes execute in parallel.", "A process can have multiple threads that execute concurrently.", "Threads require more resources than processes.", "Threads cannot share memory"],
+    "correctIndex": 1,
+    "explanation": "Multithreading allows multiple threads within a single process to run concurrently."
+  },
+  {
+    "question": "The context switch time is the time taken to save the state of the current process and load the state of the new process.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Context switch time includes saving and loading CPU states between processes."
+  },
+   {
+    "question": "In which of the following scenarios is a binary semaphore more appropriate than a counting semaphore?",
+    "choices": [
+      "Managing a limited resource pool",
+      "Controlling access to a single critical section",
+      "Synchronizing multiple threads accessing shared memory",
+      "Implementing a bounded buffer"
+    ],
+    "correctIndex": 1,
+    "explanation": "A binary semaphore is ideal for ensuring mutual exclusion, such as controlling access to a single critical section, because it only allows one process to enter at a time."
+  },
+  {
+    "question": "What happens if a process performs a P (wait) operation on a semaphore whose value is zero?",
+    "choices": [
+      "The process continues",
+      "The process is blocked",
+      "The process terminates",
+      "The process raises an error"
+    ],
+    "correctIndex": 1,
+    "explanation": "If the semaphore value is zero, the process cannot proceed and is blocked until the value becomes positive again."
+  },
+  {
+    "question": "To ensure that resources are only allocated if the resulting system state is safe, which technique should a developer apply?",
+    "choices": [
+      "Banker's Algorithm",
+      "Resource Allocation Graph",
+      "Wait-Die Scheme",
+      "Deadlock Detection"
+    ],
+    "correctIndex": 0,
+    "explanation": "Banker's Algorithm checks for a safe state before allocating resources, which helps avoid deadlock."
+  },
+  {
+    "question": "A semaphore that allows only one process to enter the critical section is known as __________.",
+    "choices": [
+      "binary semaphore.",
+      "counting semaphore.",
+      "mutex semaphore.",
+      "recursive semaphore."
+    ],
+    "correctIndex": 0,
+    "explanation": "A binary semaphore only has two values (0 and 1) and ensures that only one process can access the critical section at a time."
+  },
+  {
+    "question": "Deadlock avoidance requires that the system know in advance the maximum resource needs of each process.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Deadlock avoidance techniques like Banker's Algorithm need to know each process's maximum resource demand to assess system safety."
+  },
+  {
+    "question": "What does a semaphore value greater than zero indicate?",
+    "choices": [
+      "No resources are available",
+      "One or more resources are available",
+      "All resources are in use",
+      "The semaphore is locked"
+    ],
+    "correctIndex": 1,
+    "explanation": "A positive semaphore value shows that there are resources available that processes can acquire."
+  },
+  {
+    "question": "The Banker's Algorithm is used for deadlock avoidance, not prevention.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Banker's Algorithm helps the system avoid entering an unsafe state, which may lead to deadlock, but does not prevent deadlocks outright."
+  },
+  {
+    "question": "Which of the following best describes priority inversion?",
+    "choices": [
+      "A low-priority task holding a resource blocks a higher-priority task from proceeding.",
+      "A high-priority task pre-empts a low-priority task.",
+      "A medium-priority task executes before a low-priority task.",
+      "Two tasks of the same priority invert their execution order."
+    ],
+    "correctIndex": 0,
+    "explanation": "Priority inversion occurs when a high-priority task is blocked by a lower-priority task holding a needed resource."
+  },
+  {
+    "question": "A system is in a safe state if there exists a sequence of processes that can finish without causing a deadlock.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "A system is safe if there's a way to allocate resources so that all processes can complete without deadlock."
+  },
+  {
+    "question": "Which of the following is a method for deadlock recovery?",
+    "choices": [
+      "Resource Allocation Graph",
+      "Wait-Die Scheme",
+      "Process Termination",
+      "Banker's Algorithm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Process termination is a recovery strategy where one or more deadlocked processes are killed to break the cycle."
+  },
+  {
+    "question": "In deadlock prevention, which technique ensures that resources are allocated only when processes can hold them without waiting?",
+    "choices": [
+      "Preemption",
+      "Resource Ordering",
+      "Safe State",
+      "Maximum Resource Demand"
+    ],
+    "correctIndex": 1,
+    "explanation": "Resource ordering avoids circular wait by assigning a global order to resource acquisition."
+  },
+  {
+    "question": "Which of the following is true about a mutex?",
+    "choices": [
+      "A mutex allows multiple threads to access a shared resource at the same time.",
+      "A mutex can only be locked and unlocked by the same thread.",
+      "A mutex can be used to implement deadlock prevention.",
+      "A mutex automatically releases resources after use."
+    ],
+    "correctIndex": 1,
+    "explanation": "A mutex is owned by the locking thread and only that thread can unlock it, ensuring safe mutual exclusion."
+  },
+  {
+    "question": "To recover from deadlock in a system, which of the following is a strategic way?",
+    "choices": [
+      "Assigning fixed priorities to all processes.",
+      "Rebooting the entire system.",
+      "Killing one or more processes involved in the deadlock.",
+      "Reducing the number of available resources."
+    ],
+    "correctIndex": 2,
+    "explanation": "Killing one or more processes involved in the deadlock is a direct method to recover and break the deadlock."
+  },
+  {
+    "question": "What is the role of a monitor in process synchronization?",
+    "choices": [
+      "Provide mutual exclusion and condition synchronization.",
+      "Detect deadlocks in a system.",
+      "Pre-empt resources in case of deadlock.",
+      "Allocate resources to processes based on priority."
+    ],
+    "correctIndex": 0,
+    "explanation": "Monitors encapsulate shared variables and operations, ensuring safe mutual exclusion and condition synchronization."
+  },
+  {
+    "question": "In a system using semaphores for synchronization, what could happen if the P (wait) and V (signal) operations are not atomic?",
+    "choices": [
+      "Semaphore underflow",
+      "Starvation",
+      "Race conditions",
+      "Deadlock"
+    ],
+    "correctIndex": 2,
+    "explanation": "If semaphore operations are not atomic, multiple processes may access the critical section simultaneously, causing race conditions."
+  },
+  {
+    "question": "How many processes are needed for a semaphore with an initial value of 5 to enter the critical section simultaneously?",
+    "choices": [
+      "1",
+      "5",
+      "0",
+      "Unlimited"
+    ],
+    "correctIndex": 1,
+    "explanation": "A semaphore initialized to 5 allows 5 processes to access the critical section simultaneously before blocking additional ones."
+  },
+  {
+    "question": "In deadlock recovery, the system may need to abort one or more processes to resolve the deadlock.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Aborting processes is a common recovery technique used to break a deadlock cycle and free up resources."
+  },
+  {
+    "question": "What is the purpose of the Resource Allocation Graph (RAG)?",
+    "choices": [
+      "To detect deadlocks",
+      "To prevent deadlocks",
+      "To allocate resources",
+      "To avoid deadlocks"
+    ],
+    "correctIndex": 0,
+    "explanation": "RAGs help visualize resource allocation and can be used to detect cycles, which indicate potential deadlocks."
+  },
+  {
+    "question": "What condition must be met for a system to be in a safe state in deadlock avoidance?",
+    "choices": [
+      "All processes must release their resources simultaneously.",
+      "Every process has finished executing.",
+      "There exists a sequence in which all processes can complete.",
+      "Resources are pre-emptively taken from other processes."
+    ],
+    "correctIndex": 2,
+    "explanation": "A system is in a safe state if there's a sequence that allows all processes to finish without deadlock."
+  },
+  {
+    "question": "Which of the following is NOT a method for deadlock recovery?",
+    "choices": [
+      "Process Termination",
+      "Resource Preemption",
+      "Deadlock Detection",
+      "Rollback"
+    ],
+    "correctIndex": 2,
+    "explanation": "Deadlock detection is a technique for identifying deadlocks, not a method for recovering from them."
+  },
+  {
+    "question": "When you need to periodically check the system to determine if a deadlock has occurred, you need to incorporate _________ method.",
+    "choices": [
+      "Deadlock Prevention",
+      "Deadlock Avoidance",
+      "Deadlock Detection",
+      "Deadlock Recovery"
+    ],
+    "correctIndex": 2,
+    "explanation": "Deadlock detection involves monitoring the system at intervals to check for cycles or blocked processes."
+  },
+  {
+    "question": "What is the main goal of deadlock avoidance techniques?",
+    "choices": [
+      "To ensure that the system does not enter an unsafe state",
+      "To detect and recover from deadlocks",
+      "To prevent processes from requesting resources",
+      "To forcibly reclaim resources from deadlocked processes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Deadlock avoidance ensures the system remains in a safe state, avoiding situations that could lead to deadlock."
+  },
+  {
+    "question": "To manage a pool of identical resources, which type of semaphore is typically used?",
+    "choices": [
+      "Binary semaphore",
+      "Counting semaphore",
+      "Mutex semaphore",
+      "Conditional semaphore"
+    ],
+    "correctIndex": 1,
+    "explanation": "A counting semaphore tracks the number of available identical resources and allows multiple accesses up to the set count."
+  },
+  {
+    "question": "What type of semaphore allows multiple processes to access a resource simultaneously, up to a specified limit?",
+    "choices": [
+      "Binary semaphore",
+      "Counting semaphore",
+      "Mutex semaphore",
+      "Recursive semaphore"
+    ],
+    "correctIndex": 1,
+    "explanation": "Counting semaphores allow a defined number of processes to access the resource simultaneously, based on the semaphore value."
+  },
+  {
+    "question": "In the context of semaphores, what does the P operation do?",
+    "choices": [
+      "Increment the semaphore",
+      "Decrement the semaphore",
+      "Initialize the semaphore",
+      "Reset the semaphore"
+    ],
+    "correctIndex": 1,
+    "explanation": "The P (or wait) operation decrements the semaphore and may block the process if the value becomes negative."
+  },
+  {
+    "question": "Which of the following situations leads to a race condition?",
+    "choices": [
+      "Two processes read and write shared data without synchronization.",
+      "A single process holds multiple resources.",
+      "All processes have equal access to resources.",
+      "Resource allocation follows the priority of processes."
+    ],
+    "correctIndex": 0,
+    "explanation": "Race conditions happen when shared data is accessed without proper synchronization, leading to unpredictable results."
+  },
+  {
+    "question": "Semaphores can be used to solve the critical section problem.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Semaphores are a classic solution for enforcing mutual exclusion in critical sections."
+  },
+  {
+    "question": "Which of the following is NOT a characteristic of semaphores?",
+    "choices": [
+      "They prevent deadlock by ensuring mutual exclusion",
+      "They can be used to signal between processes",
+      "They may lead to deadlock if not handled correctly",
+      "They maintain a count of resources available for use"
+    ],
+    "correctIndex": 0,
+    "explanation": "Semaphores do not inherently prevent deadlocks; incorrect use can actually lead to them."
+  },
+  {
+    "question": "Which synchronization mechanism is used when processes need to synchronize on a condition or event?",
+    "choices": [
+      "Semaphore",
+      "Mutex",
+      "Condition variable",
+      "Spinlock"
+    ],
+    "correctIndex": 2,
+    "explanation": "Condition variables allow threads to wait for specific conditions to become true before proceeding."
+  },
+  {
+    "question": "The principle of 'No Preemption' can be violated in certain deadlock recovery techniques.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "In deadlock recovery, resources may be forcibly taken from a process, violating the 'No Preemption' principle."
+  },
+    {
+    "question": "Demand paging refers to:",
+    "choices": [
+      "Loading pages only when they are needed",
+      "Loading all pages at once",
+      "Swapping pages in advance",
+      "Continuous allocation of memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "Demand paging loads pages only when they are needed, which allows efficient use of memory and avoids loading unnecessary pages."
+  },
+  {
+    "question": "Which condition causes a \"page fault\"?",
+    "choices": [
+      "When a page is found in memory",
+      "When the requested page is not in memory",
+      "When the page table is full",
+      "When the frame is swapped to disk"
+    ],
+    "correctIndex": 1,
+    "explanation": "A page fault occurs when the requested page is not in memory, requiring the OS to fetch it from secondary storage."
+  },
+  {
+    "question": "In the FIFO page replacement algorithm, which page is replaced?",
+    "choices": [
+      "The page used least recently",
+      "The page that has been in memory the longest",
+      "The page that was loaded first",
+      "The page with the highest priority"
+    ],
+    "correctIndex": 1,
+    "explanation": "FIFO replaces the page that has been in memory the longest, regardless of how often or recently it was used."
+  },
+  {
+    "question": "In a segmented memory system, what happens if a process tries to access memory outside its segment limit?",
+    "choices": [
+      "A page fault occurs",
+      "A segmentation fault occurs",
+      "The memory is allocated dynamically",
+      "The segment grows automatically"
+    ],
+    "correctIndex": 1,
+    "explanation": "Accessing memory outside a segment's limit causes a segmentation fault, which is an error that stops the process."
+  },
+  {
+    "question": "If the page size is 4KB in a paging system, how many pages are required for a 16KB process?",
+    "choices": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "A 16KB process requires 4 pages of 4KB each because 16KB divided by 4KB equals 4."
+  },
+  {
+    "question": "How does segmentation handle memory management?",
+    "choices": [
+      "It divides memory into equal-sized pages",
+      "It divides memory into logical units based on program structure",
+      "It swaps data between physical and virtual memory",
+      "It avoids fragmentation by combining memory blocks"
+    ],
+    "correctIndex": 1,
+    "explanation": "Segmentation divides memory into logical units such as functions or data structures, matching program structure."
+  },
+  {
+    "question": "Which memory management scheme is prone to external fragmentation?",
+    "choices": [
+      "Paging",
+      "Segmentation",
+      "Virtual Memory",
+      "Swapping"
+    ],
+    "correctIndex": 1,
+    "explanation": "Segmentation can cause external fragmentation because segments vary in size and may leave gaps in memory."
+  },
+  {
+    "question": "Which of the following causes internal fragmentation?",
+    "choices": [
+      "Fixed-size memory blocks",
+      "Variable-sized memory blocks",
+      "Demand paging",
+      "Dynamic partitioning"
+    ],
+    "correctIndex": 0,
+    "explanation": "Internal fragmentation occurs with fixed-size memory blocks when allocated memory is larger than needed, wasting space inside blocks."
+  },
+  {
+    "question": "In the LRU algorithm, the page that is least recently used is replaced.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "LRU replaces the page that was used least recently, assuming it is less likely to be used soon."
+  },
+  {
+    "question": "Virtual memory allows for programs to run even if they are larger than physical memory.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Virtual memory lets programs use more memory than physically available by swapping pages in and out of disk storage."
+  },
+  {
+    "question": "Choose the CORRECT statement describing the Optimal page replacement algorithm.",
+    "choices": [
+      "Is used in modern operating systems",
+      "Is theoretical and requires future knowledge of page requests",
+      "Replaces the oldest page",
+      "Is the slowest algorithm"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Optimal algorithm is theoretical because it needs future knowledge of page requests to minimize page faults."
+  },
+  {
+    "question": "In a paging system, the size of a frame must be ______________.",
+    "choices": [
+      "Equal to the size of a segment",
+      "Larger than the size of a segment",
+      "Equal to the size of a page",
+      "Variable depending on the process"
+    ],
+    "correctIndex": 2,
+    "explanation": "Frames must be equal in size to pages to allow proper mapping between virtual and physical memory."
+  },
+  {
+    "question": "In a segmented memory system, which part of the logical address specifies the offset within a segment?",
+    "choices": [
+      "The page number",
+      "The segment number",
+      "The page offset",
+      "The segment offset"
+    ],
+    "correctIndex": 3,
+    "explanation": "The segment offset specifies the exact location inside the segment for the logical address."
+  },
+  {
+    "question": "In paging, the address is divided into two parts, they are _________ and _________.",
+    "choices": [
+      "Page number, page offset",
+      "Segment number, segment offset",
+      "Frame number, offset",
+      "Base address, offset"
+    ],
+    "correctIndex": 0,
+    "explanation": "Paging divides addresses into page number (which page) and page offset (where inside the page)."
+  },
+  {
+    "question": "In virtual memory, what does thrashing refer to?",
+    "choices": [
+      "Excessive paging leading to poor performance",
+      "Memory corruption due to segmentation fault",
+      "Constant swapping of segments",
+      "Pages being locked in memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thrashing happens when excessive paging causes the system to spend more time swapping than executing processes."
+  },
+  {
+    "question": "Which of the following algorithms requires the least future knowledge of page requests?",
+    "choices": [
+      "Optimal",
+      "LRU",
+      "FIFO",
+      "Second chance"
+    ],
+    "correctIndex": 2,
+    "explanation": "FIFO requires no future knowledge and simply replaces the oldest page in memory."
+  },
+  {
+    "question": "A page replacement algorithm's performance is measured in terms of:",
+    "choices": [
+      "Hit ratio",
+      "Page faults per second",
+      "Memory fragmentation",
+      "Average access time"
+    ],
+    "correctIndex": 0,
+    "explanation": "Performance is often measured by hit ratio, the proportion of memory accesses found in physical memory."
+  },
+  {
+    "question": "What is the main advantage of paging over segmentation?",
+    "choices": [
+      "No external fragmentation",
+      "Simpler address translation",
+      "Dynamic partitioning",
+      "Variable-sized memory blocks"
+    ],
+    "correctIndex": 0,
+    "explanation": "Paging eliminates external fragmentation because pages are fixed size, unlike variable sized segments."
+  },
+  {
+    "question": "Based on the following scenarios, choose the one where thrashing is most likely to occur.",
+    "choices": [
+      "When there are frequent page replacements due to insufficient memory",
+      "When all pages are loaded into memory",
+      "When page replacement algorithms use too much future knowledge",
+      "When no page faults occur"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thrashing occurs when frequent page replacements happen because memory is insufficient."
+  },
+  {
+    "question": "In segmentation, what does each segment represent?",
+    "choices": [
+      "A fixed-size block of memory",
+      "A variable-sized block representing a logical unit",
+      "A page within a larger memory space",
+      "An operating system partition"
+    ],
+    "correctIndex": 1,
+    "explanation": "Each segment is a variable-sized logical unit such as a function or data structure."
+  },
+  {
+    "question": "Which of the following page replacement policies replaces the page that was used least recently?",
+    "choices": [
+      "LRU",
+      "Optimal",
+      "FIFO",
+      "Clock"
+    ],
+    "correctIndex": 0,
+    "explanation": "LRU replaces the page that was used least recently to approximate optimal future use."
+  },
+  {
+    "question": "Paging can result in some wasted space within pages, leading to internal fragmentation.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Internal fragmentation can happen in paging when a process doesn't fully use the last allocated page."
+  },
+  {
+    "question": "Segmentation provides several advantages. One of the advantages is ___________.",
+    "choices": [
+      "Efficient memory use with no internal fragmentation",
+      "Large page tables for better memory mapping",
+      "Memory blocks with a fixed size",
+      "Easy page replacement during memory management"
+    ],
+    "correctIndex": 0,
+    "explanation": "Segmentation avoids internal fragmentation by allocating variable-sized segments."
+  },
+  {
+    "question": "Which of the following is TRUE about internal fragmentation?",
+    "choices": [
+      "It occurs in both paging and segmentation",
+      "It occurs only in segmentation",
+      "It occurs when allocated memory is not fully used",
+      "It occurs when pages are swapped between disk and memory"
+    ],
+    "correctIndex": 2,
+    "explanation": "Internal fragmentation occurs when allocated memory is not fully used, wasting space inside allocated blocks."
+  },
+  {
+    "question": "In a segmented system, how is a process's memory space organized?",
+    "choices": [
+      "Divided into equal-sized pages",
+      "Divided into variable-sized segments",
+      "Divided into logical partitions",
+      "Divided based on address offsets"
+    ],
+    "correctIndex": 1,
+    "explanation": "Processes in segmented systems are divided into variable-sized segments matching logical program parts."
+  },
+  {
+    "question": "Which of the following algorithms replaces the page that will not be used for the longest time in the future?",
+    "choices": [
+      "FIFO",
+      "Optimal",
+      "LRU",
+      "NRU"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Optimal algorithm replaces the page that will not be used for the longest time in the future."
+  },
+  {
+    "question": "Which of the following algorithms replaces the page that was loaded into memory first, regardless of how often it has been used?",
+    "choices": [
+      "LRU",
+      "Optimal",
+      "FIFO",
+      "NRU"
+    ],
+    "correctIndex": 2,
+    "explanation": "FIFO replaces the oldest loaded page, ignoring how often it has been used."
+  },
+  {
+    "question": "What does LRU (Least Recently Used) replace?",
+    "choices": [
+      "The page that was used the least number of times",
+      "The page that was used most recently",
+      "The page that was used longest ago",
+      "The page that is currently idle"
+    ],
+    "correctIndex": 2,
+    "explanation": "LRU replaces the page that was used longest ago, assuming older pages are less likely to be used soon."
+  },
+  {
+    "question": "Which page replacement algorithm might lead to \"Belady's anomaly\"?",
+    "choices": [
+      "FIFO",
+      "LRU",
+      "Optimal",
+      "Second chance"
+    ],
+    "correctIndex": 0,
+    "explanation": "Belady's anomaly, where more frames cause more faults, can occur with FIFO page replacement."
+  },
+  {
+    "question": "What is the purpose of a segment table in segmentation?",
+    "choices": [
+      "To map virtual pages to physical frames",
+      "To store base and limit addresses of segments",
+      "To store the size of each segment",
+      "To maintain the size of each page"
+    ],
+    "correctIndex": 1,
+    "explanation": "The segment table stores base and limit addresses of each segment for address translation and bounds checking."
+  },
+   {
+    "question": "You are tasked with creating a backup of a folder and all of its subdirectories. Which command should you use to copy everything to a backup location?",
+    "choices": ["cp -r", "rm -r", "mkdir -p", "mv -r"],
+    "correctIndex": 0,
+    "explanation": "The 'cp -r' command copies a directory and all its contents recursively, including subdirectories. This makes it ideal for backing up entire folders. Other options like 'rm' remove files, 'mkdir' creates directories, and 'mv' moves files rather than copying them."
+  },
+  {
+    "question": "Which of the following paths represents an absolute path?",
+    "choices": ["/home/user/documents", "documents/file.txt", "../images", "./scripts/"],
+    "correctIndex": 0,
+    "explanation": "An absolute path specifies the full location starting from the root directory '/', making it independent of the current working directory. Relative paths like 'documents/file.txt' depend on the current directory, while absolute paths always point to the same location."
+  },
+  {
+    "question": "Which disk scheduling algorithm minimizes the movement of the disk arm?",
+    "choices": ["SSTF (Shortest Seek Time First)", "FCFS (First-Come, First-Served)", "C-LOOK", "Round Robin"],
+    "correctIndex": 0,
+    "explanation": "SSTF selects the disk request closest to the current head position, minimizing seek time and arm movement. While efficient, it can cause starvation for requests far away. Other algorithms like FCFS are simpler but less efficient in minimizing movement."
+  },
+  {
+    "question": "Which disk scheduling algorithm guarantees that requests at the beginning and end of the queue are equally serviced?",
+    "choices": ["C-LOOK", "SSTF (Shortest Seek Time First)", "FCFS (First-Come, First-Served)", "SCAN"],
+    "correctIndex": 0,
+    "explanation": "C-LOOK services requests in one direction to the last request, then jumps back to the first request without servicing in reverse direction, ensuring fairness between requests at both ends. Unlike SSTF or FCFS, it prevents starvation by cyclically scanning."
+  },
+  {
+    "question": "To list the contents of a directory in Linux, which of the following commands should be used?",
+    "choices": ["ls", "cd", "mkdir", "rm"],
+    "correctIndex": 0,
+    "explanation": "'ls' is the standard command to display files and directories inside the current directory. 'cd' changes directories, 'mkdir' creates directories, and 'rm' deletes files or directories."
+  },
+  {
+    "question": "The purpose of a directory in the file system is to ___________.",
+    "choices": ["organize files into a hierarchy", "execute programs", "manage user permissions", "compress files"],
+    "correctIndex": 0,
+    "explanation": "Directories serve as containers that organize files into a hierarchical structure, making file management and navigation easier. They do not execute programs or manage permissions directly, nor do they compress files."
+  },
+  {
+    "question": "The First-Come, First-Served (FCFS) disk scheduling algorithm can lead to which of the following problems?",
+    "choices": ["Long waiting times for later requests", "Prioritization of urgent requests", "Starvation of processes", "Equal waiting times for all requests"],
+    "correctIndex": 0,
+    "explanation": "FCFS processes requests in the order they arrive without optimization, which can cause long waits if earlier requests require significant disk movement. It does not prioritize urgent requests and can lead to inefficient service but generally avoids starvation."
+  },
+  {
+    "question": "Jane needs to write a bash script that renames all files in a directory by appending \"_old\" to their names. Which command would she primarily use in her script?",
+    "choices": ["mv", "cp", "rm", "ls"],
+    "correctIndex": 0,
+    "explanation": "The 'mv' command renames or moves files. Appending '_old' requires renaming each file, so 'mv' is used. 'cp' copies files, 'rm' deletes them, and 'ls' lists files."
+  },
+  {
+    "question": "In a bash script, ________ is used to execute a loop that continues until a condition becomes false.",
+    "choices": ["while", "if", "case", "until"],
+    "correctIndex": 0,
+    "explanation": "The 'while' loop repeatedly executes as long as its condition evaluates to true. This allows continuous processing until the condition fails. 'Until' loops run until the condition becomes true, which is the opposite logic."
+  },
+  {
+    "question": "A directory that exists within another directory is called a ________.",
+    "choices": ["subdirectory", "root directory", "home directory", "mount point"],
+    "correctIndex": 0,
+    "explanation": "A subdirectory is a directory nested within another directory, enabling hierarchical file organization. The root directory is the top-level directory, the home directory is a user's personal directory, and a mount point is where external file systems are attached."
+  },
+  {
+    "question": "During heavy disk usage, a company finds that servicing the disk in a single direction before resetting the arm minimizes delays. Which algorithm are they most likely using?",
+    "choices": ["C-Scan", "FCFS (First-Come, First-Served)", "SSTF (Shortest Seek Time First)", "SCAN"],
+    "correctIndex": 0,
+    "explanation": "C-Scan services requests in one direction from the innermost to the outermost cylinder, then quickly returns to the start without servicing requests on the return. This approach reduces variability in response time and improves fairness compared to SCAN, which services both directions."
+  },
+  {
+    "question": "In a hierarchical directory structure, which of the following is the top-most directory?",
+    "choices": ["Root directory", "Home directory", "Subdirectory", "Parent directory"],
+    "correctIndex": 0,
+    "explanation": "The root directory is the highest level in a hierarchical file system, serving as the starting point for all absolute paths. Other directories branch out below it."
+  },
+  {
+    "question": "In a flat directory structure, all files are stored in a single directory.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "A flat directory structure contains all files in one directory without any subdirectories, which simplifies management but can become disorganized with many files."
+  },
+  {
+    "question": "C-Scan improves efficiency by servicing requests in both directions.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "explanation": "C-Scan services requests in only one direction and then jumps back to the beginning without servicing requests on the return trip. This prevents starvation and provides more uniform wait times but does not scan both directions."
+  },
+  {
+    "question": "A bash script must start with #!/bin/bash to be executable.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "The shebang '#!/bin/bash' at the start of a script tells the system which interpreter to use to run the script. Without this, the script may not execute correctly or use the intended shell."
+  },
+  {
+    "question": "A high-traffic server with multiple disk requests needs to optimize disk performance by minimizing seek time. Which algorithm would be best suited to avoid starvation of certain requests?",
+    "choices": ["C-Scan", "FCFS (First-Come, First-Served)", "SSTF (Shortest Seek Time First)", "LOOK"],
+    "correctIndex": 0,
+    "explanation": "C-Scan ensures fairness by servicing requests in a circular manner, avoiding starvation that occurs in SSTF. It balances performance and fairness, making it suitable for high-traffic environments."
+  },
+  {
+    "question": "In the LOOK algorithm, the disk arm:",
+    "choices": ["moves only as far as the last request before reversing", "moves to the beginning of the disk", "continues moving in one direction regardless of requests", "cycles through all sectors on the disk"],
+    "correctIndex": 0,
+    "explanation": "LOOK moves the disk arm only as far as the furthest request in the current direction before reversing, unlike SCAN which goes to the disk's end. This reduces unnecessary movement and improves efficiency."
+  },
+  {
+    "question": "The LOOK algorithm reverses direction once the end of the disk is reached, regardless of the number of requests.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "explanation": "LOOK reverses direction only after servicing the last pending request in one direction, not necessarily at the physical disk end, unlike SCAN which always goes to the disk's edge."
+  },
+  {
+    "question": "In Linux, hidden files can be viewed using the ls -a command.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "'ls -a' lists all files, including those starting with '.', which are hidden by default. Without '-a', hidden files are excluded from the listing."
+  },
+  {
+    "question": "A bash script is a sequence of ________ commands written in a file for execution.",
+    "choices": ["Shell", "Binary", "Object-oriented", "Procedural"],
+    "correctIndex": 0,
+    "explanation": "A bash script contains shell commands executed sequentially or conditionally by the shell interpreter. It is not binary or object-oriented code."
+  },
+  {
+    "question": "The SSTF (Shortest Seek Time First) algorithm can cause ________ for requests far from the current disk arm position.",
+    "choices": ["Starvation", "Prioritization", "Optimization", "Completion"],
+    "correctIndex": 0,
+    "explanation": "Because SSTF always selects the closest request, requests far away may be delayed indefinitely, causing starvation. This is a major drawback despite SSTF's efficiency in minimizing seek time."
+  },
+  {
+    "question": "The home directory is always the parent directory of all other directories in a hierarchical file system.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "explanation": "The root directory is the ultimate parent in a file system hierarchy, while the home directory is a subdirectory specific to a user. Therefore, the home directory is not the parent of all directories."
+  },
+  {
+    "question": "A user wants to list all the files in their directory, including hidden ones. What command should they use?",
+    "choices": ["ls -a", "ls -l", "cd", "rm"],
+    "correctIndex": 0,
+    "explanation": "'ls -a' reveals all files, including hidden files beginning with '.', unlike 'ls' alone which hides them. 'ls -l' shows detailed info but doesn't reveal hidden files by itself."
+  },
+  {
+    "question": "John is a system administrator and wants to restrict access to certain directories for specific users. Which type of file system is most appropriate for this?",
+    "choices": ["Unix-based file system with access control lists", "FAT32 file system", "A virtual file system", "CD-ROM file system"],
+    "correctIndex": 0,
+    "explanation": "Unix-based file systems support access control lists (ACLs), allowing fine-grained permission management for users and groups. FAT32 lacks advanced permissions, virtual file systems are abstractions, and CD-ROM file systems are typically read-only."
+  },
+  {
+    "question": "A bash script typically starts with ________ to indicate the shell it will be executed in.",
+    "choices": ["#!/bin/bash", "#start", "!/bin/bash", "@bashstart"],
+    "correctIndex": 0,
+    "explanation": "The shebang '#!/bin/bash' explicitly defines the script interpreter, ensuring consistent execution in the bash shell. Without it, the default shell may vary."
+  },
+  {
+    "question": "Which command is used to copy files from one location to another in Linux?",
+    "choices": ["cp", "mv", "rm", "chmod"],
+    "correctIndex": 0,
+    "explanation": "'cp' copies files or directories to a new location, preserving the original. 'mv' moves or renames files, 'rm' deletes, and 'chmod' changes permissions."
+  },
+  {
+    "question": "Which disk scheduling algorithm suffers from the issue of starvation for requests far from the current head position?",
+    "choices": ["SSTF (Shortest Seek Time First)", "FCFS (First-Come, First-Served)", "SCAN", "LOOK"],
+    "correctIndex": 0,
+    "explanation": "SSTF prioritizes the closest requests, so those far from the current head position can be postponed indefinitely, resulting in starvation. FCFS, SCAN, and LOOK avoid this by servicing requests more fairly."
+  },
+  {
+    "question": "Your task is to organize project files into specific directories. You want to ensure every department has its own directory under a common parent directory named \"Departments.\" Which file structure should you use?",
+    "choices": ["Hierarchical directory structure", "Flat directory structure", "Circular directory structure", "Object-based file system"],
+    "correctIndex": 0,
+    "explanation": "A hierarchical directory structure allows nested directories, making it easy to organize files by departments under a common parent. Flat structures do not support nesting, and other options are not typical file organization methods."
+  },
+  {
+    "question": "In a file system, ________ paths provide a complete location starting from the root directory.",
+    "choices": ["absolute", "relative", "recursive", "conditional"],
+    "correctIndex": 0,
+    "explanation": "Absolute paths start from the root directory and fully specify the location of a file or directory, making them independent of the current working directory. Relative paths depend on the current location."
+  },
+    {
+    "question": "As a developer who needs to deal with a system where different devices have varying speeds and priority levels for processing tasks, which I/O scheduling method would you choose that allocates resources based on device speed and priority?",
+    "choices": ["Priority scheduling", "Fair queuing", "Round robin", "Shortest seek time first"],
+    "correctIndex": 0,
+    "explanation": "Priority scheduling assigns CPU or I/O resources based on the priority level of each request, allowing faster or more critical devices to be serviced first. This method ensures that devices with higher importance or speed get timely access, improving overall system efficiency and responsiveness."
+  },
+  {
+    "question": "Decide a component in an I/O system which is responsible for managing multiple I/O requests and determining their order?",
+    "choices": ["I/O Scheduler", "Device Driver", "Buffer", "Controller"],
+    "correctIndex": 0,
+    "explanation": "The I/O scheduler manages the queue of pending I/O requests, deciding the sequence in which they are processed. By optimizing this order, it balances throughput, fairness, and device efficiency, thereby improving overall system performance."
+  },
+  {
+    "question": "Which of the following best describes the function of interrupt handling in device drivers?",
+    "choices": ["Signals the OS when a device needs attention", "Transfers data in blocks", "Manages communication between hardware and the OS", "Coordinates data from multiple devices"],
+    "correctIndex": 0,
+    "explanation": "Interrupt handling allows a device to notify the operating system asynchronously when it needs service, freeing the CPU from constant polling. This mechanism improves CPU utilization by enabling it to focus on other tasks until the device signals attention is required."
+  },
+  {
+    "question": "The role of I/O scheduling in an operating system is to ___________.",
+    "choices": ["determine the order of I/O requests", "allocate memory to processes", "schedule CPU tasks", "manage file system access"],
+    "correctIndex": 0,
+    "explanation": "I/O scheduling organizes how input/output requests from processes are ordered and managed to optimize device usage. Proper scheduling reduces wait times and maximizes throughput by efficiently handling competing I/O requests."
+  },
+  {
+    "question": "What is the role of an interrupt in a device driver’s operation?",
+    "choices": ["Notifies the CPU of device activity", "Prevents CPU overloading", "Halts the device operation", "Handles data errors"],
+    "correctIndex": 0,
+    "explanation": "An interrupt informs the CPU that a device requires attention, allowing the CPU to pause its current task and service the device promptly. This efficient signaling mechanism reduces wasted CPU cycles compared to continuous polling."
+  },
+  {
+    "question": "What type of communication occurs between the OS and the hardware through the device driver?",
+    "choices": ["Interrupt-driven", "Direct access", "Memory-mapped", "Polling"],
+    "correctIndex": 0,
+    "explanation": "Interrupt-driven communication lets devices notify the operating system when they are ready or require service, enabling asynchronous and efficient interaction. This reduces CPU idle time and enhances system responsiveness."
+  },
+  {
+    "question": "Which component of an I/O system is responsible for translating high-level I/O operations into hardware-specific commands?",
+    "choices": ["Device Driver", "I/O Scheduler", "Buffer", "Controller"],
+    "correctIndex": 0,
+    "explanation": "Device drivers serve as translators that convert generic OS I/O requests into device-specific instructions understood by the hardware. This abstraction allows the OS to interact with a wide range of devices through a uniform interface."
+  },
+  {
+    "question": "How do device drivers optimize the communication between the operating system and hardware?",
+    "choices": ["By utilizing efficient data transfer protocols", "By prioritizing user commands", "By using direct hardware control", "By requiring regular updates to the OS"],
+    "correctIndex": 0,
+    "explanation": "Device drivers implement efficient data transfer protocols such as DMA or interrupt-driven I/O to minimize CPU overhead and latency. This optimization improves overall system throughput and reduces delays in hardware communication."
+  },
+  {
+    "question": "Which of the following is NOT a responsibility of a device driver?",
+    "choices": ["Allocating system memory", "Device initialization", "Sending requests to hardware", "Handling device errors"],
+    "correctIndex": 0,
+    "explanation": "Allocating system memory is typically managed by the operating system's memory manager, not device drivers. Device drivers focus on controlling devices, managing requests, and handling errors specific to their hardware."
+  },
+  {
+    "question": "Which of the following represents a block I/O device?",
+    "choices": ["Hard disk", "Printer", "Keyboard", "Mouse"],
+    "correctIndex": 0,
+    "explanation": "Block devices, like hard disks, transfer data in fixed-size blocks and allow random access to any block. This contrasts with character devices such as keyboards that handle data as a continuous stream."
+  },
+  {
+    "question": "Input/output operations are directly handled by the operating system without the use of any hardware controllers.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "Hardware controllers are essential intermediaries that manage the physical operation of devices, offloading complexity from the OS. The OS relies on these controllers to standardize device communication and control."
+  },
+  {
+    "question": "Which technique allows I/O devices to transfer data directly to memory, bypassing the CPU?",
+    "choices": ["Direct Memory Access (DMA)", "Spooling", "Polling", "Interrupt-driven I/O"],
+    "correctIndex": 0,
+    "explanation": "DMA enables devices to move data directly to or from memory without involving the CPU, significantly reducing CPU load and improving data transfer efficiency. This is especially useful for high-speed or large-volume I/O."
+  },
+  {
+    "question": "What is the main benefit of a universal device driver?",
+    "choices": ["Compatibility with multiple devices", "Increased speed", "Reduced data redundancy", "Improved security"],
+    "correctIndex": 0,
+    "explanation": "Universal drivers provide a generic interface compatible with multiple device models, reducing the need for device-specific drivers and simplifying system management. This enhances flexibility and ease of hardware integration."
+  },
+  {
+    "question": "A potential risk of using outdated device drivers includes _____________.",
+    "choices": ["hardware malfunction", "faster data processing", "improved compatibility", "enhanced security"],
+    "correctIndex": 0,
+    "explanation": "Outdated drivers may lack important bug fixes or support for new OS features, leading to device errors, crashes, or suboptimal hardware performance. Maintaining updated drivers is crucial for system stability."
+  },
+  {
+    "question": "In a multi-threaded environment, how does I/O buffering contribute to system stability?",
+    "choices": ["By ensuring that each thread has access to synchronized data transfer", "By increasing the CPU's workload", "By decreasing the number of threads required", "By simplifying data encryption"],
+    "correctIndex": 0,
+    "explanation": "Buffering provides temporary storage that decouples the speed mismatch between threads and I/O devices, allowing synchronized and orderly data transfers. This prevents data corruption and race conditions in concurrent access scenarios."
+  },
+  {
+    "question": "The primary function of I/O buffering in an operating system is to ______________.",
+    "choices": ["manage data flow between the CPU and I/O devices", "allocate memory resources", "schedule CPU tasks", "manage I/O device interrupts"],
+    "correctIndex": 0,
+    "explanation": "I/O buffering temporarily holds data during transfers to accommodate differing speeds between the CPU and devices. This smooths out data flow and prevents the CPU from idling while waiting for slower I/O operations."
+  },
+  {
+    "question": "What does an interrupt-driven I/O system primarily prevent?",
+    "choices": ["CPU overloading", "Memory fragmentation", "Excessive power consumption", "Data corruption"],
+    "correctIndex": 0,
+    "explanation": "Interrupt-driven I/O avoids CPU overloading by allowing the CPU to perform other tasks until a device signals it needs service, rather than continuously polling the device. This efficient communication conserves CPU resources."
+  },
+  {
+    "question": "User-mode device drivers are more secure than kernel-mode device drivers because they operate in a restricted environment.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Running drivers in user mode limits their access to critical system resources, reducing the risk that driver faults will compromise the entire system. This containment enhances overall security and stability."
+  },
+  {
+    "question": "In a data processing system where incoming transaction data needs to be stored temporarily until the device is ready, which technique is used by an I/O system?",
+    "choices": ["Buffering", "Polling", "Paging", "Scheduling"],
+    "correctIndex": 0,
+    "explanation": "Buffering holds incoming data temporarily, allowing the system to manage timing mismatches between data arrival and device readiness. This ensures smooth and reliable data handling without loss."
+  },
+  {
+    "question": "How does an operating system handle I/O operations to ensure that data integrity is maintained during concurrent access by multiple processes?",
+    "choices": ["By using locking mechanisms", "By ignoring concurrent access", "By increasing the buffer size", "By scheduling I/O operations sequentially"],
+    "correctIndex": 0,
+    "explanation": "Locking mechanisms, such as mutexes or semaphores, prevent multiple processes from accessing the same data simultaneously, avoiding race conditions and data corruption. This preserves the integrity of shared resources."
+  },
+  {
+    "question": "Which of the following best describes the role of a printer driver?",
+    "choices": ["translate print commands into device-specific actions", "manage memory resources", "communicate with the CPU", "handle network requests"],
+    "correctIndex": 0,
+    "explanation": "A printer driver converts generic print commands from applications into specific instructions that the printer hardware can understand, ensuring correct formatting and operation. This abstraction allows seamless printing across diverse printer models."
+  },
+  {
+    "question": "How does an I/O scheduler impact overall system performance in a high-load environment?",
+    "choices": ["By optimizing the sequence and priority of I/O requests", "By increasing the memory allocation for I/O operations", "By reducing the frequency of interrupts", "By simplifying device driver interactions"],
+    "correctIndex": 0,
+    "explanation": "By prioritizing and reordering I/O requests based on device characteristics and system policies, the scheduler reduces wait times and improves throughput. This optimization is crucial under heavy load to maintain system responsiveness."
+  },
+  {
+    "question": "Interrupt handling in I/O systems requires the CPU to halt all other tasks.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "Interrupt handling typically involves briefly pausing the current CPU task to service the interrupt and then resuming it. The CPU does not halt all tasks but quickly switches context to handle the interrupt efficiently."
+  },
+  {
+    "question": "Each hardware device requires a unique device driver in the operating system.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Most hardware devices need specialized drivers to manage their unique command sets and features, ensuring proper operation. While some universal drivers exist, dedicated drivers provide optimal control and performance."
+  },
+  {
+    "question": "Device drivers are also responsible for managing data encryption and security for the devices they control.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "Security and encryption are generally handled by higher-level system components or security modules, not by device drivers. Drivers focus on hardware control rather than implementing security protocols."
+  },
+  {
+    "question": "Which of the following is a primary function of a network device driver?",
+    "choices": ["Enable communication between OS and network hardware", "Manage memory requests", "Translate data for display", "Manage system files"],
+    "correctIndex": 0,
+    "explanation": "Network device drivers facilitate communication between the operating system and networking hardware, translating network protocol requests into hardware actions. This enables data transmission and reception over the network."
+  },
+  {
+    "question": "To handle communication between the CPU and external devices is the role of __________ component.",
+    "choices": ["device driver", "I/O scheduler", "memory manager", "file system"],
+    "correctIndex": 0,
+    "explanation": "Device drivers act as the intermediary between the CPU and hardware devices, managing commands and data exchange. This component ensures correct interpretation and execution of device-specific instructions."
+  },
+  {
+    "question": "What is a key advantage of implementing I/O spooling in an operating system?",
+    "choices": ["It allows efficient handling of multiple I/O requests by queuing them", "It reduces the need for hardware controllers", "It increases the CPU's computational power", "It simplifies memory management"],
+    "correctIndex": 0,
+    "explanation": "I/O spooling queues multiple I/O tasks, such as print jobs, allowing the system to handle them asynchronously and efficiently. This buffering improves throughput and prevents device contention."
+  },
+  {
+    "question": "In a layered operating system, where do device drivers typically operate?",
+    "choices": ["Kernel layer", "User layer", "Application layer", "Network layer"],
+    "correctIndex": 0,
+    "explanation": "Device drivers usually run in the kernel layer where they have privileged access to hardware and system resources. This placement allows efficient communication with devices and the OS."
+  },
+  {
+    "question": "Which type of device driver is responsible for input devices like a keyboard or mouse?",
+    "choices": ["Character driver", "Block driver", "Network driver", "Display driver"],
+    "correctIndex": 0,
+    "explanation": "Character drivers manage devices that transfer data as a stream of characters, such as keyboards and mice, enabling byte-by-byte input processing. This contrasts with block drivers that handle fixed-size data blocks."
+  },
+    {
+    "question": "Authentication is a mechanism used to ensure that data remains confidential.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "explanation": "Authentication verifies the identity of a user or system, not the confidentiality of data. Confidentiality is achieved through encryption techniques that protect data from unauthorized access."
+  },
+  {
+    "question": "Which security mechanism ensures that a user cannot deny their actions?",
+    "choices": ["availability", "confidentiality", "non-repudiation", "integrity"],
+    "correctIndex": 2,
+    "explanation": "Non-repudiation ensures that a party in a communication cannot deny the authenticity of their signature or message. It provides accountability by using digital signatures and logs."
+  },
+  {
+    "question": "What is the main weakness of symmetric encryption compared to asymmetric encryption?",
+    "choices": ["Symmetric encryption is faster", "Symmetric encryption requires secure key distribution", "Symmetric encryption uses only one key for both encryption and decryption", "Symmetric encryption is harder to implement"],
+    "correctIndex": 1,
+    "explanation": "The main weakness of symmetric encryption is the need for secure key exchange. If the key is intercepted during distribution, the entire system's security is compromised."
+  },
+  {
+    "question": "In a scenario where sensitive data needs to be transmitted securely over the internet to prevent unauthorized access, what type of protection mechanism is used to ensure data confidentiality?",
+    "choices": ["Encryption", "Firewall", "Antivirus", "Intrusion detection system (IDS)"],
+    "correctIndex": 0,
+    "explanation": "Encryption protects data by transforming it into an unreadable format that only authorized parties can decrypt. This ensures confidentiality during transmission over insecure channels like the internet."
+  },
+  {
+    "question": "A type of malware which often uses social engineering to deceive users into installing it is called _________.",
+    "choices": ["virus", "worm", "trojan", "ransomware"],
+    "correctIndex": 2,
+    "explanation": "Trojans disguise themselves as legitimate software to trick users into installing them. Once installed, they can perform malicious actions such as data theft or system damage."
+  },
+  {
+    "question": "In public-key cryptography, what is the relationship between the public and private keys?",
+    "choices": ["Both keys are identical", "Both keys are used interchangeably for encryption and decryption", "The public key is used only to generate a hash, and the private key decrypts the hash", "One key is used for encryption, and the other for decryption"],
+    "correctIndex": 3,
+    "explanation": "Public-key cryptography uses a key pair: the public key encrypts data and the private key decrypts it. This asymmetry ensures secure communication without needing to share secret keys."
+  },
+  {
+    "question": "In asymmetric cryptography, the private key is used for which of the following purposes?",
+    "choices": ["Encrypting data", "Decrypting data", "Creating a hash of the data", "Signing digital certificates"],
+    "correctIndex": 1,
+    "explanation": "The private key in asymmetric encryption is used to decrypt messages encrypted with the corresponding public key, ensuring only the intended recipient can access the data."
+  },
+  {
+    "question": "Choose a malware which is designed to display advertisements on your device.",
+    "choices": ["Spyware", "Adware", "Ransomware", "Worm"],
+    "correctIndex": 1,
+    "explanation": "Adware is designed to show unwanted advertisements on a user's device, often leading to a degraded user experience and potential privacy concerns."
+  },
+  {
+    "question": "A digital signature is used to verify the authenticity of a message and ensure non-repudiation.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "Digital signatures provide proof that a message originated from a specific sender and has not been tampered with, ensuring both authenticity and non-repudiation."
+  },
+  {
+    "question": "Which of the following cryptographic methods is used for securing sensitive data during online transactions?",
+    "choices": ["Symmetric encryption", "Data compression", "Network sniffing", "Asymmetric encryption"],
+    "correctIndex": 3,
+    "explanation": "Asymmetric encryption is commonly used in online transactions, such as SSL/TLS, to securely exchange encryption keys and protect sensitive information."
+  },
+  {
+    "question": "Which of the following is a characteristic of symmetric encryption?",
+    "choices": ["Uses two keys, one for encryption and one for decryption", "The key is distributed publicly", "Uses a single key for both encryption and decryption", "Data cannot be decrypted after encryption"],
+    "correctIndex": 2,
+    "explanation": "Symmetric encryption uses the same key for both encrypting and decrypting data, making it fast but requiring secure key exchange."
+  },
+  {
+    "question": "Which of the following is a key feature of Intrusion Detection Systems (IDS)?",
+    "choices": ["Detecting unauthorized access to a network", "Encrypting user data", "Storing files securely", "Authenticating users"],
+    "correctIndex": 0,
+    "explanation": "An IDS monitors network or system activity to detect suspicious patterns that may indicate unauthorized access or policy violations."
+  },
+  {
+    "question": "What kind of attack uses multiple compromised systems to flood a target with traffic, causing it to become unavailable?",
+    "choices": ["Distributed Denial of Service (DDoS)", "Spyware", "Phishing", "Ransomware"],
+    "correctIndex": 0,
+    "explanation": "A DDoS attack overwhelms a system with traffic from multiple sources, making it unable to respond to legitimate users and causing service disruption."
+  },
+  {
+    "question": "Which type of malware is primarily designed to steal personal information by monitoring your activities?",
+    "choices": ["spyware", "virus", "ransomware", "adware"],
+    "correctIndex": 0,
+    "explanation": "Spyware secretly gathers information about users, such as login credentials or browsing habits, often without their knowledge or consent."
+  },
+  {
+    "question": "Which of the following is NOT a purpose of cryptography in operating system security?",
+    "choices": ["Ensuring data confidentiality", "Preventing data tampering", "Managing user access control", "Verifying the authenticity of messages"],
+    "correctIndex": 2,
+    "explanation": "Access control is handled by system policies and permissions, not cryptography. Cryptography focuses on data protection through confidentiality, integrity, and authenticity."
+  },
+  {
+    "question": "Which malware disguises itself as legitimate software?",
+    "choices": ["Worm", "Trojan", "Ransomware", "Spyware"],
+    "correctIndex": 1,
+    "explanation": "A Trojan appears as useful or benign software but contains hidden malicious functionality, often used to gain unauthorized access or control over a system."
+  },
+  {
+    "question": "Which of the following is NOT a function of a firewall?",
+    "choices": ["Filtering network traffic", "Enforcing access control", "Monitoring for viruses", "Preventing unauthorized access"],
+    "correctIndex": 2,
+    "explanation": "Firewalls do not scan for viruses; they control traffic based on predefined rules to prevent unauthorized access and enforce security policies."
+  },
+  {
+    "question": "Asymmetric encryption uses two different keys, one for encryption and one for decryption.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "Asymmetric encryption uses a public key to encrypt data and a private key to decrypt it, allowing secure communication without sharing a secret key."
+  },
+  {
+    "question": "Which of the following mechanisms is primarily concerned with protecting data from unauthorized access?",
+    "choices": ["Confidentiality", "Integrity", "Availability", "Non-repudiation"],
+    "correctIndex": 0,
+    "explanation": "Confidentiality ensures that sensitive information is accessible only to authorized individuals, typically through encryption and access controls."
+  },
+  {
+    "question": "The primary goal of cryptography as a security mechanism is to _________________",
+    "choices": ["ensure message authenticity", "provide confidentiality through encryption", "ensure data integrity", "detect malware"],
+    "correctIndex": 1,
+    "explanation": "While cryptography supports multiple security goals, its central aim is to maintain confidentiality by encrypting data so that unauthorized parties cannot access it."
+  },
+  {
+    "question": "An attack involves a hacker tricking a user into providing sensitive information, often via email or fake websites, is called __________.",
+    "choices": ["phishing", "virus", "spyware", "trojan"],
+    "correctIndex": 0,
+    "explanation": "Phishing attacks use deception, such as fake emails or websites, to trick users into revealing sensitive information like passwords or credit card numbers."
+  },
+  {
+    "question": "A Distributed Denial of Service (DDoS) attack overwhelms a target with an excessive amount of traffic, causing disruption.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "DDoS attacks flood a system with excessive traffic from multiple sources, rendering the targeted service or network unavailable to legitimate users."
+  },
+  {
+    "question": "A firewall is a mechanism designed to detect and prevent unauthorized access to a network.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "Firewalls serve as gatekeepers between networks, enforcing security policies by allowing or blocking traffic based on defined rules."
+  },
+  {
+    "question": "What is the purpose of a digital certificate in cryptography?",
+    "choices": ["To establish the authenticity of a user or device", "To compress files for faster transmission", "To encrypt messages", "To perform error detection"],
+    "correctIndex": 0,
+    "explanation": "A digital certificate binds a public key to an identity, allowing others to verify the authenticity of a user or device in secure communications."
+  },
+  {
+    "question": "In asymmetric encryption, what is the role of the public key?",
+    "choices": ["Decrypt data", "Encrypt data", "Generate digital signatures", "Compress files"],
+    "correctIndex": 1,
+    "explanation": "The public key is used to encrypt data that only the matching private key can decrypt, ensuring that only the intended recipient can access the message."
+  },
+  {
+    "question": "Which malware type exploits security vulnerabilities to spread across devices without user interaction?",
+    "choices": ["Virus", "Trojan", "Worm", "Spyware"],
+    "correctIndex": 2,
+    "explanation": "Worms are self-replicating malware that spread across networks by exploiting vulnerabilities, requiring no user action to propagate."
+  },
+  {
+    "question": "In a situation where a user's files are encrypted and they are unable to access their system unless they make a payment, which of the following is specifically designed to cause this?",
+    "choices": ["Adware", "Worm", "Ransomware", "Spyware"],
+    "correctIndex": 2,
+    "explanation": "Ransomware encrypts a user's data and demands payment for the decryption key, effectively holding data hostage until the ransom is paid."
+  },
+  {
+    "question": "In which type of access control is access determined by a set of rules defined by the system administrator?",
+    "choices": ["Mandatory Access Control (MAC)", "Discretionary Access Control (DAC)", "Role-Based Access Control (RBAC)", "User-Based Access Control (UBAC)"],
+    "correctIndex": 0,
+    "explanation": "MAC enforces access based on system-enforced rules and policies, often using security labels. Users cannot override these rules, making it highly secure."
+  },
+  {
+    "question": "Which type of malware modifies legitimate system files to conceal its presence?",
+    "choices": ["Rootkit", "Virus", "Worm", "Adware"],
+    "correctIndex": 0,
+    "explanation": "Rootkits are stealthy malware designed to hide their existence by modifying system files and kernel-level functions, making detection very difficult."
+  },
+  {
+    "question": "How do firewalls protect against unauthorized network access?",
+    "choices": ["By encrypting all outgoing data", "By blocking malicious software from executing on the system", "By filtering and monitoring incoming and outgoing network traffic based on predefined security rules", "By automatically updating all security patches on the network"],
+    "correctIndex": 2,
+    "explanation": "Firewalls monitor traffic and enforce rules to permit or block connections, thereby protecting networks from unauthorized access and attacks."
+  },
+  {
+    "question": "Virtual memory allows an operating system to use disk space to simulate additional RAM.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Virtual memory extends RAM by using disk space to hold data that cannot fit into physical memory. This lets systems run larger applications or more processes than the available RAM would normally allow."
+  },
+  {
+    "question": "What is the primary benefit of using cloud-based operating systems?",
+    "choices": ["Reduced hardware requirements", "Improved security", "Increased storage capacity", "All of the above"],
+    "correctIndex": 3,
+    "explanation": "Cloud-based OS solutions offer reduced dependence on local hardware, centralized security management, and scalable storage. These combined advantages make them attractive for organizations of all sizes."
+  },
+  {
+    "question": "Which of the following describes the auto-scaling feature in cloud computing?",
+    "choices": [
+      "automatically adjusting computing resources based on real-time demand",
+      "manually adding or removing storage capacity based on usage",
+      "requiring a constant number of resources regardless of load",
+      "scaling hardware resources according to pre-set schedules"
+    ],
+    "correctIndex": 0,
+    "explanation": "Auto-scaling allows cloud platforms to dynamically increase or decrease resources depending on workload. This ensures efficient use of resources and maintains performance during varying demand."
+  },
+  {
+    "question": "The primary purpose of system calls in an operating system is to __________.",
+    "choices": [
+      "initiate hardware devices",
+      "facilitate communication between applications and the kernel",
+      "manage file systems",
+      "provide network security"
+    ],
+    "correctIndex": 1,
+    "explanation": "System calls act as an interface between user applications and the operating system kernel. They allow programs to request services like file access, process control, or memory allocation."
+  },
+  {
+    "question": "In a distributed system, latency refers to the speed of the processor on each node.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "Latency in distributed systems refers to the time delay in data communication between nodes, not processor speed. It impacts how fast systems can coordinate and exchange information."
+  },
+  {
+    "question": "Which of the following operating systems is an open-source project?",
+    "choices": ["macOS", "Windows", "Linux", "Solaris"],
+    "correctIndex": 2,
+    "explanation": "Linux is an open-source OS that allows users to view, modify, and distribute its source code freely. This contrasts with proprietary systems like Windows and macOS."
+  },
+  {
+    "question": "Which type of cloud offers services exclusively to one organization?",
+    "choices": ["Public cloud", "Private cloud", "Hybrid cloud", "Community cloud"],
+    "correctIndex": 1,
+    "explanation": "A private cloud is dedicated to a single organization, providing greater control over security, data, and compliance compared to public cloud models."
+  },
+  {
+    "question": "The main advantage of using cloud computing for businesses is __________.",
+    "choices": [
+      "increased local server storage",
+      "centralized physical hardware",
+      "on-demand scalability",
+      "reduced user control over data"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cloud computing allows businesses to scale resources up or down based on demand, which helps optimize costs and respond quickly to workload changes."
+  },
+  {
+    "question": "In cloud computing, resource pooling allows multiple users to share physical and virtual resources dynamically.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Resource pooling enables cloud providers to serve multiple clients using the same physical infrastructure, with resources allocated dynamically as needed."
+  },
+  {
+    "question": "In Platform as a Service (PaaS), users control the underlying infrastructure like servers, storage, and networking.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "PaaS abstracts the underlying infrastructure so developers can focus on building and deploying applications without worrying about server or network management."
+  },
+  {
+    "question": "What is the primary role of device drivers in an operating system?",
+    "choices": [
+      "To manage user interfaces",
+      "To facilitate communication between the operating system and hardware devices",
+      "To allocate memory to applications",
+      "To execute user commands"
+    ],
+    "correctIndex": 1,
+    "explanation": "Device drivers act as translators between the OS and hardware components, enabling the system to communicate effectively with devices like printers and keyboards."
+  },
+  {
+    "question": "Which of the following features allows an operating system to manage multiple processes simultaneously?",
+    "choices": ["Multithreading", "Single-threading", "Batch processing", "None of the above"],
+    "correctIndex": 0,
+    "explanation": "Multithreading enables a program or system to execute multiple threads concurrently, allowing for better utilization of CPU and improved performance."
+  },
+  {
+    "question": "What is a primary role of the shell in an operating system?",
+    "choices": [
+      "Manage hardware components",
+      "Control system processes",
+      "Handle memory management",
+      "Provide an interface for user commands"
+    ],
+    "correctIndex": 3,
+    "explanation": "The shell serves as a command-line or graphical interface through which users interact with the OS to execute commands and run programs."
+  },
+  {
+    "question": "What is a major benefit of resource sharing in distributed systems?",
+    "choices": [
+      "Lower communication costs",
+      "Centralized decision-making",
+      "Efficient use of resources across multiple machines",
+      "Reduced system complexity"
+    ],
+    "correctIndex": 2,
+    "explanation": "Resource sharing allows distributed systems to balance loads and utilize hardware efficiently by accessing unused resources on other machines."
+  },
+  {
+    "question": "In a distributed system, what does the term 'replication' mean?",
+    "choices": [
+      "Copying data to multiple locations for fault tolerance",
+      "The process of reducing system latency",
+      "Synchronizing clocks across different nodes",
+      "Sharing resources between nodes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Replication involves storing copies of data across different nodes to ensure availability and fault tolerance in case of hardware or network failures."
+  },
+  {
+    "question": "In a distributed system, what is the primary goal of fault tolerance?",
+    "choices": [
+      "To minimize resource usage",
+      "To reduce communication latency",
+      "To ensure the system can recover from failures",
+      "To increase system complexity"
+    ],
+    "correctIndex": 2,
+    "explanation": "Fault tolerance ensures that the system continues operating correctly even if some components fail, maintaining reliability and service availability."
+  },
+  {
+    "question": "Which cloud model integrates both private and public cloud services?",
+    "choices": ["Public cloud", "Private cloud", "Community cloud", "Hybrid cloud"],
+    "correctIndex": 3,
+    "explanation": "A hybrid cloud combines public and private cloud features to offer flexibility, allowing workloads to move between environments as needed for cost or security."
+  },
+  {
+    "question": "In a distributed system, what does 'transparency' refer to?",
+    "choices": [
+      "The system's ability to conceal its distributed nature from users",
+      "The visibility of data to all users",
+      "The system's communication speed",
+      "The clarity of user interface"
+    ],
+    "correctIndex": 0,
+    "explanation": "Transparency hides the complexity of the distributed architecture from users, making the system appear as a single unified resource."
+  },
+  {
+    "question": "Which of the following best defines 'concurrency' in distributed systems?",
+    "choices": [
+      "Systems operating on multiple continents",
+      "Executing multiple processes simultaneously across different machines",
+      "Multiple users accessing the system at the same time",
+      "The speed at which data is transmitted"
+    ],
+    "correctIndex": 1,
+    "explanation": "Concurrency refers to the simultaneous execution of processes that may interact or operate independently across various nodes in a distributed system."
+  },
+  {
+    "question": "What does the acronym 'API' stand for in the context of operating systems?",
+    "choices": [
+      "Application Programming Interface",
+      "Application Process Interface",
+      "Advanced Programming Integration",
+      "Application Protocol Interface"
+    ],
+    "correctIndex": 0,
+    "explanation": "An API (Application Programming Interface) defines the set of rules and functions that applications can use to interact with the operating system or services."
+  },
+  {
+    "question": "A virtual machine allows the execution of multiple operating systems on a single hardware platform, but they do not share resources.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 1,
+    "explanation": "Virtual machines share hardware resources like CPU and memory via a hypervisor, allowing multiple OS instances to coexist on the same physical server."
+  },
+  {
+    "question": "Public cloud services are often more cost-effective for small businesses compared to maintaining their own data centers.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Public clouds reduce upfront costs by offering a pay-as-you-go model, eliminating the need for expensive infrastructure and ongoing maintenance for small businesses."
+  },
+  {
+    "question": "What is the primary benefit of virtualization in cloud computing?",
+    "choices": [
+      "reduce storage costs",
+      "reduce hardware requirements",
+      "increase network speed",
+      "enhance user interface design"
+    ],
+    "correctIndex": 1,
+    "explanation": "Virtualization enables multiple virtual machines to run on the same physical hardware, increasing utilization and reducing the need for dedicated servers."
+  },
+  {
+    "question": "Fault tolerance in distributed systems ensures that the system continues to operate even if some components fail.",
+    "choices": ["TRUE", "FALSE"],
+    "correctIndex": 0,
+    "explanation": "Distributed systems are designed with redundancy and recovery mechanisms so that failures in one part do not halt the entire system's operation."
+  },
+  {
+    "question": "The term ___________ refers to running multiple virtual machines on a single physical server.",
+    "choices": ["multitasking", "virtualization", "threading", "clustering"],
+    "correctIndex": 1,
+    "explanation": "Virtualization is the technique of using software to create multiple virtual environments on one physical machine, each running its own OS."
+  },
+  {
+    "question": "The role of 'load balancing' in a distributed system is to ________________.",
+    "choices": [
+      "share memory between machines",
+      "distribute workloads across multiple servers to optimize resource usage",
+      "synchronize data between servers",
+      "improve the graphical user interface"
+    ],
+    "correctIndex": 1,
+    "explanation": "Load balancing spreads work evenly across servers, preventing overload on any single node and improving system performance and reliability."
+  },
+  {
+    "question": "What role does middleware play in distributed systems?",
+    "choices": [
+      "It is responsible for data storage",
+      "It manages hardware resources",
+      "It provides common services and capabilities to applications",
+      "It handles user interfaces"
+    ],
+    "correctIndex": 2,
+    "explanation": "Middleware acts as a software layer that enables communication and coordination between different components in a distributed system, simplifying application development."
+  },
+  {
+    "question": "In distributed systems, what is 'message passing'?",
+    "choices": [
+      "The exchange of control messages between a local machine and the operating system",
+      "The communication between processes in different machines over a network",
+      "The transfer of user input between a keyboard and a computer",
+      "The process of synchronizing data across different devices"
+    ],
+    "correctIndex": 1,
+    "explanation": "Message passing is a method for processes running on separate machines to exchange data and coordinate their actions using network communication."
+  },
+  {
+    "question": "In modern operating systems, what does the term 'kernel' refer to?",
+    "choices": [
+      "The user interface",
+      "The hardware component",
+      "The core part of the operating system that manages system resources",
+      "The application layer"
+    ],
+    "correctIndex": 2,
+    "explanation": "The kernel is the central part of the operating system responsible for managing hardware, memory, processes, and system calls."
+  },
+  {
+    "question": "What is a characteristic of Platform as a Service (PaaS)?",
+    "choices": [
+      "Users develop, run, and manage applications without managing the infrastructure",
+      "Users manage and control the underlying hardware",
+      "Users manage their own physical servers",
+      "Provides storage but not networking capabilities"
+    ],
+    "correctIndex": 0,
+    "explanation": "PaaS abstracts away infrastructure management, allowing developers to focus on building and deploying applications using tools provided by the platform."
+  },
+   {
+    "question": "Which system call is used to create a new process?",
+    "choices": ["create()", "fork()", "spawn()", "exec()"],
+    "correctIndex": 1,
+    "explanation": "The `fork()` system call creates a new process by duplicating the calling process. This is a fundamental mechanism in Unix-like operating systems that allows a parent process to spawn a child process with its own unique process ID."
+  },
+  {
+    "question": "Which of the following is NOT stored in the PCB?",
+    "choices": ["Process state", "Process ID", "CPU scheduling information", "Device driver details"],
+    "correctIndex": 3,
+    "explanation": "The Process Control Block (PCB) stores information essential for process management, such as the process state, ID, registers, and scheduling info. It does not include device driver details, which are managed separately by the OS I/O subsystem."
+  },
+  {
+    "question": "Which OS development marked the transition to multitasking?",
+    "choices": ["Unix", "Windows XP", "MS-DOS", "MacOS"],
+    "correctIndex": 0,
+    "explanation": "Unix was among the first operating systems to support multitasking, enabling multiple processes to run seemingly simultaneously by efficiently sharing CPU time. This marked a major advancement from single-task systems like MS-DOS."
+  },
+  {
+    "question": "When a process is created, which data structure is initialized to manage the process?",
+    "choices": ["File descriptor table", "Process Control Block", "Device driver", "Memory table"],
+    "correctIndex": 1,
+    "explanation": "The Process Control Block (PCB) is initialized when a new process is created. It tracks key information like the process ID, state, and CPU registers needed for managing and switching between processes."
+  },
+  {
+    "question": "Which of the following best describes priority inversion?",
+    "choices": [
+      "A low-priority task holding a resource blocks a higher-priority task from proceeding",
+      "A high-priority task pre-empts a low-priority task",
+      "A medium-priority task executes before a low-priority task",
+      "Two tasks of the same priority invert their execution order"
+    ],
+    "correctIndex": 0,
+    "explanation": "Priority inversion occurs when a low-priority process holds a resource needed by a high-priority one, effectively blocking its execution. This can disrupt scheduling policies and requires mechanisms like priority inheritance to resolve."
+  },
+  {
+    "question": "To be able to manage the execution of multiple processes, which OS function can be used by a developer?",
+    "choices": ["Memory management", "Process scheduling", "Device management", "File system management"],
+    "correctIndex": 1,
+    "explanation": "Process scheduling allows the operating system to decide which process runs next, enabling multitasking. It manages CPU time efficiently across active processes to ensure responsiveness and fairness."
+  },
+  {
+    "question": "In multithreading, which of the following can be shared between threads?",
+    "choices": ["Program counter", "Stack", "Registers", "Heap"],
+    "correctIndex": 3,
+    "explanation": "Threads within the same process share the heap memory space, allowing them to communicate and share data easily. However, each thread maintains its own registers, stack, and program counter for independent execution."
+  },
+  {
+    "question": "To recover from deadlock in a system, which of the following is a strategic way?",
+    "choices": [
+      "Assigning fixed priorities to all processes",
+      "Rebooting the entire system",
+      "Killing one or more processes involved in the deadlock",
+      "Reducing the number of available resources"
+    ],
+    "correctIndex": 2,
+    "explanation": "Killing one or more processes involved in the deadlock is a practical recovery strategy. This breaks the circular wait condition, allowing the system to continue operating without restarting everything."
+  },
+  {
+    "question": "The main purpose of a context switch in process scheduling is to __________.",
+    "choices": [
+      "handle I/O operations",
+      "switch the CPU from one process to another",
+      "manage memory allocation",
+      "increase process execution time"
+    ],
+    "correctIndex": 1,
+    "explanation": "Context switching saves the state of a currently running process and loads the state of another process to resume its execution. This enables multitasking by allowing multiple processes to share a single CPU."
+  },
+  {
+    "question": "The interface through which applications interact with the OS is called __________.",
+    "choices": ["API", "Kernel", "Command-line interface", "User interface"],
+    "correctIndex": 0,
+    "explanation": "An Application Programming Interface (API) defines how software components interact with the operating system. It provides system calls and services that applications use to perform tasks like file operations or memory allocation."
+  },
+  {
+    "question": "If the page size is 4KB in a paging system, how many pages are required for a 16KB process?",
+    "choices": ["2", "4", "8", "16"],
+    "correctIndex": 1,
+    "explanation": "With a 4KB page size, a 16KB process requires 16 / 4 = 4 pages. Paging breaks memory into fixed-size blocks to simplify allocation and avoid external fragmentation."
+  },
+  {
+    "question": "A bash script typically starts with ________ to indicate the shell it will be executed in.",
+    "choices": ["#!/bin/bash", "#start", "!/bin/bash", "@bashstart"],
+    "correctIndex": 0,
+    "explanation": "The line `#!/bin/bash` is called a shebang. It tells the system that the script should be executed using the Bash shell interpreter located at `/bin/bash`."
+  },
+  {
+    "question": "Segmentation provides several advantages. One of the advantages is __________.",
+    "choices": [
+      "efficient memory use with no internal fragmentation",
+      "large page tables for better memory mapping",
+      "memory blocks with a fixed size",
+      "easy page replacement during memory management"
+    ],
+    "correctIndex": 0,
+    "explanation": "Segmentation divides memory based on logical divisions like functions or data structures, reducing internal fragmentation. Unlike paging, it matches memory allocation to program structure."
+  },
+  {
+    "question": "Which type of device driver is responsible for input devices like a keyboard or mouse?",
+    "choices": ["Character driver", "Block driver", "Network driver", "Display driver"],
+    "correctIndex": 0,
+    "explanation": "Character drivers manage devices that transmit data in a stream, such as keyboards and mice. These drivers handle input/output one character at a time, making them ideal for user input devices."
+  },
+  {
+    "question": "Which component of an I/O system is responsible for translating high-level I/O operations into hardware-specific commands?",
+    "choices": ["Device Driver", "I/O Scheduler", "Buffer", "Controller"],
+    "correctIndex": 0,
+    "explanation": "Device drivers act as the bridge between the operating system and hardware. They convert OS-level I/O requests into commands the specific hardware can understand and execute."
+  },
+  {
+    "question": "You are tasked with creating a backup of a folder and all of its subdirectories. Which command should you use to copy everything to a backup location?",
+    "choices": ["cp -r", "rm -r", "mkdir -p", "mv -r"],
+    "correctIndex": 0,
+    "explanation": "The `cp -r` command copies a directory and all of its subdirectories recursively. It’s essential for backing up complete folder structures without losing any files or hierarchy."
+  },
+  {
+    "question": "Which of the following paths represents an absolute path?",
+    "choices": ["/home/user/documents", "documents/file.txt", "../images", "./scripts/"],
+    "correctIndex": 0,
+    "explanation": "An absolute path specifies the location of a file or directory from the root (`/`) of the file system. `/home/user/documents` starts from the root, making it an absolute path."
+  },
+  {
+    "question": "How does segmentation handle memory management?",
+    "choices": [
+      "It divides memory into equal-sized pages",
+      "It divides memory into logical units based on program structure",
+      "It swaps data between physical and virtual memory",
+      "It avoids fragmentation by combining memory blocks"
+    ],
+    "correctIndex": 1,
+    "explanation": "Segmentation divides memory into variable-sized segments based on logical divisions like functions or data. This mirrors how programs are structured and allows for more intuitive memory use."
+  },
+  {
+    "question": "Which disk scheduling algorithm minimizes the movement of the disk arm?",
+    "choices": ["SSTF (Shortest Seek Time First)", "FCFS (First-Come, First-Served)", "C-LOOK", "Round Robin"],
+    "correctIndex": 0,
+    "explanation": "SSTF selects the disk I/O request closest to the current head position, reducing seek time. This minimizes disk arm movement and improves overall efficiency compared to basic approaches like FCFS."
+  },
+  {
+    "question": "A page replacement algorithm's performance is measured in terms of:",
+    "choices": ["hit ratio", "page faults per second", "memory fragmentation", "average access time"],
+    "correctIndex": 0,
+    "explanation": "The hit ratio reflects how often a requested page is found in memory. A higher hit ratio indicates better performance, as it means fewer costly page faults occur during execution."
+  }
+]
