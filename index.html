@@ -47,49 +47,44 @@
 </head>
 <body class="font-sans bg-gradient-to-br from-gray-100 to-gray-200 flex flex-col items-center p-6 min-h-screen overflow-y-auto">
     <div class="card-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
-        <div class="flashcard bg-gradient-to-br from-purple-500 via-indigo-600 to-blue-700 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard(false, this.textContent.trim())">
+        <div class="flashcard bg-gradient-to-br from-purple-500 via-indigo-600 to-blue-700 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard()">
             CS 2301 - Operating Systems 1
         </div>
         </div>
 
     <div class="popup fixed inset-0 bg-gradient-to-br from-gray-900/80 to-black/80 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out" id="popup" style="display: none;">
-        <div class="question-box bg-white rounded-3xl w-11/12 max-w-2xl text-left relative text-gray-900 shadow-2xl border border-gray-100 backdrop-blur-sm bg-opacity-90 flex flex-col max-h-[90vh]">
-            
-            <div class="header-area p-8 sm:p-12 pb-4 relative z-30 bg-white rounded-t-3xl border-b border-gray-100">
-                <h2 id="flashcardTitleDisplay" class="text-xl font-bold text-gray-800 text-center mb-4"></h2>
+        <div class="question-box bg-white p-8 sm:p-12 rounded-3xl w-11/12 max-w-2xl text-left relative text-gray-900 shadow-2xl border border-gray-100 backdrop-blur-sm bg-opacity-90 min-h-[250px]">
+            <div class="hamburger absolute top-6 left-6 w-9 h-7 flex flex-col justify-between cursor-pointer z-50" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu absolute top-20 left-6 bg-white rounded-xl shadow-xl overflow-hidden opacity-0 pointer-events-none transform -translate-y-4 z-10 min-w-[180px]" id="sideMenu">
+                <button class="block w-full px-5 py-3 border-b border-gray-100 text-left text-base font-medium text-gray-700 cursor-pointer hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200" onclick="closePopup()">Close</button>
+                <button id="saveProgressBtn" class="block w-full px-5 py-3 border-b border-gray-100 text-left text-base font-medium text-gray-700 cursor-pointer hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200" onclick="saveProgress(); showMessageBox('Progress saved!');">Save Progress</button>
+                <button id="viewResultsBtn" class="block w-full px-5 py-3 border-b border-gray-100 text-left text-base font-medium text-gray-700 cursor-pointer hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200 hidden" onclick="showEndSessionSummary()">View Results</button>
+                <button class="block w-full px-5 py-3 text-left text-base font-medium text-gray-700 cursor-pointer hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200" onclick="startOver()">Start Over</button>
+            </div>
 
-                <div class="hamburger absolute top-6 left-6 w-9 h-7 flex flex-col justify-between cursor-pointer z-50" onclick="toggleMenu()">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="menu absolute top-20 left-6 bg-white rounded-xl shadow-xl overflow-hidden opacity-0 pointer-events-none transform -translate-y-4 z-10 min-w-[180px]" id="sideMenu">
-                    <button class="block w-full px-5 py-3 border-b border-gray-100 text-left text-base font-medium text-gray-700 cursor-pointer hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200" onclick="closePopup()">Close</button>
-                    <button id="saveProgressBtn" class="block w-full px-5 py-3 border-b border-gray-100 text-left text-base font-medium text-gray-700 cursor-pointer hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200" onclick="saveProgress(); showMessageBox('Progress saved!');">Save Progress</button>
-                    <button id="viewResultsBtn" class="block w-full px-5 py-3 border-b border-gray-100 text-left text-base font-medium text-gray-700 cursor-pointer hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200 hidden" onclick="showEndSessionSummary()">View Results</button>
-                    <button class="block w-full px-5 py-3 text-left text-base font-medium text-gray-700 cursor-pointer hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200" onclick="startOver()">Start Over</button>
-                </div>
-
-                <div class="absolute top-4 right-6 w-7/12 flex flex-col items-end gap-2 z-10">
-                    <div class="w-full flex items-center gap-2">
-                        <span id="progressText" class="text-gray-700 text-sm font-semibold">0%</span>
-                        <div id="progressBarContainer" class="flex-grow h-5 bg-gray-300 rounded-full overflow-hidden">
-                            <div id="progressBar" class="h-5 rounded-full transition-all duration-300 ease-out" style="width: 0%; background-color: red;"></div>
-                        </div>
+            <div class="absolute top-4 right-6 w-7/12 flex flex-col items-end gap-2">
+                <div class="w-full flex items-center gap-2">
+                    <span id="progressText" class="text-gray-700 text-sm font-semibold">0%</span>
+                    <div id="progressBarContainer" class="flex-grow h-5 bg-gray-300 rounded-full overflow-hidden">
+                        <div id="progressBar" class="h-5 rounded-full transition-all duration-300 ease-out" style="width: 0%; background-color: red;"></div>
                     </div>
-                    <div id="scoreDisplay" class="flex items-center gap-4 mt-1 text-sm font-semibold text-gray-700">
-                        <span class="flex items-center gap-1">Correct: <span id="correctCount" class="text-green-600 font-bold">0</span></span>
-                        <span class="flex items-center gap-1">Incorrect: <span id="incorrectCount" class="text-red-600 font-bold">0</span></span>
-                    </div>
+                </div>
+                <div id="scoreDisplay" class="flex items-center gap-4 mt-1 text-sm font-semibold text-gray-700">
+                    <span class="flex items-center gap-1">Correct: <span id="correctCount" class="text-green-600 font-bold">0</span></span>
+                    <span class="flex items-center gap-1">Incorrect: <span id="incorrectCount" class="text-red-600 font-bold">0</span></span>
                 </div>
             </div>
 
-            <div id="questionScreen" class="flex flex-col flex-grow overflow-hidden p-8 sm:p-12 pt-0"> <div class="flex-grow overflow-y-auto pr-2 -mr-2"> <p id="questionText" class="mb-6 font-bold text-xl leading-relaxed">Here goes the question...</p>
-                    <div id="choices" class="space-y-4 px-2"></div>
-                    <div id="explanation" class="mt-8 p-5 rounded-xl font-normal text-amber-800 bg-amber-50 border border-amber-200 hidden shadow-inner"></div>
-                </div>
+            <div id="questionScreen">
+                <p id="questionText" class="mb-6 font-bold text-xl leading-relaxed pt-16 pl-12">Here goes the question...</p>
+                <div id="choices" class="space-y-4 px-2"></div>
+                <div id="explanation" class="mt-8 p-5 rounded-xl font-normal text-amber-800 bg-amber-50 border border-amber-200 hidden shadow-inner"></div>
 
-                <div class="nav-buttons flex justify-between items-center mt-4 p-4 -mx-8 -mb-12 bg-white rounded-b-3xl border-t border-gray-100 z-20">
+                <div class="nav-buttons flex justify-between items-center mt-8 gap-4">
                     <button class="px-8 py-3 font-bold text-lg rounded-full text-orange-800 bg-orange-200 border border-orange-300 hover:bg-orange-300 transition-all duration-200 shadow-md hover:shadow-lg active:scale-98" onclick="toggleExplanation()">Explanation</button>
                     <button class="flex items-center justify-center w-12 h-12 bg-gray-700 rounded-full hover:bg-gray-800 transition-all duration-200 shadow-md hover:shadow-lg active:scale-95" onclick="prevQuestion()">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
@@ -153,7 +148,7 @@
         const sideMenu = document.getElementById('sideMenu');
         const messageBox = document.getElementById('messageBox');
         const messageText = document.getElementById('messageText');
-        const flashcardTitleDisplay = document.getElementById('flashcardTitleDisplay'); 
+        // Removed: flashcardTitleDisplay as it's not in this version's HTML
         
         // Progress bar elements
         const progressBarContainer = document.getElementById('progressBarContainer');
@@ -349,10 +344,9 @@
          * Opens the flashcard popup and loads the first question.
          * Resets state for a new session OR loads saved progress.
          * @param {boolean} [forceNewSession=false] - If true, always start a new session, ignoring saved progress.
-         * @param {string} [flashcardName='Flashcards'] - The name of the flashcard set being opened.
          */
-        function openFlashcard(forceNewSession = false, flashcardName = 'Flashcards') {
-            console.log('openFlashcard called. forceNewSession:', forceNewSession, 'Flashcard Name:', flashcardName);
+        function openFlashcard(forceNewSession = false) { // Removed flashcardName parameter from this version
+            console.log('openFlashcard called. forceNewSession:', forceNewSession);
             if (questions.length === 0) {
                 showMessageBox('No questions loaded yet. Please wait or check the JSON file.');
                 return;
@@ -362,7 +356,7 @@
             popup.style.display = 'flex';
             reviewMode = false; // Ensure not in review mode
             
-            flashcardTitleDisplay.textContent = flashcardName; // Set the flashcard title
+            // Removed: flashcardTitleDisplay.textContent = flashcardName;
 
             let progressLoaded = false;
             if (!forceNewSession) {
@@ -594,7 +588,7 @@
             console.log('Start Over clicked.');
             clearSavedProgress(); 
             closePopup(); 
-            openFlashcard(true, flashcardTitleDisplay.textContent); 
+            openFlashcard(true); // No flashcard name to pass in this version
             showMessageBox('Flashcard session restarted!');
         }
 
