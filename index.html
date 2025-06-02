@@ -16,7 +16,7 @@
 
         /* Basic transition for menu */
         .menu {
-            transition: opacity 0.3s ease, transform 0.3s ease;
+            transition: opacity 0.3s ease, transform 0 3s ease;
         }
         .menu.open {
             opacity: 1;
@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    <div class="popup fixed inset-0 bg-gradient-to-br from-gray-900/80 to-black/80 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out" id="popup" style="display: none;">
+    <div class="popup fixed inset-0 bg-gradient-to-br from-gray-900/80 to-black/80 flex justify-center z-50 transition-opacity duration-300 ease-in-out py-8 overflow-y-auto" id="popup" style="display: none;">
         <div class="question-box bg-white rounded-3xl w-11/12 max-w-2xl text-left relative text-gray-900 shadow-2xl border border-gray-100 backdrop-blur-sm bg-opacity-90 min-h-[250px] flex flex-col">
             
             <div class="header-area p-4 sm:p-6 pb-2 relative z-30 border-b border-gray-100">
