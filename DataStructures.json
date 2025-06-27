@@ -1,0 +1,326 @@
+[
+  {
+    "question": "The process of visiting each node in a tree exactly once is called __________",
+    "choices": [
+      "Tree Traversal",
+      "Tree Sorting",
+      "Tree Insertion",
+      "Tree Deletion"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tree traversal is a systematic way to visit all nodes in a tree data structure. Common methods like in-order, pre-order, and post-order ensure that each node is processed precisely once, which is fundamental for many tree-based operations."
+  },
+  {
+    "question": "What is the best-case time complexity of the binary search algorithm?",
+    "choices": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In its best-case scenario, binary search finds the target element on the very first comparison, specifically if the target is located at the middle element of the array. This direct hit results in a constant time complexity, regardless of the array's size."
+  },
+  {
+    "question": "If an algorithm has two nested loops, each running from 1 to n, what is its time complexity?",
+    "choices": [
+      "O(n²)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When you have two nested loops, and each loop iterates 'n' times, the total number of operations grows proportionally to n multiplied by n. This quadratic relationship is precisely what O(n²) represents in Big-O notation, indicating a significantly increasing execution time as 'n' gets larger."
+  },
+  {
+    "question": "The primary goal of analyzing time complexity is to:",
+    "choices": [
+      "Optimize algorithm execution time",
+      "Determine the required memory space",
+      "Measure the speed of a program",
+      "Count the number of recursive calls"
+    ],
+    "correctIndex": 0,
+    "explanation": "Analyzing time complexity helps predict how an algorithm's running time scales with input size, allowing us to choose or design algorithms that perform efficiently, especially for large datasets. This prediction is crucial for optimizing performance rather than just measuring raw speed."
+  },
+  {
+    "question": "When using Big-O notation, what is typically ignored?",
+    "choices": [
+      "The constant factors and lower-order terms",
+      "The input size",
+      "The worst-case scenario",
+      "The leading coefficients"
+    ],
+    "correctIndex": 0,
+    "explanation": "Big-O notation focuses on the asymptotic behavior of an algorithm, describing its growth rate as input size approaches infinity. Therefore, constant factors and less significant lower-order terms are disregarded as their impact becomes negligible for large inputs, emphasizing the dominant term."
+  },
+  {
+    "question": "Which of the following data structures has an average-case time complexity of O(1) for accessing an element?",
+    "choices": [
+      "Hash Table",
+      "Linked List",
+      "Binary Search Tree",
+      "Stack"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hash tables, on average, offer constant-time O(1) access to elements. This efficiency is achieved by directly computing an element's location using a hash function, assuming minimal collisions. In contrast, other structures like linked lists or binary search trees typically require more time for access."
+  },
+  {
+    "question": "What is the time complexity of finding an element in an unsorted array using a linear search?",
+    "choices": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)",
+      "O(1)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In an unsorted array, a linear search must potentially check every element in the worst case to find the target or determine its absence. This means the number of operations grows linearly with the size of the array, 'n', hence O(n) complexity."
+  },
+  {
+    "question": "Which of the following best describes an Abstract Data Type (ADT)?",
+    "choices": [
+      "A mathematical model with defined operations but no specific implementation",
+      "A concrete implementation of a data structure",
+      "A programming language feature",
+      "A built-in data structure in programming"
+    ],
+    "correctIndex": 0,
+    "explanation": "An ADT is a high-level conceptual model that specifies a set of data values and operations that can be performed on them, without detailing how these operations are implemented. It focuses on 'what' can be done rather than 'how' it's done, providing a blueprint for data structures."
+  },
+  {
+    "question": "The space complexity of an algorithm depends on the input size and the __________ space required during execution.",
+    "choices": [
+      "Auxiliary",
+      "Primary",
+      "Temporary",
+      "Recursion"
+    ],
+    "correctIndex": 0,
+    "explanation": "Space complexity measures the total memory an algorithm uses, which includes the space taken by the input data and any additional space the algorithm requires for its computations, known as auxiliary space. This auxiliary space is temporary and used for variables, data structures, or recursive call stacks."
+  },
+  {
+    "question": "What is the advantage of a linked list over an array?",
+    "choices": [
+      "Dynamic memory allocation",
+      "Faster access to elements",
+      "Fixed size allocation",
+      "Requires less memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linked lists excel in dynamic memory allocation, allowing them to grow or shrink in size during runtime without needing contiguous memory blocks. This flexibility contrasts with arrays, which typically require a fixed size declared at compile time or initial allocation."
+  },
+  {
+    "question": "If an algorithm runs in O(n log n) time, which of the following sorting algorithms could it be?",
+    "choices": [
+      "Average case Quick Sort",
+      "Bubble Sort",
+      "Insertion Sort",
+      "Selection Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average case Quick Sort, along with Merge Sort and Heap Sort, exhibits an O(n log n) time complexity, which is considered highly efficient for sorting large datasets. This logarithmic factor arises from the divide-and-conquer strategy employed by these algorithms."
+  },
+  {
+    "question": "If an algorithm requires constant space, what is its space complexity?",
+    "choices": [
+      "O(1)",
+      "O(n)",
+      "O(n log n)",
+      "O(n²)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Constant space complexity, denoted as O(1), signifies that the amount of memory an algorithm uses remains fixed regardless of the input size. This implies that the algorithm does not require additional memory that scales with the input."
+  },
+  {
+    "question": "The Big-O notation represents the best-case performance of an algorithm.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "Big-O notation primarily describes the upper bound or worst-case time complexity of an algorithm, indicating how its running time grows at most. While other notations like Omega (Ω) and Theta (Θ) describe best-case and average-case scenarios, Big-O is specifically for the worst-case."
+  },
+  {
+    "question": "In a __________ sort algorithm, the list is divided into smaller sublists that are sorted and then merged back together.",
+    "choices": [
+      "Merge Sort",
+      "Insertion Sort",
+      "Heap Sort",
+      "Selection Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge Sort is a classic divide-and-conquer algorithm. It recursively breaks down a list into individual elements, then repeatedly merges these sorted sublists to produce new sorted sublists until there is only one sorted list remaining."
+  },
+  {
+    "question": "What does it mean if algorithm X is asymptotically more efficient than algorithm Y?",
+    "choices": [
+      "X will always be a better choice for large inputs",
+      "X will always be a better choice for small inputs",
+      "Y will always be a better choice for small inputs",
+      "X will always be a better choice for all inputs"
+    ],
+    "correctIndex": 0,
+    "explanation": "Asymptotic efficiency refers to the performance of an algorithm as the input size approaches infinity. If algorithm X is asymptotically more efficient than algorithm Y, it means X will eventually outperform Y for sufficiently large inputs, even if Y might be faster for small inputs due to constant factors."
+  },
+  {
+    "question": "Which of the following is a key advantage of a stack compared to a queue?",
+    "choices": [
+      "Supports Last In, First Out (LIFO) access, useful for function calls and backtracking",
+      "Provides faster searching of elements",
+      "Allows access to elements in FIFO order",
+      "Requires less memory for storing elements"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stacks operate on a Last-In, First-Out (LIFO) principle, meaning the last element added is the first one removed. This makes them ideal for managing function call hierarchies in programming (the call stack) and implementing algorithms that involve backtracking, such as depth-first search."
+  },
+  {
+    "question": "Which Big-O notation represents the worst-case time complexity of a balanced binary search tree (BST) search operation?",
+    "choices": [
+      "O(log n)",
+      "O(n)",
+      "O(n²)",
+      "O(1)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a balanced BST, each comparison effectively halves the search space, similar to binary search in a sorted array. This logarithmic reduction in search space leads to a worst-case time complexity of O(log n), making BSTs highly efficient for search, insertion, and deletion operations."
+  },
+  {
+    "question": "Which of the following best describes space complexity in data structures?",
+    "choices": [
+      "The total amount of memory required by an algorithm, including input size and auxiliary space",
+      "The number of steps an algorithm takes to complete execution",
+      "The amount of time required for an algorithm to execute based on input size",
+      "The total number of recursive calls made during execution"
+    ],
+    "correctIndex": 0,
+    "explanation": "Space complexity quantifies the total memory an algorithm uses during its execution, encompassing both the memory consumed by the input data itself and any additional temporary memory, or auxiliary space, the algorithm needs to complete its task. This measure is crucial for understanding an algorithm's resource footprint."
+  },
+  {
+    "question": "In an unsorted array of size n, what is the worst-case time complexity of searching for an element?",
+    "choices": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In the worst-case scenario for an unsorted array, a linear search algorithm must iterate through every single element to find a specific item or confirm its absence. Consequently, the time taken directly scales with the number of elements 'n', resulting in O(n) complexity."
+  },
+  {
+    "question": "What is the time complexity of accessing an element in an array by index?",
+    "choices": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Accessing an element in an array by its index is a constant-time operation, denoted as O(1). This is because arrays store elements in contiguous memory locations, allowing direct calculation of any element's address based on its index, regardless of the array's size."
+  },
+  {
+    "question": "Which sorting algorithm has an average-case time complexity of O(n²)?",
+    "choices": [
+      "Bubble Sort",
+      "Quick Sort",
+      "Merge Sort",
+      "Heap Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bubble Sort is known for its simplicity but is inefficient for large datasets, with an average-case time complexity of O(n²). This quadratic complexity arises from its process of repeatedly stepping through the list, comparing adjacent elements, and swapping them if they are in the wrong order."
+  },
+  {
+    "question": "A graph that has no cycles is called a __________ graph.",
+    "choices": [
+      "Acyclic",
+      "Directed",
+      "Cyclic",
+      "Weighted"
+    ],
+    "correctIndex": 0,
+    "explanation": "An acyclic graph is one that contains no cycles, meaning there is no path that starts and ends at the same vertex. A common example is a tree, which is a specific type of undirected acyclic graph, crucial in many algorithms for representing hierarchies or dependencies without redundant connections."
+  },
+  {
+    "question": "The space complexity of a recursive function is affected by the call stack.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Each recursive call adds a new frame to the call stack, storing local variables and return addresses. In the worst case, for deeply recursive functions, the space consumed by the call stack can grow linearly with the depth of recursion, impacting the overall space complexity."
+  },
+  {
+    "question": "If an algorithm’s time complexity is O(1), what does it imply?",
+    "choices": [
+      "The execution time is constant, regardless of input size",
+      "The execution time increases linearly with input size",
+      "The execution time grows exponentially",
+      "The execution time is logarithmic"
+    ],
+    "correctIndex": 0,
+    "explanation": "An algorithm with O(1) time complexity means its execution time remains constant, irrespective of the input size. This indicates that the algorithm performs a fixed number of operations, making it incredibly efficient for any scale of data."
+  },
+  {
+    "question": "O(n³) represents a more efficient algorithm than O(n log n) for large input sizes.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. For large input sizes, O(n log n) is significantly more efficient than O(n³). The logarithmic factor in O(n log n) grows much slower than a cubic factor, meaning algorithms with O(n log n) complexity will outperform those with O(n³) as 'n' increases."
+  },
+  {
+    "question": "The time complexity of binary search in a sorted array is ___.",
+    "choices": [
+      "O(log n)",
+      "O(n)",
+      "O(n²)",
+      "O(1)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary search operates by repeatedly dividing the search interval in half. This halving of the problem size with each comparison leads to a logarithmic time complexity, O(log n), making it very efficient for searching in large sorted datasets."
+  },
+  {
+    "question": "Which data structure follows the Last In, First Out (LIFO) principle?",
+    "choices": [
+      "Stack",
+      "Queue",
+      "Linked List",
+      "Tree"
+    ],
+    "correctIndex": 0,
+    "explanation": "A stack adheres to the Last In, First Out (LIFO) principle, where the last element added to the stack is the first one to be removed. Think of a stack of plates: you can only remove the top plate, which was the last one placed there."
+  },
+  {
+    "question": "What is the time complexity of inserting an element at the beginning of a linked list?",
+    "choices": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inserting an element at the beginning of a singly linked list is an O(1) operation because it only requires updating a few pointers (the new node's next pointer and the head pointer). The operation does not depend on the number of elements already in the list."
+  },
+  {
+    "question": "The Big-O notation describes the __________ limit of an algorithm’s growth rate.",
+    "choices": [
+      "Worst-case",
+      "Average-case",
+      "Best-case",
+      "Expected-case"
+    ],
+    "correctIndex": 0,
+    "explanation": "Big-O notation formally expresses the upper bound on the growth rate of an algorithm's runtime or space requirements as the input size increases. It specifically focuses on the worst-case scenario, providing a guarantee of maximum resources an algorithm might consume."
+  },
+  {
+    "question": "What is the main characteristic of a hash function in a hash table?",
+    "choices": [
+      "It transforms a key into an index in constant time",
+      "It ensures a unique value for each key",
+      "It maps keys to values randomly",
+      "It performs a sequential search"
+    ],
+    "correctIndex": 0,
+    "explanation": "The primary role of a hash function is to deterministically convert a given key into an array index where the corresponding value can be stored or retrieved. Ideally, this computation should be performed in constant time, O(1), enabling very fast average-case access to data."
+  }
+]

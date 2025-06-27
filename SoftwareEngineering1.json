@@ -1,0 +1,359 @@
+[
+  {
+    "question": "Which phase of the SDLC involves gathering and analyzing project requirements?",
+    "choices": [
+      "Requirements analysis",
+      "Testing",
+      "Design",
+      "Implementation"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Requirements Analysis phase is crucial for defining what the software system needs to do. During this stage, stakeholders' needs are collected, documented, and thoroughly understood to form the foundation for all subsequent development activities."
+  },
+  {
+    "question": "Coupling refers to the level of dependency between software modules.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Coupling measures how much one software module relies on another. High coupling indicates strong dependencies, which can make systems harder to understand, modify, and test, while low coupling is generally desired for robust and maintainable software."
+  },
+  {
+    "question": "Which SDLC model emphasizes customer collaboration over contract negotiation?",
+    "choices": [
+      "Agile",
+      "Waterfall",
+      "Spiral",
+      "Incremental"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Agile SDLC model prioritizes continuous customer collaboration throughout the development process. This emphasis ensures that the software evolves to meet changing needs and deliver maximum value, contrasting with more rigid, contract-focused approaches."
+  },
+  {
+    "question": "The process of dividing a software project into smaller, manageable tasks is known as _____.",
+    "choices": [
+      "Decomposition",
+      "Refactoring",
+      "Debugging",
+      "Optimization"
+    ],
+    "correctIndex": 0,
+    "explanation": "Decomposition involves breaking down a complex problem or project into smaller, more manageable components or tasks. This practice simplifies development, allows for parallel work, and makes it easier to track progress and identify potential issues within each smaller piece."
+  },
+  {
+    "question": "Which role focuses on writing and maintaining the source code?",
+    "choices": [
+      "Software Developer",
+      "Project Manager",
+      "System Analyst",
+      "UX Designer"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Software Developer is primarily responsible for translating design specifications into executable code. Their duties involve writing, debugging, and maintaining the software's source code, ensuring it functions as intended and meets project requirements."
+  },
+  {
+    "question": "In which SDLC model are prototypes created for client feedback?",
+    "choices": [
+      "Prototyping",
+      "Waterfall",
+      "Agile",
+      "Spiral"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Prototyping model explicitly involves creating preliminary versions of the software (prototypes) to gather early and iterative feedback from clients. This helps refine requirements and design before full-scale development, reducing the risk of building the wrong product."
+  },
+  {
+    "question": "What is the role of the Project Manager?",
+    "choices": [
+      "Overseeing the project schedule, budget, and team coordination",
+      "Writing technical code",
+      "Testing software functionality",
+      "Designing system architecture"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Project Manager is central to leading and guiding the software development team. Their responsibilities include defining project goals, creating detailed plans, managing resources and budgets, and ensuring effective communication and coordination among all team members to achieve successful delivery."
+  },
+  {
+    "question": "_____ is the phase of SDLC where the system is thoroughly tested for errors and bugs.",
+    "choices": [
+      "Testing",
+      "Development",
+      "Design",
+      "Implementation"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Testing phase is a critical stage in the SDLC dedicated to identifying defects, errors, and omissions in the software. Various testing techniques are employed to ensure the system meets specified requirements, performs reliably, and delivers a high-quality user experience."
+  },
+  {
+    "question": "Which SDLC model incorporates risk assessment as a key component?",
+    "choices": [
+      "Spiral",
+      "Waterfall",
+      "Agile",
+      "Incremental"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Spiral model is renowned for its emphasis on risk management, integrating risk assessment activities into each iteration. This iterative approach allows for systematic identification, analysis, and mitigation of risks throughout the project lifecycle, making it suitable for large and complex endeavors."
+  },
+  {
+    "question": "The primary goal of the SDLC is to ensure structured and efficient software development.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The Software Development Life Cycle (SDLC) provides a structured framework for managing the entire software development process, from conception to maintenance. Its goal is to deliver high-quality software systematically, within budget, and on schedule, by clearly defining phases and responsibilities."
+  },
+  {
+    "question": "What is Software Engineering?",
+    "choices": [
+      "Applying systematic engineering principles to software development",
+      "Writing code for software",
+      "Testing software for errors",
+      "Building hardware components"
+    ],
+    "correctIndex": 0,
+    "explanation": "Software Engineering is a systematic, disciplined, and quantifiable approach to the development, operation, and maintenance of software. It applies engineering principles to create high-quality software solutions that are reliable, efficient, and meet user requirements."
+  },
+  {
+    "question": "Who ensures that software quality standards are met through rigorous testing?",
+    "choices": [
+      "Quality Assurance Tester",
+      "Software Developer",
+      "System Administrator",
+      "Business Analyst"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Quality Assurance (QA) Tester is responsible for systematically verifying that the software meets quality standards and functional requirements. They design and execute test cases, identify defects, and work with the development team to ensure a robust and reliable product before release."
+  },
+  {
+    "question": "Which role focuses on creating visual and interactive elements of a system?",
+    "choices": [
+      "UX Designer",
+      "Software Developer",
+      "QA Tester",
+      "System Administrator"
+    ],
+    "correctIndex": 0,
+    "explanation": "A UX (User Experience) Designer focuses on enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction between the user and the product. This involves researching user behaviors, designing intuitive interfaces, and creating engaging experiences."
+  },
+  {
+    "question": "The primary drawback of the Waterfall model is:",
+    "choices": [
+      "Inability to accommodate changes mid-project",
+      "Lack of documentation",
+      "High risk of project failure",
+      "Low-quality deliverables"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Waterfall model's strict sequential nature makes it highly inflexible to changes once a phase is completed. This rigidity means that accommodating new requirements or correcting early-stage errors late in the project can be costly and disruptive, making it less suitable for dynamic environments."
+  },
+  {
+    "question": "In the Waterfall model, testing occurs only at the end of the development cycle.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. A defining characteristic of the traditional Waterfall model is that testing is a distinct phase that begins only after all development and implementation are complete. This sequential approach means defects found late can be expensive and time-consuming to fix."
+  },
+  {
+    "question": "Which SDLC model is known for its strict sequential approach?",
+    "choices": [
+      "Waterfall",
+      "Agile",
+      "Spiral",
+      "Iterative"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Waterfall model is characterized by its linear and sequential approach, where each phase must be completed before the next one begins. This strict progression makes it easy to manage but less adaptable to changes that may arise during the project."
+  },
+  {
+    "question": "Who is responsible for translating client requirements into technical specifications?",
+    "choices": [
+      "Business Analyst",
+      "Software Developer",
+      "Project Manager",
+      "QA Tester"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Business Analyst (BA) serves as a crucial liaison, bridging the gap between business stakeholders and the technical development team. They elicit, analyze, document, and translate high-level client requirements into detailed technical specifications that developers can implement."
+  },
+  {
+    "question": "What is \"Abstraction\" in Software Engineering?",
+    "choices": [
+      "Ignoring implementation details to focus on functionality",
+      "Writing complex code for every task",
+      "Avoiding software reuse",
+      "Removing features from software"
+    ],
+    "correctIndex": 0,
+    "explanation": "Abstraction in software engineering involves simplifying complex systems by focusing on essential features and hiding unnecessary details. This allows developers to manage complexity, design modular components, and improve the overall readability and maintainability of the code by representing only the relevant information."
+  },
+  {
+    "question": "The term \"Maintainability\" in Software Engineering refers to:",
+    "choices": [
+      "The ease of modifying software to meet new requirements",
+      "The ability to run on multiple platforms",
+      "The time it takes to complete a project",
+      "The aesthetics of the user interface"
+    ],
+    "correctIndex": 0,
+    "explanation": "Maintainability is a critical quality attribute of software, indicating how easily the software can be modified, adapted, or repaired after deployment. Highly maintainable software is easier to debug, enhance, and evolve over its lifecycle, leading to lower long-term costs."
+  },
+  {
+    "question": "A DevOps Engineer is primarily responsible for:",
+    "choices": [
+      "Managing software releases and automation",
+      "Designing user interfaces",
+      "Writing technical documentation",
+      "Creating test cases"
+    ],
+    "correctIndex": 0,
+    "explanation": "A DevOps Engineer plays a key role in bridging the gap between development and operations teams. They focus on automating the software delivery pipeline, managing infrastructure, and ensuring seamless integration and continuous deployment, thereby streamlining software releases and improving operational efficiency."
+  },
+  {
+    "question": "What is the primary responsibility of a Software Architect?",
+    "choices": [
+      "Designing the high-level structure of the software system",
+      "Writing and debugging code",
+      "Creating marketing materials",
+      "Testing for software bugs"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Software Architect defines the overall structure of a software system, including its components, their relationships, and the principles and guidelines governing its design and evolution. They make critical decisions about technology choices and architectural patterns to ensure scalability, reliability, and maintainability."
+  },
+  {
+    "question": "What does a Scrum Master facilitate in Agile projects?",
+    "choices": [
+      "Team communication and adherence to Agile practices",
+      "Client relations",
+      "Designing user interfaces",
+      "Debugging code"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Scrum Master acts as a facilitator for the Scrum team, ensuring adherence to Agile principles and practices. They remove impediments, coach the team in self-organization and cross-functionality, and foster a collaborative environment to maximize productivity and deliver value."
+  },
+  {
+    "question": "Who is primarily responsible for system deployment and ensuring its availability?",
+    "choices": [
+      "System Administrator",
+      "Database Administrator",
+      "Quality Assurance Tester",
+      "Business Analyst"
+    ],
+    "correctIndex": 0,
+    "explanation": "The System Administrator is crucial for deploying, configuring, and maintaining the operational infrastructure of software systems. Their role ensures that systems are available, perform optimally, and are securely managed, often involving tasks like server maintenance, network configuration, and user access control."
+  },
+  {
+    "question": "\"Reusability\" in software reduces:",
+    "choices": [
+      "Development time and cost",
+      "Scalability of the project",
+      "Testing requirements",
+      "Dependency among modules"
+    ],
+    "correctIndex": 0,
+    "explanation": "Software reusability allows developers to use existing components or modules in new applications, significantly reducing development time and costs. By leveraging previously built and tested code, it also enhances reliability and speeds up the delivery of new software features."
+  },
+  {
+    "question": "The Agile model is best suited for:",
+    "choices": [
+      "Dynamic and evolving requirements",
+      "Projects with clearly defined requirements from the start",
+      "Small-scale projects only",
+      "Projects requiring minimal client interaction"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Agile model thrives in environments where requirements are expected to change frequently or are not fully defined at the outset. Its iterative and flexible nature allows teams to adapt to evolving needs, incorporating feedback continuously and delivering value in small, incremental releases."
+  },
+  {
+    "question": "Who handles version control and code integration?",
+    "choices": [
+      "Configuration Manager",
+      "Quality Assurance Tester",
+      "System Analyst",
+      "Software Developer"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Configuration Manager is responsible for managing changes to software configurations, including source code, documentation, and other project assets. They ensure proper version control, facilitate code integration, and maintain the integrity and traceability of the software throughout its lifecycle."
+  },
+  {
+    "question": "One of the main characteristics of software is its _____, which allows changes to be made post-deployment.",
+    "choices": [
+      "Maintainability",
+      "Scalability",
+      "Portability",
+      "Robustness"
+    ],
+    "correctIndex": 0,
+    "explanation": "Maintainability refers to the ease with which software can be modified to correct errors, improve performance, or adapt to changes in the environment or requirements after it has been deployed. This characteristic is crucial for the long-term viability and evolution of any software system."
+  },
+  {
+    "question": "The Incremental model delivers:",
+    "choices": [
+      "Software in small, workable increments",
+      "Fully functional software in a single phase",
+      "Software after comprehensive testing",
+      "High-risk projects with detailed risk assessments"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Incremental model breaks down the software development process into a series of smaller, sequential iterations. Each increment builds upon the previous one, delivering a functional subset of the overall system to the client in stages, allowing for early feedback and gradual feature rollout."
+  },
+  {
+    "question": "Who acts as the bridge between the development team and clients?",
+    "choices": [
+      "Business Analyst",
+      "UX Designer",
+      "System Analyst",
+      "Software Developer"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Business Analyst (BA) acts as the crucial liaison, translating stakeholder needs and business requirements into clear, actionable specifications for the development team. They ensure that the technical solution aligns with business goals and client expectations, facilitating smooth communication and understanding."
+  },
+  {
+    "question": "What does software quality refer to?",
+    "choices": [
+      "Meeting customer expectations and functional requirements",
+      "The amount of code written",
+      "High salaries of developers",
+      "Using the latest technologies"
+    ],
+    "correctIndex": 0,
+    "explanation": "Software quality is multifaceted, primarily referring to how well a software product meets its specified functional and non-functional requirements, and satisfies the explicit and implicit needs of its users. It encompasses aspects like reliability, usability, efficiency, and maintainability."
+  },
+  {
+    "question": "Which is NOT a characteristic of good software?",
+    "choices": [
+      "High cost",
+      "Usability",
+      "Scalability",
+      "Reliability"
+    ],
+    "correctIndex": 0,
+    "explanation": "While software development involves costs, 'high cost' itself is not a characteristic of *good* software. Instead, good software is characterized by attributes like usability, scalability, and reliability, which contribute to its value and effectiveness in meeting user needs and performing its intended functions efficiently."
+  },
+  {
+    "question": "_____ is the process for capturing the functionality and requirements of a software system.",
+    "choices": [
+      "Requirements analysis",
+      "Coding",
+      "Testing",
+      "Deployment"
+    ],
+    "correctIndex": 0,
+    "explanation": "Requirements analysis is the foundational phase where the specific functionalities, constraints, and user expectations for a software system are systematically gathered, documented, and refined. This meticulous process ensures that the development team has a clear understanding of 'what' needs to be built."
+  },
+  {
+    "question": "Which layer in software development focuses on user interaction?",
+    "choices": [
+      "Presentation layer",
+      "Application logic layer",
+      "Database layer",
+      "Integration layer"
+    ],
+    "correctIndex": 0,
+    "explanation": "The presentation layer, also known as the user interface (UI) layer, is responsible for how the system interacts with users. It handles the visual display of information and captures user input, serving as the primary point of interaction within a multi-tiered software architecture."
+  }
+]
