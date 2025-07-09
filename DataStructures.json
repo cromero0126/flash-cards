@@ -322,5 +322,654 @@
     ],
     "correctIndex": 0,
     "explanation": "The primary role of a hash function is to deterministically convert a given key into an array index where the corresponding value can be stored or retrieved. Ideally, this computation should be performed in constant time, O(1), enabling very fast average-case access to data."
+  },
+    {
+    "question": "In a priority queue, the element with the lowest priority is always removed first.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. In a priority queue, elements are removed based on their priority, not necessarily the lowest. By convention, the element with the *highest* priority is removed first, though implementations can vary (e.g., min-priority queue removes the lowest priority)."
+  },
+  {
+    "question": "In recursion, the condition that stops further recursive calls is called the _______.",
+    "choices": [
+      "Base case",
+      "Recursive step",
+      "Exit point",
+      "Function call"
+    ],
+    "correctIndex": 0,
+    "explanation": "The base case in recursion is the condition under which the function returns a value without making any further recursive calls. It's essential to prevent infinite recursion and ensure the function eventually terminates."
+  },
+  {
+    "question": "What is the main advantage of a circular queue over a linear queue?",
+    "choices": [
+      "It efficiently utilizes memory by reusing empty spaces",
+      "It allows infinite insertions",
+      "It eliminates the need for pointers",
+      "It works faster than all other data structures"
+    ],
+    "correctIndex": 0,
+    "explanation": "A circular queue efficiently utilizes memory by allowing the reuse of empty spaces at the beginning of the queue once elements have been dequeued. In a linear queue, once the rear reaches the end of the array, no more elements can be inserted even if there are empty slots at the front, leading to wasted space."
+  },
+  {
+    "question": "Which operation is used to remove an element from a queue?",
+    "choices": [
+      "Dequeue",
+      "Push",
+      "Pop",
+      "Insert"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dequeue is the standard operation to remove an element from the front of a queue, following the First-In, First-Out (FIFO) principle. Push and Pop are operations associated with stacks, while Insert is a general term for adding elements to various data structures."
+  },
+  {
+    "question": "Which data structure operates on a First In, First Out (FIFO) principle?",
+    "choices": [
+      "Queue",
+      "Stack",
+      "Tree",
+      "Graph"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Queue is a linear data structure that follows the FIFO principle, meaning the first element added to the queue is the first one to be removed. This is analogous to a line of people waiting for a service."
+  },
+  {
+    "question": "If an element is removed from an empty queue, a condition known as _______ occurs.",
+    "choices": [
+      "Underflow",
+      "Overflow",
+      "Runtime Error",
+      "Stack Crash"
+    ],
+    "correctIndex": 0,
+    "explanation": "Underflow occurs when an attempt is made to remove an element from a data structure that is already empty. For a queue, this means performing a dequeue operation when there are no elements in the queue."
+  },
+  {
+    "question": "If front == rear in a circular queue and no elements exist, what condition is this?",
+    "choices": [
+      "Empty queue",
+      "Full queue",
+      "Overflow",
+      "Sorted queue"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a common implementation of a circular queue, when the `front` and `rear` pointers are equal, and no elements have been added (or all have been removed), it signifies an empty queue. To distinguish from a full queue (where front also equals rear but with elements present), an additional flag or a size counter is typically used."
+  },
+  {
+    "question": "In a circular queue, if rear == front - 1, the queue is full.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In a common implementation of a circular queue using an array, one spot is often left empty to differentiate between a full queue and an empty queue (where front == rear). Thus, if `rear` is one position behind `front` (modulo array size), it indicates that the queue is full."
+  },
+  {
+    "question": "What happens when a circular queue becomes full?",
+    "choices": [
+      "No more elements can be inserted until space is freed",
+      "The queue resets automatically",
+      "The queue crashes",
+      "New elements overwrite existing ones"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a circular queue becomes full, it means all allocated slots are occupied (or all but one, depending on implementation). Therefore, no new elements can be inserted (enqueued) until existing elements are removed (dequeued) to free up space, preventing overflow."
+  },
+  {
+    "question": "When evaluating a postfix expression, how are operands processed?",
+    "choices": [
+      "Pushed onto the stack until an operator is encountered",
+      "Stored in an array",
+      "Arranged in ascending order",
+      "Appended to a linked list"
+    ],
+    "correctIndex": 0,
+    "explanation": "When evaluating a postfix expression, operands are encountered first. According to the algorithm, these operands are immediately pushed onto a stack. When an operator is encountered, the necessary number of operands are popped from the stack, the operation is performed, and the result is pushed back onto the stack."
+  },
+  {
+    "question": "In the expression (5 + 3) * 2, which operation is performed first according to infix notation?",
+    "choices": [
+      "Addition",
+      "Multiplication",
+      "Subtraction",
+      "Modulus"
+    ],
+    "correctIndex": 0,
+    "explanation": "According to the rules of operator precedence in infix notation (PEMDAS/BODMAS), operations within parentheses are always performed first. Therefore, the addition (5 + 3) is evaluated before the multiplication."
+  },
+  {
+    "question": "When converting an infix expression to a postfix expression, the _______ data structure is used.",
+    "choices": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Tree"
+    ],
+    "correctIndex": 0,
+    "explanation": "A stack is the primary data structure used in the Shunting-yard algorithm for converting infix expressions to postfix (or prefix) expressions. It temporarily holds operators and parentheses to manage their precedence and order during the conversion process."
+  },
+  {
+    "question": "Which of the following data structures is used to implement a priority queue?",
+    "choices": [
+      "Heap",
+      "Stack",
+      "Linked List",
+      "Graph"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Heap (specifically a min-heap or max-heap) is the most common and efficient data structure used to implement a priority queue. It allows for efficient retrieval of the highest (or lowest) priority element and efficient insertion/deletion, maintaining the heap property."
+  },
+  {
+    "question": "In a priority queue, elements are dequeued based on their priority rather than their order of arrival.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. This is the defining characteristic of a priority queue. Unlike a standard queue (FIFO), elements are not necessarily removed in the order they were inserted. Instead, the element with the highest (or lowest) priority, as defined by the queue, is always the next one to be dequeued."
+  },
+  {
+    "question": "Which of the following algorithms commonly utilizes a stack data structure?",
+    "choices": [
+      "Depth-first search (DFS)",
+      "Level-order traversal",
+      "Hashing",
+      "Dynamic programming"
+    ],
+    "correctIndex": 0,
+    "explanation": "Depth-first search (DFS) algorithm for traversing trees or graphs typically uses a stack (either explicitly or implicitly through recursion's call stack) to keep track of nodes to visit. When a node is visited, its unvisited neighbors are pushed onto the stack, and the algorithm proceeds deeper before backtracking."
+  },
+  {
+    "question": "The front of a circular queue is used for _______.",
+    "choices": [
+      "Removing elements",
+      "Inserting elements",
+      "Sorting elements",
+      "Searching elements"
+    ],
+    "correctIndex": 0,
+    "explanation": "In both linear and circular queues, the 'front' pointer (or index) is consistently used to manage the removal of elements, adhering to the First-In, First-Out (FIFO) principle."
+  },
+  {
+    "question": "What happens when a stack is empty, and a pop operation is performed?",
+    "choices": [
+      "Underflow occurs",
+      "Overflow occurs",
+      "The last element is retrieved",
+      "The operation executes successfully"
+    ],
+    "correctIndex": 0,
+    "explanation": "Performing a pop operation on an empty stack results in an 'underflow' condition. This indicates an error because there are no elements to remove from the stack."
+  },
+  {
+    "question": "Recursive functions use more memory than iterative functions because each recursive call is stored in the stack.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Each time a recursive function calls itself, a new stack frame is created on the call stack to store its local variables, parameters, and return address. This repeated allocation can lead to significantly more memory consumption compared to an iterative solution, especially for deep recursion."
+  },
+  {
+    "question": "For which operation is the front of a queue used?",
+    "choices": [
+      "Removing elements",
+      "Adding elements",
+      "Sorting elements",
+      "Searching elements"
+    ],
+    "correctIndex": 0,
+    "explanation": "The front of a queue is where elements are removed. This aligns with the First-In, First-Out (FIFO) principle of a queue, where the element that has been in the queue the longest is the first to be dequeued."
+  },
+  {
+    "question": "What are the primary operations performed on a stack?",
+    "choices": [
+      "Push and Pop",
+      "Enqueue and Dequeue",
+      "Insert and Remove",
+      "Append and Delete"
+    ],
+    "correctIndex": 0,
+    "explanation": "The two fundamental operations on a stack are 'Push' (to add an element to the top) and 'Pop' (to remove the top element). Stacks adhere to the Last-In, First-Out (LIFO) principle."
+  },
+  {
+    "question": "What is the main function of the \"push\" operation in a stack?",
+    "choices": [
+      "Adds an element to the top of the stack",
+      "Removes an element from the top of the stack",
+      "Retrieves the bottom element",
+      "Sorts the stack"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 'push' operation is used to add a new element to the top of a stack. This adheres to the Last-In, First-Out (LIFO) principle, where the most recently added element is the first one accessible."
+  },
+  {
+    "question": "In a circular queue of size 5, if the rear is at position 4 and a new element is inserted, where will the rear move?",
+    "choices": [
+      "0",
+      "5",
+      "3",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a circular queue implementation using an array, when the `rear` pointer reaches the end of the physical array (index `size - 1`), and there is still space available at the beginning of the array, it 'wraps around' to index 0. So, for a size 5 queue (indices 0-4), if rear is at 4, the next position would be 0 (assuming space is available and no overflow)."
+  },
+  {
+    "question": "A circular queue can be efficiently implemented using _______.",
+    "choices": [
+      "Arrays or linked lists",
+      "Stacks",
+      "Trees",
+      "Hash tables"
+    ],
+    "correctIndex": 0,
+    "explanation": "A circular queue can be efficiently implemented using either an array (by managing front and rear pointers with modulo arithmetic to wrap around) or a circular linked list (where the last node points back to the first). Both methods allow for constant-time enqueue and dequeue operations."
+  },
+  {
+    "question": "Which data structure operates based on the principle of \"Last In, First Out (LIFO)\"?",
+    "choices": [
+      "Stack",
+      "Queue",
+      "Linked List",
+      "Heap"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Stack is a linear data structure that follows the LIFO principle. This means the last element added to the stack is the first one to be removed, similar to a stack of plates."
+  },
+  {
+    "question": "The two fundamental operations of a queue are _______ and _______.",
+    "choices": [
+      "Enqueue, Dequeue",
+      "Push, Pop",
+      "Insert, Delete",
+      "Add, Remove"
+    ],
+    "correctIndex": 0,
+    "explanation": "'Enqueue' is the operation to add an element to the rear of a queue, and 'Dequeue' is the operation to remove an element from the front of a queue. These are the specific terms for the core operations that maintain the First-In, First-Out (FIFO) behavior."
+  },
+  {
+    "question": "What data structure is used for evaluating postfix expressions?",
+    "choices": [
+      "Stack",
+      "Queue",
+      "Linked List",
+      "Tree"
+    ],
+    "correctIndex": 0,
+    "explanation": "A stack is crucial for evaluating postfix expressions. Operands are pushed onto the stack, and when an operator is encountered, the necessary number of operands are popped, the operation is performed, and the result is pushed back onto the stack. This LIFO behavior is ideal for managing the order of operations."
+  },
+  {
+    "question": "What happens when a recursive function keeps calling itself indefinitely without a base case?",
+    "choices": [
+      "Stack overflow",
+      "Stack underflow",
+      "Function termination",
+      "Compilation error"
+    ],
+    "correctIndex": 0,
+    "explanation": "If a recursive function lacks a proper base case or the base case is never reached, it will continue to call itself indefinitely. Each call consumes memory on the call stack, eventually leading to a 'stack overflow' error when the stack runs out of available memory."
+  },
+  {
+    "question": "Which of the following problems is commonly solved using recursion?",
+    "choices": [
+      "Tower of Hanoi",
+      "Sorting using Bubble Sort",
+      "Searching in an unsorted array",
+      "Hash table lookup"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Tower of Hanoi is a classic mathematical puzzle that is most elegantly and commonly solved using a recursive algorithm. Its self-similar nature naturally lends itself to a recursive solution."
+  },
+  {
+    "question": "What is the main reason recursion is implemented using a stack?",
+    "choices": [
+      "To keep track of function calls and local variables",
+      "To make code execution faster",
+      "To reduce the number of function calls",
+      "To store global variables"
+    ],
+    "correctIndex": 0,
+    "explanation": "The underlying mechanism for recursion in most programming languages is the call stack. Each time a recursive function is called, a new stack frame is pushed onto the call stack to store the function's parameters, local variables, and the return address. This allows the program to correctly unwind and return from nested calls."
+  },
+  {
+    "question": "In a priority queue, elements are dequeued based on their _______.",
+    "choices": [
+      "Priority level",
+      "Order of arrival",
+      "Random selection",
+      "Position in an array"
+    ],
+    "correctIndex": 0,
+    "explanation": "The defining characteristic of a priority queue is that elements are removed (dequeued) not based on their insertion order (FIFO) but rather based on their assigned priority. The element with the highest (or lowest, depending on the implementation) priority is always processed first."
+  },
+   {
+    "question": "Which operation is most time-consuming in a singly linked list?",
+    "choices": [
+      "Deleting the last node",
+      "Inserting at the head",
+      "Accessing the first node",
+      "Traversing from head to tail"
+    ],
+    "correctIndex": 0,
+    "explanation": "Deleting the last node in a singly linked list (without a tail pointer) requires traversing the entire list from the head to find the second-to-last node, whose pointer then needs to be updated to NULL. This makes it an O(N) operation, which is typically the most time-consuming compared to O(1) operations like inserting/accessing the head or O(N) for general traversal."
+  },
+  {
+    "question": "If a node is deleted from a singly linked list, what must be updated?",
+    "choices": [
+      "The previous node’s pointer",
+      "The next node’s pointer",
+      "The last node’s pointer",
+      "No updates are required"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a node is deleted from a singly linked list, the 'next' pointer of the *previous* node must be updated to bypass the deleted node and point to the node that *was* after the deleted node. This effectively removes the deleted node from the list's sequence."
+  },
+  {
+    "question": "In a singly linked list, deleting a node requires modifying the ______ of the previous node.",
+    "choices": [
+      "Pointer",
+      "Data",
+      "Value",
+      "Position"
+    ],
+    "correctIndex": 0,
+    "explanation": "To delete a node in a singly linked list, you need to change the 'next' pointer of the node *preceding* the one being deleted. This pointer should then point to the node that the deleted node was originally pointing to, effectively unlinking the node from the list."
+  },
+  {
+    "question": "What is the primary advantage of a doubly linked list compared to a singly linked list?",
+    "choices": [
+      "Allows traversal in both directions",
+      "Searching is easy",
+      "Uses less memory",
+      "Elements are stored in sorted order"
+    ],
+    "correctIndex": 0,
+    "explanation": "The main advantage of a doubly linked list is that each node contains pointers to both the next and the previous nodes. This allows for efficient traversal in both forward and backward directions, which is not possible in a singly linked list without re-traversing from the head."
+  },
+  {
+    "question": "If an array is declared as int arr[10];, how many elements can it store?",
+    "choices": [
+      "10",
+      "9",
+      "11",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "When an array is declared as `int arr[10];`, it allocates space for 10 integer elements. Array indices typically run from 0 to `size - 1`, so in this case, `arr[0]` to `arr[9]`."
+  },
+  {
+    "question": "In an array, elements are stored in ______ memory locations.",
+    "choices": [
+      "Contiguous",
+      "Random",
+      "Non-contiguous",
+      "Fragmented"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrays store their elements in contiguous (adjacent) memory locations. This characteristic is what enables efficient random access using an index, as the memory address of any element can be calculated directly from the base address and the element's size."
+  },
+  {
+    "question": "What happens when a node is deleted from a singly linked list?",
+    "choices": [
+      "The previous node’s pointer is updated to skip the deleted node",
+      "All elements shift left",
+      "The entire list is reallocated",
+      "The node is marked but not removed"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a node is deleted from a singly linked list, the core operation involves updating the 'next' pointer of the node that *precedes* the deleted node. This pointer is redirected to point to the node that *follows* the deleted node, effectively removing the deleted node from the sequence."
+  },
+  {
+    "question": "What is the time complexity of traversing a singly linked list with N nodes?",
+    "choices": [
+      "O(N)",
+      "O(1)",
+      "O(log N)",
+      "O(N²)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Traversing a singly linked list requires visiting each node sequentially from the beginning to the end. Therefore, in the worst case, if there are N nodes, you need to perform N operations (visits), leading to a time complexity of O(N)."
+  },
+  {
+    "question": "What is the time complexity of searching for an element in an unsorted singly linked list?",
+    "choices": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "correctIndex": 0,
+    "explanation": "To search for an element in an unsorted singly linked list, you may have to traverse the entire list from the beginning until the element is found or the end of the list is reached. In the worst-case scenario (element not found or at the end), this requires visiting all 'n' nodes, resulting in a time complexity of O(n)."
+  },
+  {
+    "question": "How many pointers are there in a node of a doubly linked list?",
+    "choices": [
+      "Two",
+      "One",
+      "Three",
+      "Zero"
+    ],
+    "correctIndex": 0,
+    "explanation": "A node in a doubly linked list contains two pointers: one pointer (typically called 'next') that points to the subsequent node in the list, and another pointer (typically called 'prev' or 'previous') that points to the preceding node in the list. This allows for bidirectional traversal."
+  },
+  {
+    "question": "What happens when an attempt is made to access an array element beyond its declared size?",
+    "choices": [
+      "Runtime error or undefined behaviour.",
+      "Compiler error",
+      "The program safely ignores it",
+      "The last element is returned instead"
+    ],
+    "correctIndex": 0,
+    "explanation": "Attempting to access an array element beyond its declared bounds (e.g., `arr[10]` for `arr[10]`) results in a runtime error, such as an 'ArrayIndexOutOfBoundsException' in Java or 'segmentation fault' in C/C++. This is considered undefined behavior as the program tries to access memory it doesn't own."
+  },
+  {
+    "question": "Which of the following is a key disadvantage of linked lists?",
+    "choices": [
+      "They use more memory due to pointers",
+      "They do not support dynamic memory allocation",
+      "They cannot grow in size",
+      "They do not allow insertions and deletions"
+    ],
+    "correctIndex": 0,
+    "explanation": "A significant disadvantage of linked lists compared to arrays is their increased memory consumption. Each node in a linked list stores not only the data but also one or more pointers (e.g., 'next' and 'previous'), which require additional memory space."
+  },
+  {
+    "question": "In a doubly linked list, which pointer facilitates backward traversal?",
+    "choices": [
+      "Previous pointer",
+      "Next pointer",
+      "Head pointer",
+      "Tail pointer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Each node in a doubly linked list contains a 'previous' pointer (or 'prev') that points to the node immediately preceding it. This pointer is specifically designed to enable efficient traversal of the list in the backward direction."
+  },
+  {
+    "question": "In a circular linked list, the last node points to the ______.",
+    "choices": [
+      "First node",
+      "Last node",
+      "Middle node",
+      "NULL"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a circular linked list, the 'next' pointer of the last node points back to the first node of the list, forming a continuous circle. This allows traversal from any node to any other node in the list."
+  },
+  {
+    "question": "In a singly linked list, each node contains a pointer to the ______ node.",
+    "choices": [
+      "Next",
+      "Previous",
+      "Middle",
+      "First"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a singly linked list, each node consists of two parts: the data it holds and a pointer (or reference) that points to the *next* node in the sequence. The last node's pointer typically points to NULL (or equivalent)."
+  },
+  {
+    "question": "The main disadvantage of an array compared to a linked list is its ______ size.",
+    "choices": [
+      "Fixed",
+      "Dynamic",
+      "Variable",
+      "Adjustable"
+    ],
+    "correctIndex": 0,
+    "explanation": "The primary disadvantage of a static array is its fixed size. Once declared, an array's size cannot be easily changed during runtime. If more elements need to be stored, a new, larger array must be created, and all existing elements copied over, which can be inefficient. Linked lists, in contrast, offer dynamic resizing."
+  },
+  {
+    "question": "How is an element accessed in an array?",
+    "choices": [
+      "Using an index",
+      "Using a key-value pair",
+      "By traversing from the first element",
+      "By dynamically searching for it"
+    ],
+    "correctIndex": 0,
+    "explanation": "Elements in an array are accessed directly using their numerical index (position). This is known as random access or direct access, and it allows retrieval of any element in O(1) time."
+  },
+  {
+    "question": "What is the best method to insert a node at a specific position in a singly linked list?",
+    "choices": [
+      "Traverse the list to the desired position and update pointers",
+      "Insert the node at the head and shift elements forward",
+      "Allocate a new list and merge it with the existing one",
+      "Reverse the entire list before inserting"
+    ],
+    "correctIndex": 0,
+    "explanation": "To insert a node at a specific position (not head or tail) in a singly linked list, you must first traverse the list from the head until you reach the node *before* the desired insertion point. Once there, you update the pointers: the new node's 'next' pointer points to the current node at that position, and the previous node's 'next' pointer points to the new node."
+  },
+  {
+    "question": "What type of memory allocation does an array use?",
+    "choices": [
+      "Contiguous memory allocation",
+      "Non-contiguous memory allocation",
+      "Linked memory allocation",
+      "Fragmented memory allocation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrays require contiguous blocks of memory to store their elements. This means all elements are placed one after another in a single, uninterrupted sequence of memory addresses. This contiguity is key to their O(1) random access time."
+  },
+  {
+    "question": "In an array, all elements must be of the same data type.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. A fundamental characteristic of arrays in most strongly-typed programming languages is that all elements stored within a single array must be of the same data type. This allows for uniform memory allocation and efficient access."
+  },
+  {
+    "question": "Which term best describes the ability to directly access any element in an array using its index?",
+    "choices": [
+      "Random Access",
+      "Sequential access",
+      "Pointer based access",
+      "Indexed access"
+    ],
+    "correctIndex": 0,
+    "explanation": "Random access (or direct access) is the ability to retrieve any item in a data structure with the same amount of time, regardless of its position. Arrays provide random access because the memory address of any element can be directly calculated using its index and the base address of the array, leading to O(1) access time."
+  },
+  {
+    "question": "What is the time complexity of inserting a new node at the beginning of a singly linked list?",
+    "choices": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inserting a new node at the beginning (head) of a singly linked list is an O(1) operation. You simply create the new node, point its 'next' pointer to the current head, and then update the head pointer to the new node. This doesn't depend on the number of elements in the list."
+  },
+  {
+    "question": "In a singly linked list, what does each node contain?",
+    "choices": [
+      "Data and a pointer to the next node",
+      "Data and a pointer to both previous and next nodes",
+      "Only data without any pointer",
+      "Multiple pointers to various nodes"
+    ],
+    "correctIndex": 0,
+    "explanation": "A node in a singly linked list fundamentally contains two parts: the data (or value) that it stores, and a pointer (or reference) that points to the subsequent node in the sequence. The last node's pointer typically points to null."
+  },
+  {
+    "question": "What is the main disadvantage of inserting a new node at the tail of a singly linked list without a tail pointer?",
+    "choices": [
+      "It requires traversing the entire list to find the last node",
+      "It is impossible to insert at the tail",
+      "The inserted node always points to the head",
+      "The inserted node gets lost in memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "Without a separate tail pointer, to insert a new node at the end of a singly linked list, you must start from the head and traverse every node until you reach the current last node. This traversal takes O(N) time, making it an inefficient operation for large lists."
+  },
+  {
+    "question": "Arrays are best suited for applications where ______ is required.",
+    "choices": [
+      "Fast random access",
+      "Frequent insertions and deletions",
+      "Dynamic resizing",
+      "Storing heterogeneous data types"
+    "correctIndex": 0,
+    "explanation": "Arrays excel in scenarios where quick, direct access to elements by their position (index) is paramount. Their contiguous memory allocation enables O(1) random access time, making them highly efficient for lookup operations based on index."
+  },
+  {
+    "question": "Which of the following is a fundamental limitation of an array?",
+    "choices": [
+      "Fixed size after declaration",
+      "Ability to store elements of different types",
+      "Inefficient random access",
+      "Memory allocation is always dynamic"
+    ],
+    "correctIndex": 0,
+    "explanation": "A fundamental limitation of arrays in many programming languages is their fixed size, determined at the time of declaration or initialization. Once an array is created, its capacity cannot be easily changed, which can lead to issues if the number of elements varies unexpectedly."
+  },
+  {
+    "question": "What is a key difference between an array and a linked list?",
+    "choices": [
+      "Arrays use contiguous memory, whereas linked lists use non-contiguous memory",
+      "Arrays can store different data types, but linked lists cannot",
+      "Linked lists allow only fixed-size storage",
+      "Arrays do not allow random access"
+    ],
+    "correctIndex": 0,
+    "explanation": "The most significant difference lies in their memory allocation: arrays store elements in a single block of contiguous memory, allowing direct index-based access. Linked lists, conversely, store elements (nodes) in potentially scattered, non-contiguous memory locations, with pointers connecting them sequentially."
+  },
+  {
+    "question": "What is the time complexity of accessing an element at a known index in an array?",
+    "choices": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Accessing an element in an array using its index is a constant-time operation, denoted as O(1). This is because the memory address of the desired element can be directly calculated based on the array's base address, the size of each element, and the given index, without needing to traverse any other elements."
+  },
+  {
+    "question": "What is the best way to merge two sorted linked lists into one sorted list?",
+    "choices": [
+      "Use two pointers to compare elements and build the merged list",
+      "Append the second list to the first, then sort the result",
+      "Copy elements to an array, sort the array, then create a new list",
+      "Use recursion to rearrange the elements"
+    ],
+    "correctIndex": 0,
+    "explanation": "The most efficient way to merge two *already sorted* linked lists is to use a two-pointer approach. You maintain one pointer for each list, compare the elements they point to, add the smaller element to the new merged list, and advance its corresponding pointer. This continues until both lists are exhausted, resulting in an O(N+M) time complexity (where N and M are the lengths of the lists)."
+  },
+  {
+  "question": "What is the main advantage of using a doubly linked list over a singly linked list?",
+  "choices": [
+    "Allows traversal in both directions",
+    "Uses less memory",
+    "Requires no additional pointer space",
+    "Faster access to random elements"
+  ],
+  "correctIndex": 0,
+  "explanation": "The primary advantage of a doubly linked list is that each node contains pointers to both the next and the previous nodes. This allows for efficient traversal in both forward and backward directions, which is not possible in a singly linked list without re-traversing from the head."
   }
 ]
