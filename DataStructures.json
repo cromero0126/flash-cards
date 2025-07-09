@@ -914,6 +914,7 @@
       "Frequent insertions and deletions",
       "Dynamic resizing",
       "Storing heterogeneous data types"
+    ],
     "correctIndex": 0,
     "explanation": "Arrays excel in scenarios where quick, direct access to elements by their position (index) is paramount. Their contiguous memory allocation enables O(1) random access time, making them highly efficient for lookup operations based on index."
   },
