@@ -355,5 +355,645 @@
     ],
     "correctIndex": 0,
     "explanation": "The presentation layer, also known as the user interface (UI) layer, is responsible for how the system interacts with users. It handles the visual display of information and captures user input, serving as the primary point of interaction within a multi-tiered software architecture."
+  },
+  {
+    "question": "Which requirement category includes features like user authentication and report generation?",
+    "choices": [
+      "Functional requirements",
+      "Non-functional requirements",
+      "Operational requirements",
+      "Security requirements"
+    ],
+    "correctIndex": 0,
+    "explanation": "Functional requirements define what the system *does* to fulfill user needs, encompassing specific features and behaviors. User authentication and report generation are clear examples of such features, outlining the distinct actions the software must perform."
+  },
+  {
+    "question": "Surveys are less structured than interviews for gathering requirements.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. Surveys are generally more structured than interviews, using predefined questions to gather consistent data from a larger audience. Interviews, by contrast, offer more flexibility for probing deeper and exploring nuanced perspectives through open-ended conversations."
+  },
+  {
+    "question": "What does a use case diagram primarily depict?",
+    "choices": [
+      "Interactions between users and the system",
+      "Data flow in the system",
+      "System hardware architecture",
+      "Non-functional requirements"
+    ],
+    "correctIndex": 0,
+    "explanation": "A use case diagram provides a high-level view of how different users, or 'actors', interact with a system to achieve specific goals. It illustrates the primary functions the system performs from the perspective of its external users, without delving into internal implementation details."
+  },
+  {
+    "question": "Verification ensures that the requirements are correct and complete.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Verification is the process of confirming that the requirements are well-formed, consistent, and adhere to defined standards. It ensures that 'we are building the product right' by checking the quality of the requirements themselves before development proceeds."
+  },
+  {
+    "question": "____________ helps prioritize requirements by analyzing their impact and feasibility.",
+    "choices": [
+      "Feasibility studies",
+      "Prototyping",
+      "Requirement workshops",
+      "Document analysis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Feasibility studies are conducted early in a project to assess the practicality and viability of proposed requirements. They analyze technical, economic, legal, operational, and schedule aspects to determine if a requirement can realistically be implemented, thus aiding in prioritization based on impact and feasibility."
+  },
+  {
+    "question": "What is the primary goal of requirements validation?",
+    "choices": [
+      "Confirm requirements meet user needs",
+      "Ensure system requirements are testable",
+      "Align requirements with software design",
+      "Prioritize high-risk requirements"
+    ],
+    "correctIndex": 0,
+    "explanation": "Requirements validation focuses on ensuring that the gathered and documented requirements accurately reflect the real needs and expectations of the stakeholders and end-users. Its goal is to confirm that 'we are building the *right* product' that will solve the intended problem or fulfill the business objective."
+  },
+  {
+    "question": "Which activity is NOT part of validation?",
+    "choices": [
+      "Debugging code errors",
+      "Prototyping feedback",
+      "Cross-functional collaboration",
+      "Stakeholder review meetings"
+    ],
+    "correctIndex": 0,
+    "explanation": "Requirements validation focuses on confirming the correctness and completeness of the requirements themselves, often through activities like prototyping feedback and stakeholder reviews. Debugging code errors, however, is a part of the *testing* and *implementation* phases of software development, occurring much later."
+  },
+  {
+    "question": "Which of these techniques is best for understanding user pain points?",
+    "choices": [
+      "Observation",
+      "Document analysis",
+      "Brainstorming",
+      "Surveys"
+    ],
+    "correctIndex": 0,
+    "explanation": "Observation, particularly ethnographic observation, involves watching users perform their tasks in their natural environment. This direct method is highly effective for uncovering unspoken needs, identifying inefficiencies, and revealing actual 'pain points' that users might not explicitly articulate in interviews or surveys."
+  },
+  {
+    "question": "In document analysis, what type of document is typically NOT analyzed?",
+    "choices": [
+      "Test case documents",
+      "Stakeholder meeting notes",
+      "User training guides",
+      "Existing system manuals"
+    ],
+    "correctIndex": 0,
+    "explanation": "Document analysis involves reviewing existing documentation to glean information about current processes, systems, and constraints. While existing system manuals, stakeholder meeting notes, and user training guides provide valuable context, 'test case documents' are typically an *output* of the requirements and design phases, rather than a source for initial analysis."
+  },
+  {
+    "question": "Peer reviews and inspections are common methods of ____________.",
+    "choices": [
+      "Verification",
+      "Validation",
+      "Prioritization",
+      "Risk analysis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Peer reviews and inspections are verification techniques focused on checking artifacts like requirements documents, design specifications, or code for defects and adherence to standards. They are systematic checks to ensure that the product is being built *correctly* according to the specifications."
+  },
+  {
+    "question": "Which of the following is an example of a functional requirement?",
+    "choices": [
+      "Users must be able to reset their passwords via email.",
+      "The system must process transactions in under 2 seconds.",
+      "The database must support up to 10 million records.",
+      "The system must be available 24/7."
+    ],
+    "correctIndex": 0,
+    "explanation": "A functional requirement specifies a particular function or service that the system must perform. The ability for users to reset passwords via email is a direct statement of such a capability, contrasting with the non-functional aspects of performance, scalability, or availability."
+  },
+  {
+    "question": "Which elicitation technique focuses on creating a shared understanding of system requirements among all stakeholders?",
+    "choices": [
+      "Workshops",
+      "Surveys",
+      "Prototyping",
+      "Observation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Requirements workshops are highly collaborative sessions designed to bring together diverse stakeholders to discuss, clarify, and collectively agree upon system requirements. This interactive environment fosters a shared understanding and helps resolve ambiguities much more efficiently than individual elicitation methods."
+  },
+  {
+    "question": "Functional requirements define \"what\" a system does, while non-functional requirements define \"how\" it performs.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. This distinction is fundamental in software engineering. Functional requirements describe the specific actions or services the system must provide (the 'what'), such as generating a report or processing a payment. Non-functional requirements, on the other hand, specify quality attributes and constraints (the 'how'), like performance speed, security levels, or usability."
+  },
+  {
+    "question": "Non-functional requirements include performance, security, and scalability.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Non-functional requirements (NFRs) are crucial attributes that define the quality and overall effectiveness of a system, but not its specific functions. Performance (e.g., response time), security (e.g., access control), and scalability (e.g., handling increased load) are all classic examples of NFRs that dictate how well the system operates."
+  },
+  {
+    "question": "What is the primary purpose of a use case in UML?",
+    "choices": [
+      "To document functional requirements",
+      "To define non-functional requirements",
+      "To validate system performance",
+      "To specify testing criteria"
+    ],
+    "correctIndex": 0,
+    "explanation": "In UML, a use case serves as a technique to capture and document functional requirements from the user's perspective. Each use case describes a specific goal an actor achieves through interaction with the system, detailing the steps involved without specifying internal implementation."
+  },
+  {
+    "question": "UML diagrams are essential for software design and development.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Unified Modeling Language (UML) diagrams provide a standardized visual notation for specifying, visualizing, constructing, and documenting the artifacts of a software system. They are invaluable tools for communicating complex designs, analyzing requirements, and planning development, making them essential throughout the software lifecycle."
+  },
+  {
+    "question": "What term describes the specific functionality provided by the system to satisfy user needs?",
+    "choices": [
+      "Functional requirement",
+      "Non-functional requirement",
+      "Design specification",
+      "Validation criteria"
+    ],
+    "correctIndex": 0,
+    "explanation": "A functional requirement explicitly describes a specific action or service that a software system must perform to meet a user's need. These requirements define the system's behavior and what it is supposed to do, such as 'The system shall allow users to log in'."
+  },
+  {
+    "question": "What diagram type is best suited for showing object behaviors?",
+    "choices": [
+      "State diagram",
+      "Component diagram",
+      "Use case diagram",
+      "Deployment diagram"
+    ],
+    "correctIndex": 0,
+    "explanation": "A state diagram, or state machine diagram, is specifically designed to model the various states an object can have and the transitions between those states in response to events. This makes it ideal for depicting the dynamic behavior of individual objects over their lifetime."
+  },
+  {
+    "question": "Which technique combines drawing and collaboration to create early models of a system?",
+    "choices": [
+      "Prototyping",
+      "Use case diagrams",
+      "Observation",
+      "Data flow diagrams"
+    ],
+    "correctIndex": 0,
+    "explanation": "Prototyping involves building early, incomplete versions of a system or specific features to gather feedback and refine requirements and design. It often includes drawing mockups or creating interactive models, fostering collaboration with stakeholders to visualize and validate ideas before full development."
+  },
+  {
+    "question": "A use case diagram consists of actors, ________, and their relationships.",
+    "choices": [
+      "Use cases",
+      "Classes",
+      "Objects",
+      "Components"
+    ],
+    "correctIndex": 0,
+    "explanation": "A use case diagram is fundamentally composed of actors (external entities interacting with the system) and use cases (the functions or services the system provides to these actors). The lines connecting them represent the relationships and interactions that define the system's external behavior."
+  },
+  {
+    "question": "Which of these best describes a class diagram?",
+    "choices": [
+      "It represents system structure and relationships between classes.",
+      "It shows user interactions with the system.",
+      "It depicts system states and transitions.",
+      "It visualizes the modular components of the system."
+    ],
+    "correctIndex": 0,
+    "explanation": "A class diagram is a foundational UML structural diagram that illustrates the static structure of a system. It shows the classes, their attributes, operations (methods), and the relationships between them, such as associations, generalizations, and dependencies, providing a blueprint for the system's data and behavior."
+  },
+  {
+    "question": "Requirements validation focuses on ensuring the software will meet the user's expectations, while verification ensures that the software is built correctly.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. This statement accurately distinguishes between validation and verification. Validation answers the question 'Are we building the *right* product?' by ensuring requirements align with user needs. Verification answers 'Are we building the product *right*?' by checking if the software conforms to its specifications and standards."
+  },
+  {
+    "question": "Which UML diagram best represents object interactions over time?",
+    "choices": [
+      "Sequence diagram",
+      "Use case diagram",
+      "Class diagram",
+      "State diagram"
+    ],
+    "correctIndex": 0,
+    "explanation": "A sequence diagram is a UML interaction diagram that visually represents the order of messages exchanged between objects or components over time. It's particularly useful for modeling the logic of a use case, showing the exact sequence of events that occur to achieve a specific outcome."
+  },
+  {
+    "question": "Which of these requirements would fall under \"usability\"?",
+    "choices": [
+      "The user shall interact with an intuitive graphical interface.",
+      "The system must validate passwords for security.",
+      "The database must recover from crashes within 1 hour.",
+      "The application must log user activities."
+    ],
+    "correctIndex": 0,
+    "explanation": "Usability is a non-functional requirement that relates to how easy and pleasant a system is to use. An intuitive graphical interface directly addresses usability, aiming to minimize user effort and maximize user satisfaction when interacting with the software."
+  },
+  {
+    "question": "Which of the following is a functional requirement?",
+    "choices": [
+      "The user shall log in with a username and password",
+      "System uptime must be 99.9%",
+      "The system should support 1000 simultaneous users",
+      "Response time should not exceed 2 seconds"
+    ],
+    "correctIndex": 0,
+    "explanation": "Functional requirements define specific behaviors or functions that a system must exhibit. The ability for a user to log in with credentials is a core functional aspect of many systems, dictating a particular interaction and outcome. The other options describe quality attributes, making them non-functional requirements."
+  },
+  {
+    "question": "Which tool is commonly used in validation?",
+    "choices": [
+      "Prototyping tools",
+      "Version control systems",
+      "Integrated Development Environments (IDEs)",
+      "Performance monitoring software"
+    ],
+    "correctIndex": 0,
+    "explanation": "Prototyping tools are commonly used in the validation phase because they allow for the creation of mock-ups or partial implementations of the system. These prototypes can be presented to stakeholders and end-users to gather early feedback and confirm that the proposed requirements align with their actual needs and expectations."
+  },
+  {
+    "question": "What is the role of a requirements traceability matrix in verification?",
+    "choices": [
+      "Maps requirements to corresponding test cases",
+      "Tracks bugs in testing phases",
+      "Ensures stakeholders agree on priorities",
+      "Records meeting minutes"
+    ],
+    "correctIndex": 0,
+    "explanation": "A requirements traceability matrix (RTM) is a powerful tool in verification as it establishes clear links between requirements and other artifacts like design elements, code modules, and especially test cases. This mapping ensures that every requirement is tested and that all tests cover specified functionalities, thereby verifying compliance and completeness."
+  },
+  {
+    "question": "____________ is a group-based technique for generating ideas and clarifying requirements.",
+    "choices": [
+      "Brainstorming",
+      "Focus groups",
+      "Observation",
+      "Interviews"
+    ],
+    "correctIndex": 0,
+    "explanation": "Brainstorming is a dynamic group technique used to generate a large number of ideas in a short period, often to identify potential requirements or solutions. It encourages free thinking and collaboration among participants, helping to uncover diverse perspectives and clarify complex aspects of a system."
+  },
+  {
+    "question": "What is the primary objective of focus groups in requirements elicitation?",
+    "choices": [
+      "To gather diverse stakeholder opinions",
+      "To test software performance",
+      "To validate system requirements",
+      "To document user stories"
+    ],
+    "correctIndex": 0,
+    "explanation": "Focus groups are a qualitative research method used to elicit a wide range of opinions, perceptions, and attitudes from a selected group of stakeholders. They facilitate discussion and interaction among participants, providing rich insights into their collective needs and perspectives on system requirements."
+  },
+  {
+    "question": "In a use case diagram, ________ are the external entities interacting with the system.",
+    "choices": [
+      "Actors",
+      "Components",
+      "Classes",
+      "Objects"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a use case diagram, 'actors' represent the roles that users or other external systems play when interacting with the system under consideration. They initiate use cases and are crucial for defining the boundaries and functionality of the system from an external perspective."
+  },
+  {
+  "question": "____________ ensures that system requirements align with customer expectations.",
+  "choices": [
+    "Validation",
+    "Verification",
+    "Unit testing",
+    "Design testing"
+  ],
+  "correctIndex": 0,
+  "explanation": "Validation is the process of evaluating software during or at the end of the development process to determine whether it satisfies specified requirements. In the context of requirements, validation ensures that the gathered requirements truly reflect the needs and expectations of the customer and stakeholders, thereby confirming that 'we are building the right product.'"
+  },
+    {
+    "question": "Which UML diagram is used to visualize the interaction between a system and external actors?",
+    "choices": [
+      "Use case diagram",
+      "Deployment diagram",
+      "Sequence diagram",
+      "Activity diagram"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Use Case diagram provides a high-level visual representation of how users (actors) interact with a system to achieve specific goals. It focuses on the external behavior of the system, defining its boundaries and primary functions from the user's perspective."
+  },
+  {
+    "question": "Which UML diagram is most suitable for showing the flow of control or data within a process?",
+    "choices": [
+      "Activity diagram",
+      "Sequence diagram",
+      "Use case diagram",
+      "Class diagram"
+    ],
+    "correctIndex": 0,
+    "explanation": "An Activity diagram is specifically designed to model the step-by-step flow of activities and decisions within a process or workflow. It is excellent for visualizing business processes, operational workflows, and the control flow of a system."
+  },
+  {
+    "question": "A ________ diagram shows the flow of activities in a system and decision points.",
+    "choices": [
+      "Activity",
+      "Sequence",
+      "Use case",
+      "Class"
+    ],
+    "correctIndex": 0,
+    "explanation": "An Activity diagram is a behavioral diagram in UML that illustrates the flow of activities, actions, and decision points within a system. It's often used to model workflows, business processes, and the logic of complex operations."
+  },
+  {
+    "question": "Which GRASP principle deals with assigning responsibility to ensure system behavior is controlled by a central entity?",
+    "choices": [
+      "Controller",
+      "Creator",
+      "Polymorphism",
+      "Indirection"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Controller GRASP principle assigns the responsibility of handling system events (like user interface events or system operations) to a single, central object. This centralizes control, reducing coupling and making the system easier to manage and understand."
+  },
+  {
+    "question": "What is the main advantage of using GRASP principles in software design?",
+    "choices": [
+      "They guide the assignment of responsibilities within a system",
+      "They offer standardized testing tools",
+      "They enhance software maintenance techniques",
+      "They reduce hardware dependencies"
+    ],
+    "correctIndex": 0,
+    "explanation": "GRASP (General Responsibility Assignment Software Patterns) principles are foundational guidelines for assigning responsibilities to classes and objects during object-oriented design. They help in creating highly cohesive and loosely coupled systems, leading to more maintainable, flexible, and understandable software."
+  },
+  {
+    "question": "Which of the following is a principle of good software design?",
+    "choices": [
+      "High cohesion and low coupling",
+      "High coupling and low cohesion",
+      "High cohesion and high coupling",
+      "Low cohesion and low coupling"
+    ],
+    "correctIndex": 0,
+    "explanation": "Good software design aims for high cohesion (where elements within a module work closely together for a single, well-defined purpose) and low coupling (where modules are as independent as possible). This combination leads to systems that are easier to understand, test, maintain, and reuse."
+  },
+  {
+    "question": "UML activity diagrams are used to model ________.",
+    "choices": [
+      "Workflow and decision-making processes",
+      "The relationships between classes",
+      "The interaction between objects",
+      "Deployment strategies"
+    ],
+    "correctIndex": 0,
+    "explanation": "UML Activity diagrams are specifically used to describe the dynamic aspects of a system, focusing on the flow of control from activity to activity. They are ideal for modeling workflows, business processes, and the decision logic within a system."
+  },
+  {
+    "question": "________ diagrams are used in UML to describe the structure of a system.",
+    "choices": [
+      "Class",
+      "Activity",
+      "Sequence",
+      "Use case"
+    ],
+    "correctIndex": 0,
+    "explanation": "Class diagrams are fundamental structural diagrams in UML. They define the static structure of a system by showing its classes, their attributes, operations, and the relationships between them, such as associations, generalizations (inheritance), and dependencies."
+  },
+  {
+    "question": "The principle of \"Separation of Concerns\" in software design aims to:",
+    "choices": [
+      "Separate different aspects of a program to reduce complexity",
+      "Break down complex systems into unrelated components",
+      "Divide a program into distinct features that overlap in functionality",
+      "Ensure all modules share the same responsibilities"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Separation of Concerns principle advocates for dividing a system into distinct sections, each addressing a specific concern (or responsibility). This approach helps manage complexity, improves modularity, and makes the system easier to develop, test, and maintain."
+  },
+  {
+    "question": "In the context of cohesion, what does \"functional cohesion\" mean?",
+    "choices": [
+      "All operations within a module contribute to a single task.",
+      "A module focuses on unrelated tasks.",
+      "A module uses global variables extensively.",
+      "Operations in a module are unrelated."
+    ],
+    "correctIndex": 0,
+    "explanation": "Functional cohesion is the highest and most desirable type of cohesion. It means that all elements (operations, attributes) within a module are essential for and contribute directly to performing a single, well-defined task or function, ensuring the module has a clear and focused purpose."
+  },
+  {
+    "question": "Which GRASP principle focuses on creating reusable objects and reduces redundancy in the system?",
+    "choices": [
+      "Pure Fabrication",
+      "Polymorphism",
+      "Creator",
+      "Information Expert"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pure Fabrication is a GRASP principle that suggests creating a class that does not represent a domain concept but is designed specifically to achieve high cohesion and low coupling. Such 'fabricated' classes are often highly reusable as they encapsulate specific behaviors that might otherwise be scattered or violate the Information Expert principle."
+  },
+  {
+    "question": "In UML, what does a solid line with a filled arrowhead represent in a class diagram?",
+    "choices": [
+      "Generalization",
+      "Dependency",
+      "Aggregation",
+      "Association"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a UML Class diagram, a solid line with a filled, triangular arrowhead pointing from the subclass to the superclass represents Generalization (inheritance). It signifies an 'is-a' relationship, where the subclass inherits properties and behaviors from the superclass."
+  },
+  {
+    "question": "Which design pattern allows an object to change its behavior when its internal state changes?",
+    "choices": [
+      "State",
+      "Singleton",
+      "Decorator",
+      "Observer"
+    ],
+    "correctIndex": 0,
+    "explanation": "The State design pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class, as it encapsulates state-specific behavior into separate state classes, making it easier to manage complex state-dependent logic."
+  },
+  {
+    "question": "What is the main goal of the Open-Closed Principle in software design?",
+    "choices": [
+      "Software entities should be open for extension but closed for modification.",
+      "Software entities should depend on abstractions rather than concretions.",
+      "Subclasses should replace parent classes without breaking functionality.",
+      "Classes should have only one reason to change."
+    ],
+    "correctIndex": 0,
+    "explanation": "The Open-Closed Principle (OCP) is a core SOLID principle stating that software entities (classes, modules, functions, etc.) should be open for extension (meaning new functionality can be added) but closed for modification (meaning existing code should not be changed). This promotes stable and maintainable codebases."
+  },
+  {
+    "question": "________ diagrams in UML are used to show the runtime interaction between objects.",
+    "choices": [
+      "Sequence",
+      "Use case",
+      "Activity",
+      "Class"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sequence diagrams are interaction diagrams in UML that depict the order of messages exchanged between objects or components in a system over time. They are excellent for visualizing the dynamic behavior and flow of control within a specific scenario or use case."
+  },
+  {
+    "question": "The \"Information Expert\" GRASP principle assigns responsibilities to the class with the most information required.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The Information Expert GRASP principle advocates assigning a responsibility to the class that has the necessary information to fulfill that responsibility. This principle leads to highly cohesive classes by keeping related data and behavior together."
+  },
+  {
+    "question": "The ________ design principle encourages depending on abstractions rather than concretions.",
+    "choices": [
+      "Dependency Inversion",
+      "Interface Segregation",
+      "Single Responsibility",
+      "Open-Closed"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Dependency Inversion Principle (DIP) is a SOLID principle that states high-level modules should not depend on low-level modules; both should depend on abstractions. Additionally, abstractions should not depend on details; details should depend on abstractions. This promotes flexible and loosely coupled architectures."
+  },
+  {
+    "question": "What is the primary goal of minimizing coupling in a software system?",
+    "choices": [
+      "To make modules independent of each other",
+      "To optimize system performance through tighter integration",
+      "To ensure seamless communication between all components",
+      "To simplify debugging by increasing modular interconnections"
+    ],
+    "correctIndex": 0,
+    "explanation": "Minimizing coupling (loose coupling) means reducing the interdependencies between software modules. The primary goal is to make modules more independent, which improves reusability, testability, and maintainability, as changes in one module are less likely to impact others."
+  },
+  {
+    "question": "The Singleton pattern can lead to issues in multithreaded environments if not implemented carefully.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In a multithreaded environment, multiple threads might attempt to create an instance of a Singleton class simultaneously, leading to multiple instances being created (violating the pattern) if proper synchronization mechanisms (like locks or double-checked locking) are not used."
+  },
+  {
+    "question": "The term \"tight coupling\" in software design means:",
+    "choices": [
+      "Modules are heavily dependent on one another",
+      "Modules have distinct and well-defined boundaries",
+      "Code can be reused across different systems",
+      "Testing becomes easier"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tight coupling occurs when modules are highly interdependent, meaning changes in one module often necessitate changes in others. This makes the system more rigid, harder to understand, test, and maintain, and reduces reusability."
+  },
+  {
+    "question": "What is the main benefit of using UML diagrams in software design?",
+    "choices": [
+      "They simplify communication among stakeholders.",
+      "They eliminate the need for documentation.",
+      "They enhance the runtime performance of software.",
+      "They automate the testing process."
+    ],
+    "correctIndex": 0,
+    "explanation": "UML diagrams provide a standardized visual language for modeling software systems. This visual representation significantly simplifies communication among developers, architects, business analysts, and other stakeholders, helping everyone understand the system's requirements, design, and behavior more effectively."
+  },
+  {
+    "question": "Which UML diagram is most useful for representing object interactions over time?",
+    "choices": [
+      "Sequence diagram",
+      "Class diagram",
+      "Component diagram",
+      "Deployment diagram"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Sequence diagram is an interaction diagram that shows the order in which messages are sent between objects. It emphasizes the time-ordered sequence of interactions, making it ideal for visualizing the dynamic behavior of a system or a specific scenario over time."
+  },
+  {
+    "question": "The ________ pattern ensures that a class has only one instance and provides a global point of access to it.",
+    "choices": [
+      "Singleton",
+      "Factory",
+      "Observer",
+      "Adapter"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Singleton design pattern restricts the instantiation of a class to a single object. It ensures that only one instance of the class exists throughout the application's lifecycle and provides a global access point to that instance."
+  },
+  {
+    "question": "The Observer pattern allows one-to-many dependencies between objects.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The Observer pattern defines a one-to-many dependency between objects so that when one object (the subject) changes state, all its dependents (observers) are notified and updated automatically. This pattern is fundamental for implementing distributed event handling systems."
+  },
+  {
+    "question": "________ design principle states that a module should only have one reason to change.",
+    "choices": [
+      "Single Responsibility",
+      "Open-Closed",
+      "Liskov Substitution",
+      "Dependency Inversion"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Single Responsibility Principle (SRP) is a SOLID principle that states a class or module should have only one reason to change. This means each module should be responsible for a single, well-defined piece of functionality, leading to more cohesive and maintainable code."
+  },
+  {
+    "question": "Which software architecture pattern divides a system into three interconnected layers: Presentation, Application, and Data?",
+    "choices": [
+      "Layered architecture",
+      "Event-driven architecture",
+      "Microservices",
+      "Model-View-Controller (MVC)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Layered architecture, often referred to as N-tier architecture, typically organizes a system into distinct horizontal layers, with the most common being Presentation (UI), Application (business logic), and Data (data access). Each layer has specific responsibilities and communicates only with the layers directly above and below it."
+  },
+  {
+    "question": "The Adapter design pattern is used to convert the interface of a class into another interface the client expects.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The Adapter design pattern (also known as Wrapper) acts as a bridge between two incompatible interfaces. It allows objects with incompatible interfaces to collaborate, converting the interface of one class into another interface clients expect, without changing the existing classes."
+  },
+  {
+    "question": "________ patterns are templates for solving common design problems in software systems.",
+    "choices": [
+      "Design",
+      "Architecture",
+      "Workflow",
+      "Behavioral"
+    ],
+    "correctIndex": 0,
+    "explanation": "Design patterns are generalized, reusable solutions to common problems encountered during software design. They are not direct solutions but rather templates or blueprints that can be adapted to various situations to create robust, flexible, and maintainable software systems."
+  },
+  {
+    "question": "Which UML diagram is primarily used to model the dynamic behavior of a system?",
+    "choices": [
+      "Sequence diagram",
+      "Class diagram",
+      "Component diagram",
+      "Deployment diagram"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sequence diagrams are UML behavioral diagrams that illustrate the dynamic behavior of a system by showing the order of interactions between objects over time. They are crucial for understanding how objects collaborate to perform a specific function or use case."
   }
 ]
