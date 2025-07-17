@@ -972,5 +972,323 @@
   ],
   "correctIndex": 0,
   "explanation": "The primary advantage of a doubly linked list is that each node contains pointers to both the next and the previous nodes. This allows for efficient traversal in both forward and backward directions, which is not possible in a singly linked list without re-traversing from the head."
+  },
+  {
+    "question": "A leaf node is a node that has no children in a binary tree.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. A leaf node (also known as an external node or terminal node) is any node in a tree data structure that does not have any child nodes. It marks the end of a path from the root."
+  },
+  {
+    "question": "The process of removing a node with one child in a BST involves replacing it with ________.",
+    "choices": [
+      "Its only child",
+      "The root node",
+      "The maximum node",
+      "The minimum node"
+    ],
+    "correctIndex": 0,
+    "explanation": "When deleting a node in a Binary Search Tree (BST) that has only one child, the node is simply replaced by its sole child. The parent of the deleted node then points directly to this child, and the child's parent pointer (if a doubly-linked tree) is updated to the parent of the deleted node."
+  },
+  {
+    "question": "A balanced BST ensures efficient searching, insertion, and deletion.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. A balanced Binary Search Tree (such as an AVL tree or Red-Black tree) maintains a logarithmic height (O(log n)), which guarantees that search, insertion, and deletion operations can be performed in O(log n) time, even in the worst case. An unbalanced BST can degenerate into a linked list, leading to O(n) worst-case time complexity."
+  },
+  {
+    "question": "A tree structure is used to model an organizational chart where each manager can have at most two subordinates. What type of tree is this?",
+    "choices": [
+      "Binary Tree",
+      "Ternary Tree",
+      "Heap",
+      "AVL Tree"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Binary Tree is defined as a tree data structure where each node has at most two children, typically referred to as the left child and the right child. This perfectly matches the description of a manager having at most two subordinates."
+  },
+  {
+    "question": "What is the time complexity of an in-order traversal in a binary tree with N nodes?",
+    "choices": [
+      "O(N)",
+      "O(log N)",
+      "O(N log N)",
+      "O(N2)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In-order traversal, like all standard tree traversals (pre-order, post-order, level-order), requires visiting each of the N nodes exactly once. Therefore, the time complexity is linear, O(N)."
+  },
+  {
+    "question": "What happens when you delete a node with two children in a binary tree?",
+    "choices": [
+      "It is replaced with its in-order successor or predecessor",
+      "It is replaced with its left child",
+      "It is replaced with its right child",
+      "It is deleted without replacement"
+    ],
+    "correctIndex": 0,
+    "explanation": "When deleting a node with two children in a Binary Search Tree, the standard procedure is to replace the deleted node with its in-order successor (the smallest node in its right subtree) or its in-order predecessor (the largest node in its left subtree). This maintains the BST properties."
+  },
+  {
+    "question": "In a binary tree, pre-order traversal always visits the left subtree before the right subtree.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In pre-order traversal, the order of visiting nodes is: Root -> Left Subtree -> Right Subtree. This means the left subtree is always processed entirely before the right subtree."
+  },
+  {
+    "question": "What is the worst-case height of a BST with N nodes if it is completely unbalanced?",
+    "choices": [
+      "O(N)",
+      "O(log N)",
+      "O(N log N)",
+      "O(1)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In the worst case, if elements are inserted into a Binary Search Tree in strictly ascending or descending order, the BST degenerates into a skewed tree (like a linked list). In this scenario, the height of the tree becomes N (the number of nodes), leading to a worst-case height of O(N)."
+  },
+  {
+    "question": "What is the average-case time complexity of searching for a value in a balanced Binary Search Tree?",
+    "choices": [
+      "O(log N)",
+      "O(N)",
+      "O(N log N)",
+      "O(1)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a balanced Binary Search Tree (BST), the height is always logarithmic (log N). Therefore, searching for a value involves traversing a path from the root to a leaf, which takes O(log N) time on average and in the worst case."
+  },
+  {
+    "question": "The root node of a BST always contains the smallest element in the tree.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. The root node of a Binary Search Tree (BST) can contain any value. The defining property of a BST is that all nodes in its left subtree have values smaller than the root, and all nodes in its right subtree have values larger than the root. The smallest element is always the leftmost node in the tree."
+  },
+  {
+    "question": "In a binary tree, _______ traversal method is used to find the correct position for inserting a new node.",
+    "choices": [
+      "Level-order",
+      "Pre-order",
+      "Post-order",
+      "In-order"
+    ],
+    "correctIndex": 0,
+    "explanation": "When inserting a node into a Binary Search Tree (which is a specific type of binary tree), the search for the correct insertion position follows a path from the root, comparing the new node's value with current node's value. This is essentially a search operation, not a specific traversal *method* like pre-order or in-order. However, if referring to a general binary tree where structure matters, level-order traversal (or breadth-first search) might be used to find the first available spot or maintain completeness."
+  },
+  {
+    "question": "A binary tree traversal where the left subtree is visited first, followed by the right subtree, and then the root, is known as:",
+    "choices": [
+      "Post-order",
+      "Pre-order",
+      "In-order",
+      "Level-order"
+    ],
+    "correctIndex": 0,
+    "explanation": "Post-order traversal follows the order: Left Subtree -> Right Subtree -> Root. The root node is visited last among the nodes of its subtree."
+  },
+  {
+    "question": "Which data structure ensures an efficient search operation similar to a BST but is always balanced?",
+    "choices": [
+      "AVL Tree",
+      "Heap",
+      "Stack",
+      "Queue"
+    ],
+    "correctIndex": 0,
+    "explanation": "An AVL Tree is a self-balancing Binary Search Tree. It automatically rebalances itself after insertions and deletions to ensure that the height difference between the left and right subtrees of any node is at most 1. This guarantee maintains a logarithmic height, leading to O(log n) time complexity for search, insert, and delete operations."
+  },
+  {
+    "question": "Which data structure is commonly used to perform level-order traversal in a binary tree?",
+    "choices": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Linked List"
+    ],
+    "correctIndex": 0,
+    "explanation": "Level-order traversal (also known as Breadth-First Search) visits nodes level by level, from left to right. A Queue data structure is ideally suited for this. You enqueue the root, then repeatedly dequeue a node, process it, and enqueue its children, ensuring nodes at the same level are processed before moving to the next level."
+  },
+  {
+    "question": "What is the time complexity of inserting an element in a balanced binary tree?",
+    "choices": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a balanced binary tree (like an AVL tree or Red-Black tree), the height of the tree is maintained at O(log n). Inserting an element involves searching for the correct position (O(log n)) and potentially performing rotations to rebalance the tree (also O(log n)). Thus, the overall time complexity for insertion is O(log n)."
+  },
+  {
+    "question": "In a binary tree, each node can have at most how many children?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "Unlimited"
+    ],
+    "correctIndex": 0,
+    "explanation": "By definition, a binary tree is a tree data structure in which each node has at most two children, commonly referred to as the left child and the right child."
+  },
+  {
+    "question": "Which traversal method of a BST returns its elements in sorted order?",
+    "choices": [
+      "In-order",
+      "Pre-order",
+      "Post-order",
+      "Level-order"
+    ],
+    "correctIndex": 0,
+    "explanation": "In-order traversal (Left -> Root -> Right) of a Binary Search Tree (BST) consistently visits nodes in ascending order of their values. This property makes it very useful for obtaining a sorted list of elements from a BST."
+  },
+  {
+    "question": "A binary tree with N nodes always has N-1 edges.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. For any tree structure with N nodes, there are always exactly N-1 edges. This is a fundamental property of trees, as each node (except the root) has exactly one incoming edge from its parent."
+  },
+  {
+    "question": "What type of data structure is generally used to implement an iterative in-order traversal?",
+    "choices": [
+      "Stack",
+      "Queue",
+      "Linked List",
+      "Heap"
+    ],
+    "correctIndex": 0,
+    "explanation": "Iterative in-order traversal of a binary tree typically uses a Stack. The algorithm involves pushing nodes onto the stack as you traverse down the left subtree, then popping nodes to visit them, and finally moving to the right subtree."
+  },
+  {
+    "question": "Which tree traversal method processes the root node first, then the left subtree, and finally the right subtree?",
+    "choices": [
+      "Pre-order",
+      "In-order",
+      "Post-order",
+      "Level-order"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pre-order traversal follows the order: Root -> Left Subtree -> Right Subtree. The root node is processed before its subtrees."
+  },
+  {
+    "question": "The maximum number of nodes at level L of a binary tree is ________.",
+    "choices": [
+      "2L",
+      "L2",
+      "L * 2",
+      "log L"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assuming the root is at level 0, the maximum number of nodes at level L (depth L) in a binary tree is $2^L$. Each level can potentially double the number of nodes from the previous level."
+  },
+  {
+    "question": "In pre-order traversal, the root node is processed ________ visiting its left and right subtrees.",
+    "choices": [
+      "Before",
+      "After",
+      "Between",
+      "Never"
+    ],
+    "correctIndex": 0,
+    "explanation": "In pre-order traversal, the sequence is Root -> Left Subtree -> Right Subtree. This means the root node is processed *before* any of its children or descendants in its subtrees."
+  },
+  {
+    "question": "The in-order successor of a node in a BST is the node with the smallest value in its ________ subtree.",
+    "choices": [
+      "Right",
+      "Left",
+      "Parent",
+      "Root"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a node in a Binary Search Tree (BST) that has a right child, its in-order successor is the node with the smallest value in its *right* subtree. This is found by going once to the right child and then continually going left until a node with no left child is found."
+  },
+  {
+    "question": "The traversal order that follows Left → Root → Right in a binary tree is called ________ traversal.",
+    "choices": [
+      "In-order",
+      "Pre-order",
+      "Post-order",
+      "Level-order"
+    ],
+    "correctIndex": 0,
+    "explanation": "In-order traversal is defined by the sequence: Left Subtree -> Root -> Right Subtree. When applied to a Binary Search Tree, this traversal method outputs the nodes in sorted (ascending) order."
+  },
+  {
+    "question": "A binary tree is full when:",
+    "choices": [
+      "Every node has 0 or 2 children",
+      "Every level is completely filled",
+      "Every node has exactly 1 child",
+      "The left subtree has more nodes than the right"
+    ],
+    "correctIndex": 0,
+    "explanation": "A full binary tree (sometimes called a strictly binary tree) is a tree in which every node has either zero or two children. This means there are no nodes with only one child."
+  },
+  {
+    "question": "A ________ binary tree is one in which all levels are entirely filled, except perhaps the last level, which is filled from left to right.",
+    "choices": [
+      "Complete",
+      "Full",
+      "Balanced",
+      "Heap"
+    ],
+    "correctIndex": 0,
+    "explanation": "A complete binary tree is a binary tree in which all levels are completely filled, except possibly the last level, which is filled from left to right. This property is important for efficient array-based implementations of binary trees, especially heaps."
+  },
+  {
+    "question": "Which traversal method visits nodes in sorted order when applied to a Binary Search Tree?",
+    "choices": [
+      "In-order",
+      "Pre-order",
+      "Post-order",
+      "Level-order"
+    ],
+    "correctIndex": 0,
+    "explanation": "In-order traversal (Left -> Root -> Right) of a Binary Search Tree (BST) guarantees that the nodes are visited in ascending order of their keys. This is a fundamental property that makes in-order traversal highly useful for BSTs."
+  },
+  {
+    "question": "What is the primary property of a Binary Search Tree (BST)?",
+    "choices": [
+      "Left subtree nodes have smaller values than the root, and right subtree nodes have larger values.",
+      "Every node has at most two children.",
+      "All nodes have equal values.",
+      "Nodes are arranged in a complete binary tree structure."
+    ],
+    "correctIndex": 0,
+    "explanation": "The defining property of a Binary Search Tree (BST) is that for any given node, all values in its left subtree are less than the node's value, and all values in its right subtree are greater than the node's value. This recursive property enables efficient searching."
+  },
+  {
+    "question": "In post-order traversal, the root node is the first node to be processed.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. In post-order traversal, the sequence is Left Subtree -> Right Subtree -> Root. The root node is processed *last* among the nodes of its subtree."
+  },
+  {
+    "question": "In a binary search tree (BST), which node is typically used to replace a node with two children during deletion?",
+    "choices": [
+      "Its in-order successor or predecessor.",
+      "Its left child.",
+      "Its right child.",
+      "Any random node from the tree."
+    ],
+    "correctIndex": 0,
+    "explanation": "When a node with two children is deleted from a BST, it is typically replaced by its in-order successor (the smallest node in its right subtree) or its in-order predecessor (the largest node in its left subtree). This maintains the BST property and ensures that the structure remains valid."
   }
 ]
