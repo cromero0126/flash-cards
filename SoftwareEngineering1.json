@@ -995,5 +995,358 @@
     ],
     "correctIndex": 0,
     "explanation": "Sequence diagrams are UML behavioral diagrams that illustrate the dynamic behavior of a system by showing the order of interactions between objects over time. They are crucial for understanding how objects collaborate to perform a specific function or use case."
+  },
+  {
+    "question": "GitHub is a web-based platform for hosting and collaborating on _______ repositories.",
+    "choices": [
+      "Git",
+      "Deployment",
+      "Code review",
+      "Backup"
+    ],
+    "correctIndex": 0,
+    "explanation": "GitHub is built around the Git version control system. It provides a platform for hosting Git repositories and offers features for collaborative software development, such as issue tracking, pull requests, and code review."
+  },
+  {
+    "question": "Waterfall is a better choice for projects where requirements are well-defined and unlikely to change.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The Waterfall model's sequential and rigid nature makes it suitable for projects with stable and clearly defined requirements. Changes are difficult and costly to incorporate once a phase is complete."
+  },
+  {
+    "question": "Agile methodology is more adaptable to changing requirements compared to Waterfall.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Agile methodologies are designed to be flexible and adaptive. They embrace changing requirements throughout the development lifecycle, unlike Waterfall, which assumes requirements are fixed upfront."
+  },
+  {
+    "question": "In Agile, what is the main purpose of a retrospective meeting?",
+    "choices": [
+      "To reflect on the previous sprint and improve processes",
+      "To plan all future sprints in detail",
+      "To finalize the requirements",
+      "To freeze the scope of the project"
+    ],
+    "correctIndex": 0,
+    "explanation": "The retrospective meeting in Agile (especially Scrum) is a dedicated time for the team to inspect how the last sprint went regarding people, relationships, processes, and tools. The goal is to identify what went well, what could be improved, and to create a plan for improvements in the next sprint."
+  },
+  {
+    "question": "What is the purpose of iterative development in methodologies like Scrum?",
+    "choices": [
+      "To improve product quality through regular feedback",
+      "To reduce team size",
+      "To eliminate testing",
+      "To avoid customer involvement"
+    ],
+    "correctIndex": 0,
+    "explanation": "Iterative development, central to Scrum, involves developing the product in small, incremental cycles. Each iteration delivers a working increment of the product, allowing for frequent feedback from stakeholders, which in turn helps improve product quality and ensures it meets evolving needs."
+  },
+  {
+    "question": "Which of the following commands initializes a new Git repository?",
+    "choices": [
+      "git init",
+      "git add",
+      "git clone",
+      "git status"
+    ],
+    "correctIndex": 0,
+    "explanation": "`git init` is the command used to create a new, empty Git repository or reinitialize an existing one. It creates the `.git` directory in the current working directory, which contains all the necessary Git files for the repository."
+  },
+  {
+    "question": "Which of the following best describes the Waterfall model?",
+    "choices": [
+      "Linear and sequential process",
+      "Flexible and iterative process",
+      "Continuous delivery of working software",
+      "Emphasis on collaboration and adaptability"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Waterfall model is characterized by its linear and sequential approach. Each phase (requirements, design, implementation, testing, deployment, maintenance) must be completed before the next one begins, with no overlapping or going back to previous phases."
+  },
+  {
+    "question": "Waterfall is an iterative approach to software development.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. The Waterfall model is a linear-sequential approach, meaning each phase must be completed before the next begins. It is not iterative; iterations are a characteristic of Agile and other flexible methodologies."
+  },
+  {
+    "question": "Which of the following is a significant benefit of Agile compared to Waterfall?",
+    "choices": [
+      "Faster delivery of working features",
+      "Higher emphasis on documentation",
+      "Clear definition of all requirements upfront",
+      "Predictable schedules for all phases"
+    ],
+    "correctIndex": 0,
+    "explanation": "Agile methodologies prioritize the frequent delivery of working software in small increments. This allows for earlier release of value to customers and faster feedback cycles, leading to more responsive development than the Waterfall model's 'big bang' release approach."
+  },
+  {
+    "question": "The foundational principle of DevOps is to bridge the gap between software development and IT operations.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. DevOps aims to unite software development (Dev) and IT operations (Ops) by promoting communication, collaboration, and integration between these teams. The goal is to improve the speed, efficiency, and quality of software delivery."
+  },
+  {
+    "question": "Which of the following is an official role defined within the Scrum framework?",
+    "choices": [
+      "Product Owner",
+      "Project Coordinator",
+      "Business Analyst",
+      "Software Architect"
+    ],
+    "correctIndex": 0,
+    "explanation": "Within the Scrum framework, there are three core roles: Product Owner, Scrum Master, and Development Team. The Project Coordinator, Business Analyst, and Software Architect are common roles in other methodologies but not explicitly defined as official Scrum roles."
+  },
+  {
+    "question": "Git is a _______ system that tracks changes in source code during software development.",
+    "choices": [
+      "Version control",
+      "Deployment",
+      "Continuous integration",
+      "Debugging"
+    ],
+    "correctIndex": 0,
+    "explanation": "Git is a distributed version control system (DVCS). Its primary function is to track changes in source code and other files over time, allowing multiple developers to collaborate on a project, manage different versions, and revert to previous states if necessary."
+  },
+  {
+    "question": "Extreme Programming (XP) emphasizes on:",
+    "choices": [
+      "Pair programming and frequent releases",
+      "Extensive testing before coding",
+      "Following strict deadlines",
+      "Limited customer involvement"
+    ],
+    "correctIndex": 0,
+    "explanation": "Extreme Programming (XP) is an Agile framework that emphasizes practices like pair programming (two developers working on one workstation), test-driven development (TDD), continuous integration, and frequent small releases to customers."
+  },
+  {
+    "question": "The Waterfall model assumes that all requirements can be _______ before development begins.",
+    "choices": [
+      "Defined",
+      "Tested",
+      "Automated",
+      "Deployed"
+    ],
+    "correctIndex": 0,
+    "explanation": "A core assumption of the Waterfall model is that all project requirements can be fully and accurately defined, documented, and approved at the very beginning of the project before any design or development work commences."
+  },
+  {
+    "question": "Which of the following is a characteristic of the Spiral Model?",
+    "choices": [
+      "Focus on risk analysis",
+      "Rigid sequential phases",
+      "Emphasis on documentation",
+      "One-time delivery"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Spiral Model is a risk-driven software development process model. It emphasizes iterative cycles with each cycle focusing on identifying and mitigating risks. Risk analysis is a central activity throughout its phases."
+  },
+  {
+    "question": "Which of the following is a key characteristic of the Agile approach?",
+    "choices": [
+      "Incremental and iterative delivery",
+      "Sequential and rigid phases",
+      "Focus on detailed upfront planning",
+      "Limited customer involvement during development"
+    ],
+    "correctIndex": 0,
+    "explanation": "Agile methodologies promote incremental and iterative development, delivering working software in small, frequent increments (e.g., sprints). This contrasts with sequential models and allows for continuous feedback and adaptation."
+  },
+  {
+    "question": "What is the primary purpose of GitHub in software development?",
+    "choices": [
+      "Hosting and collaborating on code repositories",
+      "Managing hardware resources",
+      "Automating deployment pipelines",
+      "Debugging applications"
+    ],
+    "correctIndex": 0,
+    "explanation": "GitHub's primary purpose is to provide web-based hosting for version control using Git, enabling developers to store their code repositories, collaborate on projects, track changes, and manage contributions through features like pull requests."
+  },
+  {
+    "question": "In Scrum, work is divided into time-boxed intervals called ______.",
+    "choices": [
+      "Sprints",
+      "Milestones",
+      "Iterations",
+      "Phases"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Scrum, the development process is organized into fixed-length iterations called 'Sprints'. Sprints typically last from one to four weeks and result in a potentially shippable product increment."
+  },
+  {
+    "question": "In Scrum, the main deliverable at the end of each sprint is:",
+    "choices": [
+      "A potentially shippable product increment",
+      "Comprehensive project documentation",
+      "A finalized project plan",
+      "A list of unaddressed issues"
+    ],
+    "correctIndex": 0,
+    "explanation": "The goal of each sprint in Scrum is to produce a 'potentially shippable product increment'. This means a piece of working software that is complete, tested, and ready to be released to users if desired, even if it's not the final product."
+  },
+  {
+    "question": "The Agile approach emphasizes _______ over following a strict plan.",
+    "choices": [
+      "Responding to change",
+      "Creating extensive documentation",
+      "Minimizing collaboration",
+      "Sequential development"
+    ],
+    "correctIndex": 0,
+    "explanation": "One of the core values of the Agile Manifesto is 'Responding to change over following a plan'. Agile methodologies prioritize flexibility and adaptation to new information or changing requirements rather than strictly adhering to an initial, rigid plan."
+  },
+  {
+    "question": "The Kanban methodology is primarily focused on:",
+    "choices": [
+      "Visualizing work and limiting work in progress",
+      "Timeboxing tasks",
+      "Pre-planned iterations",
+      "Extensive documentation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kanban's core practices include visualizing the workflow (e.g., using a Kanban board), limiting work in progress (WIP) to prevent bottlenecks, and managing flow to optimize throughput. It is a pull-based system, unlike Scrum's time-boxed sprints."
+  },
+  {
+    "question": "Which of the following is a benefit of using Git in software development?",
+    "choices": [
+      "Tracking changes and enabling collaboration",
+      "Automating project deployment",
+      "Managing server configurations",
+      "Debugging runtime errors"
+    ],
+    "correctIndex": 0,
+    "explanation": "Git is a version control system primarily used for tracking changes to files and coordinating work among multiple people on a project. It allows developers to maintain different versions of code, revert to previous states, and merge contributions seamlessly, thus enabling effective collaboration."
+  },
+  {
+    "question": "The Scrum Master is responsible for maximizing the value of the product.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. The Product Owner is responsible for maximizing the value of the product and the work of the Development Team. The Scrum Master is responsible for promoting and supporting Scrum, acting as a servant-leader to the team and removing impediments."
+  },
+  {
+    "question": "In Scrum, what is the primary responsibility of the Product Owner?",
+    "choices": [
+      "Defining and prioritizing the product backlog",
+      "Removing obstacles faced by the team",
+      "Writing and testing code",
+      "Designing the system architecture"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Product Owner is the sole person responsible for managing the Product Backlog. This includes clearly expressing Product Backlog items, ordering the items to best achieve goals and missions, and ensuring the Product Backlog is visible, transparent, and clear to all."
+  },
+  {
+    "question": "In Agile methodology, what is a “Sprint”?",
+    "choices": [
+      "A defined period for completing specific work",
+      "A testing phase",
+      "A customer review meeting",
+      "A team-building activity"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Agile frameworks like Scrum, a 'Sprint' is a short, time-boxed period (usually 1-4 weeks) during which a Scrum Team works to complete a specific set of work and produce a 'Done' increment of product."
+  },
+  {
+    "question": "Which principle is central to the Agile Manifesto?",
+    "choices": [
+      "Customer collaboration over contract negotiation",
+      "Comprehensive documentation over working software",
+      "Processes and tools over individuals and interactions",
+      "Following a plan over responding to change"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Agile Manifesto states: 'Customer collaboration over contract negotiation.' This emphasizes the importance of working closely with customers throughout the development process to ensure the product meets their evolving needs, rather than relying solely on upfront contractual agreements."
+  },
+  {
+    "question": "In Git, what is a branch used for?",
+    "choices": [
+      "Developing features or fixes in isolation",
+      "Deleting unnecessary files",
+      "Backing up the repository",
+      "Tracking hardware configurations"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Git, branches are used to create independent lines of development. They allow developers to work on new features, bug fixes, or experiments in isolation from the main codebase (e.g., `main` or `master` branch) without affecting its stability."
+  },
+  {
+    "question": "The primary focus of the Agile methodology is to deliver _______.",
+    "choices": [
+      "Flexible and adaptive solutions",
+      "Error-free software",
+      "High-level architecture",
+      "Pre-defined workflows"
+    ],
+    "correctIndex": 0,
+    "explanation": "Agile methodologies prioritize delivering flexible and adaptive solutions that can evolve and respond to changes in requirements and market conditions. This is achieved through iterative development, continuous feedback, and collaboration."
+  },
+  {
+    "question": "Which of the following methodologies focuses on continuous delivery and integration?",
+    "choices": [
+      "DevOps",
+      "Agile",
+      "Waterfall",
+      "Spiral"
+    ],
+    "correctIndex": 0,
+    "explanation": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the systems development life cycle and provide continuous delivery with high software quality. Continuous integration and continuous delivery (CI/CD) are foundational pillars of DevOps."
+  },
+  {
+    "question": "What is a disadvantage of the Waterfall model compared to Agile?",
+    "choices": [
+      "Limited flexibility to accommodate changes",
+      "Emphasis on customer collaboration",
+      "Early testing phases",
+      "Incremental delivery of software"
+    ],
+    "correctIndex": 0,
+    "explanation": "A major disadvantage of the Waterfall model is its lack of flexibility. Once a phase is completed, it's difficult and costly to go back and make changes to requirements or design. Agile, in contrast, embraces change throughout the development process."
+  },
+  {
+    "question": "Agile promotes frequent _______ with stakeholders to ensure the project meets their needs.",
+    "choices": [
+      "Communication",
+      "Documentation",
+      "Testing",
+      "Deployment"
+    ],
+    "correctIndex": 0,
+    "explanation": "Agile methodologies emphasize continuous and frequent communication with stakeholders (customers, users, product owners) to ensure that the developing product aligns with their evolving needs and expectations. This feedback loop is crucial for adaptation."
+  },
+  {
+    "question": "In which approach are customers actively involved throughout the development process?",
+    "choices": [
+      "Agile",
+      "Waterfall",
+      "Spiral",
+      "V-Model"
+    ],
+    "correctIndex": 0,
+    "explanation": "Agile methodologies strongly advocate for continuous customer involvement. Customers (or their representatives, like Product Owners) are typically involved in sprint planning, reviews, and provide ongoing feedback, ensuring the product constantly meets their needs."
+  },
+  {
+    "question": "In Scrum, the individual responsible for maximizing the value of the product is called the _______.",
+    "choices": [
+      "Product Owner",
+      "Scrum Master",
+      "Developer",
+      "Tester"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Product Owner is the key stakeholder representative in Scrum. Their primary responsibility is to define and articulate the product vision and to maximize the value of the product and the work of the Development Team, primarily through managing the Product Backlog."
   }
 ]
