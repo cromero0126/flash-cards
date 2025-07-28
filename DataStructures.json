@@ -1290,5 +1290,661 @@
     ],
     "correctIndex": 0,
     "explanation": "When a node with two children is deleted from a BST, it is typically replaced by its in-order successor (the smallest node in its right subtree) or its in-order predecessor (the largest node in its left subtree). This maintains the BST property and ensures that the structure remains valid."
+  },
+   {
+    "question": "Which of the following is a fundamental concept of recursion in trees?",
+    "choices": [
+      "A function calls itself",
+      "Loops are used instead of function calls",
+      "Recursion is only used in binary trees",
+      "A tree must be fully balanced to use recursion"
+    ],
+    "correctIndex": 0,
+    "explanation": "Recursion in programming involves a function calling itself, either directly or indirectly. This concept is fundamental to many tree algorithms because trees have a recursive structure: each subtree is itself a tree, allowing operations on a node to be defined in terms of the same operations on its children."
+  },
+  {
+    "question": "In a max-heap, the value of each parent node is ______ than or equal to the values of its child nodes.",
+    "choices": [
+      "Greater",
+      "Less",
+      "Equal",
+      "Divisible"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a max-heap, the heap property states that for every node 'i' other than the root, the value of node 'i' is less than or equal to the value of its parent. Equivalently, the parent node's value is always greater than or equal to the values of its children."
+  },
+  {
+    "question": "A recursive function for tree traversal typically consists of a ______ condition and recursive calls for subtrees.",
+    "choices": [
+      "Base",
+      "Loop",
+      "Infinite",
+      "Stack"
+    ],
+    "correctIndex": 0,
+    "explanation": "A recursive function always needs a base condition (or base case) to stop the recursion and prevent infinite loops. In tree traversals, the base case is typically when a null node or a leaf node is encountered."
+  },
+  {
+    "question": "What is the time complexity of extracting the minimum element from a min heap?",
+    "choices": [
+      "O(log n)",
+      "O(1)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Extracting the minimum element from a min-heap involves removing the root (O(1)), moving the last element to the root, and then 'heapifying down' (or bubbling down) this new root to restore the heap property. Heapifying down takes O(log n) time, as it involves comparisons and swaps along a path from the root to a leaf, which is proportional to the height of the heap."
+  },
+  {
+    "question": "What is the time complexity of a recursive in-order traversal in a balanced binary tree with n nodes?",
+    "choices": [
+      "O(n)",
+      "O(1)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "All standard tree traversals (in-order, pre-order, post-order, level-order) visit each node in the tree exactly once. Regardless of whether the tree is balanced or not, and regardless of the specific traversal type, visiting all 'n' nodes will take linear time, i.e., O(n)."
+  },
+  {
+    "question": "What happens when you remove the root from a max heap?",
+    "choices": [
+      "The largest element is removed, and the heap is restructured",
+      "The smallest element is removed",
+      "The tree is completely reconstructed",
+      "The heap becomes unbalanced"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a max-heap, the root node always contains the largest element. When the root is removed (extracted), the last element of the heap is typically moved to the root position. Then, a 'heapify-down' operation is performed to sink this element to its correct position, thereby restoring the max-heap property and restructuring the heap."
+  },
+  {
+    "question": "Which recursive approach is commonly used to find the height of a binary tree?",
+    "choices": [
+      "Return the maximum depth of the left and right subtrees plus one",
+      "Count the number of nodes in the left subtree only",
+      "Traverse the tree iteratively",
+      "Return the sum of all node values"
+    ],
+    "correctIndex": 0,
+    "explanation": "The height of a binary tree can be recursively defined as 1 (for the root) plus the maximum of the heights of its left and right subtrees. The base case is a null node, which has a height of -1 (or 0, depending on definition)."
+  },
+  {
+    "question": "Which sorting algorithm uses a binary heap to achieve O(n log n) complexity?",
+    "choices": [
+      "Heap Sort",
+      "Quick Sort",
+      "Merge Sort",
+      "Bubble Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. It works by first building a max-heap (or min-heap) from the input array and then repeatedly extracting the maximum (or minimum) element from the heap and placing it at the end (or beginning) of the sorted array. Both building the heap and extracting elements take O(n log n) time."
+  },
+  {
+    "question": "In a priority queue implemented using a heap, how do you decrease the priority of an element?",
+    "choices": [
+      "Decrease its key value and apply heapify",
+      "Remove and reinsert the element",
+      "Increase its key value",
+      "Move it to the root"
+    ],
+    "correctIndex": 0,
+    "explanation": "To decrease the priority of an element in a min-heap (or increase priority in a max-heap), you update its key value to a smaller number. Since its priority has decreased, it might need to move further down the heap to maintain the heap property. This is achieved by performing a 'heapify-down' (or 'sift-down') operation, also known as 'bubble-down'."
+  },
+  {
+    "question": "In an AVL tree, what is the time complexity of searching for an element?",
+    "choices": [
+      "O(log n)",
+      "O(1)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "AVL trees are self-balancing Binary Search Trees. They guarantee that the height of the tree is always logarithmic (O(log n)) with respect to the number of nodes. Therefore, searching for an element, which involves traversing a path from the root to a potential leaf, takes O(log n) time in the worst case."
+  },
+  {
+    "question": "True or False: A pre-order traversal visits the root node before its left and right subtrees.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The definition of pre-order traversal is: visit the Root, then recursively traverse the Left subtree, then recursively traverse the Right subtree."
+  },
+  {
+    "question": "A post-order traversal is particularly useful for ______ trees before deletion.",
+    "choices": [
+      "Deleting",
+      "Searching",
+      "Sorting",
+      "Coloring"
+    ],
+    "correctIndex": 0,
+    "explanation": "Post-order traversal (Left -> Right -> Root) is useful for deleting a tree or its nodes. Because the root is visited last, you can delete its children (and their subtrees) first, ensuring that when you delete a node, its children have already been processed or deleted, preventing memory leaks or dangling pointers in a recursive deletion process."
+  },
+  {
+    "question": "Which data structure is best suited for implementing a priority queue?",
+    "choices": [
+      "Heap",
+      "Stack",
+      "Queue",
+      "Linked List"
+    ],
+    "correctIndex": 0,
+    "explanation": "A heap (specifically a binary heap) is the most common and efficient data structure for implementing a priority queue. It allows for O(1) access to the highest/lowest priority element (the root) and O(log n) time complexity for insertion and extraction of elements, which are the primary operations of a priority queue."
+  },
+  {
+    "question": "How does a Red-Black tree resolve a violation when two consecutive red nodes appear after insertion?",
+    "choices": [
+      "Recoloring and rotations are applied to fix the issue",
+      "The tree remains unchanged",
+      "The violating node is recolored to black",
+      "The violating node is deleted"
+    ],
+    "correctIndex": 0,
+    "explanation": "Red-Black trees maintain their balance and properties (including no two consecutive red nodes) through a combination of recoloring nodes and performing tree rotations (left rotations and right rotations) whenever an insertion or deletion violates one of its rules."
+  },
+  {
+    "question": "True or False: In an AVL tree, every node must have two children.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. An AVL tree is a self-balancing binary *search* tree. While it maintains a balanced height (balance factor between -1 and 1 for every node), it does not require every node to have two children. Leaf nodes have zero children, and internal nodes can have one or two children as long as the balance property is maintained."
+  },
+  {
+    "question": "A node in an AVL tree is considered unbalanced when the height difference between its left and right subtrees is greater than ____.",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "In an AVL tree, the balance factor for any node is defined as the height of its left subtree minus the height of its right subtree. An AVL tree maintains balance by ensuring that the absolute value of this balance factor is at most 1 (i.e., -1, 0, or 1)."
+  },
+  {
+    "question": "The two main techniques used in dynamic programming to store intermediate results are ______ and tabulation.",
+    "choices": [
+      "Memorization",
+      "Sorting",
+      "Brute force",
+      "Approximation"
+    ],
+    "correctIndex": 0,
+    "explanation": "The two primary techniques in dynamic programming are memoization (top-down approach with caching results of recursive calls) and tabulation (bottom-up approach building up solutions for smaller subproblems in a table)."
+  },
+  {
+    "question": "What is the main difference between dynamic programming and divide and conquer?",
+    "choices": [
+      "Divide and conquer solves overlapping subproblems separately",
+      "Dynamic programming solves problems by breaking them into non-overlapping subproblems",
+      "Dynamic programming does not use recursion",
+      "Dynamic programming cannot be applied to optimization problems"
+    ],
+    "correctIndex": 0,
+    "explanation": "The key difference is how they handle subproblems. Divide and conquer (e.g., Merge Sort, Quick Sort) solves distinct (non-overlapping) subproblems recursively. Dynamic programming is used when subproblems *overlap*, meaning the same subproblems are encountered multiple times. Dynamic programming solves each overlapping subproblem only once and stores its result to avoid recomputation."
+  },
+  {
+    "question": "A problem exhibits ______ subproblems if smaller instances of the problem are solved multiple times.",
+    "choices": [
+      "Overlapping",
+      "Independent",
+      "Unique",
+      "Irrelevant"
+    ],
+    "correctIndex": 0,
+    "explanation": "A problem has 'overlapping subproblems' if the same subproblems are re-computed multiple times when solving the larger problem using a recursive approach. This is a key characteristic that makes dynamic programming an efficient solution strategy."
+  },
+  {
+    "question": "What is the base case in a recursive tree traversal algorithm?",
+    "choices": [
+      "When a node has no children (leaf node)",
+      "When a node has two children",
+      "When the tree is empty",
+      "When the recursion depth reaches 10"
+    ],
+    "correctIndex": 0,
+    "explanation": "In recursive tree traversal, the base case is typically when the current node being processed is NULL (empty). This is the condition that stops the recursion from going infinitely deep. In some contexts, reaching a leaf node can also be considered a base case if specific operations are performed there."
+  },
+  {
+    "question": "Which of the following problems can be efficiently solved using dynamic programming?",
+    "choices": [
+      "Fibonacci sequence",
+      "Tower of Hanoi",
+      "Binary search",
+      "Quick sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Fibonacci sequence problem (`F(n) = F(n-1) + F(n-2)`) exhibits overlapping subproblems (e.g., `F(3)` is computed multiple times in a naive recursive solution for `F(5)`). Dynamic programming (either memoization or tabulation) efficiently solves this by storing previously computed Fibonacci numbers."
+  },
+  {
+    "question": "Which type of problem can dynamic programming solve efficiently?",
+    "choices": [
+      "Problems with overlapping subproblems",
+      "Problems with independent subproblems",
+      "Problems with no optimal substructure",
+      "Problems where solutions must be guessed"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dynamic programming is particularly effective for problems that exhibit two main properties: optimal substructure (an optimal solution to a problem can be constructed from optimal solutions of its subproblems) and overlapping subproblems (the same subproblems are encountered repeatedly)."
+  },
+  {
+    "question": "Which tree traversal visits nodes in the order: left subtree, root, right subtree?",
+    "choices": [
+      "In-order",
+      "Pre-order",
+      "Post-order",
+      "Level-order"
+    ],
+    "correctIndex": 0,
+    "explanation": "This describes the In-order traversal. The sequence is Left Subtree -> Root -> Right Subtree. For a Binary Search Tree, this traversal yields the elements in sorted order."
+  },
+  {
+    "question": "The time complexity of inserting an element into a binary heap is typically ______, assuming a well-balanced heap structure.",
+    "choices": [
+      "O(log n)",
+      "O(1)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inserting an element into a binary heap (max-heap or min-heap) involves adding the new element at the end of the heap (which takes O(1) if implemented with an array) and then 'heapifying up' (or bubbling up) this element to its correct position to maintain the heap property. This 'sift-up' operation takes time proportional to the height of the heap, which is O(log n)."
+  },
+  {
+    "question": "Which of the following property defines a binary heap?",
+    "choices": [
+      "Every level except the last is completely filled",
+      "The root must always be the largest element",
+      "It must be a full binary tree",
+      "The parent node must always have at most one child"
+    ],
+    "correctIndex": 0,
+    "explanation": "A binary heap is a complete binary tree that satisfies the heap property. A complete binary tree is one in which all levels are completely filled, except possibly the last level, which is filled from left to right. This structural property is essential for efficient array-based implementation."
+  },
+  {
+    "question": "Which operation helps maintain balance in a Red-Black tree after insertion?",
+    "choices": [
+      "Rotations and recoloring",
+      "Only recoloring",
+      "Only rotations",
+      "Deleting the root"
+    ],
+    "correctIndex": 0,
+    "explanation": "Red-Black trees maintain their balance properties (like 'no two consecutive red nodes' and 'same number of black nodes on any path from root to leaf') by performing a combination of node recoloring and tree rotations (left and right rotations) when an insertion or deletion causes a violation."
+  },
+  {
+    "question": "What is the maximum height difference allowed between left and right subtrees in an AVL tree?",
+    "choices": [
+      "1",
+      "0",
+      "2",
+      "No limit"
+    ],
+    "correctIndex": 0,
+    "explanation": "An AVL tree is a self-balancing binary search tree where the height difference between the left and right subtrees of any node (its balance factor) is always -1, 0, or 1. If this difference exceeds 1 (or is less than -1), rotations are performed to restore balance."
+  },
+  {
+    "question": "What is the worst-case time complexity of inserting a node in an AVL tree?",
+    "choices": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inserting a node into an AVL tree involves finding the correct position (which is O(log n) due to the balanced nature) and potentially performing rotations to rebalance the tree. The rebalancing operations also take O(log n) time. Therefore, the overall worst-case time complexity for insertion is O(log n)."
+  },
+  {
+    "question": "Which of the following properties is unique to AVL trees but not necessarily guaranteed to Red-Black trees?",
+    "choices": [
+      "The balance factor of any node is between -1 and 1",
+      "Every path from root to leaf has the same number of black nodes",
+      "The tree is always strictly balanced",
+      "The tree allows duplicate keys"
+    ],
+    "correctIndex": 0,
+    "explanation": "The strict balance factor constraint (height difference of left and right subtrees being at most 1) is a defining characteristic of AVL trees. Red-Black trees are also balanced, but their balance property ('every path from root to leaf has the same number of black nodes') allows for a greater height difference between subtrees than AVL trees, though still logarithmic."
+  },
+  {
+    "question": "Which of the following problems is best suited for dynamic programming?",
+    "choices": [
+      "Finding the minimum number of coins for change",
+      "Finding the shortest path in an unweighted graph",
+      "Performing a binary search",
+      "Sorting an array"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 'minimum number of coins for change' problem exhibits both optimal substructure (the optimal solution for an amount can be found using optimal solutions for smaller amounts) and overlapping subproblems (the same sub-amounts are often evaluated multiple times). This makes it an ideal candidate for dynamic programming, usually solved with a bottom-up approach (tabulation)."
+  },
+  {
+    "question": "Which of the following hashing methods uses a second hash function to resolve collisions?",
+    "choices": [
+      "Double Hashing",
+      "Quadratic Probing",
+      "Separate Chaining",
+      "Linear Probing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Double Hashing is an open addressing collision resolution technique where, if a collision occurs with the primary hash function, a second, independent hash function is used to determine the step size for probing the hash table."
+  },
+  {
+    "question": "Which searching algorithm is used in databases for fast lookups?",
+    "choices": [
+      "Binary search",
+      "Linear search",
+      "Bubble sort",
+      "Insertion sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary search is efficient for fast lookups in sorted data. While databases use various indexing techniques (like B-trees, which are related to binary search trees) for fast lookups, the underlying principle for range queries and specific value lookups in ordered data often leverages concepts similar to binary search."
+  },
+  {
+    "question": "Which pattern matching algorithm is most efficient for DNA sequence matching when dealing with long repeating substrings?",
+    "choices": [
+      "Knuth-Morris-Pratt (KMP)",
+      "Rabin-Karp",
+      "Naive String Matching",
+      "Boyer-Moore"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Knuth-Morris-Pratt (KMP) algorithm excels in situations with repeating patterns (like in DNA sequences). It preprocesses the pattern to build a Longest Prefix Suffix (LPS) array, which allows it to efficiently skip characters in the text, avoiding redundant comparisons when mismatches occur after a partial match."
+  },
+  {
+    "question": "What is the primary issue with hash tables when handling duplicate keys?",
+    "choices": [
+      "Collisions occur more frequently",
+      "They take up more memory",
+      "The hash function must be modified",
+      "They require additional sorting operations"
+    ],
+    "correctIndex": 0,
+    "explanation": "When handling duplicate keys, hash tables are more likely to experience collisions because multiple keys map to the same hash bucket or index. Efficient collision resolution strategies become even more crucial in such scenarios."
+  },
+  {
+    "question": "Which of the following is a common hashing technique?",
+    "choices": [
+      "Linear Probing",
+      "Quick Sort",
+      "Binary Search",
+      "Dijkstra’s Algorithm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear Probing is a common collision resolution technique used in hash tables when implementing open addressing. Quick Sort is a sorting algorithm, Binary Search is a searching algorithm, and Dijkstra's Algorithm is a graph algorithm."
+  },
+  {
+    "question": "How does binary search narrow down the search space?",
+    "choices": [
+      "By dividing it into two halves",
+      "By doubling the range",
+      "By checking all elements",
+      "By sorting the array"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary search works on sorted data. In each step, it compares the target value with the middle element of the current search space. Based on the comparison, it eliminates half of the remaining search space, effectively dividing it into two halves until the element is found or the search space is exhausted."
+  },
+  {
+    "question": "What is the worst-case time complexity of the linear search algorithm?",
+    "choices": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n2)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In the worst case for linear search, the target element is either at the very end of the array or not present at all. In both scenarios, the algorithm has to check every element, leading to a time complexity directly proportional to the number of elements 'n', hence O(n)."
+  },
+  {
+    "question": "Which searching algorithm is commonly implemented using recursion?",
+    "choices": [
+      "Binary search",
+      "Linear search",
+      "Bubble search",
+      "Hash search"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary search is inherently recursive. It repeatedly divides the search interval in half. This recursive nature (search in left half or right half) makes it a common candidate for recursive implementation, although it can also be implemented iteratively."
+  },
+  {
+    "question": "Which of the following hashing techniques resolves collisions by storing multiple elements in the same bucket?",
+    "choices": [
+      "Separate Chaining",
+      "Linear Probing",
+      "Quadratic Probing",
+      "Double Hashing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Separate Chaining is a collision resolution technique where each slot in the hash table is a pointer to a linked list (or another data structure) that contains all the elements that hash to that slot. When a collision occurs, the new element is simply added to the linked list at that bucket."
+  },
+  {
+    "question": "Which string-matching algorithm is best suited for searching multiple patterns simultaneously?",
+    "choices": [
+      "Aho-Corasick Algorithm",
+      "Knuth-Morris-Pratt (KMP) Algorithm",
+      "Naive String-Matching Algorithm",
+      "Brute Force Algorithm"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Aho-Corasick algorithm is specifically designed for multi-pattern string matching. It constructs a finite automaton (based on a trie) that allows efficient simultaneous searching for all patterns in a given text."
+  },
+  {
+    "question": "What happens when the load factor of a hash table becomes too high?",
+    "choices": [
+      "Performance degrades due to increased collisions",
+      "The hash table crashes",
+      "The hash function stops working",
+      "All elements are deleted"
+    ],
+    "correctIndex": 0,
+    "explanation": "The load factor of a hash table is the ratio of the number of elements to the number of available slots. When this ratio becomes too high, it means the table is getting full, leading to a significant increase in collisions. This, in turn, increases the time required for insertion, deletion, and search operations, degrading performance."
+  },
+  {
+    "question": "What is the worst-case time complexity of searching in a hash table?",
+    "choices": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n²)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In the worst case, especially with a poorly chosen hash function or a high load factor, all elements might hash to the same bucket (in separate chaining) or cause a long chain of probes (in open addressing). In such a scenario, searching can degenerate to O(n), similar to a linear search through a linked list or an array."
+  },
+  {
+    "question": "The Knuth-Morris-Pratt (KMP) algorithm is most efficient for:",
+    "choices": [
+      "Patterns with repeating prefixes",
+      "Random text with no repetition",
+      "Large text with small patterns",
+      "Small text with large patterns"
+    ],
+    "correctIndex": 0,
+    "explanation": "KMP is particularly efficient when the pattern itself contains significant repetitions (i.e., patterns with repeating prefixes and suffixes). The algorithm preprocesses the pattern to identify these repetitions, which allows it to avoid re-comparing characters that are already known to match, leading to significant performance gains in such cases."
+  },
+  {
+    "question": "What is the primary goal of pattern matching algorithms?",
+    "choices": [
+      "Finding occurrences of a pattern in a text",
+      "Sorting strings",
+      "Encrypting text",
+      "Counting the number of words in a string"
+    ],
+    "correctIndex": 0,
+    "explanation": "The primary goal of pattern matching algorithms (also known as string searching algorithms) is to find all occurrences (or the first occurrence) of a given 'pattern' string within a larger 'text' string."
+  },
+  {
+    "question": "In an array of 1000 elements, how many comparisons does binary search make in the worst case?",
+    "choices": [
+      "Around 10",
+      "Around 100",
+      "Around 500",
+      "1000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary search's time complexity is O(log n). For n=1000, log₂1000 is approximately 9.96. So, in the worst case, it would take about 10 comparisons to find an element or determine its absence."
+  },
+  {
+    "question": "If a list contains duplicate values, what index does the linear search return when searching for a target value?",
+    "choices": [
+      "The index of the first occurrence",
+      "The index of the last occurrence",
+      "All indexes of the target value",
+      "An error"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear search typically traverses the list from the beginning. As soon as it finds the target value, it returns its index and stops. Therefore, it will return the index of the first occurrence if duplicates exist."
+  },
+  {
+    "question": "______________ is a major disadvantage of the linear search algorithm.",
+    "choices": [
+      "Slow for large datasets",
+      "Works only with sorted arrays",
+      "Requires additional memory",
+      "Does not work with negative numbers"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linear search has a worst-case time complexity of O(n), meaning the time taken grows linearly with the size of the dataset. For very large datasets, this can be extremely slow and inefficient."
+  },
+  {
+    "question": "What is the main drawback of the naive pattern matching algorithm?",
+    "choices": [
+      "High time complexity due to excessive comparisons",
+      "Requires large memory for preprocessing",
+      "It cannot find multiple occurrences of a pattern",
+      "Only works for numerical strings"
+    ],
+    "correctIndex": 0,
+    "explanation": "The naive (or brute-force) pattern matching algorithm compares the pattern with every possible substring of the text. In the worst case, this can lead to O(mn) time complexity (where m is pattern length, n is text length) due to redundant character comparisons after a mismatch, making it inefficient for large texts or patterns."
+  },
+  {
+    "question": "___________ is the primary purpose of a hash table.",
+    "choices": [
+      "Storing data in key-value pairs for quick retrieval",
+      "Sorting data",
+      "Encrypting sensitive information",
+      "Storing data in sequential order"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hash tables (or hash maps) are designed for efficient storage and retrieval of data based on a key. They map keys to indices in an array using a hash function, aiming for average O(1) time complexity for insertions, deletions, and lookups."
+  },
+  {
+    "question": "Which of the following is a drawback of open addressing?",
+    "choices": [
+      "Slower performance when the table is nearly full",
+      "Wastes memory due to linked lists",
+      "Requires additional hash functions",
+      "Cannot store duplicate keys"
+    ],
+    "correctIndex": 0,
+    "explanation": "In open addressing, as the hash table fills up (high load factor), collisions become more frequent. This leads to longer probe sequences to find an empty slot or the desired key, significantly degrading performance. This issue is known as clustering."
+  },
+  {
+    "question": "What is the worst-case time complexity of the binary search algorithm?",
+    "choices": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n2)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary search repeatedly divides the search space in half. This logarithmic reduction means that the number of comparisons grows proportionally to the logarithm of the number of elements 'n', hence O(log n) in the worst case."
+  },
+  {
+    "question": "Binary search cannot be applied to which type of data structure?",
+    "choices": [
+      "An unsorted array",
+      "A sorted array",
+      "A sorted linked list",
+      "A list with unique elements"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary search fundamentally relies on the data being sorted to efficiently narrow down the search space. If the array is unsorted, binary search will not work correctly, as it cannot assume anything about the order of elements in the halves it examines."
+  },
+  {
+    "question": "What is the 'load factor' in the context of hash tables?",
+    "choices": [
+      "The ratio of used slots to total slots in the table",
+      "The total number of collisions",
+      "The number of hash functions used",
+      "The number of keys stored in the table"
+    ],
+    "correctIndex": 0,
+    "explanation": "The load factor (usually denoted by $\\alpha$) is a measure of how full a hash table is. It is calculated as the number of stored items divided by the total number of available buckets (or slots) in the table. It is crucial for determining a hash table's performance."
+  },
+  {
+    "question": "What is the worst-case time complexity of the Knuth-Morris-Pratt (KMP) algorithm?",
+    "choices": [
+      "O(n + m)",
+      "O(n²)",
+      "O(n log m)",
+      "O(m log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The KMP algorithm has a worst-case time complexity of O(n + m), where 'n' is the length of the text and 'm' is the length of the pattern. This is because it preprocesses the pattern in O(m) time and then performs the search in O(n) time, making it highly efficient."
+  },
+  {
+    "question": "Which type of probing reduces clustering in hash tables?",
+    "choices": [
+      "Quadratic Probing",
+      "Linear Probing",
+      "Separate Chaining",
+      "Chained Hashing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quadratic Probing helps to reduce primary clustering, which is a common problem with linear probing. Instead of searching linearly for the next available slot, quadratic probing uses a quadratic increment to find the next slot (e.g., $h(k) + i^2$ for the $i$-th probe), spreading out the probes more effectively."
+  },
+  {
+    "question": "What is the main advantage of Knuth-Morris-Pratt (KMP) over the Naïve approach?",
+    "choices": [
+      "Avoids redundant comparisons",
+      "Uses extra memory for hashing",
+      "Always finds the longest pattern",
+      "Works only for numeric patterns"
+    ],
+    "correctIndex": 0,
+    "explanation": "KMP's main advantage is its ability to avoid redundant comparisons. By leveraging information about the pattern's structure (specifically, common prefixes and suffixes), it knows how much to shift the pattern after a mismatch without needing to re-examine already matched characters in the text."
+  },
+  {
+    "question": "Which pattern matching algorithm is most effective for searching short patterns in long texts?",
+    "choices": [
+      "Boyer-Moore Algorithm",
+      "Knuth-Morris-Pratt (KMP) Algorithm",
+      "Naive Pattern Matching Algorithm",
+      "Brute Force Algorithm"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Boyer-Moore algorithm is often considered the most efficient practical string-matching algorithm for a wide range of applications, especially when searching for relatively short patterns within very long texts. It achieves this by starting comparisons from the end of the pattern and making larger jumps when a mismatch occurs, leveraging bad character and good suffix rules."
+  },
+  {
+    "question": "Which string-matching algorithm efficiently avoids unnecessary comparisons, making it suitable for structured binary data search?",
+    "choices": [
+      "Knuth-Morris-Pratt (KMP) Algorithm",
+      "Rabin-Karp Algorithm",
+      "Boyer-Moore Algorithm",
+      "Aho-Corasick Algorithm"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Knuth-Morris-Pratt (KMP) algorithm's efficiency comes from its ability to avoid unnecessary comparisons by intelligently shifting the pattern. This makes it particularly suitable for searching in structured data, including binary data, where specific byte sequences represent patterns."
+  },
+  {
+    "question": "What does the Knuth-Morris-Pratt (KMP) algorithm use to avoid unnecessary comparisons?",
+    "choices": [
+      "A prefix-suffix table (LPS (Longest Prefix Suffix) array)",
+      "A hash function",
+      "Randomized searching",
+      "A brute force approach"
+    ],
+    "correctIndex": 0,
+    "explanation": "The KMP algorithm preprocesses the pattern to construct a 'Longest Prefix Suffix' (LPS) array (also known as the failure function). This array tells the algorithm how many characters to shift the pattern when a mismatch occurs, based on the longest proper prefix of the pattern that is also a suffix of the (matched) part of the pattern."
+  },
+  {
+    "question": "What is the best-case time complexity of linear search?",
+    "choices": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n2)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In the best case for linear search, the target element is found at the very first position of the array. This requires only one comparison, resulting in a constant time complexity of O(1)."
   }
 ]
