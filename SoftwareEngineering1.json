@@ -1348,5 +1348,717 @@
     ],
     "correctIndex": 0,
     "explanation": "The Product Owner is the key stakeholder representative in Scrum. Their primary responsibility is to define and articulate the product vision and to maximize the value of the product and the work of the Development Team, primarily through managing the Product Backlog."
+  },
+  {
+    "question": "In Test-Driven Development (TDD), why is writing tests before code beneficial?",
+    "choices": [
+      "It helps identify potential design flaws early in the process",
+      "It ensures that the code will pass without any changes",
+      "It guarantees faster code writing",
+      "It eliminates the need for manual testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Writing tests first in TDD forces developers to think about the requirements and the API design of the code before implementation. This 'design-first' approach often reveals potential design flaws, edge cases, or ambiguities in requirements early on, making them cheaper and easier to fix."
+  },
+  {
+    "question": "The \"Green\" phase in TDD refers to:",
+    "choices": [
+      "Making the test pass",
+      "Writing tests",
+      "Refactoring code",
+      "Deploying the application"
+    ],
+    "correctIndex": 0,
+    "explanation": "TDD follows a 'Red-Green-Refactor' cycle. The 'Red' phase is writing a failing test. The 'Green' phase involves writing just enough code to make that failing test pass, quickly."
+  },
+  {
+    "question": "What is the primary role of the tests written during the TDD process?",
+    "choices": [
+      "To verify individual units or components of the software",
+      "To test the overall performance of the system",
+      "To verify the system requirements",
+      "To ensure that user interfaces are functional"
+    ],
+    "correctIndex": 0,
+    "explanation": "The tests in TDD are typically unit tests, focusing on verifying the smallest testable parts of an application (individual functions, methods, or classes) in isolation. This granular testing ensures that each component works as expected before integration."
+  },
+  {
+    "question": "Which type of software testing is performed after the development process and checks for defects in the integrated system?",
+    "choices": [
+      "Integration testing",
+      "Unit testing",
+      "System testing",
+      "Acceptance testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integration testing is performed after unit testing. It focuses on testing the interfaces and interactions between integrated units (modules or components) to ensure they work together correctly as a group."
+  },
+  {
+    "question": "A common tool used for TDD in Python is:",
+    "choices": [
+      "PyUnit",
+      "Selenium",
+      "Postman",
+      "LoadRunner"
+    ],
+    "correctIndex": 0,
+    "explanation": "PyUnit, often referred to as `unittest` in Python's standard library, is a widely used unit testing framework that follows the xUnit style (like JUnit for Java). It is a common choice for implementing TDD in Python."
+  },
+  {
+    "question": "White-box testing focuses on ______ structures of the code.",
+    "choices": [
+      "Internal",
+      "External",
+      "Integrated",
+      "Functional"
+    ],
+    "correctIndex": 0,
+    "explanation": "White-box testing (also known as clear-box, glass-box, or structural testing) examines the internal structure, design, and implementation of the software. Testers use their knowledge of the code to design test cases that cover paths, branches, and statements within the code."
+  },
+  {
+    "question": "Which of the following is a potential drawback of using Test-Driven Development (TDD)?",
+    "choices": [
+      "Code may become too tightly coupled",
+      "Increased likelihood of missing edge cases",
+      "Slower feedback loop in detecting errors",
+      "A large number of redundant tests"
+    ],
+    "correctIndex": 0,
+    "explanation": "While TDD generally leads to better design, a potential drawback is that if not done carefully, writing tests for every small component can sometimes lead to overly granular tests that tightly couple the test code to the implementation details, making refactoring harder. The other options are generally benefits of TDD or unrelated."
+  },
+  {
+    "question": "Why is Test-Driven Development (TDD) beneficial in software development?",
+    "choices": [
+      "It ensures the development of code that meets requirements by testing functionality early",
+      "It speeds up the development process by skipping testing phases",
+      "It reduces the cost of testing by eliminating the need for automated tools",
+      "It eliminates the need for code refactoring after testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "TDD forces developers to consider requirements and expected behavior upfront, leading to a clearer understanding of the desired functionality. By writing tests before code, it ensures that the code written directly addresses those requirements and provides continuous validation, catching bugs early."
+  },
+  {
+    "question": "Regression testing ensures that:",
+    "choices": [
+      "New changes do not break existing functionality",
+      "The software passes initial smoke tests",
+      "User interface components are aligned",
+      "Stress limits are adhered to"
+    ],
+    "correctIndex": 0,
+    "explanation": "Regression testing is the process of re-running previously executed tests to ensure that new code changes, bug fixes, or feature additions have not negatively impacted existing functionality. Its purpose is to prevent regressions (new bugs in old features)."
+  },
+  {
+    "question": "Which of the following testing types is considered a non-functional test?",
+    "choices": [
+      "Usability Testing",
+      "Unit Testing",
+      "Integration Testing",
+      "Regression Testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Non-functional testing evaluates the 'how' of a system (e.g., performance, security, usability, reliability), rather than the 'what' (functionality). Usability testing assesses how easy the software is to use, learn, and understand, making it a non-functional aspect. Unit, Integration, and Regression testing are primarily functional or related to functional aspects."
+  },
+  {
+    "question": "The type of testing best suited for an automated testing tool like JUnit is:",
+    "choices": [
+      "Unit testing",
+      "Load testing",
+      "User acceptance testing",
+      "Security testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "JUnit is a widely used unit testing framework for Java. It is designed to test individual units or components of code in isolation, making it perfectly suited for automated unit testing."
+  },
+  {
+    "question": "Postponing testing to later stages in software development leads to the following consequences, except:",
+    "choices": [
+      "Decreased overall project time",
+      "Increased cost of defect fixing",
+      "Higher risk of missing critical defects",
+      "More time available for feature development"
+    ],
+    "correctIndex": 0,
+    "explanation": "Postponing testing *increases* overall project time and cost. It does not decrease it. Defects found later in the development lifecycle are significantly more expensive and time-consuming to fix because they might require changes across multiple integrated components. It also increases the risk of critical defects going unnoticed until late stages or even after deployment."
+  },
+  {
+    "question": "Which of the following is a popular automated testing tool used for web application testing?",
+    "choices": [
+      "Selenium",
+      "GitHub Actions",
+      "Postman",
+      "Jenkins"
+    ],
+    "correctIndex": 0,
+    "explanation": "Selenium is a widely recognized and popular open-source framework specifically designed for automating web browser interactions, making it a key tool for web application testing, including functional, regression, and cross-browser testing."
+  },
+  {
+    "question": "Which of the following is most likely to be impacted by the stage at which software testing is conducted in a project?",
+    "choices": [
+      "The cost of defect resolution",
+      "The number of testers required",
+      "The type of programming language used",
+      "The number of user stories"
+    ],
+    "correctIndex": 0,
+    "explanation": "The cost of defect resolution significantly increases the later a defect is found in the software development lifecycle. Bugs caught during unit testing are far cheaper to fix than those found during integration testing, system testing, or, most expensively, after deployment in production."
+  },
+  {
+    "question": "______ testing is performed to validate the system's compliance with business requirements.",
+    "choices": [
+      "Acceptance",
+      "Unit",
+      "Regression",
+      "System"
+    ],
+    "correctIndex": 0,
+    "explanation": "Acceptance testing (often User Acceptance Testing - UAT) is a formal testing process conducted to verify that a system meets the specified business requirements and is acceptable for delivery. It's typically the final stage of functional testing before the system is released."
+  },
+  {
+    "question": "The type of software testing that checks if the software functions according to the specified requirements is __________ testing.",
+    "choices": [
+      "Functional testing",
+      "Performance testing",
+      "Security testing",
+      "Usability testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Functional testing is a type of black-box testing that verifies software system features and functionality against the specified requirements. It answers the question 'Does the software do what it's supposed to do?'"
+  },
+  {
+    "question": "Tests written in TDD serve as both validation and ______ for the code.",
+    "choices": [
+      "Documentation",
+      "Verification",
+      "Analysis",
+      "Budget"
+    ],
+    "correctIndex": 0,
+    "explanation": "In TDD, well-written tests act as executable documentation. They clearly demonstrate how a piece of code is expected to behave under various conditions, serving as a living specification of the system's requirements and functionality."
+  },
+  {
+    "question": "Which of the following tools is most commonly used to ensure that code quality is maintained during development?",
+    "choices": [
+      "SonarQube",
+      "JIRA",
+      "Jenkins",
+      "Selenium"
+    ],
+    "correctIndex": 0,
+    "explanation": "SonarQube is a popular open-source platform designed for continuous inspection of code quality. It performs static analysis to detect bugs, code smells, and security vulnerabilities, helping developers maintain high code quality standards throughout the development process."
+  },
+  {
+    "question": "Which of the following is the best practice in ensuring effective quality assurance in software development?",
+    "choices": [
+      "Integrating automated and manual testing early in the development process",
+      "Focusing solely on functional testing to meet requirements",
+      "Conducting manual tests only at the end of the project",
+      "Using a single testing technique throughout the project"
+    ],
+    "correctIndex": 0,
+    "explanation": "The most effective quality assurance integrates testing (both automated and manual) continuously and early into the software development lifecycle (Shift Left testing). This proactive approach helps detect and fix defects when they are least expensive to resolve and ensures continuous feedback on quality."
+  },
+  {
+    "question": "TDD encourages developers to think about ______ before writing the actual code.",
+    "choices": [
+      "Requirements",
+      "Test cases",
+      "Functionality",
+      "Implementation"
+    ],
+    "correctIndex": 0,
+    "explanation": "TDD fundamentally shifts the focus to requirements and desired behavior. By writing a test first, developers are forced to clarify what the code should do (its requirements and functionality) and how it will be interacted with, before diving into the implementation details."
+  },
+  {
+    "question": "To identify performance issues early in development, the most likely quality assurance process is:",
+    "choices": [
+      "Load testing",
+      "Code reviews",
+      "Regression testing",
+      "Unit testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Load testing (a type of performance testing) involves simulating a large number of users or transactions to determine how the system behaves under anticipated load. Doing this early in development helps identify performance bottlenecks and issues before they become critical."
+  },
+  {
+    "question": "What does the \"refactor\" step in Test-Driven Development (TDD) primarily focus on?",
+    "choices": [
+      "Improving the quality of the code without changing its functionality",
+      "Adding new tests for functionality",
+      "Writing new feature requirements",
+      "Removing all existing tests"
+    ],
+    "correctIndex": 0,
+    "explanation": "After a test passes ('Green' phase), the 'Refactor' phase in TDD involves restructuring the code to improve its design, readability, maintainability, and efficiency without altering its external behavior or functionality. The existing tests serve as a safety net to ensure no functionality is broken during refactoring."
+  },
+  {
+    "question": "Using an automated testing tool such as Selenium in a continuous integration (CI) environment speeds up the execution of repetitive test cases.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Automated testing tools like Selenium are invaluable in CI/CD pipelines because they can run tests quickly and consistently every time code changes are integrated, significantly speeding up the feedback loop for repetitive and regression tests compared to manual execution."
+  },
+  {
+    "question": "A key benefit of using automated testing tools in software development is:",
+    "choices": [
+      "Saving time on repetitive tests",
+      "Early bug detection",
+      "Simplifying the testing process",
+      "Reducing long-term testing costs"
+    ],
+    "correctIndex": 0,
+    "explanation": "While automated testing offers several benefits, one of its most prominent advantages is the significant time savings achieved by automating repetitive and regression tests. Once written, these tests can be run quickly and frequently without human intervention."
+  },
+  {
+    "question": "The earlier a defect is found, the cheaper it is to fix.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. This is a widely accepted principle in software engineering. Defects found in early stages (e.g., requirements, design, unit testing) are typically much cheaper and easier to fix than those found later (e.g., system testing, acceptance testing, or production), as late-stage fixes often require extensive rework across integrated components."
+  },
+  {
+    "question": "The cost of fixing a defect ______ as it is discovered later in the development lifecycle.",
+    "choices": [
+      "Increases",
+      "Decreases",
+      "Remains constant",
+      "Is negligible"
+    ],
+    "correctIndex": 0,
+    "explanation": "The cost of fixing a defect escalates significantly the later it is discovered. A bug found during unit testing might take minutes or hours to fix, while the same bug found in production could take days or weeks, involving deployment, patches, and potential reputation damage."
+  },
+  {
+    "question": "Which of the following best describes an effective quality assurance (QA) process in agile development?",
+    "choices": [
+      "QA is integrated continuously throughout the development process",
+      "QA is conducted only at the end of each sprint",
+      "QA is handled by a separate team from the developers",
+      "QA only focuses on performance testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Agile, QA is not a separate phase at the end but an ongoing activity. Testing and quality checks are integrated into every stage and conducted continuously within each sprint. This 'whole team' approach means developers, testers, and product owners collaborate on quality from the outset."
+  },
+  {
+    "question": "In Test-Driven Development (TDD), which of the following is the correct order of steps?",
+    "choices": [
+      "Write tests, write code, refactor code",
+      "Write code, write tests, refactor code",
+      "Write tests, refactor code, write code",
+      "Write code, refactor code, write tests"
+    ],
+    "correctIndex": 0,
+    "explanation": "The TDD cycle is often described as 'Red, Green, Refactor'. This translates to: 1. Write a failing test (Red). 2. Write just enough code to make the test pass (Green). 3. Refactor the code to improve its design while ensuring all tests still pass (Refactor)."
+  },
+  {
+    "question": "What is the primary limitation of automated testing tools?",
+    "choices": [
+      "They may not handle complex UI or visual elements well",
+      "They cannot be used for functional testing",
+      "They require fewer resources than manual testing",
+      "They are not scalable in large systems"
+    ],
+    "correctIndex": 0,
+    "explanation": "While highly effective for repetitive and logical tests, automated testing tools often struggle with tasks that require human judgment, such as assessing the aesthetics, usability, or subjective user experience of complex UIs. Visual validation, accessibility, and exploratory testing often still require manual intervention."
+  },
+  {
+    "question": "Which testing approach is the most cost-effective if defects are detected during the early development stages?",
+    "choices": [
+      "Unit testing",
+      "Regression testing",
+      "Beta testing",
+      "System testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unit testing is performed very early in the development lifecycle, typically by developers, to test individual components or units of code in isolation. Defects found at this granular level are the cheapest to fix because they are localized and haven't propagated through the system."
+  },
+  {
+    "question": "Which principle is central to TDD?",
+    "choices": [
+      "Writing tests first",
+      "Writing code before tests",
+      "Skipping test cases for simple functionalities",
+      "Writing documentation before tests"
+    ],
+    "correctIndex": 0,
+    "explanation": "The core principle of TDD is to 'Test-First'. This means writing an automated test for a small piece of functionality before writing the actual code that implements that functionality."
+  },
+  {
+    "question": "Which QA activity is typically performed after the software is fully developed to ensure that it behaves as expected in a production environment?",
+    "choices": [
+      "User acceptance testing",
+      "Load testing",
+      "Regression testing",
+      "Static code analysis"
+    ],
+    "correctIndex": 0,
+    "explanation": "User Acceptance Testing (UAT) is one of the final stages of software testing, where actual end-users or clients test the software to ensure it meets their requirements and can support daily business operations in a real-world scenario."
+  },
+  {
+    "question": "Which of the following is true about automated testing tools?",
+    "choices": [
+      "They are effective at running repetitive tests and regression tests quickly.",
+      "They are most beneficial when applied only during the final testing phase.",
+      "They replace the need for manual testing entirely.",
+      "They cannot be used for performance testing."
+    ],
+    "correctIndex": 0,
+    "explanation": "Automated testing tools excel at efficiently executing repetitive tests (like regression tests) and providing quick feedback. They are not meant to replace all manual testing but rather to complement it, focusing on areas where automation provides the most value."
+  },
+  {
+    "question": "What is \"code churn\" in software metrics?",
+    "choices": [
+      "Measurement of code changes over time",
+      "Total lines of code in the system",
+      "The number of tests performed",
+      "User satisfaction levels"
+    ],
+    "correctIndex": 0,
+    "explanation": "Code churn, also known as code volatility, refers to the rate at which code is added, deleted, or modified over a period. It's a metric that indicates the instability or activity of a codebase, often used in software quality and project management."
+  },
+  {
+    "question": "Which of the following is a key goal of software maintenance?",
+    "choices": [
+      "Enhancing software performance",
+      "Designing new software",
+      "Eliminating software entirely",
+      "Avoiding software updates"
+    ],
+    "correctIndex": 0,
+    "explanation": "Software maintenance involves activities to modify and update software after delivery to correct faults, improve performance or other attributes, or adapt it to a changed environment. Enhancing performance is a type of perfective maintenance."
+  },
+  {
+    "question": "Which of the following tools is most commonly used for issue tracking in maintenance?",
+    "choices": [
+      "Jira",
+      "Excel",
+      "Photoshop",
+      "VLC Player"
+    ],
+    "correctIndex": 0,
+    "explanation": "Jira is a widely used proprietary issue tracking product, developed by Atlassian. It provides bug tracking, issue tracking, and project management functions. Excel is a spreadsheet, Photoshop is for image editing, and VLC Player is a media player."
+  },
+  {
+    "question": "What is a key benefit of software reengineering?",
+    "choices": [
+      "Enhancing system maintainability and performance",
+      "Reducing project costs",
+      "Increasing system redundancy",
+      "Avoiding documentation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Software reengineering aims to restructure and modify an existing system to improve its quality attributes like maintainability, performance, or portability, without necessarily changing its core functionality. It is often done to extend the lifespan of legacy systems."
+  },
+  {
+    "question": "What role does version control play in software maintenance?",
+    "choices": [
+      "Tracking changes and managing versions",
+      "Deleting old versions",
+      "Avoiding updates",
+      "Enhancing hardware"
+    ],
+    "correctIndex": 0,
+    "explanation": "Version control systems (VCS) like Git are crucial in software maintenance for tracking every change made to the codebase, enabling developers to revert to previous versions, merge changes from different branches, and collaborate effectively. This is vital for managing bug fixes and new features."
+  },
+  {
+    "question": "Identify the main purpose of software reengineering.",
+    "choices": [
+      "Improving software structure and functionality",
+      "Rewriting entire codebases",
+      "Avoiding maintenance tasks",
+      "Reducing user involvement"
+    ],
+    "correctIndex": 0,
+    "explanation": "Software reengineering primarily focuses on understanding and then improving the internal structure, design, and often the functionality of existing software systems without discarding the current system entirely. It's about rejuvenation, not starting from scratch."
+  },
+  {
+    "question": "Software reengineering involves restructuring existing code to improve maintainability and performance.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. This is the core definition and goal of software reengineering. It takes existing code and transforms it to enhance its quality attributes, such as maintainability, understandability, and performance, without changing its external behavior."
+  },
+  {
+    "question": "Corrective maintenance focuses solely on adding new features to the software, ignoring bug fixes or error correction.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. Corrective maintenance is specifically concerned with fixing defects, bugs, and errors discovered after the software has been deployed. Adding new features falls under perfective maintenance."
+  },
+  {
+    "question": "What is perfective maintenance?",
+    "choices": [
+      "Enhancing system performance and functionalities",
+      "Fixing bugs and errors",
+      "Adapting software to new environments",
+      "Removing obsolete components"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perfective maintenance involves improving the software's functionality, efficiency, or other quality attributes based on user feedback or evolving requirements, such as adding new features, enhancing performance, or improving usability."
+  },
+  {
+    "question": "In configuration management, version control systems help track _______ made to the software over time.",
+    "choices": [
+      "changes",
+      "errors",
+      "licenses",
+      "backups"
+    ],
+    "correctIndex": 0,
+    "explanation": "Version control systems are a fundamental component of configuration management, designed to record and manage all changes made to source code, documentation, and other project assets throughout the software development lifecycle."
+  },
+  {
+    "question": "A maintenance backlog is:",
+    "choices": [
+      "A list of pending maintenance tasks",
+      "A completed project",
+      "Documentation storage",
+      "Redundant features"
+    ],
+    "correctIndex": 0,
+    "explanation": "A maintenance backlog is a prioritized list of tasks that need to be addressed in the software, including bug fixes, enhancements, and other modifications. It's continuously managed and refined."
+  },
+  {
+    "question": "How does automation benefit software maintenance?",
+    "choices": [
+      "It reduces human error and speeds up processes",
+      "It eliminates developer roles",
+      "It adds complexity to systems",
+      "It avoids documentation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Automation in software maintenance (e.g., automated testing, deployment, monitoring) significantly reduces the likelihood of human errors, accelerates repetitive tasks, and ensures consistency, thereby making the maintenance process more efficient and reliable."
+  },
+  {
+    "question": "What does \"technical debt\" refer to in software measurement?",
+    "choices": [
+      "Shortcuts taken during development that require future fixes",
+      "Financial cost of software",
+      "User satisfaction levels",
+      "Total size of the software"
+    ],
+    "correctIndex": 0,
+    "explanation": "Technical debt is a metaphor reflecting the implied cost of additional rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer. It often stems from shortcuts or suboptimal design decisions that accumulate interest in the form of increased maintenance effort later."
+  },
+  {
+    "question": "Why is modular design essential for software maintenance?",
+    "choices": [
+      "It simplifies updates and fixes",
+      "It makes the software harder to understand",
+      "It eliminates all bugs",
+      "It avoids collaboration"
+    ],
+    "correctIndex": 0,
+    "explanation": "Modular design breaks down software into smaller, independent, and loosely coupled modules. This makes it easier to understand, test, update, and fix individual parts without affecting the entire system, significantly simplifying the maintenance process."
+  },
+  {
+    "question": "Which phase of software reengineering involves analyzing the current system?",
+    "choices": [
+      "Reverse engineering",
+      "Forward engineering",
+      "Maintenance",
+      "Testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reverse engineering is the initial phase of software reengineering, where the existing system is analyzed to understand its components, relationships, and design. This understanding is crucial before any restructuring or modification (forward engineering) can begin."
+  },
+  {
+    "question": "What is reverse engineering in software development?",
+    "choices": [
+      "Analyzing and understanding existing systems",
+      "Creating new systems from scratch",
+      "Avoiding system documentation",
+      "Developing prototypes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reverse engineering in software development is the process of examining a system to identify its components and their interrelationships, and to create representations of the system in another form or at a higher level of abstraction. Its goal is to understand how the system works, often without original design documents."
+  },
+  {
+    "question": "Which metric is often used to assess code quality?",
+    "choices": [
+      "Maintainability Index",
+      "Lines of Code (LOC)",
+      "MTTR",
+      "Story Points"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Maintainability Index is a software metric that measures how easy it is to maintain code. It's typically calculated based on factors like cyclomatic complexity, lines of code, and Halstead volume, providing a composite score indicating the code's maintainability."
+  },
+  {
+    "question": "Software maintenance involves applying changes such as fixing bugs, improving functionality, and enhancing performance to ensure the software remains _______. ",
+    "choices": [
+      "operational",
+      "deprecated",
+      "incomplete",
+      "inaccessible"
+    ],
+    "correctIndex": 0,
+    "explanation": "The overarching goal of software maintenance is to ensure the software continues to be effective and useful. This means keeping it operational, performing correctly, meeting evolving user needs, and adapting to new environments."
+  },
+  {
+    "question": "Software estimation techniques are only useful during initial development and have no role in maintenance projects.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. Software estimation techniques are crucial for maintenance projects as well. They help in predicting the effort, cost, and schedule required for bug fixes, enhancements, and other modifications, enabling better planning and resource allocation for ongoing support."
+  },
+  {
+    "question": "Choose the correct definition of forward engineering in software reengineering.",
+    "choices": [
+      "Creating new systems from analyzed data",
+      "Reverting changes made to software",
+      "Simplifying code without modification",
+      "Eliminating old systems"
+    ],
+    "correctIndex": 0,
+    "explanation": "Forward engineering in the context of reengineering refers to the process of developing a new or improved version of a system, often based on the understanding gained from reverse engineering the old system. It involves creating detailed designs and implementing new code."
+  },
+  {
+    "question": "In the context of software maintenance, what is the primary purpose of effort estimation?",
+    "choices": [
+      "Optimizing resource utilization and timeline accuracy",
+      "Managing potential risks and unforeseen costs",
+      "Prioritizing and planning required modifications",
+      "Streamlining feature implementation and innovation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Effort estimation in software maintenance is primarily about accurately predicting the human resources and time required to complete maintenance tasks (bug fixes, enhancements). This enables efficient planning, resource allocation, and setting realistic timelines for project completion."
+  },
+  {
+    "question": "Which technique is widely used for size estimation in software projects?",
+    "choices": [
+      "Function Point Analysis (FPA)",
+      "Prototyping",
+      "Agile Development",
+      "Static Analysis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Function Point Analysis (FPA) is a widely recognized and standardized method for measuring the functional size of a software system. It measures functionality from the user's perspective, independent of the technology used, making it useful for estimation across different projects and phases."
+  },
+  {
+    "question": "What does refactoring involve?",
+    "choices": [
+      "Improving code structure without changing functionality",
+      "Adding new features",
+      "Removing old systems",
+      "Avoiding updates"
+    ],
+    "correctIndex": 0,
+    "explanation": "Refactoring is the process of altering the internal structure of code without changing its external behavior. The goal is to improve non-functional attributes of the software, such as readability, maintainability, and efficiency, making it easier to understand and cheaper to modify in the future."
+  },
+  {
+    "question": "A key best practice in software maintenance is conducting regular _______ testing to ensure that new changes do not negatively impact existing features.",
+    "choices": [
+      "regression",
+      "exploratory",
+      "unit",
+      "acceptance"
+    ],
+    "correctIndex": 0,
+    "explanation": "Regression testing is crucial in software maintenance to ensure that any new changes (bug fixes, enhancements, or adaptations) do not introduce new defects or reintroduce old ones into existing, previously functional parts of the software. It guards against unintended side effects."
+  },
+  {
+    "question": "Configuration management ensures that changes to the software are made without tracking their impact or maintaining version control.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. The very purpose of configuration management is to systematically manage, organize, and control changes made to the software product throughout its lifecycle, including tracking their impact and maintaining strict version control. It's about ensuring order and traceability in change management."
+  },
+  {
+    "question": "What is software measurement?",
+    "choices": [
+      "Quantifying attributes of software",
+      "Writing documentation",
+      "Deleting redundant code",
+      "Conducting user interviews"
+    ],
+    "correctIndex": 0,
+    "explanation": "Software measurement is the process of quantitatively assessing the attributes of software, such as its size, complexity, quality, reliability, and the effort or cost involved in its development and maintenance. It provides data for better decision-making and process improvement."
+  },
+  {
+    "question": "_______ tool is widely used for configuration management.",
+    "choices": [
+      "Git",
+      "Photoshop",
+      "Excel",
+      "VLC Player"
+    ],
+    "correctIndex": 0,
+    "explanation": "Git is the most widely used distributed version control system (VCS), which is a core component of software configuration management (SCM). It enables developers to track changes, collaborate on code, and manage different versions of software projects."
+  },
+  {
+    "question": "Why is configuration management critical in software maintenance?",
+    "choices": [
+      "It ensures consistency and control over system changes",
+      "It eliminates testing requirements",
+      "It automates user feedback collection",
+      "It simplifies interface design"
+    ],
+    "correctIndex": 0,
+    "explanation": "Configuration management is critical in maintenance because it provides a structured approach to managing changes to the software. It ensures that all modifications are tracked, versions are controlled, and consistent baselines are maintained, which is essential for long-term stability and controlled evolution of the system."
+  },
+  {
+    "question": "Which metric measures software complexity?",
+    "choices": [
+      "Cyclomatic complexity",
+      "Lines of code (LOC)",
+      "Effort estimation",
+      "Response time"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cyclomatic complexity is a quantitative measure of the number of linearly independent paths through a program's source code. It is often used as a metric for the complexity of a program, indicating the effort required for testing and maintenance."
+  },
+  {
+    "question": "Software size estimation methods like Function Point Analysis help measure the scope of maintenance projects.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Methods like Function Point Analysis (FPA) are not only for initial development but can also be adapted to estimate the size and effort of maintenance projects, particularly when adding new functionality or making significant enhancements. They help quantify the scope of changes."
+  },
+  {
+    "question": "What does \"Mean Time to Repair\" (MTTR) measure?",
+    "choices": [
+      "Average time to fix a failure",
+      "Total time for software testing",
+      "Development time for new features",
+      "Time spent in meetings"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean Time to Repair (MTTR) is a maintenance metric that represents the average time required to repair a failed system or component and restore it to full functionality. It includes the time spent on diagnosis, repair, and testing."
+  },
+  {
+    "question": "Why is code restructuring performed during reengineering?",
+    "choices": [
+      "To improve code readability and efficiency",
+      "To increase system size",
+      "To delete unused modules",
+      "To reduce development time"
+    ],
+    "correctIndex": 0,
+    "explanation": "Code restructuring during reengineering aims to improve the internal quality of the code. This includes making it more readable, understandable, maintainable, and potentially more efficient, without changing its external behavior."
+  },
+  {
+    "question": "Define the role of a baseline in measurement.",
+    "choices": [
+      "Comparing current metrics with past data",
+      "Starting new software projects",
+      "Avoiding historical data",
+      "Designing new systems"
+    ],
+    "correctIndex": 0,
+    "explanation": "A baseline in measurement is a defined reference point or standard against which future measurements can be compared. In software, it allows for tracking progress, identifying trends, and assessing the impact of changes by comparing current metrics against a previously established baseline."
   }
 ]
