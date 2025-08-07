@@ -2060,5 +2060,350 @@
     ],
     "correctIndex": 0,
     "explanation": "A baseline in measurement is a defined reference point or standard against which future measurements can be compared. In software, it allows for tracking progress, identifying trends, and assessing the impact of changes by comparing current metrics against a previously established baseline."
+  },
+  {
+    "question": "Which of the following is an example of an ethical concern in software engineering?",
+    "choices": [
+      "Protecting user privacy and data security",
+      "Maximizing code efficiency",
+      "Reducing the size of the software",
+      "Ensuring the software runs on multiple platforms"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ethical concerns in software engineering revolve around the moral implications of technology and its impact on society. Protecting user privacy and data security is a primary ethical responsibility, as a failure to do so can lead to significant harm."
+  },
+  {
+    "question": "The first step in secure software development is______________.",
+    "choices": [
+      "Threat modeling",
+      "Deployment",
+      "Documentation",
+      "User testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Threat modeling is the first and most crucial step in a secure software development lifecycle. It involves identifying potential threats and vulnerabilities to the system and then planning countermeasures to mitigate those risks before any code is written."
+  },
+  {
+    "question": "Secure software development lifecycle (SDLC) includes:",
+    "choices": [
+      "Planning, design, implementation, testing, deployment",
+      "Planning, testing, marketing",
+      "Design, advertising, sales",
+      "Implementation, documentation, sales"
+    ],
+    "correctIndex": 0,
+    "explanation": "The secure SDLC integrates security considerations into every phase of the traditional SDLC. This includes security-focused activities during planning, design, implementation (coding), testing, and deployment to ensure a holistic approach to security."
+  },
+  {
+    "question": "What is a security patch?",
+    "choices": [
+      "An update to address vulnerabilities",
+      "A bug-fixing update",
+      "A feature enhancement",
+      "A performance improvement"
+    ],
+    "correctIndex": 0,
+    "explanation": "A security patch is a software update specifically designed to fix or 'patch' a known security vulnerability or a bug that could be exploited by an attacker. It is a critical part of maintaining the security of an application post-release."
+  },
+  {
+    "question": "Which of the following is an example of regulatory compliance in software development?",
+    "choices": [
+      "Encrypting sensitive data as per legal requirements",
+      "Ensuring the software is optimized for performance",
+      "Ensuring the software meets accessibility standards",
+      "Allowing users to modify the software code"
+    ],
+    "correctIndex": 0,
+    "explanation": "Regulatory compliance refers to adhering to laws and regulations, such as GDPR or HIPAA. Encrypting sensitive data to meet legal requirements is a direct example of compliance, as it's often mandated by these laws to protect user data."
+  },
+  {
+    "question": "A well-implemented security system in software development has no impact on the overall performance of the software.",
+    "choices": [
+      "FALSE",
+      "TRUE"
+    ],
+    "correctIndex": 0,
+    "explanation": "FALSE. Security measures, such as encryption, logging, and extensive validation, can add overhead and thus impact software performance. The goal of secure software development is to find an optimal balance between security and performance, not to eliminate performance impacts entirely."
+  },
+  {
+    "question": "What is the primary purpose of ethics in software engineering?",
+    "choices": [
+      "To ensure fairness, accountability, and transparency",
+      "To maximize profit",
+      "To develop faster software",
+      "To reduce the cost of software development"
+    ],
+    "correctIndex": 0,
+    "explanation": "The primary purpose of ethics in software engineering is to guide professionals in making responsible decisions that prioritize the public good. This includes ensuring fairness in algorithms, holding themselves accountable for the software's impact, and maintaining transparency in its operation and data usage."
+  },
+  {
+    "question": "The most important reason for implementing secure coding practices in software engineering is:",
+    "choices": [
+      "To prevent unauthorized access and data breaches",
+      "To make the software faster",
+      "To increase software complexity",
+      "To improve the software’s user interface"
+    ],
+    "correctIndex": 0,
+    "explanation": "Secure coding practices are designed to prevent security vulnerabilities that could be exploited by attackers. The most critical outcome of these practices is to protect the system from unauthorized access, data breaches, and other malicious activities."
+  },
+  {
+    "question": "Identify the purpose of input validation.",
+    "choices": [
+      "To prevent malicious data from being processed",
+      "To ensure software runs faster",
+      "To encrypt data",
+      "To make software user-friendly"
+    ],
+    "correctIndex": 0,
+    "explanation": "Input validation is a fundamental security measure that checks, cleans, and filters user input to ensure it is safe and expected. Its purpose is to prevent attackers from injecting malicious data (like SQL injection or XSS attacks) that could compromise the system."
+  },
+  {
+    "question": "Which of the following is a key feature of \"Role-Based Access Control\" (RBAC)?",
+    "choices": [
+      "Assigning permissions based on user roles",
+      "Unlimited user permissions",
+      "Denying access to all users",
+      "No control over user actions"
+    ],
+    "correctIndex": 0,
+    "explanation": "Role-Based Access Control (RBAC) is an access control mechanism where permissions are assigned to specific user roles (e.g., 'admin', 'user', 'guest'). Users are then granted permissions based on the role they are assigned, simplifying access management and enforcing the principle of least privilege."
+  },
+  {
+    "question": "Which technique ensures data is protected during transmission?",
+    "choices": [
+      "Encryption",
+      "Compression",
+      "File Sharing",
+      "Tokenization"
+    ],
+    "correctIndex": 0,
+    "explanation": "Encryption is the process of converting data into a code to prevent unauthorized access. When data is transmitted, techniques like SSL/TLS encryption are used to protect it from being intercepted and read by unauthorized parties."
+  },
+  {
+    "question": "Releasing incomplete software knowingly is an ethical practice if it saves costs.",
+    "choices": [
+      "FALSE",
+      "TRUE"
+    ],
+    "correctIndex": 0,
+    "explanation": "FALSE. Releasing incomplete software, especially if it contains known security flaws or is unstable, is considered unethical. It can harm users, compromise their data, and erode trust in the developer and the software. Cost-saving is not a justification for knowingly releasing a flawed product."
+  },
+  {
+    "question": "Which is an example of secure coding practice?",
+    "choices": [
+      "Encrypting sensitive data",
+      "Ignoring logging errors",
+      "Using default passwords",
+      "Hardcoding API keys in the source code"
+    ],
+    "correctIndex": 0,
+    "explanation": "Encrypting sensitive data, both at rest and in transit, is a core secure coding practice. It ensures that even if data is stolen, it remains unreadable to an attacker. The other options are examples of insecure practices."
+  },
+  {
+    "question": "Input validation is a critical step in preventing security vulnerabilities.",
+    "choices": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correctIndex": 0,
+    "explanation": "TRUE. Input validation is a fundamental and critical security practice. By ensuring that all user-provided data is properly checked and sanitized, developers can prevent a wide range of common attacks, including SQL injection, Cross-Site Scripting (XSS), and buffer overflows."
+  },
+  {
+    "question": "Which of the following is a secure authentication method?",
+    "choices": [
+      "Using multi-factor authentication",
+      "Storing plaintext passwords",
+      "Sharing credentials via email",
+      "Hardcoding passwords in scripts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multi-factor authentication (MFA) is a secure method that requires users to provide two or more verification factors to gain access to a resource. This significantly increases security by making it much harder for an attacker to compromise an account even if they have one credential."
+  },
+  {
+    "question": "Why is ethical consideration important in software engineering?",
+    "choices": [
+      "To ensure societal trust in technology",
+      "To meet user expectations",
+      "To reduce software costs",
+      "To avoid testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ethical considerations are vital because software has a profound impact on society. By acting ethically, software engineers build and maintain public trust, ensuring that technology is developed and used in a way that benefits humanity and avoids potential harm."
+  },
+  {
+    "question": "What does \"CIA Triad\" in software security stand for?",
+    "choices": [
+      "Confidentiality, Integrity, Availability",
+      "Control, Identification, Authentication",
+      "Compliance, Integration, Assessment",
+      "Configuration, Implementation, Access"
+    ],
+    "correctIndex": 0,
+    "explanation": "The CIA Triad is a foundational model for software security. It represents the three main goals of information security: Confidentiality (protecting data from unauthorized access), Integrity (ensuring data is accurate and not tampered with), and Availability (making sure the system is accessible when needed)."
+  },
+  {
+    "question": "What is an example of a secure coding principle?",
+    "choices": [
+      "Validating all inputs",
+      "Using default passwords",
+      "Avoiding code reviews",
+      "Writing unstructured code"
+    ],
+    "correctIndex": 0,
+    "explanation": "Validating all inputs is a key secure coding principle. It is a defense-in-depth strategy that prevents many common vulnerabilities by ensuring that any data entering the system is in a safe and expected format before it is processed."
+  },
+  {
+    "question": "What is Cross-Site Scripting (XSS)?",
+    "choices": [
+      "Injecting malicious scripts into a trusted website",
+      "Encrypting user data on the server",
+      "Exploiting a vulnerability in web browsers",
+      "Overloading server resources"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cross-Site Scripting (XSS) is a type of web security vulnerability where an attacker injects malicious client-side scripts into a website viewed by other users. These scripts can then be used to steal session cookies, deface websites, or redirect users."
+  },
+  {
+    "question": "What is the purpose of threat modeling in software security?",
+    "choices": [
+      "Identifying potential vulnerabilities and mitigating them",
+      "Designing user interfaces",
+      "Enhancing software performance",
+      "Testing software for usability"
+    ],
+    "correctIndex": 0,
+    "explanation": "Threat modeling is a structured process used to identify, analyze, and prioritize potential security threats to a system. Its purpose is to proactively find vulnerabilities and design appropriate mitigations early in the development lifecycle."
+  },
+  {
+    "question": "What is the purpose of access control in secure coding?",
+    "choices": [
+      "To restrict unauthorized access to sensitive resources",
+      "To improve software performance",
+      "To minimize code redundancy",
+      "To reduce development time"
+    ],
+    "correctIndex": 0,
+    "explanation": "Access control is a security measure that determines who can access what within a system. Its purpose is to enforce security policies and restrict unauthorized users from accessing sensitive data or functionalities, thereby protecting the system's integrity and confidentiality."
+  },
+  {
+    "question": "In software engineering, ethics involves:",
+    "choices": [
+      "Considering societal impacts of software",
+      "Maximizing profit at all costs",
+      "Ensuring code is well-documented",
+      "Ignoring legal obligations"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ethics in software engineering goes beyond technical and legal compliance. It requires engineers to consider the broader societal impacts of their work, including how their software might affect privacy, security, and human well-being."
+  },
+  {
+    "question": "In the context of software security, which term refers to verifying the identity of users or systems?",
+    "choices": [
+      "Authentication",
+      "Authorization",
+      "Accounting",
+      "Auditing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Authentication is the process of verifying a user's identity, typically through credentials like a username and password. Authorization, on the other hand, determines what an authenticated user is allowed to do."
+  },
+  {
+    "question": "Ethical accountability ensures that engineers prioritize the ___________ impact of their software.",
+    "choices": [
+      "Social",
+      "Financial",
+      "Environmental",
+      "Technical"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ethical accountability means that software engineers are responsible for the social and human impact of their work. They must consider the potential consequences of their software on society, including issues like bias, privacy, and accessibility."
+  },
+  {
+    "question": "Software development compliance with intellectual property laws involves:",
+    "choices": [
+      "Ensuring all code is original or properly licensed",
+      "Using free software exclusively",
+      "Sharing software without restrictions",
+      "Disregarding patents and copyrights aggregation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Compliance with intellectual property (IP) laws requires developers to respect the rights of others. This means that any code, libraries, or assets used in a project must either be original, or properly licensed from the creator to avoid legal issues related to copyright or patents."
+  },
+  {
+    "question": "What is the main purpose of \"Code Reviews\" in secure development?",
+    "choices": [
+      "To identify and fix security vulnerabilities",
+      "To document system requirements",
+      "To improve software speed",
+      "To test usability"
+    ],
+    "correctIndex": 0,
+    "explanation": "Code reviews are a peer-based process where developers examine each other's code. In secure development, a primary goal of this process is to proactively identify and correct potential security vulnerabilities, coding errors, and logic flaws before the code is integrated and deployed."
+  },
+  {
+    "question": "Which of the following security practices helps protect software by limiting access to only what is necessary for users to perform their tasks?",
+    "choices": [
+      "Principle of least privilege",
+      "Multi-factor authentication",
+      "Code designing",
+      "Input validation"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Principle of Least Privilege is a security practice that mandates giving users or processes the minimum level of access rights and permissions needed to perform their job. This minimizes the potential damage if an account is compromised."
+  },
+  {
+    "question": "Writing clean, structured code is unrelated to secure coding.",
+    "choices": [
+      "FALSE",
+      "TRUE"
+    ],
+    "correctIndex": 0,
+    "explanation": "FALSE. Writing clean, structured, and well-organized code is a core aspect of secure coding. It makes the codebase easier to read, understand, and review, which in turn makes it simpler to identify and prevent security vulnerabilities."
+  },
+  {
+    "question": "Identify the fundamental ethical principle in software engineering.",
+    "choices": [
+      "Prioritizing user safety",
+      "Writing minimal code",
+      "Avoiding testing phases",
+      "Ignoring user feedback"
+    ],
+    "correctIndex": 0,
+    "explanation": "The fundamental ethical principle in software engineering is to prioritize the well-being and safety of the public. This includes protecting users from potential harm, such as data breaches, unsafe functionality, or misuse of personal information."
+  },
+  {
+    "question": "Which of the following is a key goal of software security?",
+    "choices": [
+      "To protect software against vulnerabilities and threats",
+      "To ensure high performance of the software",
+      "To simplify user interfaces",
+      "To improve software speed"
+    ],
+    "correctIndex": 0,
+    "explanation": "The primary goal of software security is to protect the application, its data, and its users from a wide array of threats and vulnerabilities, thereby preserving the confidentiality, integrity, and availability of the system."
+  },
+  {
+    "question": "A software development team is discussing application confidentiality. What does confidentiality refer to in software security?",
+    "choices": [
+      "Preventing unauthorized access to sensitive information",
+      "The integrity of data",
+      "Ensuring data is backed up",
+      "The availability of software"
+    ],
+    "correctIndex": 0,
+    "explanation": "Confidentiality, a core component of the CIA triad, means preventing unauthorized access to sensitive information. This is achieved through measures like encryption, access control, and secure storage."
+  },
+  {
+    "question": "What is the consequence of non-compliance with industry regulations for software developers?",
+    "choices": [
+      "Legal penalties and loss of trust",
+      "Increased revenue",
+      "Enhanced customer loyalty",
+      "Reduced development time"
+    ],
+    "correctIndex": 0,
+    "explanation": "Non-compliance with regulations (e.g., GDPR, HIPAA) can lead to severe legal consequences, including fines and lawsuits. It can also cause a significant loss of public trust and reputational damage, which can harm business in the long run."
   }
 ]
+
