@@ -1946,5 +1946,318 @@
     ],
     "correctIndex": 0,
     "explanation": "In the best case for linear search, the target element is found at the very first position of the array. This requires only one comparison, resulting in a constant time complexity of O(1)."
+  },
+  {
+    "question": "Which sorting algorithm repeatedly compares and swaps adjacent elements if they are in the wrong order until the entire array is sorted?",
+    "choices": [
+      "Bubble Sort",
+      "Quick Sort",
+      "Merge Sort",
+      "Selection Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. This process is repeated until no swaps are needed, which indicates the list is sorted."
+  },
+  {
+    "question": "Which sorting algorithm requires O(n) additional space due to its recursive implementation?",
+    "choices": [
+      "Merge Sort",
+      "Quick Sort",
+      "Selection Sort",
+      "Bubble Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge Sort is a 'divide and conquer' algorithm that works by splitting the array into two halves, recursively sorting them, and then merging the sorted halves. This merging process requires a temporary array of size O(n) to store the elements, hence its O(n) space complexity."
+  },
+  {
+    "question": "Which sorting algorithm has an average-case time complexity of O(n²)?",
+    "choices": [
+      "Bubble Sort",
+      "Quick Sort",
+      "Merge Sort",
+      "Heap Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bubble Sort, along with Selection Sort and Insertion Sort, has an average-case time complexity of O(n²). This makes it inefficient for large datasets. Quick Sort, Merge Sort, and Heap Sort have a much better average time complexity of O(n log n)."
+  },
+  {
+    "question": "Which sorting algorithm works by repeatedly dividing the list into two halves, sorting each half, and then merging them?",
+    "choices": [
+      "Merge Sort",
+      "Quick Sort",
+      "Selection Sort",
+      "Insertion Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge Sort is a 'divide and conquer' algorithm. It recursively divides the array into sub-arrays until each sub-array has only one element (which is by definition sorted), then it merges the sub-arrays back together in a sorted manner."
+  },
+  {
+    "question": "The worst-case time complexity of Quick Sort and Bubble Sort is the same, O(n²), when the input array is already sorted in ascending order or sorted in reverse order.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. For Bubble Sort, the worst case occurs for a reverse-sorted array. For Quick Sort, the worst-case O(n²) time complexity occurs when the pivot selection consistently results in imbalanced partitions, such as when the array is already sorted in ascending or descending order and the first or last element is chosen as the pivot."
+  },
+  {
+    "question": "A teacher has an almost sorted list of student grades. Which algorithm provides the most time-efficient sorting?",
+    "choices": [
+      "Insertion Sort",
+      "Bubble Sort",
+      "Selection Sort",
+      "Quick Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Insertion Sort performs exceptionally well on nearly sorted data. In its best-case scenario (an already sorted array), its time complexity is O(n), as it only needs to iterate through the list once to confirm it's sorted. For a nearly sorted array, it will perform very few swaps, making it highly efficient."
+  },
+  {
+    "question": "Which sorting algorithm uses a divide-and-conquer approach?",
+    "choices": [
+      "Quick Sort",
+      "Insertion Sort",
+      "Bubble Sort",
+      "Selection Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quick Sort is a classic example of a 'divide and conquer' algorithm. It partitions an array into two sub-arrays around a pivot element, then recursively sorts the sub-arrays."
+  },
+  {
+    "question": "True or False: Insertion Sort performs well on nearly sorted data.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Insertion Sort's time complexity becomes linear, O(n), for a nearly sorted array, as it only needs to perform a minimal number of shifts and comparisons to place the few misplaced elements."
+  },
+  {
+    "question": "In which sorting algorithm is the number of swaps directly proportional to the number of inversions in the input array?",
+    "choices": [
+      "Insertion Sort",
+      "Quick Sort",
+      "Bubble Sort",
+      "Merge Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Insertion Sort's performance is closely tied to the number of inversions. An inversion is a pair of elements that are out of order. Each swap in Insertion Sort fixes exactly one inversion, so the number of swaps is directly proportional to the number of inversions."
+  },
+  {
+    "question": "When sorting a nearly sorted array, which algorithm is likely to perform the best?",
+    "choices": [
+      "Insertion Sort",
+      "Quick Sort",
+      "Bubble Sort",
+      "Merge Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Insertion Sort is highly efficient for nearly sorted data because it only performs a few comparisons and shifts to place the elements that are out of order, leading to a near-linear time complexity."
+  },
+  {
+    "question": "When does Bubble Sort achieve its best-case time complexity of O(n)?",
+    "choices": [
+      "Already sorted",
+      "Reverse sorted",
+      "Randomly sorted",
+      "Contains duplicate elements"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bubble Sort's best-case time complexity is O(n) when the array is already sorted. The algorithm will perform one full pass through the array, detect that no swaps were made, and then terminate early."
+  },
+  {
+    "question": "Selection Sort is more efficient than Insertion Sort when dealing with nearly sorted data.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. Selection Sort's number of comparisons and swaps remains the same regardless of the initial order of the data. Its performance does not improve on nearly sorted data, while Insertion Sort's performance does."
+  },
+  {
+    "question": "True or False: Merge Sort has a worst-case time complexity of O(n log n).",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Merge Sort's time complexity is consistently O(n log n) in all cases (best, average, and worst). This is because it always divides the array into two halves and performs the merge operation, regardless of the input data's initial order."
+  },
+  {
+    "question": "Which sorting algorithm's time complexity is not affected by the initial order of elements?",
+    "choices": [
+      "Merge Sort",
+      "Quick Sort",
+      "Insertion Sort",
+      "Bubble Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge Sort's time complexity is consistently O(n log n) for all cases, as it always performs the same number of recursive divisions and merge operations, regardless of whether the array is sorted, reverse-sorted, or random."
+  },
+  {
+    "question": "In Selection Sort, how is the smallest element positioned correctly in each iteration?",
+    "choices": [
+      "By swapping it with the first unsorted element",
+      "By swapping with the largest element",
+      "By moving it to the end",
+      "By inserting it in the middle"
+    ],
+    "correctIndex": 0,
+    "explanation": "In each pass of Selection Sort, the algorithm finds the minimum element from the unsorted part of the array and then swaps it with the first unsorted element, thus placing it in its correct sorted position."
+  },
+  {
+    "question": "When sorting data that is nearly sorted or has only a few elements out of place, ______ is the most efficient algorithm in terms of time complexity.",
+    "choices": [
+      "Insertion Sort",
+      "Quick Sort",
+      "Merge Sort",
+      "Selection Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Insertion Sort excels at sorting nearly sorted data because its time complexity approaches O(n) in this scenario. It simply shifts the few out-of-place elements into their correct position with minimal work."
+  },
+  {
+    "question": "Which sorting algorithm is considered the most suitable for external sorting?",
+    "choices": [
+      "Merge Sort",
+      "Quick Sort",
+      "Bubble Sort",
+      "Insertion Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge Sort is highly suitable for external sorting, which is used for datasets too large to fit in main memory. Its linear read-and-write pattern to sequential storage devices is very efficient, unlike other algorithms that may require random access."
+  },
+  {
+    "question": "Quick Sort has a worst-case time complexity of O(n²), but its average time complexity is O(n log n), which makes it efficient for large datasets in practice.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Quick Sort's average-case performance is excellent, making it one of the fastest in-place sorting algorithms for typical datasets. The worst-case of O(n²) is rare in practice with good pivot selection strategies."
+  },
+  {
+    "question": "A cloud service needs to sort a dataset in memory, but available RAM is very limited. Which sorting algorithm is most suitable for this scenario due to its minimal additional memory usage?",
+    "choices": [
+      "Quick Sort",
+      "Selection Sort",
+      "Merge Sort",
+      "Bubble Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "While both Quick Sort and Selection Sort are in-place, Quick Sort is generally faster. Merge Sort is not suitable due to its O(n) space complexity. Therefore, Quick Sort, with its good average-case performance and minimal memory usage, is the best choice here. Selection and Bubble Sort are generally too slow for large datasets, even with limited memory."
+  },
+  {
+    "question": "Which sorting algorithm is the most efficient for large datasets stored on secondary storage?",
+    "choices": [
+      "Merge Sort",
+      "Insertion Sort",
+      "Quick Sort",
+      "Bubble Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge Sort is the most efficient choice for external sorting (large datasets on secondary storage). Its divide-and-conquer strategy, combined with sequential access to data, minimizes the number of costly disk I/O operations."
+  },
+  {
+    "question": "______ is a divide-and-conquer algorithm that consistently performs well on large datasets but requires additional memory proportional to the size of the input.",
+    "choices": [
+      "Merge Sort",
+      "Bubble Sort",
+      "Quick Sort",
+      "Selection Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge Sort is a divide-and-conquer algorithm with a consistent O(n log n) time complexity. However, its merging step requires a temporary array of size O(n), which is a key characteristic distinguishing it from in-place algorithms like Quick Sort."
+  },
+  {
+    "question": "Which sorting algorithm has the same time complexity in its best, worst, and average cases?",
+    "choices": [
+      "Selection Sort",
+      "Quick Sort",
+      "Insertion Sort",
+      "Merge Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Selection Sort has a consistent time complexity of O(n²) regardless of the input data's order. It always makes the same number of comparisons and swaps in each pass to find the minimum element and place it correctly, making its performance independent of the initial state of the array."
+  },
+  {
+    "question": "In the following scenarios, when will you use selection sort?",
+    "choices": [
+      "Large values need to be sorted with small keys",
+      "Small values need to be sorted with large keys",
+      "The input is already sorted",
+      "A large file has to be sorted"
+    ],
+    "correctIndex": 0,
+    "explanation": "Selection Sort's main advantage is that it minimizes the number of swaps. It performs at most n-1 swaps. This makes it a good choice when the cost of swapping elements is very high, such as with large objects or records, while comparisons are relatively cheap."
+  },
+  {
+    "question": "An embedded system with limited memory needs to sort small arrays (e.g., 10–20 elements). Which sorting algorithm is most suitable from the given choices?",
+    "choices": [
+      "Selection Sort",
+      "Merge Sort",
+      "Quick Sort",
+      "Bubble Sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "For small datasets, the overhead of more complex algorithms like Quick Sort or Merge Sort often outweighs the performance benefits. Simple, in-place algorithms like Selection Sort or Insertion Sort are often preferred because they are easy to implement, have low memory overhead, and are fast enough for small n."
+  },
+  {
+    "question": "True or False: Quick Sort has an average-case time complexity of O(n log n).",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Quick Sort's average-case performance is O(n log n), which is highly efficient. This is a major reason why it's a popular choice for sorting in many applications, despite its O(n²) worst-case."
+  },
+  {
+    "question": "Insertion Sort can be implemented iteratively but not recursively.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. While Insertion Sort is most commonly implemented iteratively, it can also be implemented recursively. A recursive implementation would involve sorting the sub-array of size n-1 and then inserting the last element into its correct position."
+  },
+  {
+    "question": "The worst-case time complexity of Quick Sort occurs when which of the following holds TRUE?",
+    "choices": [
+      "The pivot element is always the smallest or largest.",
+      "The array is already sorted.",
+      "The middle element is always chosen as the pivot.",
+      "The last element is always chosen as the pivot."
+    ],
+    "correctIndex": 0,
+    "explanation": "The worst-case of O(n²) for Quick Sort happens when the pivot selection consistently results in one sub-array with n-1 elements and another with 0 elements. This occurs if the pivot is always the smallest or largest element in the sub-array, which can happen if the array is already sorted or reverse-sorted and the pivot is chosen as the first or last element."
+  },
+  {
+    "question": "True or False: A sorting algorithm with a worst-case time complexity of O(n²) is generally considered less efficient than one with a worst-case time complexity of O(n log n).",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. O(n log n) grows much more slowly than O(n²), especially for large values of n. This means an O(n log n) algorithm will be significantly faster than an O(n²) algorithm in the worst case for any reasonably large dataset."
+  },
+  {
+    "question": "In Selection Sort, the swapping step occurs inside the inner loop for every comparison made.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. In Selection Sort, the inner loop iterates to find the minimum element's index. Only after the inner loop completes is a single swap performed to place the minimum element at the beginning of the unsorted portion of the array."
+  },
+  {
+    "question": "Which statement is true regarding the space complexity of Merge Sort and Insertion Sort?",
+    "choices": [
+      "Merge Sort requires additional space for its operations, whereas Insertion Sort is an in-place algorithm.",
+      "Merge Sort is more efficient for small datasets than Insertion Sort.",
+      "Insertion Sort has a worst-case time complexity of O(n log n), while Merge Sort has O(n²).",
+      "Insertion Sort is a divide-and-conquer algorithm, whereas Merge Sort is not."
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge Sort's merge operation typically requires a temporary array of size O(n), giving it a space complexity of O(n). Insertion Sort, on the other hand, only requires a constant amount of extra memory for temporary variables to perform swaps, making it an in-place algorithm with O(1) space complexity."
   }
 ]
+
