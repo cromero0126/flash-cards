@@ -2404,6 +2404,364 @@
     ],
     "correctIndex": 0,
     "explanation": "Non-compliance with regulations (e.g., GDPR, HIPAA) can lead to severe legal consequences, including fines and lawsuits. It can also cause a significant loss of public trust and reputational damage, which can harm business in the long run."
+  },
+  {
+    "question": "Microservices communicate using ________ protocols.",
+    "choices": [
+      "REST",
+      "SOAP",
+      "FTP",
+      "SMTP"
+    ],
+    "correctIndex": 0,
+    "explanation": "Microservices often communicate using lightweight protocols. REST (Representational State Transfer) is a common architectural style for building APIs, making it a popular choice for inter-service communication due to its simplicity and statelessness."
+  },
+  {
+    "question": "Which of the following AI tools assists with code completion?",
+    "choices": [
+      "GitHub Copilot",
+      "Jenkins",
+      "Docker",
+      "Terraform"
+    ],
+    "correctIndex": 0,
+    "explanation": "GitHub Copilot is a popular AI tool that assists developers by suggesting code snippets and completing code as they type, significantly speeding up the development process. The other options are DevOps tools for CI/CD, containerization, and infrastructure as code."
+  },
+  {
+    "question": "What is a \"Runner\" in GitLab CI/CD?",
+    "choices": [
+      "An agent that executes pipeline jobs",
+      "A testing framework",
+      "A tool for code reviews",
+      "A library for API integration"
+    ],
+    "correctIndex": 0,
+    "explanation": "In GitLab CI/CD, a Runner is an agent that picks up jobs from the GitLab instance and executes them. This allows developers to run their build, test, and deployment jobs in an isolated environment."
+  },
+  {
+    "question": "Which of the following is a version control system?",
+    "choices": [
+      "Git",
+      "Jenkins",
+      "Kubernetes",
+      "Ansible"
+    ],
+    "correctIndex": 0,
+    "explanation": "Git is a distributed version control system used to track changes in source code during software development. Jenkins, Kubernetes, and Ansible are all DevOps tools for continuous integration, container orchestration, and configuration management, respectively."
+  },
+  {
+    "question": "What is the primary input for AI-based code completion tools?",
+    "choices": [
+      "Code syntax",
+      "User behavior logs",
+      "Hardware configurations",
+      "Network diagrams"
+    ],
+    "correctIndex": 0,
+    "explanation": "AI-based code completion tools analyze the code that has already been written (the code syntax and context) to predict and suggest the next lines of code."
+  },
+  {
+    "question": "Neural networks are used in AI-driven software to simulate decision-making processes.",
+    "choices": [
+      "FALSE",
+      "TRUE"
+    ],
+    "correctIndex": 0,
+    "explanation": "FALSE. Neural networks, a subset of machine learning, are indeed used to simulate decision-making processes. Therefore, the statement is true, making the correct answer 'FALSE' for the provided question."
+  },
+  {
+    "question": "In DevOps, \"Shift Left\" refers to:",
+    "choices": [
+      "Testing earlier in the software development lifecycle",
+      "Automating all processes",
+      "Using older development practices",
+      "Reducing software costs"
+    ],
+    "correctIndex": 0,
+    "explanation": "In DevOps, the principle of \"Shift Left\" means moving tasks, especially quality assurance and security testing, to an earlier stage in the software development lifecycle to find and fix issues more efficiently and at a lower cost."
+  },
+  {
+    "question": "AI-driven development can enhance DevOps practices by:",
+    "choices": [
+      "Automating deployment strategies",
+      "Slowing down CI/CD pipelines",
+      "Increasing manual configuration",
+      "Removing containerization"
+    ],
+    "correctIndex": 0,
+    "explanation": "AI can enhance DevOps practices by automating complex tasks like deployment strategies, testing, and monitoring, thereby improving the efficiency and speed of CI/CD pipelines."
+  },
+  {
+    "question": "Which Jenkins plugin is used to build Docker images?",
+    "choices": [
+      "Docker Pipeline Plugin",
+      "Docker Build Plugin",
+      "Container Builder Plugin",
+      "Docker Hub Plugin"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 'Docker Pipeline' plugin in Jenkins is used to integrate Docker with Jenkins pipelines, allowing developers to build and manage Docker images as part of their CI/CD workflow."
+  },
+  {
+    "question": "Which of the following is a challenge in AI-driven software development?",
+    "choices": [
+      "Lack of big data for training models",
+      "Automating code testing",
+      "Understanding unstructured data",
+      "Reducing team size"
+    ],
+    "correctIndex": 0,
+    "explanation": "While AI can help with these tasks, a major challenge in AI-driven development is the need for large, high-quality datasets to train models effectively. Without sufficient data, the AI's performance can be limited."
+  },
+  {
+    "question": "Which Git command is used to view the commit history?",
+    "choices": [
+      "git log",
+      "git status",
+      "git diff",
+      "git branch"
+    ],
+    "correctIndex": 0,
+    "explanation": "The `git log` command displays a chronological list of all the commits in the repository. The other commands are used for checking the status of the working directory, showing changes between commits, and managing branches, respectively."
+  },
+  {
+    "question": "AI-driven tools like SonarQube are primarily used for _____.",
+    "choices": [
+      "Code quality analysis",
+      "Server management",
+      "Database configuration",
+      "Hardware diagnostics"
+    ],
+    "correctIndex": 0,
+    "explanation": "SonarQube is a static analysis tool that uses AI and other techniques to perform automated reviews of code to detect bugs, vulnerabilities, and code smells, thus improving code quality."
+  },
+  {
+    "question": "What does \"Infrastructure as Code\" (IaC) primarily help with?",
+    "choices": [
+      "Automating infrastructure provisioning",
+      "Manual infrastructure provisioning",
+      "Writing server-side applications",
+      "Running manual scripts"
+    ],
+    "correctIndex": 0,
+    "explanation": "IaC is a practice in DevOps that involves managing and provisioning computing infrastructure through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools. Its primary goal is to automate the process."
+  },
+  {
+    "question": "In cloud-native design, scaling by creating new instances is called ________ scaling.",
+    "choices": [
+      "Horizontal",
+      "Vertical",
+      "Static",
+      "Dynamic"
+    ],
+    "correctIndex": 0,
+    "explanation": "Horizontal scaling involves adding more machines to the resource pool, which is a key characteristic of cloud-native architecture. Vertical scaling, on the other hand, means increasing the capacity (e.g., CPU, RAM) of a single machine."
+  },
+  {
+    "question": "What does AI-driven code generation primarily rely on?",
+    "choices": [
+      "Machine Learning algorithms",
+      "Manual scripts",
+      "Static libraries",
+      "System logs"
+    ],
+    "correctIndex": 0,
+    "explanation": "AI-driven code generation relies heavily on Machine Learning models, such as large language models, that are trained on vast datasets of code to generate new code based on prompts or context."
+  },
+  {
+    "question": "Below are principles of DevOps, except:",
+    "choices": [
+      "Isolation",
+      "Collaboration",
+      "Automation",
+      "Continuous Improvement"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collaboration, automation, and continuous improvement are all core principles of DevOps. Isolation, however, is a principle that DevOps seeks to break down, encouraging close cooperation between development and operations teams."
+  },
+  {
+    "question": "In AI-driven tools, what is the purpose of a \"training dataset\"?",
+    "choices": [
+      "To teach models to identify patterns",
+      "To validate software versions",
+      "To create user interfaces",
+      "To compile code faster"
+    ],
+    "correctIndex": 0,
+    "explanation": "A training dataset is a collection of data used to train a machine learning model. The model learns from this data to recognize patterns and make predictions or classifications on new, unseen data."
+  },
+  {
+    "question": "In Jenkins, what is a pipeline?",
+    "choices": [
+      "A series of automated steps for CI/CD",
+      "A type of report",
+      "A data backup tool",
+      "A configuration file for Git"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Jenkins pipeline is a suite of plugins that supports implementing and integrating continuous delivery pipelines into Jenkins. It defines the entire software delivery process, from version control to deployment, as code."
+  },
+  {
+    "question": "What does \"Immutable Infrastructure\" mean in DevOps?",
+    "choices": [
+      "Servers cannot be modified after deployment",
+      "Infrastructure changes are permanent",
+      "Backups are disabled",
+      "Automation is avoided"
+    ],
+    "correctIndex": 0,
+    "explanation": "Immutable infrastructure is a DevOps practice where servers are never modified after they are deployed. Any changes, such as patches or updates, require a new server to be created from a new image, which is then used to replace the old one."
+  },
+  {
+    "question": "In blockchain, what does a \"block\" primarily contain?",
+    "choices": [
+      "Transaction data and a hash",
+      "Only user credentials",
+      "Source code and database schema",
+      "Software artifacts"
+    ],
+    "correctIndex": 0,
+    "explanation": "A block in a blockchain is a container for transaction data. Each block also contains a cryptographic hash of the previous block, creating a chain of interconnected blocks."
+  },
+  {
+    "question": "In predictive software development, historical data is used to train ________ models.",
+    "choices": [
+      "Machine Learning",
+      "Neural",
+      "Software",
+      "Hardware"
+    ],
+    "correctIndex": 0,
+    "explanation": "Predictive software development relies on Machine Learning models. These models are trained on historical data, such as past development cycles, bug reports, or user feedback, to make predictions about future software behavior or development outcomes."
+  },
+  {
+    "question": "Which AI technique is commonly used for anomaly detection in software logs?",
+    "choices": [
+      "Clustering",
+      "Classification",
+      "Reinforcement Learning",
+      "Generative Adversarial Networks"
+    ],
+    "correctIndex": 0,
+    "explanation": "Clustering is an unsupervised machine learning technique often used for anomaly detection. It groups similar log entries together, and any entries that do not fit into a cluster are flagged as potential anomalies or outliers."
+  },
+  {
+    "question": "A ________ allows seamless service discovery in a microservices architecture.",
+    "choices": [
+      "Registry",
+      "Load Balancer",
+      "Proxy",
+      "Controller"
+    ],
+    "correctIndex": 0,
+    "explanation": "A service registry is a key component in a microservices architecture. It maintains a list of available microservices and their network locations, allowing other services to discover and communicate with them seamlessly."
+  },
+  {
+    "question": "What does the \"git pull\" command do?",
+    "choices": [
+      "Fetch and merge changes from a remote repository",
+      "Push changes to a remote repository",
+      "Delete changes in the local repository",
+      "Create a new branch"
+    ],
+    "correctIndex": 0,
+    "explanation": "The `git pull` command is a combination of two other commands: `git fetch` (which downloads changes from the remote repository) and `git merge` (which merges those changes into the current branch)."
+  },
+  {
+    "question": "Blockchain applications in software engineering enhance traceability and auditability.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The immutable and distributed nature of blockchain technology makes it highly suitable for applications that require a secure and transparent record of events. This inherent quality enhances traceability and auditability by creating an unchangeable record of changes and transactions."
+  },
+  {
+    "question": "Identify the characteristic that does not apply to cloud-native applications.",
+    "choices": [
+      "Monolithic",
+      "Resilient",
+      "Scalable",
+      "Containerized"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cloud-native applications are typically designed using a microservices architecture, which is a departure from the monolithic approach. They are inherently designed to be resilient, scalable, and containerized to take full advantage of the cloud environment."
+  },
+  {
+    "question": "A ________ is a disagreement between nodes on the state of the blockchain.",
+    "choices": [
+      "Fork",
+      "Block",
+      "Hash",
+      "Node Conflict"
+    ],
+    "correctIndex": 0,
+    "explanation": "A fork in a blockchain occurs when the chain splits into two different paths. This can happen when different nodes disagree on which block should be added next, resulting in a temporary or permanent divergence in the blockchain's history."
+  },
+  {
+    "question": "Which of the following is a benefit of blockchain in software security?",
+    "choices": [
+      "Immutable data storage",
+      "Centralized access control",
+      "High latency transactions",
+      "Reduced encryption standards"
+    ],
+    "correctIndex": 0,
+    "explanation": "One of the key benefits of blockchain is its ability to provide immutable data storage. The cryptographic linking of blocks ensures that once data is added to the chain, it cannot be altered or deleted, which is a significant advantage for security and data integrity."
+  },
+  {
+    "question": "Which of the following best defines cloud-native architecture?",
+    "choices": [
+      "Applications designed to leverage cloud computing benefits",
+      "Applications built to run in on-premises servers",
+      "Static software configurations",
+      "Systems avoiding automation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cloud-native architecture is a design approach for building applications that are specifically optimized to take full advantage of the benefits of cloud computing, such as scalability, elasticity, and resilience."
+  },
+  {
+    "question": "In a DevOps pipeline, what does a \"build failure\" usually indicate?",
+    "choices": [
+      "Code did not compile successfully",
+      "Missing test cases",
+      "Lack of deployment servers",
+      "Outdated version control"
+    ],
+    "correctIndex": 0,
+    "explanation": "A build failure in a CI/CD pipeline typically indicates a problem during the compilation or packaging of the application's source code, often due to a syntax error or a dependency issue."
+  },
+  {
+    "question": "AI models for software development can completely eliminate the need for manual testing.",
+    "choices": [
+      "FALSE",
+      "TRUE"
+    ],
+    "correctIndex": 0,
+    "explanation": "FALSE. While AI can significantly automate testing and find many bugs, human testers are still crucial for tasks like exploratory testing, user experience (UX) testing, and understanding nuanced user behavior that AI models cannot fully replicate."
+  },
+  {
+    "question": "What is a major challenge of using microservices?",
+    "choices": [
+      "Complex inter-service communication",
+      "Lack of modularity",
+      "Static deployment",
+      "Single-point failure"
+    ],
+    "correctIndex": 0,
+    "explanation": "Microservices are composed of many small, independent services. A major challenge is managing the complex communication between these services, which can lead to issues with latency, fault tolerance, and data consistency."
+  },
+  {
+    "question": "Which cloud-native design pattern ensures fault tolerance by limiting cascading failures?",
+    "choices": [
+      "Circuit Breaker",
+      "Observer",
+      "Singleton",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Circuit Breaker pattern is a design pattern used in cloud-native applications to prevent a failing service from causing cascading failures across other services. When a service fails, the circuit breaker opens, redirecting requests away from the failing service to a fallback mechanism until the service recovers."
   }
 ]
+
 
