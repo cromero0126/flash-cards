@@ -2258,6 +2258,313 @@
     ],
     "correctIndex": 0,
     "explanation": "Merge Sort's merge operation typically requires a temporary array of size O(n), giving it a space complexity of O(n). Insertion Sort, on the other hand, only requires a constant amount of extra memory for temporary variables to perform swaps, making it an in-place algorithm with O(1) space complexity."
+  },
+  {
+    "question": "The BFS algorithm is implemented using a _______ data structure.",
+    "choices": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Linked List"
+    ],
+    "correctIndex": 0,
+    "explanation": "BFS (Breadth-First Search) explores all neighbor nodes at the present depth prior to moving on to the nodes at the next depth level. A Queue is the ideal data structure for this, as it processes nodes in a first-in, first-out (FIFO) order."
+  },
+  {
+    "question": "Which of the following problems can Depth First Search (DFS) help solve?",
+    "choices": [
+      "Detecting cycles in a graph",
+      "Finding shortest paths in weighted graphs",
+      "Finding the minimum spanning tree",
+      "Computing strongly connected components"
+    ],
+    "correctIndex": 0,
+    "explanation": "DFS explores as far as possible along each branch before backtracking. This makes it efficient for detecting cycles. When a back edge (an edge from a vertex to an already visited ancestor in the DFS tree) is found, it indicates a cycle."
+  },
+  {
+    "question": "Breadth First Search (BFS) guarantees finding the shortest path in an unweighted graph.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In an unweighted graph, all edges have the same weight (or are considered to have a weight of 1). BFS explores the graph layer by layer, so the first time it finds the destination node, it will have found a path with the fewest edges, which is the shortest path."
+  },
+  {
+    "question": "What is the time complexity of checking whether an edge exists between two vertices in an adjacency matrix?",
+    "choices": [
+      "O(1)",
+      "O(V)",
+      "O(E)",
+      "O(V²)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In an adjacency matrix, checking for an edge between vertices 'i' and 'j' simply involves looking up the value at `A[i][j]`. This is a direct array access operation, which has a constant time complexity of O(1)."
+  },
+  {
+    "question": "Which data structure is used to implement Depth First Search (DFS)?",
+    "choices": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Priority Queue"
+    ],
+    "correctIndex": 0,
+    "explanation": "DFS explores a branch of the graph completely before backtracking. A Stack is the appropriate data structure for this, as it allows for a last-in, first-out (LIFO) order of processing, which naturally supports the 'go deeper' approach of DFS."
+  },
+  {
+    "question": "Dijkstra’s algorithm is applicable to graphs with which type of edge weights?",
+    "choices": [
+      "Only positive edge weights",
+      "Negative edge weights",
+      "Both positive and negative edge weights",
+      "No edge weights"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dijkstra’s algorithm works by greedily selecting the node with the minimum known distance. This greedy approach fails if negative weights exist, as a path with a greater initial weight might later become the shortest path due to a negative-weight edge. For graphs with negative weights, the Bellman-Ford algorithm should be used."
+  },
+  {
+    "question": "In adjacency matrix representation, which element represents an edge between vertex i and j?",
+    "choices": [
+      "A[i][j] = 1",
+      "A[i][j] = 0",
+      "A[i][j] = -1",
+      "A[i][j] = i + j"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a simple adjacency matrix, a value of 1 at `A[i][j]` signifies that an edge exists between vertex 'i' and vertex 'j'. A value of 0 indicates the absence of an edge."
+  },
+  {
+    "question": "The adjacency list representation is preferred when the graph is _______. ",
+    "choices": [
+      "Sparse",
+      "Dense",
+      "Cyclic",
+      "Complete"
+    ],
+    "correctIndex": 0,
+    "explanation": "A sparse graph is one where the number of edges is much less than the maximum possible number of edges. The adjacency list representation uses space proportional to the number of vertices and edges (O(V+E)), making it much more memory-efficient than an adjacency matrix (O(V²)) for sparse graphs."
+  },
+  {
+    "question": "Which of the following is not a limitation of Dijkstra’s algorithm?",
+    "choices": [
+      "Can only work with weighted graphs",
+      "Cannot handle graphs with negative edge weights",
+      "May be inefficient for very large graphs",
+      "Does not work for disconnected graphs"
+    ],
+    "correctIndex": 0,
+    "explanation": "While Dijkstra’s algorithm is designed for weighted graphs, this is not considered a limitation as it is its intended purpose. The other options are actual limitations: it cannot handle negative weights, and its efficiency can degrade with a naive implementation on large graphs. It can work on disconnected graphs, but will only find the shortest paths within the component of the starting node."
+  },
+  {
+    "question": "What is the time complexity of Dijkstra’s algorithm when implemented with a priority queue (binary heap)?",
+    "choices": [
+      "O((V + E) log V)",
+      "O(V²)",
+      "O(V + E)",
+      "O(V log V)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The time complexity is O((V + E) log V). The 'E' term comes from iterating through all edges, and the 'log V' term comes from the operations on the priority queue (insert and extract-min), which have a logarithmic time complexity."
+  },
+  {
+    "question": "What is the worst-case time complexity of BFS for a graph with V vertices and E edges?",
+    "choices": [
+      "O(V + E)",
+      "O(V)",
+      "O(E)",
+      "O(V²)"
+    ],
+    "correctIndex": 0,
+    "explanation": "BFS has to visit every vertex and every edge once to ensure all reachable nodes are explored. For a graph represented with an adjacency list, the complexity is O(V + E). For an adjacency matrix, it would be O(V²)."
+  },
+  {
+    "question": "What is a key property of the adjacency matrix of an undirected graph?",
+    "choices": [
+      "Symmetric",
+      "Asymmetric",
+      "Skewed",
+      "Triangular"
+    ],
+    "correctIndex": 0,
+    "explanation": "In an undirected graph, if there is an edge from vertex 'i' to 'j', there is also an edge from 'j' to 'i'. This means that the element `A[i][j]` will be equal to `A[j][i]` for all 'i' and 'j', making the matrix symmetric along its main diagonal."
+  },
+  {
+    "question": "A priority queue is used in Dijkstra’s algorithm to select the node with the _______ shortest distance.",
+    "choices": [
+      "Minimum",
+      "Maximum",
+      "Average",
+      "Random"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dijkstra’s algorithm uses a greedy approach. At each step, it selects the unvisited vertex with the smallest distance from the source. A min-priority queue is used to efficiently retrieve this minimum-distance vertex."
+  },
+  {
+    "question": "What is the space complexity of an adjacency matrix for a graph with V vertices?",
+    "choices": [
+      "O(V²)",
+      "O(1)",
+      "O(V)",
+      "O(V log V)"
+    ],
+    "correctIndex": 0,
+    "explanation": "An adjacency matrix is a 2D array of size V x V, where V is the number of vertices. The space required to store this matrix is therefore proportional to V squared, or O(V²)."
+  },
+  {
+    "question": "If a graph has V vertices and E edges, the worst-case time complexity of Dijkstra’s algorithm using an adjacency matrix is:",
+    "choices": [
+      "O(V²)",
+      "O(V log E)",
+      "O(V + E)",
+      "O(VE)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When using an adjacency matrix, finding the unvisited vertex with the minimum distance takes O(V) time in each of the V iterations. This results in a total time complexity of O(V²)."
+  },
+  {
+    "question": "Which data structure is commonly used to implement Dijkstra’s algorithm efficiently?",
+    "choices": [
+      "Priority Queue (Min Heap)",
+      "Stack",
+      "Queue",
+      "Linked List"
+    ],
+    "correctIndex": 0,
+    "explanation": "A priority queue (specifically a min-heap) is used to efficiently extract the vertex with the minimum distance from the source. This is the key to optimizing Dijkstra's algorithm from O(V²) to O((V + E) log V)."
+  },
+  {
+    "question": "In an undirected graph, if vertex A is adjacent to vertex B, what can be inferred about their adjacency lists?",
+    "choices": [
+      "Both A and B have each other in their adjacency lists",
+      "Only A has B in its adjacency list",
+      "Only B has A in its adjacency list",
+      "The adjacency list is not used"
+    ],
+    "correctIndex": 0,
+    "explanation": "In an undirected graph, an edge from A to B is the same as an edge from B to A. Therefore, if there is a connection, B will be in A's adjacency list, and A will also be in B's adjacency list."
+  },
+  {
+    "question": "Which data structure is commonly used to represent an adjacency list in a graph?",
+    "choices": [
+      "Linked List",
+      "Array",
+      "Stack",
+      "Queue"
+    ],
+    "correctIndex": 0,
+    "explanation": "An adjacency list is an array of lists. Each element in the array represents a vertex, and the list at that index contains the vertices adjacent to it. A linked list is a common choice for implementing these lists due to its dynamic nature."
+  },
+  {
+    "question": "Which algorithm can be used as an alternative to Dijkstra’s algorithm for graphs with negative weights?",
+    "choices": [
+      "Bellman-Ford Algorithm",
+      "Kruskal’s Algorithm",
+      "Floyd-Warshall Algorithm",
+      "Prim’s Algorithm"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Bellman-Ford algorithm can correctly find the shortest path in a graph containing negative edge weights. Unlike Dijkstra's, it can also detect negative cycles, where a path can be made infinitely shorter."
+  },
+  {
+    "question": "What is the time complexity of DFS in an adjacency list representation?",
+    "choices": [
+      "O(V + E)",
+      "O(V)",
+      "O(V²)",
+      "O(E log V)"
+    ],
+    "correctIndex": 0,
+    "explanation": "DFS, like BFS, must visit every vertex and every edge in the worst case to explore the entire graph. With an adjacency list, the total time to visit all vertices is O(V), and the time to traverse all edges is O(E). Thus, the total complexity is O(V + E)."
+  },
+  {
+    "question": "Which graph representation is preferred for algorithms like Dijkstra’s and Prim’s?",
+    "choices": [
+      "Adjacency List",
+      "Adjacency Matrix",
+      "Incidence Matrix",
+      "Edge List"
+    ],
+    "correctIndex": 0,
+    "explanation": "Both Dijkstra’s and Prim’s algorithms work by visiting nodes and their adjacent edges. An adjacency list provides an efficient way to iterate through all neighbors of a vertex in O(degree(V)) time, which is much faster than an O(V) scan required by an adjacency matrix, especially for sparse graphs."
+  },
+  {
+    "question": "What is the time complexity of BFS in an adjacency list representation?",
+    "choices": [
+      "O(V + E)",
+      "O(V)",
+      "O(V²)",
+      "O(E log V)"
+    ],
+    "correctIndex": 0,
+    "explanation": "BFS requires visiting every vertex once and traversing every edge once. When using an adjacency list, which provides efficient access to a vertex's neighbors, the overall time complexity is O(V + E)."
+  },
+  {
+    "question": "How does Dijkstra’s algorithm determine the shortest path?",
+    "choices": [
+      "By updating distances to neighbors using the minimum current path",
+      "By exploring all paths exhaustively",
+      "By using a recursive approach",
+      "By using a breadth-first strategy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dijkstra's algorithm determines the shortest path by maintaining a set of visited nodes and their minimum distances. At each step, it greedily selects the unvisited node with the smallest known distance from the source and updates the distances of all its unvisited neighbors."
+  },
+  {
+    "question": "What is the first step in Dijkstra’s algorithm?",
+    "choices": [
+      "Initialize all distances to infinity except the source node",
+      "Pick an arbitrary node as the source",
+      "Choose the shortest edge in the graph",
+      "Remove all edges with negative weights"
+    ],
+    "correctIndex": 0,
+    "explanation": "The first step in Dijkstra’s algorithm is to set the distance of the source node to 0 and all other nodes to infinity. This establishes a baseline for the algorithm to begin its search for the shortest paths."
+  },
+  {
+    "question": "Which algorithm guarantees finding the shortest path in an unweighted graph?",
+    "choices": [
+      "Breadth First Search (BFS)",
+      "Depth First Search (DFS)",
+      "Dijkstra’s Algorithm",
+      "Bellman-Ford Algorithm"
+    ],
+    "correctIndex": 0,
+    "explanation": "BFS explores all neighbors at a distance of k before exploring any nodes at a distance of k+1. This layer-by-layer exploration naturally guarantees that the first time a destination is reached, the path taken will have the minimum number of edges, which is the shortest path in an unweighted graph."
+  },
+  {
+    "question": "What is the primary advantage of an adjacency list representation over an adjacency matrix?",
+    "choices": [
+      "Uses less space for sparse graphs",
+      "Easier to implement",
+      "Faster access time",
+      "Uses more memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a sparse graph (a graph with relatively few edges), an adjacency list only stores the existing edges, resulting in a space complexity of O(V + E). An adjacency matrix, however, always requires O(V²) space regardless of the number of edges, making the adjacency list far more memory-efficient."
+  },
+  {
+    "question": "Which type of problem does Dijkstra’s algorithm solve, and which type of graphs is it applicable to?",
+    "choices": [
+      "Shortest Path",
+      "Minimum Spanning Tree",
+      "Topological Sorting",
+      "Cycle Detection"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dijkstra’s algorithm is specifically designed to solve the single-source shortest path problem in a graph, and it works correctly on graphs with non-negative edge weights."
+  },
+  {
+    "question": "How many edges does a complete undirected graph with n vertices have?",
+    "choices": [
+      "n(n - 1) / 2",
+      "n",
+      "n²",
+      "n(n + 1) / 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a complete undirected graph, every vertex is connected to every other vertex. Each of the 'n' vertices connects to 'n-1' other vertices. This gives n * (n-1) connections. We divide by 2 because each edge is counted twice (once for each vertex it connects), resulting in the formula n(n - 1) / 2."
   }
 ]
+
 
