@@ -1,0 +1,2208 @@
+[
+  {
+    "question": "The HTTP request-response cycle is a fundamental part of web communication.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The HTTP request-response cycle is a foundational concept of how the World Wide Web operates. It defines the communication protocol where a client (e.g., a web browser) sends a request to a server, and the server returns a response with the requested resources."
+  },
+  {
+    "question": "What is the first step in an HTTP request-response cycle?",
+    "choices": [
+      "The server processes the request",
+      "The client sends a request to the server",
+      "The server sends a response",
+      "The browser loads the page"
+    ],
+    "correctIndex": 1,
+    "explanation": "The HTTP request-response cycle begins when a client, such as a web browser, initiates a request for a web resource (like a web page or an image) from a web server. This is the initiating action that sets the entire process in motion."
+  },
+  {
+    "question": "Web servers primarily handle which type of request?",
+    "choices": [
+      "FTP requests",
+      "Email requests",
+      "HTTP requests",
+      "DNS requests"
+    ],
+    "correctIndex": 2,
+    "explanation": "Web servers are specialized software designed to handle requests made using the Hypertext Transfer Protocol (HTTP). They listen for these requests on specific ports (like 80 for HTTP and 443 for HTTPS) and respond with web content."
+  },
+  {
+    "question": "Which of the following best describes the role of the HTTP request-response cycle in server-side web development?",
+    "choices": [
+      "It defines how web pages are styled using CSS before being sent to the client.",
+      "It outlines the sequence in which a client sends a request to a server, and the server processes and responds with the requested data",
+      "It describes how web browsers store cookies and cache static assets for faster loading.",
+      "It ensures that JavaScript code runs only on the server to generate dynamic web pages."
+    ],
+    "correctIndex": 1,
+    "explanation": "The HTTP request-response cycle forms the basis of all server-side web development. It is the sequential communication pattern where a client requests a resource, the server processes the request, potentially interacts with a database, and then sends back a response containing the requested data or an error message."
+  },
+  {
+    "question": "Which web server is known for its speed and efficiency?",
+    "choices": [
+      "NGINX",
+      "Apache",
+      "Tomcat",
+      "IIS"
+    ],
+    "correctIndex": 0,
+    "explanation": "NGINX is a high-performance web server known for its lightweight architecture and efficient handling of concurrent connections. Its asynchronous, event-driven design makes it particularly well-suited for high-traffic websites and as a reverse proxy or load balancer."
+  },
+  {
+    "question": "Which HTTP method is used to retrieve data from a server?",
+    "choices": [
+      "PUT",
+      "POST",
+      "DELETE",
+      "GET"
+    ],
+    "correctIndex": 3,
+    "explanation": "The GET method is one of the most common HTTP methods and is used to request data from a specified resource on a web server. It should only be used to retrieve data and should have no other side effects on the server's state."
+  },
+  {
+    "question": "Apache and NGINX are examples of __________.",
+    "choices": [
+      "web servers",
+      "programming languages",
+      "browsers",
+      "databases"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apache and NGINX are two of the most widely used web server software platforms. They are responsible for serving web content, handling HTTP requests, and managing the communication between clients and the server-side application."
+  },
+  {
+    "question": "What is a key difference between client-side and server-side scripting?",
+    "choices": [
+      "Server-side scripting is only used for designing web pages.",
+      "Client-side scripting is primarily used for database interactions.",
+      "Server-side scripting cannot generate dynamic content.",
+      "Server-side scripts execute on the web server, while client-side scripts run in the user's browser."
+    ],
+    "correctIndex": 3,
+    "explanation": "The fundamental difference lies in where the code is executed. Server-side scripts run on a web server before the page is sent to the browser, while client-side scripts are sent to the browser and run there to add interactivity and manipulate the user interface."
+  },
+  {
+    "question": "Client-side scripting is more secure than server-side scripting.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Server-side scripting is inherently more secure because the code, logic, and sensitive data (like database connections) are executed and stored on the server, away from the end-user's direct access. Client-side code is viewable and can be manipulated by the user, making it less secure for sensitive operations."
+  },
+  {
+    "question": "Web servers handle both static and dynamic content.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. While web servers can efficiently serve static content (e.g., HTML, CSS files), they are also designed to work with server-side scripting languages to generate and serve dynamic content (e.g., web pages with live data from a database)."
+  },
+  {
+    "question": "What does an HTTP 404 status code indicate?",
+    "choices": [
+      "The requested page was not found",
+      "The server is down",
+      "The resource is moved permanently",
+      "The request was successful"
+    ],
+    "correctIndex": 0,
+    "explanation": "An HTTP 404 status code is a standard response code from a web server indicating that the server could not find the requested resource (e.g., a web page or file) at the specified URL. It's a common error seen when a link is broken or a page has been moved."
+  },
+  {
+    "question": "The most commonly used web server software includes Apache, NGINX, and __________.",
+    "choices": [
+      "SQL",
+      "Java",
+      "Microsoft IIS",
+      "HTML"
+    ],
+    "correctIndex": 2,
+    "explanation": "Microsoft Internet Information Services (IIS) is a popular web server software developed by Microsoft for its Windows operating system. Along with Apache and NGINX, it is one of the most widely used web servers for hosting websites and applications."
+  },
+  {
+    "question": "Which HTTP method is used to send data to the server?",
+    "choices": [
+      "GET",
+      "DELETE",
+      "POST",
+      "PATCH"
+    ],
+    "correctIndex": 2,
+    "explanation": "The POST method is used to send data to a server to create or update a resource. The data is included in the body of the request, making it suitable for submitting forms, uploading files, or any operation that changes data on the server."
+  },
+  {
+    "question": "Server-side scripting is used to generate __________ web content.",
+    "choices": [
+      "non-interactive",
+      "dynamic",
+      "unprocessed",
+      "static"
+    ],
+    "correctIndex": 1,
+    "explanation": "Server-side scripting allows developers to create dynamic web content, which is content that changes based on user actions, time, or other conditions. This is in contrast to static content, which is pre-written and unchanging."
+  },
+  {
+    "question": "What is the main advantage of using NGINX over Apache?",
+    "choices": [
+      "Better handling of high traffic loads",
+      "Requires JavaScript",
+      "Works only with PHP",
+      "Only serves static content"
+    ],
+    "correctIndex": 0,
+    "explanation": "NGINX's asynchronous and event-driven architecture gives it a significant advantage over Apache in handling a large number of concurrent connections and high traffic loads. This makes NGINX an excellent choice for modern web applications that need to scale efficiently."
+  },
+  {
+    "question": "Web servers only handle static web pages.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. While web servers are capable of serving static pages, they are also integral to delivering dynamic content. They can execute server-side scripts (e.g., PHP, Python, Node.js) to generate customized web pages based on user input or database queries."
+  },
+  {
+    "question": "Which of the following is NOT an example of server-side programming?",
+    "choices": [
+      "Fetching data from a database with Python",
+      "Processing form submissions with Node.js",
+      "Using JavaScript to create an alert box",
+      "Handling user authentication with PHP"
+    ],
+    "correctIndex": 2,
+    "explanation": "Creating an alert box with JavaScript is a client-side activity, as the JavaScript code is executed within the user's browser. The other options involve logic and data processing that occur on the server."
+  },
+  {
+    "question": "Which of the following is a benefit of server-side scripting?",
+    "choices": [
+      "Reduces the load on the server",
+      "Runs only in the browser",
+      "Makes web pages faster than static sites",
+      "Handles secure and sensitive user data"
+    ],
+    "correctIndex": 3,
+    "explanation": "A significant benefit of server-side scripting is its ability to handle sensitive information securely. Since the code runs on the server, it can safely interact with databases, process private user data, and manage authentication without exposing sensitive logic to the client."
+  },
+  {
+    "question": "Which component is necessary for a web server to function?",
+    "choices": [
+      "Database",
+      "HTTP protocol",
+      "CSS",
+      "JavaScript"
+    ],
+    "correctIndex": 1,
+    "explanation": "The HTTP protocol is the essential component that defines the rules of communication between web servers and clients. Without it, web servers would not be able to understand requests or formulate responses, rendering them non-functional for web communication."
+  },
+  {
+    "question": "Which of the following is a characteristic of client-side scripting?",
+    "choices": [
+      "Runs on the web server",
+      "Executes in the user’s browser",
+      "Processes backend logic",
+      "Cannot be executed without a database"
+    ],
+    "correctIndex": 1,
+    "explanation": "Client-side scripts, such as JavaScript, are sent from the server to the client's web browser and are executed there. Their primary purpose is to add interactivity and dynamic behavior to the web page's user interface."
+  },
+  {
+    "question": "The HTTP protocol encrypts all data by default.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. The standard HTTP protocol transmits data in plaintext, making it vulnerable to interception. For secure communication, HTTPS (HTTP Secure) must be used, which encrypts the data using SSL/TLS protocols."
+  },
+  {
+    "question": "Which part of an HTTP response contains the actual web page content?",
+    "choices": [
+      "Response header",
+      "Status code",
+      "URL",
+      "Response body"
+    ],
+    "correctIndex": 3,
+    "explanation": "The response body is the main part of the HTTP response that contains the actual data being sent back to the client. This can be an HTML page, an image file, a JSON object, or any other type of content requested."
+  },
+  {
+    "question": "A web server responds to __________ requests.",
+    "choices": [
+      "SMTP",
+      "HTTP",
+      "DNS",
+      "FTP"
+    ],
+    "correctIndex": 1,
+    "explanation": "Web servers are specifically designed to respond to requests using the Hypertext Transfer Protocol (HTTP). Other protocols are handled by different types of servers (e.g., SMTP for email, DNS for domain names)."
+  },
+  {
+    "question": "Which scripting runs first when a user visits a webpage?",
+    "choices": [
+      "Client-side scripting",
+      "Server-side scripting",
+      "Neither, the user runs the script manually",
+      "Both run at the same time"
+    ],
+    "correctIndex": 1,
+    "explanation": "When a user visits a webpage, the server-side script is executed on the web server first to generate the HTML and other content. This content is then sent to the client's browser, where any client-side scripts are then executed."
+  },
+  {
+    "question": "What happens when client-side scripting is disabled in a browser?",
+    "choices": [
+      "The server will execute JavaScript instead",
+      "Some functionalities may not work properly",
+      "The browser will display a security warning",
+      "The website will completely stop working"
+    ],
+    "correctIndex": 1,
+    "explanation": "When client-side scripting (e.g., JavaScript) is disabled, the browser will still display the static HTML and CSS of the webpage. However, any dynamic or interactive features that rely on that scripting will fail to function, potentially impacting the user experience."
+  },
+  {
+    "question": "HTTP responses always include a status code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Every HTTP response, regardless of success or failure, must include a three-digit status code. This code communicates the result of the request, such as '200 OK' for success or '404 Not Found' for an error."
+  },
+  {
+    "question": "Why is server-side scripting important for large-scale applications?",
+    "choices": [
+      "It makes websites look more attractive",
+      "It increases the size of web pages",
+      "It improves security and handles complex logic",
+      "It is required for all websites"
+    ],
+    "correctIndex": 2,
+    "explanation": "Server-side scripting is essential for large-scale applications because it allows for secure data handling (e.g., user authentication, database access) and the execution of complex business logic that cannot be trusted to a user's browser."
+  },
+  {
+    "question": "A POST request is used for retrieving information from a web server.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. A POST request is used to send data to a server to create or update a resource. The GET method, on the other hand, is the correct method for retrieving information from a server."
+  },
+  {
+    "question": "Server-side scripting is only used for displaying static content.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. Server-side scripting is primarily used to generate dynamic content, which changes based on conditions or user input. Static content is served directly without the need for server-side processing."
+  },
+  {
+    "question": "Which of the following is NOT a function of a web server?",
+    "choices": [
+      "Serving web pages",
+      "Managing dynamic content",
+      "Executing client-side code",
+      "Handling HTTP requests"
+    ],
+    "correctIndex": 2,
+    "explanation": "A web server's role is to serve web content and execute server-side code. It sends client-side code (like JavaScript) to the browser, but it does not execute it. The browser's engine is responsible for running client-side scripts."
+  },
+  {
+    "question": "The HTTP request-response cycle is a fundamental part of web communication.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The HTTP request-response cycle is a foundational concept of how the World Wide Web operates. It defines the communication protocol where a client (e.g., a web browser) sends a request to a server, and the server returns a response with the requested resources."
+  },
+  {
+    "question": "What is the first step in an HTTP request-response cycle?",
+    "choices": [
+      "The server processes the request",
+      "The client sends a request to the server",
+      "The server sends a response",
+      "The browser loads the page"
+    ],
+    "correctIndex": 1,
+    "explanation": "The HTTP request-response cycle begins when a client, such as a web browser, initiates a request for a web resource (like a web page or an image) from a web server. This is the initiating action that sets the entire process in motion."
+  },
+  {
+    "question": "Web servers primarily handle which type of request?",
+    "choices": [
+      "FTP requests",
+      "Email requests",
+      "HTTP requests",
+      "DNS requests"
+    ],
+    "correctIndex": 2,
+    "explanation": "Web servers are specialized software designed to handle requests made using the Hypertext Transfer Protocol (HTTP). They listen for these requests on specific ports (like 80 for HTTP and 443 for HTTPS) and respond with web content."
+  },
+  {
+    "question": "Which of the following best describes the role of the HTTP request-response cycle in server-side web development?",
+    "choices": [
+      "It defines how web pages are styled using CSS before being sent to the client.",
+      "It outlines the sequence in which a client sends a request to a server, and the server processes and responds with the requested data",
+      "It describes how web browsers store cookies and cache static assets for faster loading.",
+      "It ensures that JavaScript code runs only on the server to generate dynamic web pages."
+    ],
+    "correctIndex": 1,
+    "explanation": "The HTTP request-response cycle forms the basis of all server-side web development. It is the sequential communication pattern where a client requests a resource, the server processes the request, potentially interacts with a database, and then sends back a response containing the requested data or an error message."
+  },
+  {
+    "question": "Which web server is known for its speed and efficiency?",
+    "choices": [
+      "NGINX",
+      "Apache",
+      "Tomcat",
+      "IIS"
+    ],
+    "correctIndex": 0,
+    "explanation": "NGINX is a high-performance web server known for its lightweight architecture and efficient handling of concurrent connections. Its asynchronous, event-driven design makes it particularly well-suited for high-traffic websites and as a reverse proxy or load balancer."
+  },
+  {
+    "question": "Which HTTP method is used to retrieve data from a server?",
+    "choices": [
+      "PUT",
+      "POST",
+      "DELETE",
+      "GET"
+    ],
+    "correctIndex": 3,
+    "explanation": "The GET method is one of the most common HTTP methods and is used to request data from a specified resource on a web server. It should only be used to retrieve data and should have no other side effects on the server's state."
+  },
+  {
+    "question": "Apache and NGINX are examples of __________.",
+    "choices": [
+      "web servers",
+      "programming languages",
+      "browsers",
+      "databases"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apache and NGINX are two of the most widely used web server software platforms. They are responsible for serving web content, handling HTTP requests, and managing the communication between clients and the server-side application."
+  },
+  {
+    "question": "What is a key difference between client-side and server-side scripting?",
+    "choices": [
+      "Server-side scripting is only used for designing web pages.",
+      "Client-side scripting is primarily used for database interactions.",
+      "Server-side scripting cannot generate dynamic content.",
+      "Server-side scripts execute on the web server, while client-side scripts run in the user's browser."
+    ],
+    "correctIndex": 3,
+    "explanation": "The fundamental difference lies in where the code is executed. Server-side scripts run on a web server before the page is sent to the browser, while client-side scripts are sent to the browser and run there to add interactivity and manipulate the user interface."
+  },
+  {
+    "question": "Client-side scripting is more secure than server-side scripting.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Server-side scripting is inherently more secure because the code, logic, and sensitive data (like database connections) are executed and stored on the server, away from the end-user's direct access. Client-side code is viewable and can be manipulated by the user, making it less secure for sensitive operations."
+  },
+  {
+    "question": "Web servers handle both static and dynamic content.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. While web servers can efficiently serve static content (e.g., HTML, CSS files), they are also designed to work with server-side scripting languages to generate and serve dynamic content (e.g., web pages with live data from a database)."
+  },
+  {
+    "question": "What does an HTTP 404 status code indicate?",
+    "choices": [
+      "The requested page was not found",
+      "The server is down",
+      "The resource is moved permanently",
+      "The request was successful"
+    ],
+    "correctIndex": 0,
+    "explanation": "An HTTP 404 status code is a standard response code from a web server indicating that the server could not find the requested resource (e.g., a web page or file) at the specified URL. It's a common error seen when a link is broken or a page has been moved."
+  },
+  {
+    "question": "The most commonly used web server software includes Apache, NGINX, and __________.",
+    "choices": [
+      "SQL",
+      "Java",
+      "Microsoft IIS",
+      "HTML"
+    ],
+    "correctIndex": 2,
+    "explanation": "Microsoft Internet Information Services (IIS) is a popular web server software developed by Microsoft for its Windows operating system. Along with Apache and NGINX, it is one of the most widely used web servers for hosting websites and applications."
+  },
+  {
+    "question": "Which HTTP method is used to send data to the server?",
+    "choices": [
+      "GET",
+      "DELETE",
+      "POST",
+      "PATCH"
+    ],
+    "correctIndex": 2,
+    "explanation": "The POST method is used to send data to a server to create or update a resource. The data is included in the body of the request, making it suitable for submitting forms, uploading files, or any operation that changes data on the server."
+  },
+  {
+    "question": "Server-side scripting is used to generate __________ web content.",
+    "choices": [
+      "non-interactive",
+      "dynamic",
+      "unprocessed",
+      "static"
+    ],
+    "correctIndex": 1,
+    "explanation": "Server-side scripting allows developers to create dynamic web content, which is content that changes based on user actions, time, or other conditions. This is in contrast to static content, which is pre-written and unchanging."
+  },
+  {
+    "question": "What is the main advantage of using NGINX over Apache?",
+    "choices": [
+      "Better handling of high traffic loads",
+      "Requires JavaScript",
+      "Works only with PHP",
+      "Only serves static content"
+    ],
+    "correctIndex": 0,
+    "explanation": "NGINX's asynchronous and event-driven architecture gives it a significant advantage over Apache in handling a large number of concurrent connections and high traffic loads. This makes NGINX an excellent choice for modern web applications that need to scale efficiently."
+  },
+  {
+    "question": "Web servers only handle static web pages.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. While web servers are capable of serving static pages, they are also integral to delivering dynamic content. They can execute server-side scripts (e.g., PHP, Python, Node.js) to generate customized web pages based on user input or database queries."
+  },
+  {
+    "question": "Which of the following is NOT an example of server-side programming?",
+    "choices": [
+      "Fetching data from a database with Python",
+      "Processing form submissions with Node.js",
+      "Using JavaScript to create an alert box",
+      "Handling user authentication with PHP"
+    ],
+    "correctIndex": 2,
+    "explanation": "Creating an alert box with JavaScript is a client-side activity, as the JavaScript code is executed within the user's browser. The other options involve logic and data processing that occur on the server."
+  },
+  {
+    "question": "Which of the following is a benefit of server-side scripting?",
+    "choices": [
+      "Reduces the load on the server",
+      "Runs only in the browser",
+      "Makes web pages faster than static sites",
+      "Handles secure and sensitive user data"
+    ],
+    "correctIndex": 3,
+    "explanation": "A significant benefit of server-side scripting is its ability to handle sensitive information securely. Since the code runs on the server, it can safely interact with databases, process private user data, and manage authentication without exposing sensitive logic to the client."
+  },
+  {
+    "question": "Which component is necessary for a web server to function?",
+    "choices": [
+      "Database",
+      "HTTP protocol",
+      "CSS",
+      "JavaScript"
+    ],
+    "correctIndex": 1,
+    "explanation": "The HTTP protocol is the essential component that defines the rules of communication between web servers and clients. Without it, web servers would not be able to understand requests or formulate responses, rendering them non-functional for web communication."
+  },
+  {
+    "question": "Which of the following is a characteristic of client-side scripting?",
+    "choices": [
+      "Runs on the web server",
+      "Executes in the user’s browser",
+      "Processes backend logic",
+      "Cannot be executed without a database"
+    ],
+    "correctIndex": 1,
+    "explanation": "Client-side scripts, such as JavaScript, are sent from the server to the client's web browser and are executed there. Their primary purpose is to add interactivity and dynamic behavior to the web page's user interface."
+  },
+  {
+    "question": "The HTTP protocol encrypts all data by default.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. The standard HTTP protocol transmits data in plaintext, making it vulnerable to interception. For secure communication, HTTPS (HTTP Secure) must be used, which encrypts the data using SSL/TLS protocols."
+  },
+  {
+    "question": "Which part of an HTTP response contains the actual web page content?",
+    "choices": [
+      "Response header",
+      "Status code",
+      "URL",
+      "Response body"
+    ],
+    "correctIndex": 3,
+    "explanation": "The response body is the main part of the HTTP response that contains the actual data being sent back to the client. This can be an HTML page, an image file, a JSON object, or any other type of content requested."
+  },
+  {
+    "question": "A web server responds to __________ requests.",
+    "choices": [
+      "SMTP",
+      "HTTP",
+      "DNS",
+      "FTP"
+    ],
+    "correctIndex": 1,
+    "explanation": "Web servers are specifically designed to respond to requests using the Hypertext Transfer Protocol (HTTP). Other protocols are handled by different types of servers (e.g., SMTP for email, DNS for domain names)."
+  },
+  {
+    "question": "Which scripting runs first when a user visits a webpage?",
+    "choices": [
+      "Client-side scripting",
+      "Server-side scripting",
+      "Neither, the user runs the script manually",
+      "Both run at the same time"
+    ],
+    "correctIndex": 1,
+    "explanation": "When a user visits a webpage, the server-side script is executed on the web server first to generate the HTML and other content. This content is then sent to the client's browser, where any client-side scripts are then executed."
+  },
+  {
+    "question": "What happens when client-side scripting is disabled in a browser?",
+    "choices": [
+      "The server will execute JavaScript instead",
+      "Some functionalities may not work properly",
+      "The browser will display a security warning",
+      "The website will completely stop working"
+    ],
+    "correctIndex": 1,
+    "explanation": "When client-side scripting (e.g., JavaScript) is disabled, the browser will still display the static HTML and CSS of the webpage. However, any dynamic or interactive features that rely on that scripting will fail to function, potentially impacting the user experience."
+  },
+  {
+    "question": "HTTP responses always include a status code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Every HTTP response, regardless of success or failure, must include a three-digit status code. This code communicates the result of the request, such as '200 OK' for success or '404 Not Found' for an error."
+  },
+  {
+    "question": "Why is server-side scripting important for large-scale applications?",
+    "choices": [
+      "It makes websites look more attractive",
+      "It increases the size of web pages",
+      "It improves security and handles complex logic",
+      "It is required for all websites"
+    ],
+    "correctIndex": 2,
+    "explanation": "Server-side scripting is essential for large-scale applications because it allows for secure data handling (e.g., user authentication, database access) and the execution of complex business logic that cannot be trusted to a user's browser."
+  },
+  {
+    "question": "A POST request is used for retrieving information from a web server.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. A POST request is used to send data to a server to create or update a resource. The GET method, on the other hand, is the correct method for retrieving information from a server."
+  },
+  {
+    "question": "Server-side scripting is only used for displaying static content.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. Server-side scripting is primarily used to generate dynamic content, which changes based on conditions or user input. Static content is served directly without the need for server-side processing."
+  },
+  {
+    "question": "Which of the following is NOT a function of a web server?",
+    "choices": [
+      "Serving web pages",
+      "Managing dynamic content",
+      "Executing client-side code",
+      "Handling HTTP requests"
+    ],
+    "correctIndex": 2,
+    "explanation": "A web server's role is to serve web content and execute server-side code. It sends client-side code (like JavaScript) to the browser, but it does not execute it. The browser's engine is responsible for running client-side scripts."
+  },
+  {
+    "question": "PHP is a server-side scripting language primarily used for web development.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. PHP, which stands for Hypertext Preprocessor, is specifically designed for server-side execution. It embeds into HTML to generate dynamic web content, making it one of the most widely used languages in backend web development."
+  },
+  {
+    "question": "Which symbol is used for concatenation in PHP?",
+    "choices": [
+      "+",
+      ".",
+      "&",
+      "-"
+    ],
+    "correctIndex": 1,
+    "explanation": "The dot symbol (`.`) serves as the concatenation operator in PHP, joining two or more strings together to form a single, continuous string. While other languages might use the plus symbol (`+`), in PHP, the plus sign is reserved exclusively for arithmetic addition."
+  },
+  {
+    "question": "The `elseif` statement is used in PHP to check __________ conditions after an initial `if` statement.",
+    "choices": [
+      "irrelevant",
+      "multiple",
+      "single",
+      "no"
+    ],
+    "correctIndex": 1,
+    "explanation": "The `elseif` construct is integral to complex conditional logic, as it enables the evaluation of multiple sequential conditions following an initial `if` statement. This structure ensures that only the code block associated with the very first true condition is executed, thereby providing an elegant method for handling diverse scenarios."
+  },
+  {
+    "question": "What is the output of the following code:\n$i = 5;\nwhile ($i < 5) {\n    echo \"Hello\";\n    $i++;\n}",
+    "choices": [
+      "Hello",
+      "Infinite loop",
+      "No output",
+      "Syntax error"
+    ],
+    "correctIndex": 2,
+    "explanation": "This `while` loop's condition, which checks if the value of `$i` is less than five, is false on the very first evaluation since `$i` is initialized to five. Because the condition is never met, the code block is never executed, and consequently, no output is produced."
+  },
+  {
+    "question": "What is the purpose of the `continue` statement in PHP?",
+    "choices": [
+      "Skips the current iteration and moves to the next loop iteration",
+      "Stops the execution of the loop",
+      "Terminates the program",
+      "Executes the loop infinitely"
+    ],
+    "correctIndex": 0,
+    "explanation": "The `continue` statement is a control flow mechanism that abruptly halts the execution of the current loop iteration. This immediately transfers control to the loop's conditional test, allowing the loop to proceed directly to its next scheduled iteration without executing any remaining code within the current block."
+  },
+  {
+    "question": "What will be the output of the following PHP code?\n$x = 10;\nif ($x > 5) {\n    echo \"Greater\";\n} else {\n    echo \"Smaller\";\n}",
+    "choices": [
+      "Error",
+      "Greater",
+      "Smaller",
+      "Nothing"
+    ],
+    "correctIndex": 1,
+    "explanation": "The `if` statement evaluates the condition `$x > 5`, which is true since the variable `$x` holds the integer value 10. Consequently, the code inside the `if` block, which prints the string 'Greater', is executed, while the `else` block is entirely bypassed."
+  },
+  {
+    "question": "The __________ loop executes its block of code at least once, even if the condition is false.",
+    "choices": [
+      "do-while",
+      "switch",
+      "while",
+      "for"
+    ],
+    "correctIndex": 0,
+    "explanation": "The fundamental characteristic of the `do-while` loop is that it executes its code block first before checking the termination condition. This design guarantees that the operations within the loop's body will be performed a minimum of one time, regardless of the initial state of the condition."
+  },
+  {
+    "question": "The __________ loop is used when the number of iterations is known in advance.",
+    "choices": [
+      "do-while",
+      "while",
+      "foreach",
+      "for"
+    ],
+    "correctIndex": 3,
+    "explanation": "The `for` loop is explicitly designed for scenarios where the exact number of required iterations is predetermined. Its structure conveniently groups the initialization, condition check, and iterative update in a single, compact statement, making it the ideal choice for count-controlled repetition."
+  },
+  {
+    "question": "What will be the value of `$result` after executing the following code?\n$a = 10;\n$b = 20;\n$result = ($a > $b) ? \"Greater\" : \"Smaller\";",
+    "choices": [
+      "10",
+      "Smaller",
+      "Greater",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "The code uses the ternary operator, which evaluates the condition `$a > $b`, yielding a Boolean value of false since 10 is not greater than 20. When the condition is false, the expression after the colon is returned, which sets the value of `$result` to the string 'Smaller'."
+  },
+  {
+    "question": "Which of the following is NOT a valid PHP variable name?",
+    "choices": [
+      "$_var",
+      "$123var",
+      "$var123",
+      "$var_name"
+    ],
+    "correctIndex": 1,
+    "explanation": "PHP variable names must adhere to strict naming conventions, requiring that they begin with a dollar sign (`$`) followed by either a letter or an underscore. Therefore, a variable name starting with a numeric digit, such as `$123var`, results in a syntax error and is considered invalid."
+  },
+  {
+    "question": "The operator used to check whether two values are identical in both value and type is __________.",
+    "choices": [
+      "$<=$",
+      "$$==$$",
+      "$$===$$",
+      "$$!=$"
+    ],
+    "correctIndex": 2,
+    "explanation": "The identity operator, represented by three equal signs (`===`), performs a strict comparison, verifying that both the values of the two operands and their underlying data types are exactly the same. This differs from the loose equality operator (`==`), which only checks the value after attempting type coercion."
+  },
+  {
+    "question": "The `echo` statement in PHP is used to display output.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The `echo` statement is one of PHP's primary constructs for producing output, allowing data to be printed to the web browser as part of the generated HTML response."
+  },
+  {
+    "question": "Which of the following PHP control structures can replace multiple `if-else` statements efficiently?",
+    "choices": [
+      "break",
+      "while",
+      "foreach",
+      "switch"
+    ],
+    "correctIndex": 3,
+    "explanation": "The `switch` statement is designed to compare a single expression against numerous possible constant values, providing a more readable and often more performant alternative to a long chain of `if-elseif-else` statements."
+  },
+  {
+    "question": "What will be the output of the following PHP code?\nfor ($i = 5; $i <= 5; $i++) {\n    if ($i == 7) {\n        continue;\n    }\n    echo $i;\n}",
+    "choices": [
+      "5689",
+      "5678",
+      "5",
+      "error"
+    ],
+    "correctIndex": 2,
+    "explanation": "This `for` loop is initialized such that the variable `$i` begins at 5 and the loop executes only once, as the condition `$i <= 5` immediately becomes false after the first iteration's update. The code within the loop prints the value of 5, and the `if` statement's condition is irrelevant."
+  },
+  {
+    "question": "The default file extension for PHP files is __________.",
+    "choices": [
+      ".html",
+      ".js",
+      ".py",
+      ".php"
+    ],
+    "correctIndex": 3,
+    "explanation": "The standard and default file extension used to identify a file containing PHP script code is `.php`. Web servers are configured to recognize and process files with this extension using the PHP interpreter before serving the output to the client."
+  },
+  {
+    "question": "The `while` loop in PHP checks the condition before executing the loop body.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The `while` loop is classified as a pre-test loop because it evaluates its termination condition at the beginning of each iteration, which determines whether the loop body will be executed even once."
+  },
+  {
+    "question": "The `foreach` loop in PHP is specifically used to iterate over arrays.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The `foreach` construct in PHP is custom-tailored for iterating through elements of arrays or objects, offering a simple and readable syntax for accessing each element's value or key-value pair sequentially."
+  },
+  {
+    "question": "The `if` statement in PHP allows conditional execution of code.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The `if` statement is the fundamental control structure in PHP that dictates the flow of execution, allowing specific blocks of code to be run only when a certain Boolean condition is evaluated as true."
+  },
+  {
+    "question": "Which of the following PHP operators is used for logical AND?",
+    "choices": [
+      "$$&$$",
+      "$$!$$",
+      "$$&&$$",
+      "$$||$$"
+    ],
+    "correctIndex": 2,
+    "explanation": "The double ampersand (`&&`) is the logical operator used to perform a logical AND operation, where the entire expression returns true only if both operands evaluate to true."
+  },
+  {
+    "question": "What will be the output of the following code?\n$x = 5;\necho $x + \"5\";",
+    "choices": [
+      "Error",
+      "10",
+      "55",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "PHP employs weak typing, which allows it to automatically coerce the string '5' into an integer during the arithmetic operation with the integer 5. This type juggling behavior results in a standard integer addition, producing the output 10."
+  },
+  {
+    "question": "What will be the output of the following PHP script?\nfor ($i = 1; $i <= 5; $i++) {\n    if ($i == 3) {\n        continue;\n    }\n    echo $i;\n}",
+    "choices": [
+      "12345",
+      "Error",
+      "1245",
+      "1345"
+    ],
+    "correctIndex": 2,
+    "explanation": "The `continue` statement within the loop causes the code to skip the `echo` operation when `$i` is equal to 3. Consequently, the values 1, 2, 4, and 5 are printed, while the number 3 is omitted from the sequence."
+  },
+  {
+    "question": "PHP is case-sensitive when it comes to variable names.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. PHP enforces case sensitivity for all variable names, meaning that `$myVar` and `$myvar` are interpreted as two distinct variables by the language runtime."
+  },
+  {
+    "question": "Which of the following is the correct way to write a comment in PHP?",
+    "choices": [
+      "** This is a comment **",
+      "//This is a comment //",
+      "",
+      "// This is a comment"
+    ],
+    "correctIndex": 3,
+    "explanation": "The double forward slash (`//`) is one of the standard and most commonly used methods for denoting a single-line comment in PHP, instructing the interpreter to ignore the text following it until the end of the line."
+  },
+  {
+    "question": "The __________ statement is used to check whether a variable exists in PHP.",
+    "choices": [
+      "isset()",
+      "define()",
+      "empty()",
+      "validate()"
+    ],
+    "correctIndex": 0,
+    "explanation": "The `isset()` language construct is essential for determining if a variable has been declared and assigned a non-null value, which is a crucial check before attempting to use a variable."
+  },
+  {
+    "question": "The `break` statement in PHP can only be used inside a `for` loop.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. The `break` statement is a versatile control flow tool that can be used to immediately terminate the execution of any current loop structure, including `for`, `while`, `do-while`, and `foreach` loops, as well as `switch` blocks."
+  },
+  {
+    "question": "Which of the following is the correct way to start a PHP script?",
+    "choices": [
+      "</php>",
+      "<php>",
+      "<?>",
+      "<?php"
+    ],
+    "correctIndex": 3,
+    "explanation": "The correct and recommended syntax for opening a PHP script block is the standard short tag `<?php`. This ensures maximum compatibility across different server configurations, as other tags may be disabled."
+  },
+  {
+    "question": "What is the output of the following code?\n$val = \"20\";\n$val += 5;\necho $val;",
+    "choices": [
+      "25",
+      "Error",
+      "205",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "Due to PHP's automatic type conversion when performing arithmetic operations, the string value '20' is temporarily converted into the integer 20 before addition. This results in the final value of `$val` being the integer 25, which is then printed."
+  },
+  {
+    "question": "How many times will the following loop execute?\nfor ($i = 0; $i < 3; $i++) {\n    echo $i;\n}",
+    "choices": [
+      "3",
+      "4",
+      "Infinite",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The loop is initialized with `$i = 0` and iterates as long as `$i` is less than 3, with `$i` incrementing by one after each execution. The loop will run for the values of 0, 1, and 2, resulting in exactly three total executions."
+  },
+  {
+    "question": "What does PHP stand for?",
+    "choices": [
+      "Programming Hyper Protocol",
+      "Predefined HTML Parser",
+      "Hypertext Preprocessor",
+      "Personal Home Page"
+    ],
+    "correctIndex": 2,
+    "explanation": "While PHP originally stood for Personal Home Page, its current, official recursive acronym is Hypertext Preprocessor. This name accurately reflects its primary function: processing code to generate HTML output for the client."
+  },
+  {
+    "question": "In PHP, an `else` statement can be used independently.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. An `else` statement is fundamentally tied to a preceding `if` or `elseif` block, serving as the optional default path to be executed only when all preceding conditional checks have evaluated to false."
+  },
+  {
+    "question": "The `substr()` function is used to extract a portion of a string.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The **`substr()`** function is a fundamental string manipulation tool in PHP, designed specifically to retrieve and return a **substring** of a specified length, starting from a given position within the original string. It's crucial for parsing or truncating text data efficiently."
+  },
+  {
+    "question": "Which type of array uses named keys instead of numeric indexes?",
+    "choices": [
+      "Indexed",
+      "Sequential",
+      "Associative",
+      "Multidimensional"
+    ],
+    "correctIndex": 2,
+    "explanation": "An **associative array** is characterized by the use of **named keys**—which are typically strings—to reference the array's values, rather than relying on the default sequential, zero-based numeric indexing of an indexed array. This structure allows data to be retrieved using meaningful labels."
+  },
+  {
+    "question": "Which function is used to repeat a string multiple times?",
+    "choices": [
+      "str_repeat()",
+      "repeat_str()",
+      "loop_string()",
+      "repeat()"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`str_repeat()`** function is the dedicated string function in PHP used to generate a new string by repeating the input string a specified number of times. This function streamlines the process of text replication without the need for manual loops."
+  },
+  {
+    "question": "Which function is used to compare two strings case-insensitively?",
+    "choices": [
+      "compareIgnoreCase()",
+      "strcasecmp()",
+      "strcmp()",
+      "casecmp()"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`strcasecmp()`** function is essential for comparing two strings without regard to the case of their letters, returning a value that indicates whether the first string is less than, greater than, or equal to the second. In contrast, the `strcmp()` function performs a case-sensitive comparison."
+  },
+  {
+    "question": "In PHP, a function is defined using the keyword ________, followed by the function name and parentheses.",
+    "choices": [
+      "Call",
+      "Define",
+      "Function",
+      "Method"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`function`** keyword is the mandatory keyword that precedes the function name when declaring any user-defined function in PHP. This syntax signals to the interpreter that a block of reusable code is being defined."
+  },
+  {
+    "question": "Which function removes HTML and PHP tags from a string?",
+    "choices": [
+      "clear_html()",
+      "strip_tags()",
+      "sanitize()",
+      "remove_tags()"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`strip_tags()`** function is primarily used to remove all HTML, XML, and PHP tags from a string, helping to clean up input or prevent cross-site scripting (XSS) vulnerabilities. It provides an option to specify which tags should be allowed to remain in the string."
+  },
+  {
+    "question": "An indexed array in PHP starts counting elements from index __________.",
+    "choices": [
+      "1",
+      "0",
+      "-1",
+      "Any value"
+    ],
+    "correctIndex": 1,
+    "explanation": "Like many other programming languages, PHP uses **zero-based indexing** for indexed arrays. The first element of any indexed or sequential array is accessed using the index **0**, ensuring a consistent structure for array manipulation."
+  },
+  {
+    "question": "Which function is used to convert a string to lowercase?",
+    "choices": [
+      "toLower()",
+      "string_lower()",
+      "case_down()",
+      "strtolower()"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`strtolower()`** function is the correct and conventional built-in function for converting all alphabetic characters within a string to their corresponding lowercase equivalents. This is a common operation for standardization and normalization of text data."
+  },
+  {
+    "question": "________ functions in PHP allow calling the function without defining it explicitly, as long as it exists within a class or file.",
+    "choices": [
+      "Static",
+      "Recursive",
+      "Global",
+      "Anonymous"
+    ],
+    "correctIndex": 3,
+    "explanation": "The term **anonymous functions** (or closures) refers to functions that are defined without a name, which can be stored in a variable and called later. This is often leveraged in scenarios where functions are passed as arguments or returned from other functions."
+  },
+  {
+    "question": "What will be the output of the following code?\n$arr = array(\"Apple\", \"Banana\", \"Cherry\");\necho $arr[1];",
+    "choices": [
+      "Error",
+      "Cherry",
+      "Apple",
+      "Banana"
+    ],
+    "correctIndex": 3,
+    "explanation": "In this indexed array, the elements are stored starting at index 0. Accessing the array element at index 1 (`$arr[1]`) retrieves the second value in the sequence. Therefore, the code will output the string **'Banana'**."
+  },
+  {
+    "question": "To return a value from a function in PHP, we use the ________ statement.",
+    "choices": [
+      "echo",
+      "return",
+      "print",
+      "output"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`return`** statement is the designated construct for sending a result back to the calling code from within a function. This capability is fundamental to writing functions that produce computed values or signal the termination of the function's execution."
+  },
+  {
+    "question": "What will be the output of the following code?\n$colors = [\"Red\", \"Blue\", \"Green\"];\n$colors[] = \"Yellow\";\nprint_r($colors);",
+    "choices": [
+      "[\"Yellow\", \"Red\", \"Blue\", \"Green\"]",
+      "[\"Red\", \"Blue\", \"Green\", \"Yellow\"]",
+      "Error",
+      "[\"Red\", \"Blue\", \"Green\"]"
+    ],
+    "correctIndex": 1,
+    "explanation": "Appending a value to an indexed array using the empty bracket syntax (`$colors[] = 'Yellow'`) places the new element at the next available numeric index. Consequently, the array gains the string **'Yellow'** at index 3, following the initial three colors."
+  },
+  {
+    "question": "What will be the output of the following code?\n$numbers = [1, 2, 3, 4, 5];\narray_push($numbers, 6);\nprint_r($numbers);",
+    "choices": [
+      "[1, 2, 3, 4, 5, 6]",
+      "[1, 2, 3, 4, 5]",
+      "[6, 1, 2, 3, 4, 5]",
+      "Error"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`array_push()`** function is designed to add one or more new elements onto the end of an array. The code successfully appends the integer 6 to the existing list, producing a six-element array that ends with the number 6."
+  },
+  {
+    "question": "What will be the output of the following code?\n$arr = [\n    [\"Apple\", \"Banana\"],\n    [\"Carrot\", \"Tomato\"]\n];\necho $arr[1][0];",
+    "choices": [
+      "Tomato",
+      "Banana",
+      "Apple",
+      "Carrot"
+    ],
+    "correctIndex": 3,
+    "explanation": "This code accesses a **multidimensional array**, where the first index `[1]` selects the second internal array, `[\"Carrot\", \"Tomato\"]`. The second index `[0]` then selects the first element from that inner array. Consequently, the output is the string **'Carrot'**."
+  },
+  {
+    "question": "What is the best way to ensure a PHP function is reusable across multiple files?",
+    "choices": [
+      "Use the include or require statement to import a file containing the function.",
+      "Write the function inside the HTML file.",
+      "Copy and paste the function in every script where it is needed.",
+      "Define the function multiple times in each file."
+    ],
+    "correctIndex": 0,
+    "explanation": "To ensure efficient **reusability** and maintainability, the best practice is to define the function once in a separate PHP file and then load that file into any script that needs it using the **`include`** or **`require`** statements. This avoids redundancy and simplifies future updates."
+  },
+  {
+    "question": "What will be the output of the following code?\n$fruits = array(\"Apple\", \"Banana\", \"Cherry\");\necho count($fruits);",
+    "choices": [
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`count()`** function is used to return the total number of elements within an array. Since the array `$fruits` contains three distinct string elements, the code correctly outputs the integer value **3**."
+  },
+  {
+    "question": "What does `strpos(\"Hello World\", \"World\")` return?",
+    "choices": [
+      "0",
+      "1",
+      "6",
+      "error"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`strpos()`** function is used to find the first occurrence of one string within another and returns the starting **position** (index). Since PHP uses zero-based indexing and the substring 'World' begins after 'Hello' and a space, it starts at index **6**."
+  },
+  {
+    "question": "To call a function in PHP, you need to use its ________ followed by parentheses.",
+    "choices": [
+      "return type",
+      "declaration",
+      "name",
+      "definition"
+    ],
+    "correctIndex": 2,
+    "explanation": "Invoking a function, or getting it to execute, requires using its unique **name** followed immediately by parentheses `()`, which may contain arguments. The name is the identifier assigned during the function's definition."
+  },
+  {
+    "question": "Which function is used to format a string using placeholders?",
+    "choices": [
+      "replace_vars()",
+      "format()",
+      "string_format()",
+      "sprintf()"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`sprintf()`** function is a highly versatile function used for formatting a string according to a specified format string. It uses placeholders like `%s` (for string) or `%d` (for integer) to substitute values, effectively creating complex formatted outputs."
+  },
+  {
+    "question": "What happens if a function in PHP does not include a `return` statement?",
+    "choices": [
+      "It returns null by default.",
+      "It automatically prints the last variable in the function.",
+      "It returns false.",
+      "It causes an error."
+    ],
+    "correctIndex": 0,
+    "explanation": "If a function's execution completes without encountering an explicit **`return`** statement, the function will implicitly return the special value **`NULL`**. This predictable behavior is vital for checking the output of functions that may not always need to return a complex data type."
+  },
+  {
+    "question": "PHP functions can have default parameter values.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. PHP supports the assignment of **default values** to function parameters, allowing the function to be called without those arguments. If a caller omits an argument, the function automatically uses the predefined default value, enhancing flexibility and reusability."
+  },
+  {
+    "question": "What is the correct syntax to define a function in PHP?",
+    "choices": [
+      "func myFunction() { }",
+      "function myFunction() { }",
+      "def myFunction() { }",
+      "define myFunction() { }"
+    ],
+    "correctIndex": 1,
+    "explanation": "The required syntax for defining a function begins with the keyword **`function`**, followed by the desired function name, an empty or parameterized list enclosed in parentheses, and the code block contained within curly braces `{}`."
+  },
+  {
+    "question": "PHP arrays can store multiple values under a single variable name.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The array data structure is designed precisely for **storing multiple values**—which can be of different data types—and associating them with a single, common variable name. This aggregation is key to handling collections of related data."
+  },
+  {
+    "question": "What is the output of the following code?\necho strtoupper(\"hello\");",
+    "choices": [
+      "Error",
+      "HELLO",
+      "HeLLo",
+      "hello"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`strtoupper()`** function is specifically used to convert all alphabetic characters in a given string to their **uppercase** equivalents. Consequently, the string 'hello' is transformed and outputted as the string **'HELLO'**."
+  },
+  {
+    "question": "A function in PHP must always return a value.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. While a function *can* return a value using the `return` statement, it is not mandatory. Functions that do not explicitly return a value are often used solely for performing actions, such as printing output or modifying a global state, and they implicitly return **`NULL`**."
+  },
+  {
+    "question": "In PHP, function parameters allow passing values into a function. What happens if a parameter is not provided when calling a function?",
+    "choices": [
+      "PHP automatically assigns a random value.",
+      "It causes a syntax error.",
+      "It returns null unless a default value is set.",
+      "The function execution is skipped."
+    ],
+    "correctIndex": 2,
+    "explanation": "If a function is called without providing an argument for a parameter that **doesn't have a default value**, PHP will issue a **warning** and treat that parameter as **`NULL`**. Conversely, if a default value is defined, that value is used instead, preventing the warning."
+  },
+  {
+    "question": "Which function sorts an array in descending order?",
+    "choices": [
+      "order_desc()",
+      "sort()",
+      "array_reverse()",
+      "rsort()"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`rsort()`** function is the dedicated array function in PHP used for sorting an indexed array in **reverse or descending order**. It performs the sorting directly on the array, reassigning new numeric keys while destroying the original key-value relationship."
+  },
+  {
+    "question": "An associative array allows keys to be non-numeric.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Associative arrays are distinguished by their use of **string keys**, allowing the array's elements to be indexed by descriptive, non-numeric identifiers. This contrasts sharply with indexed arrays, which rely solely on implicit integer keys."
+  },
+  {
+    "question": "What function generates a new session ID?",
+    "choices": [
+      "session_regenerate_id()",
+      "new_session_id()",
+      "session_generate_id()",
+      "session_reset_id()"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`session_regenerate_id()`** function is a critical security measure used to replace the current session ID with a new, randomly generated one. This is typically done after a user successfully logs in to prevent **session fixation attacks**, where an attacker attempts to use a predictable session ID."
+  },
+  {
+    "question": "To check if a form field is empty in PHP, which function is best?",
+    "choices": [
+      "check()",
+      "validate()",
+      "empty()",
+      "isset()"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`empty()`** function is the most appropriate and efficient way to check for emptiness in PHP. It not only verifies if a variable is unset but also checks if it has an empty value, such as a zero-length string or the integer 0, which commonly occurs with empty form fields."
+  },
+  {
+    "question": "The _________ method does not store data in the browser history.",
+    "choices": [
+      "POST",
+      "COOKIE",
+      "REQUEST",
+      "GET"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **POST** method transmits form data within the body of the HTTP request, preventing the data from being exposed in the URL query string. Because the data is not part of the URL, it avoids being cached by the browser or stored in the browser's history, which is essential for sensitive information."
+  },
+  {
+    "question": "What function should be used to prevent XSS (Cross-Site Scripting) in user input?",
+    "choices": [
+      "addslashes()",
+      "strip_tags()",
+      "htmlspecialchars()",
+      "htmlentities()"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`htmlspecialchars()`** function is the standard tool for mitigating **XSS vulnerabilities**. It converts special characters that are meaningful in HTML (like `<` to `&lt;` and `>` to `&gt;`) into their HTML entities, ensuring that malicious scripts are displayed as text rather than executed by the browser."
+  },
+  {
+    "question": "Sessions are not automatically destroyed after a user logs out; they must be manually cleared.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. While sessions expire naturally after a period of inactivity, they must be **manually destroyed** by the application when a user explicitly logs out. If this cleanup is skipped, the session data remains on the server, posing a potential security risk."
+  },
+  {
+    "question": "The default session storage location in PHP is _________.",
+    "choices": [
+      "In a cookie",
+      "In local storage",
+      "On the server",
+      "In the browser cache"
+    ],
+    "correctIndex": 2,
+    "explanation": "PHP session variables and their corresponding data are stored **on the server** by default, typically in temporary files. The only information transmitted to the client is the unique session ID, which is usually carried by a cookie to link the client back to the server-side data."
+  },
+  {
+    "question": "Using prepared statements is an effective way to ensure data integrity when inserting user input into a database.",
+    "choices": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correctIndex": 0,
+    "explanation": "TRUE. **Prepared statements** are a highly effective defense against **SQL injection attacks**. They separate the SQL query structure from the user-provided data, ensuring that user input is always treated as data and never executable code, which safeguards the database's integrity."
+  },
+  {
+    "question": "Where are PHP session variables stored by default?",
+    "choices": [
+      "In local storage",
+      "In the browser cache",
+      "On the server",
+      "In a cookie"
+    ],
+    "correctIndex": 2,
+    "explanation": "The session data for PHP variables is stored **on the server's filesystem**. Only a unique **session ID** is sent to the client (usually in a cookie) to act as a pointer to the correct data file on the server, ensuring security and persistence across requests."
+  },
+  {
+    "question": "Which function helps escape special characters in SQL queries?",
+    "choices": [
+      "validate_sql()",
+      "mysqli_real_escape_string()",
+      "sanitize_input()",
+      "escape_string()"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`mysqli_real_escape_string()`** function (or its PDO equivalent) is used to escape special characters in a string, such as single quotes (`'`) and double quotes (`\"`), making the string safe to use in an SQL query. However, using **prepared statements** is the modern and preferred approach for security."
+  },
+  {
+    "question": "The _________ method is generally used for retrieving data from a server.",
+    "choices": [
+      "POST",
+      "COOKIE",
+      "GET",
+      "REQUEST"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **GET** method is the HTTP verb designated for requesting and retrieving data from a specific resource on a server. It is considered idempotent, meaning multiple identical requests should have the same effect as a single request."
+  },
+  {
+    "question": "Which method is most secure for storing user authentication data?",
+    "choices": [
+      "Storing plaintext passwords in a database",
+      "Encrypting the entire session storage",
+      "Hashing passwords before storing",
+      "Using session variables without security checks"
+    ],
+    "correctIndex": 2,
+    "explanation": "The most secure practice for storing user credentials is **hashing passwords** (using modern algorithms like Argon2 or bcrypt) before saving them to the database. This process makes the original password unrecoverable, even if the database is compromised."
+  },
+  {
+    "question": "What function is used to start a session in PHP?",
+    "choices": [
+      "open_session()",
+      "start_session()",
+      "session_begin()",
+      "session_start()"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`session_start()`** function is mandatory for initiating or resuming a PHP session. It must be called at the beginning of the script, before any output is sent to the browser, to enable the use of the `$_SESSION` superglobal array."
+  },
+  {
+    "question": "Which method can be bookmarked because it stores data in the URL?",
+    "choices": [
+      "POST",
+      "SESSION",
+      "GET",
+      "COOKIE"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **GET** method appends form data directly to the URL as a query string. This visibility of data in the URL allows the resulting page to be easily bookmarked or shared, enabling users to return directly to that specific state later."
+  },
+  {
+    "question": "When should you use the POST method instead of GET?",
+    "choices": [
+      "When handling sensitive information like passwords",
+      "When sending data to a URL",
+      "When retrieving data from a database",
+      "When displaying a static page"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **POST** method should be used for transmitting sensitive data, such as login credentials or private form content. It transmits data in the request body, concealing it from the URL, browser history, and server logs, unlike the less secure GET method."
+  },
+  {
+    "question": "The _________ function is used to sanitize a URL input.",
+    "choices": [
+      "clean_url($url)",
+      "check_url($url)",
+      "validate_url($url)",
+      "filter_var($url, FILTER_SANITIZE_URL)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`filter_var()`** function, utilizing the **`FILTER_SANITIZE_URL`** flag, is the designated tool for cleaning up URL input. This sanitation process removes all illegal URL characters, ensuring the string remains a valid and safe URL format."
+  },
+  {
+    "question": "The POST method supports sending large amounts of data.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Because the **POST** method carries data in the request body, it is not limited by the character limits of the URL query string, as the GET method is. This makes POST highly suitable for submitting large forms, uploading files, or sending extensive JSON payloads."
+  },
+  {
+    "question": "The session ID is stored in a _________ by default in PHP.",
+    "choices": [
+      "Local storage",
+      "Session database",
+      "Cookie",
+      "Server file"
+    ],
+    "correctIndex": 2,
+    "explanation": "While the session *data* is stored on the server, the unique **session ID** (which acts as a key to retrieve that data) is stored on the client side, typically in a **cookie**. This cookie is sent with every subsequent request to allow the server to identify and retrieve the correct session data."
+  },
+  {
+    "question": "How do you retrieve the value of an input field named \"email\" using POST?",
+    "choices": [
+      "$_POST['email']",
+      "$_SESSION['email']",
+      "$_GET['email']",
+      "$_REQUEST['email']"
+    ],
+    "correctIndex": 0,
+    "explanation": "Form data submitted using the POST method is accessed via the **`$_POST`** superglobal array. To retrieve the value of an input field named 'email', you must reference its key within this array using the syntax `$_POST['email']`."
+  },
+  {
+    "question": "Which PHP superglobal is used to retrieve data sent via the GET method?",
+    "choices": [
+      "$_SESSION",
+      "$_GET",
+      "$_REQUEST",
+      "$_POST"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`$_GET`** superglobal array is specifically used to collect and retrieve data that has been passed to the script via the URL query string (using the GET method), with all data being accessible through their respective key-value pairs."
+  },
+  {
+    "question": "The _________ function is used to remove HTML tags from user input.",
+    "choices": [
+      "htmlentities()",
+      "filter_var()",
+      "strip_tags()",
+      "remove_html()"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`strip_tags()`** function is designed to remove all HTML and PHP tags from a string. This is a common security and sanitation technique to clean up user-provided text before displaying it or storing it in a database."
+  },
+  {
+    "question": "What should you use to protect session data from hijacking?",
+    "choices": [
+      "Use GET requests for authentication",
+      "Regenerate session IDs",
+      "Store session data in cookies",
+      "Disable session storage"
+    ],
+    "correctIndex": 1,
+    "explanation": "The most effective defense against **session hijacking** is to **regenerate session IDs** after a user performs a major action, such as logging in. This invalidates any old session ID that an attacker might have captured, forcing them to capture a new, ephemeral ID."
+  },
+  {
+    "question": "Which function is used to validate an integer input?",
+    "choices": [
+      "check_int($var)",
+      "filter_var($var, FILTER_VALIDATE_INT)",
+      "is_int($var)",
+      "validate_int($var)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`filter_var()`** function, when used with the **`FILTER_VALIDATE_INT`** flag, is the correct and robust way to validate user input as an integer. It ensures the variable is actually a valid integer format, rather than just checking its variable type, which `is_int()` does."
+  },
+  {
+    "question": "Which PHP superglobal is used to handle form data submitted via POST?",
+    "choices": [
+      "$_REQUEST",
+      "$_GET",
+      "$_POST",
+      "$_SESSION"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`$_POST`** superglobal array is specifically utilized to collect and manage data that is sent to a PHP script using the HTTP **POST** method, typically via HTML forms. This data is delivered in the request body."
+  },
+  {
+    "question": "Why is it not recommended to use GET for password transmission?",
+    "choices": [
+      "GET is faster than POST",
+      "GET does not support encryption",
+      "GET cannot be used in PHP",
+      "Data is visible in the URL and can be stored in browser history"
+    ],
+    "correctIndex": 3,
+    "explanation": "It is highly discouraged to use the GET method for transmitting passwords or other sensitive data because the information is **directly exposed in the URL query string**. This makes it vulnerable to interception and causes the sensitive data to be stored in the browser's history and server logs."
+  },
+  {
+    "question": "If no HTTP method is specified in an HTML form, the default method used is POST.",
+    "choices": [
+      "FALSE",
+      "TRUE"
+    ],
+    "correctIndex": 0,
+    "explanation": "FALSE. By default, if the `method` attribute is omitted from an HTML `<form>` tag, the browser will automatically use the **GET** method for submitting the form data, not POST."
+  },
+  {
+    "question": "Which HTTP method is considered more secure for transmitting sensitive data?",
+    "choices": [
+      "GET",
+      "REQUEST",
+      "SESSION",
+      "POST"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **POST** method is considered more secure for sensitive data because it embeds the data within the body of the HTTP request, preventing it from being visibly exposed in the URL. This method, especially when paired with HTTPS, provides greater confidentiality."
+  },
+  {
+    "question": "What function is used to destroy a session in PHP?",
+    "choices": [
+      "delete_session()",
+      "session_unset()",
+      "session_destroy()",
+      "destroy_session()"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`session_destroy()`** function is the dedicated mechanism for completely terminating a PHP session. It removes all session data stored on the server side and is typically called after the user has logged out."
+  },
+  {
+    "question": "What is the best method to prevent CSRF (Cross-Site Request Forgery) attacks?",
+    "choices": [
+      "Using CSRF tokens",
+      "Storing data in cookies",
+      "Using hidden input fields",
+      "Enabling JavaScript validation"
+    ],
+    "correctIndex": 0,
+    "explanation": "The most reliable defense against **CSRF attacks** is the use of **CSRF tokens** (Synchronizer Tokens). A unique, secret token is generated by the server and included in every form. The server then validates this token upon submission to ensure the request originated from a legitimate source."
+  },
+  {
+    "question": "How do you store a value in a session variable?",
+    "choices": [
+      "session_save('key', 'value');",
+      "$_SESSION['key'] = 'value';",
+      "$_SESSION->set('key', 'value');",
+      "session_set('key', 'value');"
+    ],
+    "correctIndex": 1,
+    "explanation": "Session variables are managed using the **`$_SESSION`** superglobal array. To store a value, you simply assign the desired value to an array key, like any standard PHP array assignment, using the syntax `$_SESSION['key'] = 'value';`."
+  },
+  {
+    "question": "Which method allows sending large amounts of data?",
+    "choices": [
+      "POST",
+      "SESSION",
+      "GET",
+      "COOKIE"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **POST** method is the correct choice for sending large data volumes because the data is transmitted in the request body, which has no practical size limit. Conversely, the GET method is severely restricted by URL length limits imposed by browsers and servers."
+  },
+  {
+    "question": "Encapsulation is the OOP principle that ensures data is hidden from unauthorized access and modification.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Encapsulation** is a foundational OOP concept that involves bundling the data (properties) and the methods that operate on that data into a single unit (the class). This principle is vital for **data hiding**, restricting direct, unauthorized manipulation of the object's internal state to ensure data integrity and security."
+  },
+  {
+    "question": "Polymorphism allows methods with the same name but different implementations.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. **Polymorphism**, derived from Greek meaning 'many forms,' enables objects of different classes to respond uniquely to a single, identical method call or signature. This dynamic behavior is typically achieved in PHP through **method overriding** within a class hierarchy."
+  },
+  {
+    "question": "The private access modifier allows a property or method to be accessed only within the same class.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The **`private`** keyword represents the most stringent access restriction in object-oriented programming. It strictly limits the scope of a property or method, making it accessible only to the code defined directly **within that class itself**, effectively isolating it from both child classes and external code."
+  },
+  {
+    "question": "In PHP, how can a child class modify the behavior of a method from its parent class?",
+    "choices": [
+      "By using the final keyword",
+      "By using the static keyword",
+      "By changing the method to private",
+      "By overriding the method in the child class"
+    ],
+    "correctIndex": 3,
+    "explanation": "A child class modifies inherited behavior through **method overriding**. This process entails defining a new method in the child class that possesses the exact same name and signature as the parent's method, ensuring the child's specialized implementation is executed when called."
+  },
+  {
+    "question": "Inheritance in Object-Oriented Programming allows a class to derive properties and methods from another class, promoting code reusability.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Inheritance** is a cornerstone of OOP that facilitates a hierarchical relationship where a subclass acquires the attributes and behaviors of a superclass. This mechanism directly **promotes code reusability** by ensuring common logic is defined once and shared by all descendants."
+  },
+  {
+    "question": "In PHP, a constructor method is defined using the keyword __construct within a class to initialize object properties when an instance is created.",
+    "choices": [
+      "__construct",
+      "__init",
+      "constructor",
+      "initialize"
+    ],
+    "correctIndex": 0,
+    "explanation": "PHP utilizes the magic method **`__construct`** to designate the class constructor. This special function is automatically invoked by the PHP runtime immediately after a class instance is created, serving as the essential stage for setting up initial property states and executing necessary startup logic."
+  },
+  {
+    "question": "Which function is automatically called when an object is created?",
+    "choices": [
+      "start()",
+      "create()",
+      "__construct()",
+      "init()"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`__construct()`** method, a constructor function, is automatically executed by the system as soon as a new object is successfully instantiated using the `new` operator. Its purpose is solely to handle the initial setup and configuration of the newly created object."
+  },
+  {
+    "question": "Which of the following is true about polymorphism?",
+    "choices": [
+      "Inheritance is not required for polymorphism",
+      "A single method name can have multiple implementations in different classes",
+      "A method can only be used once in a class hierarchy",
+      "Private methods can be accessed outside the class"
+    ],
+    "correctIndex": 1,
+    "explanation": "The essence of **polymorphism** is the dynamic ability for a single method signature to have distinct implementations across various classes that share a common type (either through inheritance or interfaces). This allows for flexible and interchangeable component design."
+  },
+  {
+    "question": "Why are private properties useful in OOP?",
+    "choices": [
+      "They speed up execution time",
+      "They prevent accidental modification from outside the class",
+      "They make properties globally accessible",
+      "They allow unrestricted access"
+    ],
+    "correctIndex": 1,
+    "explanation": "Declaring properties as **`private`** enforces a core security aspect of **encapsulation**. By restricting direct external access, developers guarantee that property values can only be modified via controlled methods (getters and setters), thereby safeguarding the object's integrity against unintended or unauthorized changes."
+  },
+  {
+    "question": "The destructor method in PHP is used to:",
+    "choices": [
+      "Initialize object properties",
+      "Perform cleanup before an object is destroyed",
+      "Create an object",
+      "Prevent inheritance"
+    ],
+    "correctIndex": 1,
+    "explanation": "The destructor method, defined by **`__destruct()`**, is a special function that the PHP runtime automatically calls just as an object is about to be reclaimed by the garbage collector. Its function is to **perform necessary cleanup operations**, such as closing file handles or releasing resources, before the object leaves memory."
+  },
+  {
+    "question": "Which feature of OOP allows different classes to be treated as the same type through a common interface?",
+    "choices": [
+      "Static binding",
+      "Encapsulation",
+      "Overloading",
+      "Polymorphism"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Polymorphism** allows code to interact with objects of different classes uniformly, provided they share a common interface or base class. This design pattern simplifies system architecture by promoting interchangeable component usage and reducing conditional code reliance."
+  },
+  {
+    "question": "Which design approach makes PHP classes more reusable and easier to maintain?",
+    "choices": [
+      "Using only global variables",
+      "Writing large classes with many unrelated methods",
+      "Following the Single Responsibility Principle (SRP)",
+      "Avoiding the use of constructors"
+    ],
+    "correctIndex": 2,
+    "explanation": "Following the **Single Responsibility Principle (SRP)** dramatically enhances maintainability and reusability. SRP mandates that each class should be responsible for only one part of a system's functionality, leading to smaller, highly cohesive classes that are simpler to test and modify."
+  },
+  {
+    "question": "What does polymorphism allow objects to do?",
+    "choices": [
+      "Access private properties from another class",
+      "Take multiple forms by overriding or implementing methods",
+      "Change access modifiers dynamically",
+      "Prevent inheritance"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Polymorphism** allows objects to **take multiple forms**—specifically, to exhibit different behaviors depending on their type. This is fundamental to object-oriented programming, enabling a single action (method call) to be executed via different, specialized implementations."
+  },
+  {
+    "question": "What is the primary purpose of a constructor in a PHP class?",
+    "choices": [
+      "To define a new method",
+      "To initialize an object’s properties when it is created",
+      "To call the parent class",
+      "To destroy an object"
+    ],
+    "correctIndex": 1,
+    "explanation": "The primary role of a constructor (`__construct`) is to perform essential setup and **initialize the object's properties** with valid starting values. This ensures that the object is in a usable and consistent state immediately following its creation."
+  },
+  {
+    "question": "Which keyword is used to inherit properties and methods from a parent class?",
+    "choices": [
+      "implements",
+      "parent",
+      "extends",
+      "inherits"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`extends`** keyword is the designated PHP syntax for establishing an inheritance relationship. When used in a class declaration, it signifies that the new class will derive and access the non-private members of the specified parent class."
+  },
+  {
+    "question": "Why should properties in PHP OOP often be declared private?",
+    "choices": [
+      "To prevent accidental modification from outside the class",
+      "To make them accessible from anywhere",
+      "To allow direct access without methods",
+      "To make the code run faster"
+    ],
+    "correctIndex": 0,
+    "explanation": "Properties are often declared **`private`** to enforce encapsulation and **prevent accidental modification** or corruption of data by external code. This forces external interaction to occur through controlled, validated public methods (getters and setters)."
+  },
+  {
+    "question": "How can you prevent a method from being overridden in a child class?",
+    "choices": [
+      "By making it private",
+      "By declaring it as final",
+      "By using the override keyword",
+      "By declaring it as public"
+    ],
+    "correctIndex": 1,
+    "explanation": "Declaring a method with the **`final`** keyword explicitly prevents any subclass from overriding or redefining that method. This mechanism is employed when a developer wants to guarantee that a specific piece of logic remains invariant across the entire class hierarchy."
+  },
+  {
+    "question": "In Object-Oriented Programming, the concept of inheritance allows a subclass to inherit properties and methods from a parent class.",
+    "choices": [
+      "Abstraction",
+      "Encapsulation",
+      "Polymorphism",
+      "Inheritance"
+    ],
+    "correctIndex": 3,
+    "explanation": "The concept described is **Inheritance**. It is a crucial feature that allows a specialized class (subclass) to automatically reuse the general attributes and behaviors (properties and methods) of a broader class (parent class), thereby fostering a strong 'is-a' relationship."
+  },
+  {
+    "question": "Which method is automatically called when an object is destroyed?",
+    "choices": [
+      "remove()",
+      "destroy()",
+      "__construct()",
+      "__destruct()"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`__destruct()`** magic method is automatically executed by the PHP runtime just before the object is removed from memory. This function is essential for performing necessary cleanup, such as closing connections or releasing allocated system resources."
+  },
+  {
+    "question": "What happens if a class does not define a constructor?",
+    "choices": [
+      "The class must define a destructor instead",
+      "PHP provides a default constructor",
+      "All properties must be initialized manually",
+      "The class cannot create objects"
+    ],
+    "correctIndex": 1,
+    "explanation": "If a constructor is not explicitly defined by the developer, the PHP runtime automatically supplies a **default, parameterless constructor**. This ensures that the class remains instantiable and avoids disruption to the object creation process."
+  },
+  {
+    "question": "When a child class provides a specific implementation of a method already defined in the parent class, it is called ________.",
+    "choices": [
+      "Method Overloading",
+      "Abstraction",
+      "Encapsulation",
+      "Method Overriding"
+    ],
+    "correctIndex": 3,
+    "explanation": "This mechanism is known as **Method Overriding**. It is a cornerstone of polymorphism, where a subclass redefines an inherited method to provide its own specialized behavior while maintaining the original method signature."
+  },
+  {
+    "question": "Overriding in Object-Oriented Programming ensures that the internal details of a class are hidden from outside access, allowing only controlled interaction through public methods.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The principle described—hiding internal details and controlling access via public methods—is **Encapsulation**. Overriding, by contrast, relates to **Polymorphism** and the ability of a child class to change the execution logic of an inherited method."
+  },
+  {
+    "question": "What is the main benefit of using inheritance in PHP?",
+    "choices": [
+      "Making code execute faster",
+      "Preventing code duplication",
+      "Allowing a class to reuse the properties and methods of another class",
+      "Reducing memory usage"
+    ],
+    "correctIndex": 2,
+    "explanation": "The central advantage of **inheritance** is its direct ability to **reuse existing properties and methods** from a parent class. This architectural relationship minimizes the need to rewrite common code, thereby promoting consistency and efficiency."
+  },
+  {
+    "question": "Which keyword allows a child class to access properties of a parent class but restricts access from outside the class hierarchy?",
+    "choices": [
+      "protected",
+      "public",
+      "final",
+      "private"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`protected`** access modifier is designed to balance visibility. It permits the defining class and all its descendant (child) classes to access the member, while strictly denying access to any code residing **outside the class hierarchy**."
+  },
+  {
+    "question": "Which feature of OOP helps in reducing code duplication?",
+    "choices": [
+      "Composition",
+      "Abstraction",
+      "Inheritance",
+      "Encapsulation"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Inheritance** is the primary OOP feature dedicated to reducing code duplication. By structuring classes hierarchically, common attributes and behaviors are defined once in the parent class and are automatically inherited by all child classes."
+  },
+  {
+    "question": "Which of the following is a key benefit of using access modifiers in PHP?",
+    "choices": [
+      "They allow control over how properties and methods are accessed",
+      "They remove the need for functions",
+      "They improve the speed of PHP execution",
+      "They help in defining global variables"
+    ],
+    "correctIndex": 0,
+    "explanation": "Access modifiers (`public`, `protected`, `private`) are essential for enforcing **encapsulation**. Their core benefit is to provide explicit **control over the visibility and accessibility** of a class's members, ensuring that internal logic and data structures are only exposed when necessary."
+  },
+  {
+    "question": "Which of the following best describes modular code in PHP OOP?",
+    "choices": [
+      "Code that is divided into reusable classes and methods",
+      "Code that is written in one large function",
+      "Code that does not use objects",
+      "Code that contains only procedural functions"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Modular code** in the context of OOP is characterized by the organization of a system into discrete, self-contained **classes and methods**. This structure minimizes interdependence between system components, significantly enhancing clarity, maintainability, and reusability."
+  },
+  {
+    "question": "What does method overriding allow in PHP?",
+    "choices": [
+      "A child class to redefine a method of the parent class",
+      "A private method to become public",
+      "A parent class to prevent inheritance",
+      "Multiple parent classes to be inherited"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Method overriding** permits a specialized class (the child) to supply a unique and tailored implementation for a method that was originally defined in a more general class (the parent). This ability to redefine inherited behavior is a mechanism of polymorphism."
+  },
+  {
+    "question": "Which of the following OOP features in PHP allows multiple methods with the same name but different implementations?",
+    "choices": [
+      "Abstraction",
+      "Polymorphism",
+      "Inheritance",
+      "Encapsulation"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Polymorphism** is the feature that allows objects of varying types to respond to the same method call with distinct, type-specific logic. In PHP, this is chiefly implemented through method overriding across class hierarchies or through interface implementation."
+  },
+  {
+    "question": "How can a private property be accessed within the same class?",
+    "choices": [
+      "Directly calling $propertyName",
+      "Using $this->propertyName",
+      "By declaring it as public",
+      "Using the global keyword"
+    ],
+    "correctIndex": 1,
+    "explanation": "A private property is accessible only from methods **within its defining class**. Accessing the property requires using the pseudo-variable **`$this`**, which references the current object instance, followed by the object operator (`->`) and the property name."
+  },
+  {
+    "question": "What function can be used to log errors instead of displaying them?",
+    "choices": [
+      "store_error()",
+      "log_message()",
+      "error_log()",
+      "catch_error()"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`error_log()`** function is the dedicated PHP mechanism for directing error messages to a specified location, such as a file on the server or the system logger. This practice is crucial in a production environment because it prevents sensitive internal details from being displayed to end-users, thereby enhancing security while retaining necessary debug information."
+  },
+  {
+    "question": "In PHP, what type of error does not stop script execution?",
+    "choices": [
+      "Fatal error",
+      "Warning",
+      "Syntax error",
+      "Parse error"
+    ],
+    "correctIndex": 1,
+    "explanation": "A **Warning** represents a non-critical runtime error that alerts the developer to a potential issue, such as calling an incorrect function or encountering a file that does not exist. Critically, unlike fatal or parse errors, a warning allows the PHP script to continue its execution process."
+  },
+  {
+    "question": "What is the best practice for handling errors in a production environment?",
+    "choices": [
+      "Ignore errors to improve performance",
+      "Suppress errors using @",
+      "Log errors instead of displaying them",
+      "Display all errors to the user"
+    ],
+    "correctIndex": 2,
+    "explanation": "The most secure and robust practice in a production setting is to **log all errors** to a private, secure file rather than displaying them on the screen. This ensures that users do not see potentially compromising details about the application's internal structure or file paths, maintaining both security and a clean user interface."
+  },
+  {
+    "question": "What is the purpose of the UPDATE SQL statement?",
+    "choices": [
+      "Modifies existing records in a table",
+      "Adds a new table",
+      "Deletes a table",
+      "Retrieves data from a table"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **UPDATE** command is a fundamental SQL Data Manipulation Language (DML) statement. Its explicit purpose is to **modify or change the data values** contained within one or more existing rows of a database table, typically using a `WHERE` clause to specify the target records."
+  },
+  {
+    "question": "In PHP, ____ function is used to execute SQL queries securely with parameter binding.",
+    "choices": [
+      "mysqli_query()",
+      "mysqli_prepare()",
+      "mysqli_run()",
+      "mysqli_exec()"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`mysqli_prepare()`** function is essential for creating secure **prepared statements**. It separates the structure of the SQL command from the user-provided data, thereby enabling **parameter binding** that effectively prevents user input from being executed as malicious SQL code."
+  },
+  {
+    "question": "_________ PHP extension is commonly used for connecting to MySQL.",
+    "choices": [
+      "MySQLi",
+      "PDO",
+      "PostgreSQL",
+      "SQLite"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **MySQLi** (MySQL Improved) extension is a dedicated, native driver for interacting with MySQL databases from PHP. It provides both procedural and object-oriented APIs, and importantly, it supports the use of modern security features like prepared statements."
+  },
+  {
+    "question": "What function is used in PHP to execute a SQL query using MySQLi?",
+    "choices": [
+      "db_query()",
+      "run_sql()",
+      "mysql_execute()",
+      "mysqli_query()"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`mysqli_query()`** function serves as the direct command used to send and execute an SQL query to the connected MySQL database when using the MySQLi extension. It is the core function for performing simple queries or non-prepared statements."
+  },
+  {
+    "question": "What does PDO stand for in PHP?",
+    "choices": [
+      "PHP Database Operations",
+      "Personal Data Organizer",
+      "Predefined Database Objects",
+      "PHP Data Objects"
+    ],
+    "correctIndex": 3,
+    "explanation": "**PDO** is the acronym for **PHP Data Objects**. It is a crucial extension that offers a uniform interface for database access, allowing PHP applications to connect and perform operations across numerous different database systems using a consistent API."
+  },
+  {
+    "question": "What does die() do in PHP?",
+    "choices": [
+      "Logs errors to a file",
+      "Stops script execution and displays an optional message",
+      "Continues script execution",
+      "Ignores errors"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`die()`** language construct is an alias for `exit()`. Its primary function is to **immediately terminate the execution** of the current PHP script at that precise point. It is often used to halt program flow when a critical, unrecoverable error, such as a failed database connection, occurs."
+  },
+  {
+    "question": "The ____ function is used to log errors to a file instead of displaying them on the screen.",
+    "choices": [
+      "log_error()",
+      "store_log()",
+      "write_error()",
+      "error_log()"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`error_log()`** function is utilized to record error messages to a destination such as a file, email, or system logger, thereby preventing them from being displayed directly to the user. This is critical for security and maintainability in deployed applications."
+  },
+  {
+    "question": "_______ SQL statement is used to insert data into a table.",
+    "choices": [
+      "ADD DATA",
+      "INPUT INTO",
+      "APPEND",
+      "INSERT INTO"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **INSERT INTO** command is the correct SQL Data Manipulation Language (DML) statement used for the creation of new records. This command adds a new row of data into a specified database table."
+  },
+  {
+    "question": "How do you delete a specific record from a MySQL table using SQL?",
+    "choices": [
+      "REMOVE FROM table_name WHERE condition",
+      "DROP RECORD FROM table_name",
+      "DELETE FROM table_name WHERE condition",
+      "CLEAR table_name WHERE condition"
+    ],
+    "correctIndex": 2,
+    "explanation": "The correct syntax for removing rows is **`DELETE FROM table_name WHERE condition`**. The `DELETE FROM` clause specifies the action and table, while the essential `WHERE` clause dictates precisely which records are to be permanently removed from the table."
+  },
+  {
+    "question": "Which of the following is an advantage of using PDO over MySQLi?",
+    "choices": [
+      "Works only with MySQL",
+      "Does not support prepared statements",
+      "Supports multiple database types",
+      "Requires more memory"
+    ],
+    "correctIndex": 2,
+    "explanation": "The primary benefit of **PDO** is its **database abstraction capability**. It provides a single, consistent programming interface that is capable of communicating with numerous **different database systems** (such as MySQL, SQL Server, and SQLite), simplifying the codebase and enhancing portability."
+  },
+  {
+    "question": "Using prepared statements in PHP can help protect against SQL injection attacks.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Prepared statements** are the most robust defense against **SQL injection**. By mandating that the SQL query structure be sent to the database separately from any user-provided data, they guarantee that the data is never mistakenly executed as part of the SQL command."
+  },
+  {
+    "question": "What does the try-catch block do in PHP?",
+    "choices": [
+      "Catches and handles exceptions",
+      "Ignores errors",
+      "Prevents PHP execution",
+      "Automatically fixes errors"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`try-catch`** block is a foundational structured control flow tool for **exception handling**. Code that may throw an exception is encapsulated within the `try` block; should an exception occur, execution transfers to the `catch` block, allowing the application to manage the error gracefully."
+  },
+  {
+    "question": "Which of the following error reporting levels displays all types of errors?",
+    "choices": [
+      "E_ALL",
+      "E_ERROR",
+      "E_WARNING",
+      "E_NOTICE"
+    ],
+    "correctIndex": 0,
+    "explanation": "The constant **`E_ALL`** represents the maximum level of error reporting available in PHP. When set, it directs the interpreter to report every possible error, including notices, warnings, fatal errors, and all other classifications, making it ideal for thorough development and debugging."
+  },
+  {
+    "question": "Which PHP function is used to throw an exception manually?",
+    "choices": [
+      "trigger_error()",
+      "php_error()",
+      "raise_exception()",
+      "throw new Exception()"
+    ],
+    "correctIndex": 3,
+    "explanation": "Exceptions are manually raised in PHP using the **`throw new Exception()`** syntax. This action creates a new `Exception` object, forcing the script's normal execution to immediately cease and demanding that the exception be handled by the nearest `try-catch` block."
+  },
+  {
+    "question": "Which of the following is used to fetch data row by row in an associative array format?",
+    "choices": [
+      "mysqli_fetch_array()",
+      "mysqli_fetch_assoc()",
+      "mysqli_fetch_object()",
+      "mysqli_fetch_row()"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`mysqli_fetch_assoc()`** function retrieves the next row from a database result set and returns it as an **associative array**. This format is highly desirable because the column names from the SQL query serve directly as the string keys of the array, enhancing code readability."
+  },
+  {
+    "question": "What does mysqli_fetch_assoc() return?",
+    "choices": [
+      "The last inserted row",
+      "The entire result set as a string",
+      "A numerical array",
+      "An associative array containing the next row of a result set"
+    ],
+    "correctIndex": 3,
+    "explanation": "The function's output is an **associative array** that holds the data for the next available record in the result set. This structure is advantageous because it uses the database column names as array keys, providing semantic access to the fetched data fields."
+  },
+  {
+    "question": "Which PHP function checks if the connection to MySQL was successful?",
+    "choices": [
+      "mysqli_connect_errno()",
+      "db_status()",
+      "mysql_error()",
+      "check_connection()"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`mysqli_connect_errno()`** function is used to retrieve the error code generated by the most recent database connection attempt. A successful connection will yield a return value of zero, making this function the definitive check for connection status."
+  },
+  {
+    "question": "Which PHP function retrieves the last inserted ID from an auto-increment column?",
+    "choices": [
+      "mysqli_get_id()",
+      "mysqli_last_id()",
+      "mysqli_insert_id()",
+      "mysqli_fetch_id()"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`mysqli_insert_id()`** function is designed to return the value that the database automatically generated for the primary key (auto-increment column) in the most recently executed `INSERT` query. This value is often necessary for maintaining referential integrity across related tables."
+  },
+  {
+    "question": "What parameters are required for mysqli_connect()?",
+    "choices": [
+      "Port number only",
+      "Hostname, username, password, database name",
+      "Table name",
+      "IP address only"
+    ],
+    "correctIndex": 1,
+    "explanation": "Establishing a connection requires four crucial parameters: the **hostname** of the server, the **username** and **password** for client authentication, and the specific **database name** to be selected. These credentials ensure a secure and targeted connection."
+  },
+  {
+    "question": "How do you prevent SQL injection in PHP while performing CRUD operations?",
+    "choices": [
+      "Using prepared statements",
+      "Directly embedding user input into SQL queries",
+      "Using string concatenation for SQL queries",
+      "Ignoring user input validation"
+    ],
+    "correctIndex": 0,
+    "explanation": "The most effective method for preventing **SQL injection** during CRUD operations is the consistent use of **prepared statements**. This technique ensures that input parameters are treated strictly as data, neutralizing any malicious code that may be embedded within the user's input."
+  },
+  {
+    "question": "What is the purpose of error handling in PHP?",
+    "choices": [
+      "To avoid using try-catch blocks",
+      "To delete error logs automatically",
+      "To detect, handle, and resolve issues in code execution",
+      "To slow down script execution"
+    ],
+    "correctIndex": 2,
+    "explanation": "The fundamental goal of error handling is to provide a comprehensive and robust strategy to **detect, manage, and resolve errors** that arise during script execution. Proper error handling ensures the application maintains stability and avoids abrupt or insecure failures."
+  },
+  {
+    "question": "What function is used to get the number of affected rows after an UPDATE or DELETE query in MySQLi?",
+    "choices": [
+      "mysqli_row_count()",
+      "mysqli_num_rows()",
+      "mysqli_total_rows()",
+      "mysqli_affected_rows()"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`mysqli_affected_rows()`** function retrieves the integer count of rows that were successfully modified by the last executed DML statement, such as `UPDATE`, `DELETE`, or `INSERT`. This is a vital verification step for assessing the impact of data modification operations."
+  },
+  {
+    "question": "What is the correct syntax for inserting data using MySQLi in PHP?",
+    "choices": [
+      "INSERT INTO table_name (column1, column2) VALUES ('value1', 'value2')",
+      "NEW RECORD table_name (column1, column2) VALUES ('value1', 'value2')",
+      "INPUT INTO table_name (column1, column2) VALUES ('value1', 'value2')",
+      "ADD TO table_name (column1, column2) VALUES ('value1', 'value2')"
+    ],
+    "correctIndex": 0,
+    "explanation": "The universally correct SQL syntax for inserting data involves the command **`INSERT INTO`**, followed by the target table name, a parenthesized list of columns, the **`VALUES`** keyword, and the parenthesized list of data values corresponding to those columns."
+  },
+  {
+    "question": "The mysqli_connect() function is used to establish a connection to a MySQL database using MySQLi.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The **`mysqli_connect()`** function is the specific procedural call designed to open a persistent connection to the MySQL database server, acting as the essential first step before any database operations can be performed using the MySQLi extension."
+  },
+  {
+    "question": "_____ function is used to execute an SQL query in MySQLi.",
+    "choices": [
+      "mysql_execute()",
+      "sql_exec()",
+      "mysqli_query()",
+      "run_query()"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`mysqli_query()`** function is the primary method for submitting and executing SQL queries to the database server via the MySQLi extension. It is used to perform general database interactions that do not require prepared statements."
+  },
+  {
+    "question": "What is the purpose of restore_error_handler() in PHP?",
+    "choices": [
+      "Clears all previous error logs",
+      "Restores the default PHP error handler",
+      "Displays custom error messages",
+      "Disables error logging"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`restore_error_handler()`** function is invoked to revert the custom error handling function, which was previously registered using `set_error_handler()`, back to the **default PHP error handler**. This ensures that standard error reporting resumes after specialized handling is complete."
+  },
+  {
+    "question": "The mysqli_close() function in PHP is used to open a new database connection.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 0,
+    "explanation": "False. The **`mysqli_close()`** function performs the final step of database interaction: it gracefully **terminates a previously established connection** to the MySQL server, releasing the system and network resources allocated to that link."
+  }
+]
