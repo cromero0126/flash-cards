@@ -127,6 +127,14 @@
         <div class="flashcard bg-gradient-to-br from-red-500 via-pink-600 to-purple-700 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard(false, this.textContent.trim())">
             CS 2401 - Software Engineering 1
         </div>
+        <!-- New Flashcard: CS 3305 - Web Programming 2 -->
+        <div class="flashcard bg-gradient-to-br from-orange-500 via-amber-600 to-yellow-700 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard(false, this.textContent.trim())">
+            CS 3305 - Web Programming 2
+        </div> 
+        <!-- New Flashcard: CS 4405 - Mobile Applications -->
+        <div class="flashcard bg-gradient-to-br from-cyan-500 via-sky-600 to-blue-700 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard(false, this.textContent.trim())">
+            CS 4405 - Mobile Applications
+        </div>
     </div>
 
     <div class="popup fixed inset-0 bg-gradient-to-br from-gray-900/80 to-black/80 flex justify-center z-50 transition-opacity duration-300 ease-in-out py-8 overflow-y-auto" id="popup" style="display: none;">
@@ -229,7 +237,9 @@
         const flashcardFileMap = {
             "CS 2301 - Operating Systems 1": "OperatingSystems1.json",
             "CS 3303 - Data Structures": "DataStructures.json",
-            "CS 2401 - Software Engineering 1": "SoftwareEngineering1.json"
+            "CS 2401 - Software Engineering 1": "SoftwareEngineering1.json",
+            "CS 3305 - Web Programming 2": "WebProgramming2.json",
+            "CS 4405 - Mobile Applications": "MobileApplications.json"
             // Ensure you have these JSON files in the same directory as your HTML file
         };
 
