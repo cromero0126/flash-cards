@@ -1,0 +1,711 @@
+[
+  {
+    "question": "Among the following options what is the correct order of mobile application development life cycle?",
+    "choices": [
+      "Test, Monitor, Release, Develop, Analyze",
+      "Monitor, Test, Release, Develop, Analyze",
+      "Test, Release, Monitor, Develop, Analyze",
+      "Analyze, Develop, Test, Release, Monitor"
+    ],
+    "correctIndex": 3,
+    "explanation": "The correct order of the mobile application development life cycle typically begins with the analysis and planning phase, followed by development, then rigorous testing, the release of the app, and finally, ongoing monitoring for performance and user feedback."
+  },
+  {
+    "question": "Which language is used to write code in the Flutter framework?",
+    "choices": [
+      "Dart",
+      "JavaScript",
+      "Kotlin",
+      "Objective-C"
+    ],
+    "correctIndex": 0,
+    "explanation": "Flutter is an open-source UI software development kit. It uses the Dart programming language, which is optimized for client-side development and is known for its fast execution and performance."
+  },
+  {
+    "question": "The front end of a mobile application includes ______. ",
+    "choices": [
+      "the visual and interactive part of the app",
+      "data",
+      "code for the services that the app provides",
+      "communication among machines and servers"
+    ],
+    "correctIndex": 0,
+    "explanation": "The front end, or client-side, of a mobile application consists of everything the user sees and interacts with. This includes the graphical user interface, user input fields, and all visual components that make up the app's experience."
+  },
+  {
+    "question": "Important parameters like the number of resources that will be consumed and the performance of the application are taken into consideration while choosing an alternative for building a mobile app.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. When deciding on a mobile app development approach (e.g., native vs. cross-platform), key parameters such as performance, resource consumption, scalability, and development cost are all critical factors that need to be evaluated to ensure the project's success."
+  },
+  {
+    "question": "Native mobile apps have direct access to device API and give the best performance.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Native apps are built for a specific platform using its native language and tools. This allows them to have direct access to a device's features and APIs, resulting in the highest possible performance and the best user experience."
+  },
+  {
+    "question": "Flutter is an open-source framework provided by ________.",
+    "choices": [
+      "Apple",
+      "Facebook",
+      "Google",
+      "Windows"
+    ],
+    "correctIndex": 2,
+    "explanation": "Flutter is an open-source UI software development kit created by Google. It is used for building cross-platform applications for mobile, web, and desktop from a single codebase."
+  },
+  {
+    "question": "Which IDE is used to write the code using the Flutter framework?",
+    "choices": [
+      "XCode",
+      "Android Studio",
+      "NetBeans",
+      "Eclipse"
+    ],
+    "correctIndex": 1,
+    "explanation": "While Flutter development can be done in various IDEs, Android Studio is one of the most popular choices. It provides robust tools and a supportive environment for writing and debugging Dart code for Flutter applications."
+  },
+  {
+    "question": "Native app for iOS can be developed on which IDE?",
+    "choices": [
+      "Visual Studio",
+      "XCode",
+      "Android Studio",
+      "IntelliJ"
+    ],
+    "correctIndex": 1,
+    "explanation": "XCode is Apple's integrated development environment (IDE) and is the primary tool used for developing native applications for iOS and other Apple platforms. It includes a complete set of tools for developing, debugging, and submitting apps to the App Store."
+  },
+  {
+    "question": "Web Apps are websites designed for mobile devices developed using web technologies like HTML and JavaScript.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Web apps are essentially websites that are optimized to provide a mobile-like user experience. They are built using standard web technologies and are accessible through a web browser, requiring no installation."
+  },
+  {
+    "question": "With the help of mobile apps, businesses can ________. ",
+    "choices": [
+      "engage more customers",
+      "provide better customer service",
+      "increase revenues",
+      "All of the above"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mobile applications provide numerous business benefits. They offer a direct channel for customer engagement, can be used to provide personalized and efficient customer service, and can create new revenue streams through in-app purchases or exclusive content."
+  },
+  {
+    "question": "The function count() in Kotlin returns the number of characters in a Kotlin string.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In Kotlin, the extension function **`count()`** is correctly used on a String object to return the total number of characters it contains. This is often used interchangeably with the **`length`** property for strings."
+  },
+  {
+    "question": "What will be the output of the following Kotlin program:\nfun main()\n{\nprintln(\"Hello\");\nprintln(\"World\")\n}",
+    "choices": [
+      "Prints 1",
+      "Prints 12",
+      "Prints Hello followed by World in the next line",
+      "Prints Hello and World in the same line"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`println()`** function in Kotlin is designed to print the given argument followed by a newline character. Therefore, each call to `println()` forces the subsequent output to start on a new line."
+  },
+  {
+    "question": "What will be the output of the following Kotlin program:\nfun main () {\nvar a = 10\nvar b = 20\nprintln(a*b)",
+    "choices": [
+      "200",
+      "1020",
+      "30",
+      "10*20"
+    ],
+    "correctIndex": 0,
+    "explanation": "The program executes a standard multiplication operation between the two integer variables, `a` (10) and `b` (20). The result, **200**, is then printed to the console."
+  },
+  {
+    "question": "In Kotlin the operators ‘<, >, <=, >=, ==, !=’  are called ______.",
+    "choices": [
+      "Arithmetic Operators",
+      "Relational Operators",
+      "Assignment Operators",
+      "Unary Operators"
+    ],
+    "correctIndex": 1,
+    "explanation": "These operators are known as **Relational Operators** because their function is to establish and test the relationship between two operands, yielding a Boolean result (true or false)."
+  },
+  {
+    "question": "Which of the following is a valid variable declaration in Kotlin?",
+    "choices": [
+      "Var #age = 21",
+      "Var age: Int = 21",
+      "Var age: Int = “21”",
+      "let age = 21"
+    ],
+    "correctIndex": 1,
+    "explanation": "This declaration correctly uses the **`Var`** keyword for a mutable variable, follows variable naming rules, explicitly specifies the **`Int`** type, and assigns an integer literal as its value."
+  },
+  {
+    "question": "What will be the output of the following Kotlin program:\nfun main() {\n    var a = 10\n    print(++a)\n}",
+    "choices": [
+      "10",
+      "11",
+      "++a",
+      "a syntax error"
+    ],
+    "correctIndex": 1,
+    "explanation": "The prefix increment operator **`++a`** first increments the value of the variable `a` from 10 to **11**, and then uses that new value in the `print()` function, resulting in the output 11."
+  },
+  {
+    "question": "Which of the following lines will give a syntax error in Kotlin?\nLine 1 Var name = “My Name”\nLine 2 Var name: String = “My Name”\nLine 3 Var name = My Name",
+    "choices": [
+      "Line 1",
+      "Line 2",
+      "Line 3",
+      "All three lines"
+    ],
+    "correctIndex": 2,
+    "explanation": "Line 3 contains an error because the string literal **`My Name`** is not enclosed in double quotes, which violates the language's syntax rule for declaring string values."
+  },
+  {
+    "question": "Which keyword is used to declare read-only variables in Kotlin?",
+    "choices": [
+      "Var",
+      "Val",
+      "Let",
+      "Static"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`Val`** keyword is utilized to declare a variable that is assigned a value only once and cannot be reassigned afterward, essentially making it a read-only variable or constant reference."
+  },
+  {
+    "question": "What will be the output of the following Kotlin program:\nfun main () {\n    var text = \"Hello\"\n    print(text[5])\n}",
+    "choices": [
+      "It will print alphabet o",
+      "Hello",
+      "It will throw run time error",
+      "It will print 5 alphabets of the word Hello one by one"
+    ],
+    "correctIndex": 2,
+    "explanation": "The string 'Hello' has 5 characters, meaning its indices run from 0 to 4. Attempting to access the character at index **5** is an **out-of-bounds access**, which will result in a runtime error."
+  },
+  {
+    "question": "Kotlin is a statically typed programming language.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Kotlin is a **statically typed** language, meaning that the type of every variable must be known at compile time, which helps prevent type-related errors before the code is executed."
+  },
+  {
+    "question": "Every Kotlin class does NOT need to have a constructor.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Every Kotlin class must have a constructor, though it might not be explicitly declared. If a primary constructor is not explicitly defined, the Kotlin compiler automatically generates a parameterless, implicit primary constructor. Therefore, a constructor is always present."
+  },
+  {
+    "question": "Which of the following method is used to set the color for an android button title?",
+    "choices": [
+      "setColor()",
+      "setTextColor()",
+      "setTitleColor()",
+      "setColorForTitle"
+    ],
+    "correctIndex": 1,
+    "explanation": "In Android development, the correct method for programmatically changing the color of the text displayed on a `Button` (which inherits from `TextView`) is **`setTextColor()`**. This method accepts an integer color value or a `ColorStateList`."
+  },
+  {
+    "question": "What is the use of the setOnClickListener method in Kotlin?",
+    "choices": [
+      "It gets called when the screen is loaded.",
+      "It is used to display buttons on the screen.",
+      "It is not a method of the button class.",
+      "Perform some action when the button gets clicked."
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`setOnClickListener()`** method is a standard pattern in Android development used to register an event handler, typically a lambda function or an anonymous class. This handler is executed when the associated UI component, such as a `Button`, is tapped or clicked by the user."
+  },
+  {
+    "question": "Button in android is a _______.",
+    "choices": [
+      "view to display an Image",
+      "UI component to display some text",
+      "UI component that a user can tap on to trigger some action",
+      "view where the user can enter some input"
+    ],
+    "correctIndex": 2,
+    "explanation": "A **Button** is a fundamental user interface (UI) component in Android. Its primary function is to provide a tappable area that, when interacted with, triggers a predefined action or response within the application."
+  },
+  {
+    "question": "What will be the output of the following Kotlin program?\nopen class FirstClass {\n   open fun greet () {\n     println(\"Hey!! there\")\n   }\n}\nclass SecondClass: FirstClass() {\n   override fun greet() {\n     println(\"Hello friend\")\n   }\n}\nfun main(args: Array<String>) {\n   var a = SecondClass()\n a.greet()\n}",
+    "choices": [
+      "Hey there",
+      "Hey!! there",
+      "It will throw run time error",
+      "Hello friend"
+    ],
+    "correctIndex": 3,
+    "explanation": "This code demonstrates **method overriding** (a form of polymorphism). Since the object `a` is an instance of `SecondClass`, and `SecondClass` overrides the `greet()` method, the overridden implementation, which prints **'Hello friend'**, is executed."
+  },
+  {
+    "question": "In Kotlin, the properties and methods of a class are accessed using the dot (.) operator.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The **dot operator (`.`)** is the standard syntax in Kotlin, inherited from Java, used to access and invoke members (properties and methods) of a class instance (object)."
+  },
+  {
+    "question": "The syntax to declare an object in Kotlin is ________.",
+    "choices": [
+      "var objectName = ClassName()",
+      "var objectName: ClassName",
+      "var objectName = ClassName",
+      "var objectName: ClassName()"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct syntax for declaring and initializing an object in Kotlin uses the `var` or `val` keyword, followed by the object name, the assignment operator (`=`), and the class name followed by parentheses **`ClassName()`** to invoke the constructor."
+  },
+  {
+    "question": "In Kotlin, a class that inherits the members of another class is known as ______.",
+    "choices": [
+      "subclass",
+      "superclass",
+      "primary class",
+      "parent class"
+    ],
+    "correctIndex": 0,
+    "explanation": "A class that acquires the properties and methods from another class is formally known as a **subclass** (or child class). The class being inherited from is known as the superclass or parent class."
+  },
+  {
+    "question": "What will be the output of the following Kotlin program?\n\nclass MyClass {\n    var name = \"my name\"\n    fun sayGreetings() {\n        println(\"Hello\" + \" \" + this.name)\n    }\n}\n\nfun main() {\n  var myObject = MyClass()\n  myObject.sayGreetings()\n}",
+    "choices": [
+      "Hello my name",
+      "Hello + “ ” name",
+      "Prints nothing",
+      "It has a syntax error"
+    ],
+    "correctIndex": 0,
+    "explanation": "The program creates an instance of `MyClass` and calls `sayGreetings()`. The method uses string concatenation to join the literal 'Hello', a space, and the class property 'my name'. The output is the single, concatenated string **'Hello my name'**."
+  },
+  {
+    "question": "________ view is an object used to display an image in the android app.",
+    "choices": [
+      "Button",
+      "Image",
+      "Draft",
+      "Text"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`ImageView`** view is the standard UI component in Android's layout system specifically designed and utilized for displaying images, such as photos, icons, or graphics, within an application interface."
+  },
+  {
+    "question": "In Kotlin, inheritance is useful as it lets you reuse previously written code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Inheritance** is a cornerstone of object-oriented programming that enables a new class (subclass) to acquire and utilize the attributes and behaviors of an existing class (superclass). This mechanism is fundamental to achieving **code reusability**, allowing developers to build specialized classes based on general ones without rewriting common logic."
+  },
+  {
+    "question": "What will be the output of the following Kotlin program:\nfun main () {\n    var text = \"Hello\"\n    print(text[5])\n}",
+    "choices": [
+      "It will print alphabet o",
+      "Hello",
+      "It will throw run time error",
+      "It will print 5 alphabets of the word Hello one by one"
+    ],
+    "correctIndex": 2,
+    "explanation": "The string 'Hello' contains 5 characters, meaning its valid indices range from 0 to 4. Attempting to access the character at index **5** constitutes an **ArrayIndexOutOfBoundsException**, which is a **runtime error**. The language prevents accessing memory outside the defined boundaries of the string object."
+  },
+  {
+    "question": "The top most panel which appears on the android studio window is called ______.",
+    "choices": [
+      "a navigation bar",
+      "a toolbar",
+      "a taskbar",
+      "an editor window"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **Toolbar** is the interface component situated at the top of the main Android Studio window. It houses essential controls for managing projects, executing builds, running the application on a device or emulator, and managing version control operations."
+  },
+  {
+    "question": "Hybrid apps are easier to develop than native apps, but they have less access to device APIs and give a slow performance.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Hybrid applications** are constructed using web technologies (HTML, CSS, JavaScript) encased in a native shell. This design simplifies cross-platform development. However, it necessitates communication through a bridging layer to access native functionalities, resulting in **lower performance** and **limited, indirect access to device APIs**."
+  },
+  {
+    "question": "What will be the output of the following Kotlin program:\nfun main() {\n    var age = 6\nif (age < 5) {\n    print(\"Baby\")\n} else {\n    print(\"Not a baby\")\n}\n}",
+    "choices": [
+      "Baby",
+      "Not a baby",
+      "A syntax error",
+      "It will not print anything\t"
+    ],
+    "correctIndex": 1,
+    "explanation": "The program evaluates the conditional expression **`age < 5`**. Since the variable `age` is assigned the integer value 6, the condition evaluates to **false**. Consequently, the block associated with the **`else`** statement is executed, resulting in the output **'Not a baby'**."
+  },
+  {
+    "question": "Which of the following is the native language for developing iOS apps?",
+    "choices": [
+      "Swift",
+      "Java",
+      "Kotlin",
+      "Python"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Swift** is the modern, primary, and officially supported programming language developed by Apple for creating applications across its platforms, including iOS, iPadOS, and macOS. It is designed to be safer, faster, and more expressive than its predecessor, Objective-C."
+  },
+  {
+    "question": "The following syntax for creating an enum in Kotlin is incorrect because:\nEnum class className { case constantName1,\u00a0 constantName2,\u00a0 constantName3 }",
+    "choices": [
+      "curly brackets are used",
+      "the case keyword is not allowed.",
+      "the enum keyword is not to be used.",
+      "the class keyword is not to be used."
+    ],
+    "correctIndex": 1,
+    "explanation": "The provided syntax is flawed because the **`case` keyword is not valid** for defining enumeration constants in Kotlin. In a Kotlin `enum class`, constants are declared directly and separated by commas, such as `ENUM_CONSTANT1, ENUM_CONSTANT2`, within the class body."
+  },
+  {
+    "question": "Exceptions in Kotlin are thrown using the_____ expression.",
+    "choices": [
+      "try",
+      "throw",
+      "fire",
+      "trigger"
+    ],
+    "correctIndex": 1,
+    "explanation": "In Kotlin, the **`throw`** keyword is the explicit expression used to raise an exception. When the program encounters a `throw` statement, it immediately interrupts the normal flow of execution, signaling that an exceptional condition has occurred that must be handled by a surrounding `try-catch` block."
+  },
+  {
+    "question": "What does CRUD in database management stand for?",
+    "choices": [
+      "Control, Run, Undo, Delete",
+      "Create, Run, Update, Delete",
+      "Create, Read, Update, Destroy",
+      "Create, Read, Update, Delete"
+    ],
+    "correctIndex": 3,
+    "explanation": "**CRUD** is a fundamental acronym in database and API design, representing the four basic operations essential for any persistent data storage system. These operations are **C**reate (INSERT), **R**ead (SELECT), **U**pdate (UPDATE), and **D**elete (DELETE)."
+  },
+  {
+    "question": "Which of the following keywords is used for exception handling in Kotlin?",
+    "choices": [
+      "trigger",
+      "block",
+      "launch",
+      "try"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`try`** keyword is the core component of structured exception handling in Kotlin (and its JVM compatibility). It denotes a block of code where exceptions might occur, allowing these exceptions to be caught and managed gracefully by an associated `catch` block."
+  },
+  {
+    "question": "All exception classes in Kotlin are descendants of the ______ class.",
+    "choices": [
+      "exception handler",
+      "catchable",
+      "throwable",
+      "exception manager"
+    ],
+    "correctIndex": 2,
+    "explanation": "The base class for all exceptions and errors in Kotlin is **`Throwable`**. This class serves as the root of the exception hierarchy, and all classes that can be explicitly thrown using the `throw` expression must be descendants of `Throwable`."
+  },
+  {
+    "question": "In Kotlin, which class contains methods to perform database operations like insert, select, update, delete, and so on?",
+    "choices": [
+      "DB Helper class",
+      "Model Data class",
+      "DB Contract class",
+      "Activity class"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Android's standard SQLite framework (often used with Kotlin), the **DB Helper class** (typically inheriting from `SQLiteOpenHelper`) is the dedicated class responsible for managing database creation, version changes, and providing helper methods to perform fundamental database operations (CRUD)."
+  },
+  {
+    "question": "In Kotlin, generics is a concept that allows defining class methods that can be used on different data types.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Generics** enable developers to define classes, interfaces, and methods with **type parameters**. This allows the same code structure to operate safely on various data types without unnecessary type casting, greatly enhancing code reusability and type safety."
+  },
+  {
+    "question": "In Kotlin, execSQL(String sql) is used to____.",
+    "choices": [
+      "create a database",
+      "execute a query on a database",
+      "update a query",
+      "insert a record"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`execSQL(String sql)`** method, which belongs to the `SQLiteDatabase` class, is used to **execute a raw SQL query** that does not return any data. This method is typically utilized for DDL statements like `CREATE TABLE` or DML statements like `INSERT`, `UPDATE`, and `DELETE`."
+  },
+  {
+    "question": "In Kotlin, exception is a_______ that occurs in a program.",
+    "choices": [
+      "compile-time error",
+      "runtime problem",
+      "syntactic problem",
+      "compile-space error"
+    ],
+    "correctIndex": 1,
+    "explanation": "An exception is fundamentally a **runtime problem** or event that occurs during the execution of a program, disrupting the normal flow of instructions. Unlike compile-time errors (syntax), exceptions must be handled by the running application."
+  },
+  {
+    "question": "Which Database, by default, is embedded in android?",
+    "choices": [
+      "Oracle",
+      "Core Data",
+      "SQLite",
+      "MongoDB"
+    ],
+    "correctIndex": 2,
+    "explanation": "**SQLite** is the lightweight, file-based relational database that is embedded and natively supported in all Android operating systems. This makes it the default solution for local, on-device data persistence in Android applications."
+  },
+  {
+    "question": "In Kotlin, the method public abstract void onCreate(SQLiteDatabase db) is created only the first time the database is created.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The **`onCreate()`** method, which must be overridden in a class extending `SQLiteOpenHelper`, is automatically invoked **only once**: specifically, the very first time the database file is accessed and needs to be created on the device. It is where initial tables are typically defined."
+  },
+  {
+    "question": "Which of the following is the property of Swift sets?",
+    "choices": [
+      "Elements are stored in a particular order.",
+      "All the elements in a set must be unique.",
+      "An element in a set can be accessed by its index.",
+      "Sets contain items of numerical type only."
+    ],
+    "correctIndex": 1,
+    "explanation": "A defining characteristic of **Swift Sets** is that they are collections of **unique elements** of the same type, meaning no element can appear more than once. Unlike arrays, sets do not guarantee any particular storage order, and elements are not accessed via a positional index."
+  },
+  {
+    "question": "What will be the output of the following Swift code snippet?\nvar greetings = \"Hello\"\ngreetings = \"Hey there\"\nprint(greetings)",
+    "choices": [
+      "Hello",
+      "Hello Hey there",
+      "Hey there",
+      "It will raise a syntax error"
+    ],
+    "correctIndex": 2,
+    "explanation": "The code first declares a mutable variable, `greetings`, and assigns it the string 'Hello'. It then immediately **reassigns** the variable to the new string 'Hey there'. The final `print` statement outputs only the last assigned value, which is **'Hey there'**."
+  },
+  {
+    "question": "What will be the output of the following Swift code snippet?\nlet three = 3\nlet minusThree = -three\nprint(minusThree + 1)",
+    "choices": [
+      "invalid operator",
+      "-3 + 1",
+      "-2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "The code uses the **unary minus operator (`-`)** to negate the constant `three`, resulting in `minusThree` having a value of **-3**. The final arithmetic operation, `-3 + 1`, is then performed, which yields **-2**."
+  },
+  {
+    "question": "Below code snippet is valid in Swift.\nlet chocolates = [\"Kitkat\", \"Cadbury\"]\nlet kitKat = chocolate[\"Kitkat\"]",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. This code snippet is **invalid** because it attempts to access the array `chocolates` using the variable name `chocolate`, which is undefined, and it tries to access an element using a **string key (`\"Kitkat\"`)** on an indexed Array type, which requires integer keys."
+  },
+  {
+    "question": "What will be the output of the following Swift code snippet?\nvar arr = [1,2,3,4]\nfor element in arr {\n    print(element, terminator: \" \")\n}",
+    "choices": [
+      "1 2 3 4",
+      "1,2,3,4",
+      " [1 2 3 4]",
+      "[1,2,3,4]"
+    ],
+    "correctIndex": 0,
+    "explanation": "The `for-in` loop iterates through each integer in the array. The `terminator: \" \"` argument explicitly tells the `print` function to use a single space instead of the default newline character after each element, resulting in the space-separated sequence **1 2 3 4** on one line."
+  },
+  {
+    "question": "Which of the following keyword is used to declare a variable in the Swift programming language?",
+    "choices": [
+      "val",
+      "var",
+      "let",
+      "Variable"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`var`** keyword is the designated identifier in Swift used to declare a **variable**, meaning a value that is mutable and can be changed or reassigned after its initial declaration."
+  },
+  {
+    "question": "Which of the following lines creates a new variable in Swift?",
+    "choices": [
+      "greetings = \"hello\"",
+      "var greetings = \"hello\"",
+      "greetings: String = \"hello\"",
+      "greetings = hello"
+    ],
+    "correctIndex": 1,
+    "explanation": "The line **`var greetings = \"hello\"`** correctly uses the **`var`** keyword to signal the declaration of a new mutable variable named `greetings`. The other options are either reassignments or incorrect syntax for declaration."
+  },
+  {
+    "question": "Which of the below options is a valid declaration for constants in Swift?",
+    "choices": [
+      " var pi = 3.14",
+      " pi = 3.14",
+      " let pi = 3.14 ",
+      "val pi = 3.14"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`let`** keyword is the correct and necessary identifier in Swift for declaring a **constant**, which is a value whose assignment cannot be changed after its initial definition. The presence of surrounding spaces does not invalidate the syntax."
+  },
+  {
+    "question": "What will be the output of the following Swift code snippet?\nvar x = 2\nx += 3\nprint(x)",
+    "choices": [
+      "3",
+      "2",
+      "It will raise a compile time error.",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "The code uses the **compound assignment operator (`+=`)** to add 3 to the current value of the mutable variable `x`. The operation calculates $2 + 3$, updates `x` to 5, and the final print statement outputs **5**."
+  },
+  {
+    "question": "Which of the following array declaration statement will raise a syntax error in Swift?",
+    "choices": [
+      "var arr = [Int]()",
+      "var arr: [Int]",
+      "var arr: Array<Int>",
+      "var arr: Array"
+    ],
+    "correctIndex": 3,
+    "explanation": "The declaration **`var arr: Array`** will raise a syntax error because the type `Array` in Swift is a generic collection and **requires a concrete element type** to be specified within angle brackets (`<>`) or square brackets (`[]`)."
+  },
+  {
+    "question": "What will the type of sampleBook be with respect to the following Swift code?\nstruct Swift: Book {\n\tvar author: String\n}\nLet sampleBook = Swift(author: \"Taylor\")",
+    "choices": [
+      "Swift",
+      "Book",
+      "This code will not compile",
+      "String"
+    ],
+    "correctIndex": 2,
+    "explanation": "This code **will not compile**. In Swift, when a structure or class attempts to adopt a protocol (like `Book`), that protocol **must be defined** and visible to the struct prior to its usage. Since the `Book` protocol is not explicitly defined in this snippet, the compiler cannot process the conformance statement, immediately resulting in a compilation error."
+  },
+  {
+    "question": "What output will be generated by the Swift code below?\nclass Person {\n\tvar name: String\n\toverride init(initialName: String) {\n\t\tname = initialName\n\t}\n}\nlet myself = Person(initialName: \"Daniel\")\nprint(myself.name)",
+    "choices": [
+      "Daniel",
+      "\"\"",
+      "This code will not compile.",
+      "Null"
+    ],
+    "correctIndex": 2,
+    "explanation": "This code **will not compile**. The use of the **`override`** keyword on the designated initializer (`init`) is incorrect because the `Person` class, which does not explicitly inherit from another class, does not require its base designated initializer to be overridden. The `override` keyword is illegal when an initializer is not overriding a superclass implementation."
+  },
+  {
+    "question": "In Swift, variables declared inside a class are called properties.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In Swift, the term **properties** is the precise name used for variables associated with a class, structure, or enumeration instance. They form the essential data elements of the type and are used to store or compute values."
+  },
+  {
+    "question": "What output will be generated by the Swift code below?\nstruct Book {\n\tvar name: String\n}\nvar book = Book(name: \"Swift for beginners\")\nbook.name = \"Swift advanced\"\nprint(book.name)",
+    "choices": [
+      "\"\"",
+      "Swift for beginners",
+      "It will give an error",
+      "Swift advanced"
+    ],
+    "correctIndex": 3,
+    "explanation": "The instance `book` is declared with **`var`**, denoting it as a mutable variable, even though `Book` is a value type (struct). The code successfully initializes the property and then **reassigns** its value to 'Swift advanced'. The final print statement outputs the latest value, **'Swift advanced'**."
+  },
+  {
+    "question": "Which of the following holds true for both swift classes and structs?",
+    "choices": [
+      "Both the structs and class are of reference type.",
+      "Conform protocols to provide standard functionality of a certain kind.",
+      "Deinitialization - enables an instance to free up any resource assigned to it.",
+      "Inheritance - enables one class or struct to inherit the characteristics of another."
+    ],
+    "correctIndex": 1,
+    "explanation": "The ability to **conform to protocols** is a powerful feature shared by both classes and structures in Swift. This capability allows both reference types and value types to adopt specified interfaces, enabling polymorphic behavior based on protocol conformance rather than inheritance alone."
+  },
+  {
+    "question": "What will be the output of the following Swift code?\nstruct Person {\n\tvar name: String\n}\nvar person1 = Person(name: \"Person1\")\nvar person2 = person1\nperson1.name = \"Taylor\"\nprint(person2.name)",
+    "choices": [
+      "Null",
+      "Taylor",
+      "\"\"",
+      "Person1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since `Person` is a **struct (a value type)**, the assignment `var person2 = person1` creates a **distinct copy** of the data, not a reference. Therefore, modifying `person1.name` to 'Taylor' has no effect on `person2.name`, which retains its original copied value, **'Person1'**."
+  },
+  {
+    "question": "What will be the output of the following Swift code?\nstruct Department {\n\tstatic var name: String = \"Computer science\"\n}\nlet deptt = Department(name: \"Mobile development\")",
+    "choices": [
+      "This code will give compile time error",
+      "Computer science",
+      "Mobile Development",
+      "Null"
+    ],
+    "correctIndex": 0,
+    "explanation": "This code **will give a compile time error**. The memberwise initializer of a struct is used to initialize **instance properties**, but `name` is declared as a **`static`** (type) property. Static properties cannot be initialized via the instance initializer, causing the compilation to fail."
+  },
+  {
+    "question": "What will be the data type assigned to the test in the below Swift code?\nenum Planet: Int {\n\tcase Mercury = 1\n\tcase Venus\n\tcase Earth\n\tcase Mars\n}\nlet test = Planet(rawValue: 3)",
+    "choices": [
+      "Planet",
+      "Planet?",
+      "Int?",
+      "Int"
+    ],
+    "correctIndex": 1,
+    "explanation": "The initializer **`init(rawValue:)`** is a **failable initializer** because the provided raw value (3) might not correspond to a valid enum case. Consequently, the constant `test` is assigned the **optional type `Planet?`**, which is either an instance of `Planet` (in this case, `.Earth`) or `nil`."
+  },
+  {
+    "question": "A computed property (in Swift) having only a getter but NOT a setter is called read-only property.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. A **computed property** that omits a setter is classified as a **read-only property**. Its value is calculated and returned through its explicit getter block, but the value cannot be set or directly modified by external code."
+  },
+  {
+    "question": "Which of the following is true about computed properties in Swift?",
+    "choices": [
+      "Their value is computed at runtime.",
+      "They cannot be declared in the extensions.",
+      "These properties are only provided by classes and structs.",
+      "Their value is computed at compile time."
+    ],
+    "correctIndex": 0,
+    "explanation": "**Computed properties** do not store a value; rather, their value is **calculated dynamically at runtime** every time the property is accessed via its getter block. This contrasts with stored properties, whose values are fixed in memory."
+  }
+]
