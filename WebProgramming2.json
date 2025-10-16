@@ -1092,7 +1092,7 @@
       "False",
       "True"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "True. Because the **POST** method carries data in the request body, it is not limited by the character limits of the URL query string, as the GET method is. This makes POST highly suitable for submitting large forms, uploading files, or sending extensive JSON payloads."
   },
   {
@@ -1892,3 +1892,4 @@
     "explanation": "False. The **`mysqli_close()`** function performs the final step of database interaction: it gracefully **terminates a previously established connection** to the MySQL server, releasing the system and network resources allocated to that link."
   }
 ]
+
