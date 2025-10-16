@@ -707,5 +707,71 @@
     ],
     "correctIndex": 0,
     "explanation": "**Computed properties** do not store a value; rather, their value is **calculated dynamically at runtime** every time the property is accessed via its getter block. This contrasts with stored properties, whose values are fixed in memory."
+  },
+  {
+    "question": "Which of the following is NOT a valid function declaration in Swift?",
+    "choices": [
+      "func sayGreetings(to person: String)",
+      "func sayGreetings(to person: String) -> String",
+      "func sayGreetings(to person withName: String) -> String",
+      "func sayGreetings(_ person: String) -> String?"
+    ],
+    "correctIndex": 2,
+    "explanation": "The function declaration **`func sayGreetings(to person withName: String) -> String`** is **not valid** because it attempts to use two external parameter names (`to` and `withName`) before the colon (`:`) for a single parameter. A Swift function parameter can only have one local name and one optional external name (or no external name, using `_`) preceding the colon."
+  },
+  {
+    "question": "Which of the following keywords is used in Swift control flow?",
+    "choices": [
+      "func",
+      "print",
+      "guard",
+      "weak"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`guard`** statement is an integral part of Swift's control flow, used for conditional early exit. Unlike the `if` statement, `guard` requires the condition to be true to proceed, enforcing a clean exit path when requirements are not met, which improves code clarity and readability."
+  },
+  {
+    "question": "How many deinitializers can a swift class have?",
+    "choices": [
+      "At most two",
+      "At most one",
+      "There should be no deinitializer at all",
+      "At least two"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Swift class can have **at most one deinitializer**, which is defined using the **`deinit`** keyword. The deinitializer is automatically called just before an instance of a class is deallocated to perform necessary cleanup, but its definition is restricted to a single implementation per class."
+  },
+  {
+    "question": "What will be the output of the following Swift code snippet?\nlet greetings = \"Hello there!\"\nprint(greetings[greetings.startIndex])",
+    "choices": [
+      "Hello there!",
+      "Hello",
+      "H",
+      "incorrect code"
+    ],
+    "correctIndex": 2,
+    "explanation": "The code uses Swift's String indexing via **`greetings.startIndex`**, which points to the first character of the string. The character at that position is **'H'**, which is the output."
+  },
+  {
+    "question": "What will be the output of the following Kotlin code snippet?\nfun main() {\n    val dividend = 6\n    val divisor = 0\n    var result: Int\n    try {\n        result = dividend/divisor\n    } catch (e : ArithmeticException){\n        println(\"Oops! You can’t divide a number by zero.\")\n    }\n}",
+    "choices": [
+      "Oops! You can divide a number by zero.",
+      "Oops! You can’t divide a number by zero.",
+      "“Oops! You can’t divide a number by zero.”",
+      "OOPS! You can’t divide a number by zero."
+    ],
+    "correctIndex": 1,
+    "explanation": "The expression `dividend/divisor` attempts **division by zero**, which raises an **`ArithmeticException`**. The Kotlin runtime transfers control immediately to the **`catch`** block, which is specifically set up to handle this exception, resulting in the output of the string **'Oops! You can’t divide a number by zero.'**"
+  },
+  {
+    "question": "What will be the output of the below Swift code?\nclass Bird {\n    var canFly: Bool?\n}\nvar ostrich = Bird()\nlet canFly = ostrich.canFly ?? false\nprint(canFly)",
+    "choices": [
+      "\"\"",
+      "false",
+      "Null",
+      "This code will not compile"
+    ],
+    "correctIndex": 1,
+    "explanation": "The code demonstrates the **nil-coalescing operator (`??`)**. The property `canFly` is an optional `Bool?` which is implicitly `nil` upon initialization. The nil-coalescing operator unwraps the optional if it contains a value; otherwise, it returns the default value provided, which is `false`. Thus, the output is **false**."
   }
 ]
