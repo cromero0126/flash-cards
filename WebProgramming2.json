@@ -1890,6 +1890,325 @@
     ],
     "correctIndex": 0,
     "explanation": "False. The **`mysqli_close()`** function performs the final step of database interaction: it gracefully **terminates a previously established connection** to the MySQL server, releasing the system and network resources allocated to that link."
+  },
+  {
+    "question": "Which of the following is an example of a serverless function platform?",
+    "choices": [
+      "AWS Lambda",
+      "Nginx",
+      "Kubernetes",
+      "Apache Tomcat"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct example of a serverless function platform is **AWS Lambda**. This service, offered by Amazon Web Services, allows users to run code without provisioning or managing servers, embodying the Function-as-a-Service (FaaS) model of serverless computing."
+  },
+  {
+    "question": "What is one major drawback of serverless computing?",
+    "choices": [
+      "Cannot handle event-driven applications",
+      "Does not support API integration",
+      "Requires expensive physical servers",
+      "Cold start latency can affect performance"
+    ],
+    "correctIndex": 3,
+    "explanation": "A significant technical constraint of serverless computing is **cold start latency**. This occurs when an idle function is invoked, requiring a short delay while the cloud provider initializes and spins up a new execution environment, which can negatively impact the response time of the application."
+  },
+  {
+    "question": "In RESTful API design, what does \"statelessness\" mean?",
+    "choices": [
+      "The server stores user session data",
+      "The API depends on the client’s session",
+      "Data is always encrypted",
+      "Each request from a client must contain all necessary information"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **statelessness** constraint in REST architecture mandates that the server must not store any client context or session information between requests. Consequently, **each client request must be fully self-contained**, including all data required for the server to understand and process the request completely."
+  },
+  {
+    "question": "FastAPI is built on top of the Starlette ASGI framework.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **FastAPI** is designed to leverage the power of the **Starlette ASGI framework** (Asynchronous Server Gateway Interface) for high performance and asynchronous capabilities. It also integrates **Pydantic** for data validation and serialization, resulting in its impressive speed and robustness."
+  },
+  {
+    "question": "Laravel follows the Model-View-Controller (MVC) architectural pattern.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. **Laravel** is a popular PHP web application framework that rigidly adheres to the **Model-View-Controller (MVC)** design pattern. This structure separates application concerns into distinct areas: Models handle data logic, Views manage presentation, and Controllers manage user input and application flow."
+  },
+  {
+    "question": "What is FastAPI primarily used for?",
+    "choices": [
+      "Managing databases",
+      "Building APIs with Python",
+      "Developing desktop applications",
+      "Creating frontend interfaces"
+    ],
+    "correctIndex": 1,
+    "explanation": "**FastAPI** is a modern, high-performance web framework used specifically for **building robust and scalable APIs** using the Python programming language. It stands out due to its native asynchronous support and automatic data validation capabilities."
+  },
+  {
+    "question": "In Laravel, the .env file stores database configuration settings.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The **`.env`** (environment) file in Laravel is the conventional location used to store application-specific configuration details, including sensitive data such as **database credentials**, API keys, and external service settings, separating them from the core codebase."
+  },
+  {
+    "question": "What event triggers the execution of a serverless function?",
+    "choices": [
+      "Manual execution by a system administrator",
+      "It runs continuously in the background",
+      "A predefined event such as an HTTP request or database update",
+      "A fixed schedule"
+    ],
+    "correctIndex": 2,
+    "explanation": "Serverless functions operate on an **event-driven** basis. Execution is triggered only in response to a specific, predefined event, which can include external actions like an **HTTP request**, internal cloud events like a file upload, or database modifications."
+  },
+  {
+    "question": "What is the purpose of Laravel Middleware?",
+    "choices": [
+      "To filter HTTP requests before they reach controllers",
+      "To generate database schemas",
+      "To store user authentication details",
+      "To manage frontend rendering"
+    ],
+    "correctIndex": 0,
+    "explanation": "Laravel **Middleware** acts as a filtering layer for incoming **HTTP requests**. Middleware can be used to perform tasks like request logging, handling CORS, **verifying user authentication**, or performing security checks *before* the request is handed over to the application's controller for processing."
+  },
+  {
+    "question": "What is the primary function of Laravel’s Artisan CLI?",
+    "choices": [
+      "To configure web hosting settings",
+      "To automate repetitive tasks like migrations and controllers",
+      "To handle frontend JavaScript code",
+      "To create HTML templates"
+    ],
+    "correctIndex": 1,
+    "explanation": "Laravel's **Artisan Command Line Interface (CLI)** is a powerful built-in tool designed to **automate and streamline repetitive development tasks**. It is used to generate code boilerplate (models, controllers), manage database migrations, and interact with the application efficiently."
+  },
+  {
+    "question": "The status code 201 is returned when a resource is successfully created in a RESTful API.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The HTTP status code **201 Created** is the standard and correct response from a server when a POST request results in the **successful creation of a new resource**. The response usually includes a URI pointing to the newly created resource."
+  },
+  {
+    "question": "What is a major difference between FastAPI and Flask?",
+    "choices": [
+      "FastAPI does not support request validation",
+      "FastAPI is asynchronous by default, while Flask requires extra setup for async support",
+      "Flask is faster than FastAPI",
+      "Flask has built-in OpenAPI support"
+    ],
+    "correctIndex": 1,
+    "explanation": "A core distinction is that **FastAPI** is **asynchronous (async) by default**, leveraging Python's `async/await` syntax for concurrent request handling. **Flask**, being older, is synchronous by default and requires additional libraries or configuration for robust asynchronous operation."
+  },
+  {
+    "question": "In Laravel, which component is responsible for handling HTTP requests?",
+    "choices": [
+      "Controller",
+      "View",
+      "Middleware",
+      "Model"
+    ],
+    "correctIndex": 0,
+    "explanation": "In the Laravel MVC pattern, the **Controller** is the component responsible for receiving incoming **HTTP requests**. It retrieves user input, interacts with the Model to access data, and ultimately determines the response to be sent back, typically rendered via a View."
+  },
+  {
+    "question": "What command is used to create a new Laravel project?",
+    "choices": [
+      "laravel start project-name",
+      "php new laravel project",
+      "npm install Laravel",
+      "composer create-project laravel/laravel project-name"
+    ],
+    "correctIndex": 3,
+    "explanation": "The correct and standard command for scaffolding a new Laravel project is executed using **Composer**, the PHP package manager: **`composer create-project laravel/laravel project-name`**. Composer fetches the framework's files and sets up the project structure."
+  },
+  {
+    "question": "Serverless computing eliminates the need for developers to manage infrastructure.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The fundamental value proposition of **serverless computing** is abstracting away infrastructure management. Developers are freed from provisioning, maintaining, and scaling servers, allowing them to focus exclusively on their application code."
+  },
+  {
+    "question": "Which of the following is a key advantage of Laravel?",
+    "choices": [
+      "Lacks support for API development",
+      "Built-in authentication and security features",
+      "Requires extensive manual configuration",
+      "No database support"
+    ],
+    "correctIndex": 1,
+    "explanation": "A significant advantage of **Laravel** is its comprehensive set of built-in features, most notably its robust, pre-configured systems for **user authentication, authorization, and common security tasks** like CSRF protection and encryption."
+  },
+  {
+    "question": "Which tool does FastAPI use to provide interactive API documentation?",
+    "choices": [
+      "ReactJS",
+      "GraphQL",
+      "Flask-Docs",
+      "Swagger UI"
+    ],
+    "correctIndex": 3,
+    "explanation": "**FastAPI** leverages the **OpenAPI specification** to automatically generate documentation, primarily displaying it through the interactive UI provided by **Swagger UI** (for testing endpoints) and ReDoc (for documentation viewing)."
+  },
+  {
+    "question": "REST stands for:",
+    "choices": [
+      "Reliable Secure Transfer",
+      "Random Execution of Services and Transactions",
+      "Remote Service Transmission",
+      "Representational State Transfer"
+    ],
+    "correctIndex": 3,
+    "explanation": "**REST** is an acronym for **Representational State Transfer**. It is an architectural style that defines a set of constraints for designing networked applications, emphasizing scalability, simplicity, and statelessness."
+  },
+  {
+    "question": "Which cloud provider offers AWS Lambda as a serverless computing service?",
+    "choices": [
+      "DigitalOcean",
+      "Google Cloud",
+      "Amazon Web Services (AWS)",
+      "Microsoft Azure"
+    ],
+    "correctIndex": 2,
+    "explanation": "**AWS Lambda** is the pioneering and flagship Function-as-a-Service (FaaS) product offered by **Amazon Web Services (AWS)**, allowing users to execute code in response to events without managing servers."
+  },
+  {
+    "question": "In a serverless architecture, the cloud provider manages ____ to ensure automatic scaling and execution.",
+    "choices": [
+      "Client-side scripts",
+      "HTML files",
+      "Application logic",
+      "Infrastructure"
+    ],
+    "correctIndex": 3,
+    "explanation": "The fundamental promise of serverless computing is that the cloud provider takes complete responsibility for managing the underlying **infrastructure** (servers, scaling, capacity planning, OS maintenance). Developers only upload their application code."
+  },
+  {
+    "question": "Which of the following best describes \"cold start\" in serverless computing?",
+    "choices": [
+      "A technique to warm up servers for better performance",
+      "A security vulnerability in serverless systems",
+      "The process of initializing a new database",
+      "The delay when a function is invoked after being idle"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Cold start** is the inherent **delay** that occurs when a serverless function is invoked for the first time or after a period of inactivity. This delay is due to the cloud environment needing time to initialize the container, load the runtime, and execute the application code."
+  },
+  {
+    "question": "What is the purpose of the OpenAPI specification in FastAPI?",
+    "choices": [
+      "To connect to databases",
+      "To handle file uploads",
+      "To automatically generate API documentation",
+      "To enforce security policies"
+    ],
+    "correctIndex": 2,
+    "explanation": "**FastAPI** automatically uses Python type hints and Pydantic models to comply with the **OpenAPI specification** (formerly Swagger). This compliance allows the framework to **automatically generate interactive API documentation** (e.g., Swagger UI and ReDoc) directly from the application code."
+  },
+  {
+    "question": "What is the main role of API Gateway in a serverless architecture?",
+    "choices": [
+      "To route and manage API requests",
+      "To handle database migrations",
+      "To execute serverless functions",
+      "To store static web pages"
+    ],
+    "correctIndex": 0,
+    "explanation": "An **API Gateway** acts as the crucial single entry point for all API calls. Its main role is to **route and manage** incoming HTTP requests, directing them to the correct backend service, such as a Lambda function, while also handling authentication and traffic management."
+  },
+  {
+    "question": "In a serverless architecture, developers focus primarily on:",
+    "choices": [
+      "Setting up virtual machines manually",
+      "Configuring and maintaining physical servers",
+      "Writing application logic without managing servers",
+      "Managing operating system updates"
+    ],
+    "correctIndex": 2,
+    "explanation": "The key benefit of serverless platforms is the abstraction of infrastructure management. Developers are thereby enabled to concentrate almost entirely on **writing and optimizing the core application logic** (business value)."
+  },
+  {
+    "question": "The Laravel command used to generate a new model is php artisan make:model.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The correct **Artisan CLI** command to create a boilerplate Eloquent Model class in Laravel is indeed **`php artisan make:model`**, followed by the desired model name."
+  },
+  {
+    "question": "Which of the following is a key advantage of serverless computing?",
+    "choices": [
+      "Fixed pricing regardless of usage",
+      "Requires continuous server maintenance",
+      "Manual server provisioning",
+      "Automatic scaling based on demand"
+    ],
+    "correctIndex": 3,
+    "explanation": "A core advantage of serverless computing is its **automatic scaling**. The cloud provider instantly adjusts resource allocation to match the demand placed on the functions, ensuring high availability without manual intervention by developers."
+  },
+  {
+    "question": "What is Laravel primarily used for?",
+    "choices": [
+      "Developing web applications using PHP",
+      "Creating mobile applications",
+      "Designing frontend user interfaces",
+      "Managing cloud servers"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Laravel** is the most popular and widely used open-source framework for **developing robust, large-scale web applications** utilizing the **PHP** programming language."
+  },
+  {
+    "question": "Which of the following is a key advantage of using FastAPI?",
+    "choices": [
+      "Lack of dependency injection",
+      "Complex syntax",
+      "High performance and automatic data validation",
+      "Slow request processing"
+    ],
+    "correctIndex": 2,
+    "explanation": "**FastAPI** is celebrated for its **high performance** (often rivaling Node.js and Go) and its seamless, automatic **data validation and serialization** capabilities, which are powered by Pydantic and Python type hints."
+  },
+  {
+    "question": "What is the purpose of Laravel’s Eloquent ORM?",
+    "choices": [
+      "To optimize JavaScript performance",
+      "To generate HTML templates",
+      "To simplify database interactions using an object-oriented approach",
+      "To manage frontend styling"
+    ],
+    "correctIndex": 2,
+    "explanation": "Eloquent is Laravel's **Object-Relational Mapper (ORM)**. Its purpose is to provide an abstract, **object-oriented interface** for querying and manipulating the database, allowing developers to treat database records as easy-to-use PHP objects."
+  },
+  {
+    "question": "In FastAPI, which library is used for data validation and serialization?",
+    "choices": [
+      "Pydantic",
+      "TensorFlow",
+      "Pandas",
+      "NumPy"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Pydantic** is the specialized Python library that FastAPI integrates to automatically handle data validation, serialization, and deserialization, ensuring type safety and robust error handling for request and response models."
   }
 ]
+
 
