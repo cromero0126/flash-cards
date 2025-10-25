@@ -773,5 +773,114 @@
     ],
     "correctIndex": 1,
     "explanation": "The code demonstrates the **nil-coalescing operator (`??`)**. The property `canFly` is an optional `Bool?` which is implicitly `nil` upon initialization. The nil-coalescing operator unwraps the optional if it contains a value; otherwise, it returns the default value provided, which is `false`. Thus, the output is **false**."
+  },
+  {
+    "question": "In Swift, multiple protocols can be listed, and are separated by ____.",
+    "choices": [
+      "commas",
+      "periods",
+      "parentheses",
+      "spaces"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a Swift type (a class, struct, or enum) conforms to several protocols, the names of these protocols are listed after the type name, and they must be separated by **commas**. This syntax clearly delineates the set of behaviors the type is adopting."
+  },
+  {
+    "question": "In Swift, which parameters are returned to the completion handler of URLSession’s data task?",
+    "choices": [
+      "data, handler, response",
+      "response, data, handler",
+      "reply, error, data",
+      "data, response, error"
+    ],
+    "correctIndex": 3,
+    "explanation": "The standard completion handler block for a `URLSession` data task always receives three optional parameters in a specific order: **`data`** (the received data payload), **`response`** (metadata about the response), and **`error`** (any error that occurred during the request). All three are typically optional (`?`)."
+  },
+  {
+    "question": "Which constraint is added in the below Swift code for the generic parameter?\nfunc sum<T: Numeric>(val1: T, val2: T) -> T {\n    return val1 + val2\n}",
+    "choices": [
+      "Numeric",
+      "T",
+      "There is no constraint.",
+      "<T: Numeric>"
+    ],
+    "correctIndex": 0,
+    "explanation": "In this generic function signature, the **`Numeric`** protocol is specified after the colon (`:`) as a **type constraint**. This constraint guarantees that the generic placeholder `T` can only be substituted by types that conform to the `Numeric` protocol (like `Int` or `Double`), thereby ensuring the addition operator (`+`) is valid."
+  },
+  {
+    "question": "Which API is used to make an internet connection in Swift?",
+    "choices": [
+      "URLSession",
+      "InternetKit",
+      "MapKit",
+      "UIKit"
+    ],
+    "correctIndex": 0,
+    "explanation": "The primary and foundational API used across Apple platforms for all network-related tasks, including making internet connections, uploading data, and downloading content, is **`URLSession`**. It provides a robust, modern interface for handling data transfers."
+  },
+  {
+    "question": "In Swift, Core Data uses SQLite Database as the default persistent store.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Core Data** is Apple's object graph and persistence framework. While it is not itself a database, it uses a **SQLite database** file as its default, underlying persistent store to save and manage application data efficiently on disk."
+  },
+  {
+    "question": "What is the correct syntax for declaring a throwing function in swift?",
+    "choices": [
+      "func canThrowErrors() throws -> String",
+      "func canThrowErrors() -> String\t",
+      "func throws canThrowErrors() -> String",
+      "func canThrowErrors() -> throws String"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct Swift syntax requires inserting the keyword **`throws`** immediately after the function's parameter list and before the return arrow (`->`). This keyword explicitly signals that the function is a **throwing function** and must be called within an appropriate error handling context."
+  },
+  {
+    "question": "Which of the following is a native framework used for data persistence in iOS?",
+    "choices": [
+      "MongoDB",
+      "Core Data",
+      "Oracle",
+      "Apple Database"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Core Data** is the native, comprehensive framework provided by Apple platforms (iOS, macOS, etc.) for managing the persistence layer of an application, offering tools to model, store, and manipulate data graphs."
+  },
+  {
+    "question": "What will be the output of the following Swift code?\nfunc swap<T>( val1: inout T,  val2: inout T) {\n    let temp = val1\n    val1 = val2\n    val2 = temp\n}\nvar value1 = 12\nvar value2 = 11\nswap(val1: &value1, val2: &value2)\nprint(value1, value2)",
+    "choices": [
+      "12 11",
+      "11 12",
+      "It will not compile.",
+      "Null"
+    ],
+    "correctIndex": 1,
+    "explanation": "The function uses **`inout`** parameters, meaning the values passed to the function are modified directly. The code swaps the initial values of 12 and 11, and the subsequent print statement outputs the new, swapped values: **11 12**."
+  },
+  {
+    "question": "Which of the following object (in Swift) is true about NSManagedObjectModel class of the Core Data stack?",
+    "choices": [
+      "It keeps track of the changes you made to your data model.",
+      "It sets up the model for data.",
+      "It saves and fetches data.",
+      "It database schema."
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`NSManagedObjectModel`** class is the component within the Core Data stack responsible for defining the application's data **schema or model**. It describes the entities, attributes, and relationships that structure the persistent data."
+  },
+  {
+    "question": "Which of the following class (in Swift) is responsible for fetching data from Core Data?",
+    "choices": [
+      "NSPersistentContainer",
+      "NSManagedObjectContext",
+      "NSPersistentStoreCoordinator",
+      "NSFetchRequest"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`NSFetchRequest`** class is the specific tool used to define the criteria for retrieving data from a Core Data persistent store. It specifies which entities to retrieve, the filtering predicates, and the desired sorting order."
   }
 ]
+
