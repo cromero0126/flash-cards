@@ -881,6 +881,113 @@
     ],
     "correctIndex": 3,
     "explanation": "The **`NSFetchRequest`** class is the specific tool used to define the criteria for retrieving data from a Core Data persistent store. It specifies which entities to retrieve, the filtering predicates, and the desired sorting order."
+  },
+  {
+    "question": "What is the full form of HTML?",
+    "choices": [
+      "Hyper Text Makeup Language",
+      "Hyper Text Markup Language",
+      "Hyper Tech Markup Language",
+      "Hyper Tech Makeup Language"
+    ],
+    "correctIndex": 1,
+    "explanation": "HTML stands for **Hyper Text Markup Language**. The term 'Markup Language' is crucial, as it indicates the use of tags to define the structure and elements of a web page, unlike a programming language which defines logic."
+  },
+  {
+    "question": "Which of the following rendering engine is used in the safari browser?",
+    "choices": [
+      "EdgeHTML",
+      "Blink",
+      "WebKit",
+      "Gecko"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **WebKit** rendering engine is the core engine developed by Apple and utilized by the Safari web browser. This engine is responsible for interpreting and displaying HTML, CSS, and JavaScript content to the user."
+  },
+  {
+    "question": "Which element contains meta information about the HTML page?",
+    "choices": [
+      "<html>",
+      "<title>",
+      "<head>",
+      "<!DOCTYPE html>"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`<head>`** element serves as a container for metadata about the HTML document. This information is not displayed on the page itself but includes essential details like the character set, links to stylesheets, script paths, and the page's title."
+  },
+  {
+    "question": "CSS is used for structuring the webpage.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **HTML** is the language used for **structuring** the webpage content. **CSS** (Cascading Style Sheets) is used for **styling** the page, controlling its visual presentation, layout, colors, and fonts."
+  },
+  {
+    "question": "Javascript is used to bring functionality to the webpage.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **JavaScript** is the primary client-side scripting language responsible for adding **dynamic behavior and functionality** to web pages, enabling features such as user interactivity, complex animations, and asynchronous communication."
+  },
+  {
+    "question": "What is HTML used for?",
+    "choices": [
+      "Styling web content.",
+      "Making web content responsive for different device sizes.",
+      "Scripting.",
+      "Structuring web content."
+    ],
+    "correctIndex": 3,
+    "explanation": "The fundamental purpose of **HTML** is **structuring web content**. It uses tags to define the various parts of a document, such as headings, paragraphs, links, and images, providing the semantic foundation for the page."
+  },
+  {
+    "question": "Which of the following is the correct HTML syntax for an end tag",
+    "choices": [
+      "</tagname>",
+      "<tagname/>",
+      "<tagname>",
+      "</tagname/>"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct syntax for an HTML closing or **end tag** is the opening angle bracket, followed by a **forward slash (`/`)**, the element name, and the closing angle bracket. The forward slash is essential for marking the termination of the element."
+  },
+  {
+    "question": "What is CSS used for?",
+    "choices": [
+      "Structuring the web page.",
+      "Writing the business logic of the web page.",
+      "Styling the web page.",
+      "Handling user interaction."
+    ],
+    "correctIndex": 2,
+    "explanation": "**CSS** is explicitly designed for **styling the web page**. It dictates the visual presentation of the structured HTML elements, controlling everything from colors and typography to layout and responsive design."
+  },
+  {
+    "question": "Which of the following is NOT a JavaScript library?",
+    "choices": [
+      "Angular.js",
+      "Swift.js",
+      "React.js",
+      "Node.js"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Swift** is a native programming language developed by Apple for iOS and macOS development, and **`Swift.js`** does not exist as a standard JavaScript library. Angular.js, React.js (often just React), and Node.js (a runtime environment) are all core parts of the JavaScript ecosystem."
+  },
+  {
+    "question": "Which is the default web browser of an iOS device?",
+    "choices": [
+      "Chrome",
+      "Safari",
+      "Apple browser",
+      "Edge"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Safari** is the proprietary web browser developed by Apple and is the **default browser** installed and used across all iOS (iPhone/iPad) and macOS devices."
   }
 ]
+
 
