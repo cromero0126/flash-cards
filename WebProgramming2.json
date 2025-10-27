@@ -2208,7 +2208,326 @@
     ],
     "correctIndex": 0,
     "explanation": "**Pydantic** is the specialized Python library that FastAPI integrates to automatically handle data validation, serialization, and deserialization, ensuring type safety and robust error handling for request and response models."
+  },
+  {
+    "question": "A best practice for securing PHP sessions is to:",
+    "choices": [
+      "Regenerate session IDs periodically.",
+      "Store session data in database without encryption.",
+      "Disable session handling.",
+      "Use predictable session IDs."
+    ],
+    "correctIndex": 0,
+    "explanation": "A crucial security measure for protecting PHP sessions is to **regenerate the session ID periodically**, especially after a user authenticates. This practice, known as session ID rotation, is highly effective at mitigating **session fixation attacks**, where an attacker attempts to hijack a session by using a known or predictable ID."
+  },
+  {
+    "question": "A secure PHP coding practice is to:",
+    "choices": [
+      "Use outdated PHP versions.",
+      "Store sensitive data in plain text.",
+      "Avoid error handling.",
+      "Sanitize all user inputs."
+    ],
+    "correctIndex": 3,
+    "explanation": "The process of **sanitizing and validating all user inputs** is a foundational security practice in PHP. This ensures that any data received from the client is safe, expected, and free from malicious content or injection attempts before it is processed or stored in the database."
+  },
+  {
+    "question": "SQL injection attacks exploit vulnerabilities in:",
+    "choices": [
+      "Network protocols.",
+      "Session management.",
+      "Server-side includes.",
+      "Database interactions."
+    ],
+    "correctIndex": 3,
+    "explanation": "SQL injection (SQLi) is an attack vector that exploits vulnerabilities in the way an application handles user-supplied data that is incorporated into **database interactions**. The attacker injects malicious SQL code into the query string, deceiving the database into executing unauthorized commands."
+  },
+  {
+    "question": "In API security, protecting sensitive data often involves:",
+    "choices": [
+      "Exposing API keys in client-side code.",
+      "Implementing robust authentication and authorization.",
+      "Not validating API requests.",
+      "Using basic authentication without encryption."
+    ],
+    "correctIndex": 1,
+    "explanation": "A cornerstone of API security is the **implementation of robust authentication and authorization** mechanisms. Authentication verifies the identity of the user or service accessing the API, while authorization strictly controls the permissions and resources that entity is allowed to access."
+  },
+  {
+    "question": "To prevent ______ vulnerabilities, user-supplied data should be properly encoded before being displayed on a web page.",
+    "choices": [
+      "SQL injection",
+      "CSRF",
+      "session hijacking",
+      "XSS"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Output encoding**, which involves converting user-supplied data into a harmless format before displaying it, is the primary defense against **Cross-Site Scripting (XSS)** attacks. Encoding ensures that malicious scripts are rendered as harmless text rather than being executed by the browser."
+  },
+  {
+    "question": "What is the main advantage of using prepared statements over concatenating SQL queries directly?",
+    "choices": [
+      "Prevention of SQL injection.",
+      "Improved readability.",
+      "Enhanced performance.",
+      "Simplified error handling."
+    ],
+    "correctIndex": 0,
+    "explanation": "The decisive advantage of prepared statements is the inherent **prevention of SQL injection**. By separating the SQL command from the user data, the database driver ensures that input is always treated as data, preventing it from being executed as part of the query code."
+  },
+  {
+    "question": "Rate limiting can help mitigate denial-of-service (DoS) attacks on APIs.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Rate limiting** restricts the number of API requests a user or client can make within a specified time frame. This directly **mitigates denial-of-service (DoS) and brute-force attacks** by limiting the volume of traffic an attacker can send to overload the service."
+  },
+  {
+    "question": "Cross-site scripting (XSS) attacks primarily target:",
+    "choices": [
+      "Server-side code.",
+      "Database integrity.",
+      "User browsers.",
+      "Network infrastructure."
+    ],
+    "correctIndex": 2,
+    "explanation": "XSS attacks involve injecting malicious client-side scripts into a website. When a user visits the compromised page, the script is executed by their **web browser**, allowing the attacker to steal session tokens, cookies, or redirect the user."
+  },
+  {
+    "question": "Rate limiting in API security helps to prevent:",
+    "choices": [
+      "CSRF attacks",
+      "Brute-force attacks",
+      "XSS attacks",
+      "SQL injection"
+    ],
+    "correctIndex": 1,
+    "explanation": "The specific function of **rate limiting** is to restrict the sheer volume of repeated requests from a single source. This makes it highly effective at mitigating **brute-force attacks** against login endpoints and preventing service exhaustion."
+  },
+  {
+    "question": "______ are used to verify the authenticity and integrity of API requests.",
+    "choices": [
+      "digital signatures",
+      "API keys",
+      "input validation",
+      "HTTPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Digital signatures** provide cryptographic proof of the **authenticity and integrity** of an API request's origin and content. They ensure that the request has not been tampered with in transit and that it genuinely originates from the expected sender."
+  },
+  {
+    "question": "The function openssl_random_pseudo_bytes() can be used to generate a secure random number for encryption purposes in PHP.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The **`openssl_random_pseudo_bytes()`** function is a cryptographically secure function that is reliable for generating high-quality random data, making it suitable for security-sensitive applications like generating encryption keys, salts, and nonces in PHP."
+  },
+  {
+    "question": "Cross-site request forgery (CSRF) attacks exploit:",
+    "choices": [
+      "Lack of input validation.",
+      "Unpatched server software.",
+      "User trust in websites.",
+      "Weak encryption algorithms."
+    ],
+    "correctIndex": 2,
+    "explanation": "CSRF attacks exploit the **implicit trust a website has in a user's browser**. The attacker tricks the user into submitting an unauthorized request (e.g., changing their email or transferring funds) to a trusted site where they are currently authenticated."
+  },
+  {
+    "question": "Input validation and parameterized queries technique is MOST effective in preventing SQL injection.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. The combined use of **input validation** (checking data type and format) and **parameterized queries** (prepared statements) forms a layered defense that is highly effective and considered best practice for preventing SQL injection attacks."
+  },
+  {
+    "question": "Which PHP function is commonly used for password hashing?",
+    "choices": [
+      "crypt()",
+      "sha1()",
+      "password_hash()",
+      "md5()"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`password_hash()`** function is the modern and recommended standard in PHP for **password hashing**. It automatically handles secure salting and uses robust, slow hashing algorithms (like bcrypt or Argon2), which are necessary to resist brute-force attacks."
+  },
+  {
+    "question": "A robust API authentication mechanism uses:",
+    "choices": [
+      "Authentication tokens (e.g., JWTs).",
+      "Only API keys in headers.",
+      "Only basic authentication.",
+      "Only IP address restrictions."
+    ],
+    "correctIndex": 0,
+    "explanation": "A robust and modern API authentication system relies on **authentication tokens**, such as **JSON Web Tokens (JWTs)**. These tokens provide a secure, stateless way to transmit verified user identity claims between the server and client, enabling efficient and scalable authorization."
+  },
+  {
+    "question": "Using parameterized queries or prepared statements is the most effective way to prevent SQL injection in APIs.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Parameterized queries** or **prepared statements** are the industry-standard, most effective defense against SQL injection attacks in any application, including APIs. They ensure that user input is never executed as part of the SQL command."
+  },
+  {
+    "question": "The PUT HTTP method is generally considered safer for updating data in APIs due to its idempotency.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The **PUT** method is **idempotent**, meaning that making the same call multiple times will result in the same state change (or no change) on the server. This characteristic makes it safer for update operations compared to non-idempotent methods like POST."
+  },
+  {
+    "question": "Which of the following is NOT a good practice for API security?",
+    "choices": [
+      "Implementing robust authentication and authorization.",
+      "Exposing API keys in client-side code.",
+      "Regularly updating API dependencies.",
+      "Using HTTPS to secure communication."
+    ],
+    "correctIndex": 1,
+    "explanation": "A critical lapse in API security is **exposing API keys in client-side code**. Since client-side code is easily viewed and manipulated by users, API keys placed there can be quickly compromised, allowing unauthorized access to the API or backend resources."
+  },
+  {
+    "question": "Input validation should ideally occur:",
+    "choices": [
+      "Only on the client-side",
+      "Only in the database",
+      "On both the client-side and the server-side",
+      "Only on the server-side"
+    ],
+    "correctIndex": 2,
+    "explanation": "The optimal approach is to implement validation **on both the client-side and the server-side**. Client-side validation improves user experience by providing immediate feedback, but **server-side validation is mandatory for security**, as client-side checks can be easily bypassed by attackers."
+  },
+  {
+    "question": "What is a common mitigation strategy for CSRF attacks in APIs?",
+    "choices": [
+      "Input sanitization",
+      "Output encoding",
+      "Rate limiting",
+      "Implementing anti-CSRF tokens"
+    ],
+    "correctIndex": 3,
+    "explanation": "The most effective mitigation technique for **CSRF attacks** is **implementing anti-CSRF tokens**. These unique, secret, and unpredictable tokens are embedded in forms and validated by the server, ensuring that a request originates from the application itself and not from a malicious external site."
+  },
+  {
+    "question": "Why should you avoid directly embedding user-supplied data into SQL queries?",
+    "choices": [
+      "It improves database portability.",
+      "It improves performance.",
+      "It enhances code readability.",
+      "It makes SQL injection easier."
+    ],
+    "correctIndex": 3,
+    "explanation": "Directly embedding user input into SQL queries creates the perfect condition for **SQL injection**, as the application treats the user's data as part of the executable SQL command. This vulnerability allows attackers to alter the query's logic, leading to data theft or destruction."
+  },
+  {
+    "question": "When using prepared statements, parameters are treated as:",
+    "choices": [
+      "Separate data values.",
+      "Code to be executed.",
+      "Part of the SQL query.",
+      "Data to be inserted."
+    ],
+    "correctIndex": 0,
+    "explanation": "The core security mechanism of prepared statements is that parameters are transmitted to the database and treated strictly as **separate data values**. They are never parsed or executed as part of the SQL command itself, thereby neutralizing injection attacks."
+  },
+  {
+    "question": "The ______ header helps to prevent MIME-sniffing vulnerabilities.",
+    "choices": [
+      "Content-Security-Policy",
+      "Strict-Transport-Security",
+      "X-Frame-Options",
+      "X-Content-Type-Options"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **`X-Content-Type-Options`** HTTP header, when set to `nosniff`, instructs the browser to strictly follow the declared `Content-Type` header and **prevents MIME-sniffing**. This is vital for security, as it stops the browser from interpreting files (like images) as executable scripts."
+  },
+  {
+    "question": "A web application firewall (WAF) can help protect against various web attacks.",
+    "choices": [
+      "False",
+      "True"
+    ],
+    "correctIndex": 1,
+    "explanation": "True. A **Web Application Firewall (WAF)** is an application security tool that monitors, filters, and blocks malicious HTTP traffic to and from a web application. It serves as a vital defensive layer against common attacks like SQL injection, XSS, and path traversal."
+  },
+  {
+    "question": "Which encryption algorithm is commonly used for securing data in transit (e.g., HTTPS)?",
+    "choices": [
+      "AES",
+      "Blowfish",
+      "DES",
+      "3DES"
+    ],
+    "correctIndex": 0,
+    "explanation": "**AES (Advanced Encryption Standard)** is the current industry standard and the most widely used symmetric encryption algorithm for securing data in transit (via protocols like TLS/SSL in HTTPS) and data at rest due to its high speed and robust security."
+  },
+  {
+    "question": "______ functions are used to generate one-way hashes, making password recovery impractical.",
+    "choices": [
+      "Hashing",
+      "Encryption",
+      "Encoding",
+      "Decryption"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Hashing functions** (or cryptographic hash functions) are used to generate one-way, fixed-size output (the hash) from input data. They are ideal for securely storing passwords because the process is irreversible, meaning the original password cannot be retrieved from the hash."
+  },
+  {
+    "question": "Which PHP function is commonly used for escaping user input to prevent SQL injection?",
+    "choices": [
+      "mysql_real_escape_string()",
+      "strip_tags()",
+      "addslashes()",
+      "htmlspecialchars()"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`mysql_real_escape_string()`** function (or its modern counterpart, `mysqli_real_escape_string()`) is used to escape special characters in a string. This sanitization prepares user input for safe inclusion in an SQL query, serving as a primary defense against SQL injection."
+  },
+  {
+    "question": "Input validation in APIs should check for:",
+    "choices": [
+      "Data type only",
+      "Data format only",
+      "Data length only",
+      "Data type, length, and format"
+    ],
+    "correctIndex": 3,
+    "explanation": "Comprehensive input validation requires checking all aspects of the data. This includes **data type** (e.g., ensuring an age is an integer), **data length** (e.g., ensuring a username is within limits), and **data format** (e.g., ensuring an email adheres to proper syntax)."
+  },
+  {
+    "question": "CSRF protection often involves the use of:",
+    "choices": [
+      "Anti-virus software.",
+      "Session tokens.",
+      "CAPTCHAs.",
+      "Strong passwords."
+    ],
+    "correctIndex": 1,
+    "explanation": "The most effective technique for **CSRF protection** involves implementing unique, secret, and unpredictable **session tokens** (or anti-CSRF tokens) in every request that modifies data. The server validates this token upon submission to verify the request's legitimacy."
+  },
+  {
+    "question": "Prepared statements are primarily used to mitigate which type of attack?",
+    "choices": [
+      "Cross-site scripting (XSS)",
+      "Cross-site request forgery (CSRF)",
+      "SQL injection",
+      "Denial-of-service (DoS)"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Prepared statements** are the most robust, industry-standard defense specifically designed to mitigate **SQL injection (SQLi)** attacks by ensuring that user-supplied input is never executed as code."
   }
 ]
+
 
 
