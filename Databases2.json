@@ -1,0 +1,212 @@
+[
+  {
+    "question": "Relations in Databases are usually visualized as...",
+    "choices": [
+      "Boxes",
+      "Tables",
+      "Hexagons",
+      "Circles"
+    ],
+    "correctIndex": 1,
+    "explanation": "In the relational model, data is organized into relations, which are intuitively visualized and implemented as **tables**. Each table consists of rows (tuples) and columns (attributes) representing the data and its relationships."
+  },
+  {
+    "question": "What subsystems does a DBMS have?",
+    "choices": [
+      "A transaction manager, a query processor and a storage manager.",
+      "A query processor and a storage manager",
+      "A transaction manager and a query processor",
+      "A schema operator and a dynamic ODBC interface"
+    ],
+    "correctIndex": 0,
+    "explanation": "A standard Database Management System (DBMS) is composed of three core subsystems: the **query processor** (interprets and optimizes queries), the **transaction manager** (ensures data integrity and consistency), and the **storage manager** (handles data storage and retrieval from physical media)."
+  },
+  {
+    "question": "What is the meaning of DDL?",
+    "choices": [
+      "Double Data Logic",
+      "Delta Dynamic List",
+      "Data Dynamic Language",
+      "Data Definition Language"
+    ],
+    "correctIndex": 3,
+    "explanation": "**DDL** stands for **Data Definition Language**. It is a subset of SQL used to define and modify the database structure or schema, including commands like `CREATE`, `ALTER`, and `DROP`."
+  },
+  {
+    "question": "What is the difference between an instance and a schema?",
+    "choices": [
+    "The collection of information stored in the database at a particular moment is called a schema of the database. The overall design of the database is called the database instance.",
+    "The collection of information stored in the database at any time is called an instance of the database. The overall design of the database is called the database schema.",
+    "The relations and entities stored in the database that have a one-to-many cardinality are called an instance of the database. The overall collection of data in the database is called the database schema.",
+    "The collection of particular moments in the database are called an instance of the database. The overall duration of the database is called the database schema.",
+    "The collection of information stored in the database at a particular moment is called an instance of the database. The overall design of the database is called the database schema."
+  ],
+    "correctIndex": 4,
+    "explanation": "A **schema** is the logical blueprint or overall design of the database which rarely changes. An **instance** is the specific snapshot of the collection of information stored in the database at a **particular moment** in time."
+  },
+  {
+    "question": "What is a data query?",
+    "choices": [
+      "A piece of code that defines the rules for a DML compiler for further use.",
+      "A piece of code that publishes the data on social media.",
+      "A piece of code that adds data to the database.",
+      "A piece of code that is understood by the DDL interpreter and returns data entries for further use."
+    ],
+    "correctIndex": 3,
+    "explanation": "A **data query** is a request for information from a database. It is typically written in a query language (like SQL) and processed by the DBMS to retrieve specific data that matches the given criteria."
+  },
+  {
+    "question": "You want to determine the cardinality of a database that matches persons with (official) ID cards. From a government perspective, what would be the ideal cardinality for a relation Person \u2013 ID card?",
+    "choices": [
+      "many to any",
+      "many to many",
+      "one to many",
+      "one to one"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ideally, a single person should possess exactly one official ID card, and a single ID card should belong to exactly one person. This establishes a **one-to-one (1:1)** relationship, ensuring uniqueness and preventing identity fraud."
+  },
+  {
+    "question": "Which of the following is NOT a type of access or manipulation for data queries?",
+    "choices": [
+      "Retrieval of Information stored in the database",
+      "Insertion of new information into the database",
+      "Interpretation of information stored in the database",
+      "Deletion of information from the database"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard data manipulation operations include **insertion, deletion, modification (update), and retrieval**. 'Interpretation' is a cognitive process performed by the user or application logic, not a direct database manipulation operation provided by the DBMS."
+  },
+  {
+    "question": "What is a Cardinality?",
+    "choices": [
+      "The number of how many entities in a database are associated with a given entity.",
+      "The number of entities in a database.",
+      "The number of Cardinals that use databases.",
+      "The total number of possible associations in a database."
+    ],
+    "correctIndex": 0,
+    "explanation": "**Cardinality** in database modeling defines the numerical relationship between occurrences of one entity and another. It specifies whether the relationship is one-to-one, one-to-many, or many-to-many."
+  },
+  {
+    "question": "Which elements does an object-oriented data model include?",
+    "choices": [
+      "abstraction, inheritance, and object action",
+      "encapsulation, methods (functions), and object identity",
+      "dynamic linked objects, library access (DLL\u2019s), and pointers",
+      "big data capacity, recursive search, and normalized data"
+    ],
+    "correctIndex": 1,
+    "explanation": "The object-oriented data model is characterized by core OOP concepts adapted for databases: **encapsulation** (bundling data and behavior), **methods** (functions defining object behavior), and **object identity** (unique distinction of each object)."
+  },
+  {
+    "question": "Which of the following is NOT a well-known database system?",
+    "choices": [
+      "Microsoft SQL",
+      "MySQL",
+      "Oracle",
+      "Adobe Application Manager"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Adobe Application Manager** is a utility for managing Adobe software installations and updates, not a database management system. Microsoft SQL Server, MySQL, Oracle, and PostgreSQL are all prominent DBMS examples."
+  },
+  {
+    "question": "What is a structure described in a formal language supported by the database management system?",
+    "choices": [
+      "A database process",
+      "A database transaction",
+      "A database schema",
+      "A database query"
+    ],
+    "correctIndex": 2,
+    "explanation": "A **database schema** is the formal description of the database structure, defined using a Data Definition Language (DDL). It outlines the tables, fields, relationships, views, indexes, and other elements that make up the database."
+  },
+  {
+    "question": "What kind of symbol is used in a diagram for a relationship set.",
+    "choices": [
+      "A circle",
+      "A line",
+      "An oval",
+      "A diamond"
+    ],
+    "correctIndex": 3,
+    "explanation": "In Entity-Relationship (ER) diagrams, a **diamond** symbol is the standard notation used to represent a **relationship set**, which depicts the association between entity sets (rectangles)."
+  },
+  {
+    "question": "What are the two main architectures for DBMS\u2019s?",
+    "choices": [
+      "The Last-in-first-out (LIFO) architecture and the First-in-first-out (FIFO) architecture",
+      "The Fast Output and the Ultra Fast Output (UFO) architecture",
+      "The two-tier and the three-tier architecture",
+      "The FBI and the CIA security architecture"
+    ],
+    "correctIndex": 2,
+    "explanation": "The two predominant architectures for DBMS deployment are **two-tier** (client-server, where the application communicates directly with the database) and **three-tier** (client-application server-database server, adding an intermediate logic layer)."
+  },
+  {
+    "question": "What does the acronym DML stand for?",
+    "choices": [
+      "Data Manipulation Language",
+      "Data Mining Language",
+      "Data Mining List",
+      "Dynamic Meta Language"
+    ],
+    "correctIndex": 0,
+    "explanation": "**DML** stands for **Data Manipulation Language**. It is a subset of SQL commands used to manage data within the database, including operations like `SELECT`, `INSERT`, `UPDATE`, and `DELETE`."
+  },
+  {
+    "question": "What is the name of a commonly used database model?",
+    "choices": [
+      "The Equity Relationship Model",
+      "The Eternity Relationship Model",
+      "The Entity Relationship Model",
+      "The External Relationship Model"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **Entity-Relationship (ER) Model** is a widely used conceptual data model for designing databases. It represents data as entities, attributes, and relationships, providing a high-level view of the data structure."
+  },
+  {
+    "question": "Which of the following are the levels of data abstraction?",
+    "choices": [
+      "Physical level, protection level and access level",
+      "Logical level, level of perception and action level",
+      "Physical level, logical level and application level",
+      "Physical level, logical level and view level"
+    ],
+    "correctIndex": 3,
+    "explanation": "The three standard levels of data abstraction in a DBMS are the **Physical level** (how data is stored), the **Logical level** (what data is stored and relationships), and the **View level** (what part of the data is visible to users)."
+  },
+  {
+    "question": "What does DBMS stand for?",
+    "choices": [
+      "Databases by Microsoft",
+      "Database Management-System",
+      "Data Bound Managerial Safety",
+      "Data Big Mining Software"
+    ],
+    "correctIndex": 1,
+    "explanation": "**DBMS** stands for **Database Management System**. It is the system software responsible for creating, managing, storing, retrieving, and updating data in a database."
+  },
+  {
+    "question": "What would a basic SQL query look like?",
+    "choices": [
+      "SELECT * FROM DATA",
+      "SELECT * OF DATA",
+      "CHOOSE * FROM DATA",
+      "PRINT * OF DATA"
+    ],
+    "correctIndex": 0,
+    "explanation": "A fundamental SQL query for retrieving all data from a table named 'DATA' follows the syntax: **`SELECT * FROM DATA`**. `SELECT` specifies retrieval, `*` selects all columns, and `FROM` specifies the source table."
+  },
+  {
+    "question": "Which of the following is NOT a data model?",
+    "choices": [
+      "Rational Model",
+      "Relational Model",
+      "Entity-Relationship Model",
+      "Object-based Model"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **'Rational Model'** is not a standard term in database theory. The correct term is the **Relational Model**. Other valid data models include the Entity-Relationship Model, Object-based Model, and Semistructured Model."
+  }
+]

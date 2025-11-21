@@ -1,0 +1,106 @@
+[
+  {
+    "question": "Who is the creator of Linux?",
+    "choices": [
+      "Tux",
+      "Bill Gates",
+      "Linus Torvalds",
+      "Steve Jobs"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linus Torvalds is the Finnish-American software engineer who created the Linux kernel in 1991. He initiated the development of this open-source kernel, which became the foundation for a vast family of Unix-like operating systems used globally."
+  },
+  {
+    "question": "Which of the following is not an example of an embedded system?",
+    "choices": [
+      "microwave oven",
+      "automobile on-board hardware",
+      "avionics",
+      "servers"
+    ],
+    "correctIndex": 3,
+    "explanation": "Servers are general-purpose computers designed to manage network resources and run a wide variety of applications, distinguishing them from embedded systems. Embedded systems, like those in microwaves or avionics, are dedicated computing devices designed to perform specific tasks within a larger system."
+  },
+  {
+    "question": "Which operating system was the first to be used in IBM compatible computers?",
+    "choices": [
+      "System",
+      "AS300",
+      "MS-DOS",
+      "Altair"
+    ],
+    "correctIndex": 2,
+    "explanation": "MS-DOS (Microsoft Disk Operating System) was the dominant operating system for the IBM PC and compatible computers during the 1980s. It provided the essential command-line interface and system services that allowed early personal computers to function."
+  },
+  {
+    "question": "Which operating system is a Google’s Linux based operating system designed primarily for touch screen mobile devices?",
+    "choices": [
+      "iOS",
+      "Android",
+      "Symbian",
+      "Solaris"
+    ],
+    "correctIndex": 1,
+    "explanation": "Android is a mobile operating system developed by Google, based on a modified version of the Linux kernel and other open-source software. It is specifically optimized for touchscreen devices like smartphones and tablets, offering a flexible and customizable user interface."
+  },
+  {
+    "question": "Embedded operating systems are designed to be small, efficient, and dependable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Embedded operating systems must operate within strict hardware constraints, often with limited memory and processing power. Therefore, they are engineered to be extremely compact, resource-efficient, and reliable to ensure continuous operation without failure."
+  },
+  {
+    "question": "Which device does iOS not power?",
+    "choices": [
+      "AppleWatch",
+      "iPhones",
+      "iPods",
+      "Chromebooks"
+    ],
+    "correctIndex": 3,
+    "explanation": "Chromebooks are powered by Chrome OS, a Linux-based operating system designed by Google. iOS is Apple's proprietary mobile operating system, exclusively used for their hardware lines such as the iPhone and iPod Touch."
+  },
+  {
+    "question": "Windows can be expensive since the OS is paid license and the majority of its applications are paid products..",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Unlike open-source alternatives like Linux, the Windows ecosystem typically relies on a proprietary licensing model where the operating system itself and many of its popular productivity suites require purchase. This contributes to a higher total cost of ownership."
+  },
+  {
+    "question": "UNIX and Linux are very similar operating systems.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Linux was designed as a 'Unix-like' operating system, effectively cloning the architecture, command-line structure, and philosophy of UNIX. While they are distinct entities—one being a registered trademark and the other an open-source kernel—they operate in a very similar manner."
+  },
+  {
+    "question": "Embedded systems are designed to run without _______.",
+    "choices": [
+      "updates",
+      "power",
+      "memory",
+      "data"
+    ],
+    "correctIndex": 0,
+    "explanation": "Embedded systems are often deployed in environments where regular maintenance is difficult or impossible. Consequently, they are designed to be robust and stable, capable of running their specific tasks reliably for their entire lifecycle without the frequent software updates typical of general-purpose computers."
+  },
+  {
+    "question": "Which processor is Windows designed to work primarily with?",
+    "choices": [
+      "SPARC",
+      "x86",
+      "ARM",
+      "Dorito"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Windows operating system has historically been architected to run on the **x86** instruction set architecture (and its 64-bit extension, x64). While versions for other architectures exist, the vast majority of Windows software and driver ecosystems are built around Intel and AMD x86 processors."
+  }
+]
