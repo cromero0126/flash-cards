@@ -135,6 +135,14 @@
         <div class="flashcard bg-gradient-to-br from-cyan-500 via-sky-600 to-blue-700 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard(false, this.textContent.trim())">
             CS 4405 - Mobile Applications
         </div>
+        <!-- New Flashcard: Databases 2 (Blue-Green Gradient) -->
+        <div class="flashcard bg-gradient-to-br from-yellow-300 via-yellow-500 to-orange-600 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard(false, this.textContent.trim())">
+            CS 3306 - Databases 2
+        </div>
+        <!-- New Flashcard: Operating Systems 2 (Gold/Yellow Gradient) -->
+        <div class="flashcard bg-gradient-to-br from-red-800 via-rose-900 to-gray-900 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard(false, this.textContent.trim())">
+            CS 3307 - Operating Systems 2
+        </div>
     </div>
 
     <div class="popup fixed inset-0 bg-gradient-to-br from-gray-900/80 to-black/80 flex justify-center z-50 transition-opacity duration-300 ease-in-out py-8 overflow-y-auto" id="popup" style="display: none;">
@@ -239,7 +247,10 @@
             "CS 3303 - Data Structures": "DataStructures.json",
             "CS 2401 - Software Engineering 1": "SoftwareEngineering1.json",
             "CS 3305 - Web Programming 2": "WebProgramming2.json",
-            "CS 4405 - Mobile Applications": "MobileApplications.json"
+            "CS 4405 - Mobile Applications": "MobileApplications.json",
+            // NEW ENTRIES BELOW (11/21/2025):
+            "CS 3306 - Databases 2": "Databases2.json",
+            "CS 3307 - Operating Systems 2": "OperatingSystems2.json"
             // Ensure you have these JSON files in the same directory as your HTML file
         };
 
@@ -508,7 +519,9 @@
 
             const q = shuffledQuestions[index];
             
-            questionText.textContent = `${index + 1}. ${q.question}`;
+            //questionText.textContent = `${index + 1}. ${q.question}`;
+            // Proposed structure to show total count:
+            questionText.textContent = `${index + 1} / ${shuffledQuestions.length}. ${q.question}`;
             console.log('Question text updated:', questionText.textContent);
 
             explanationDiv.classList.add('hidden'); // Ensure explanation is hidden by default
