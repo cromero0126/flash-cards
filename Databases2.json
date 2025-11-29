@@ -208,5 +208,246 @@
     ],
     "correctIndex": 0,
     "explanation": "The **'Rational Model'** is not a standard term in database theory. The correct term is the **Relational Model**. Other valid data models include the Entity-Relationship Model, Object-based Model, and Semistructured Model."
+  },
+  {
+    "question": "What term describes the effect on a long transaction if a sequence of conflicting short transactions causes repeated restarting of the long transaction?",
+    "choices": [
+      "Oblivion",
+      "Obliteration",
+      "Starvation",
+      "Failure",
+      "Deadlock"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Starvation** occurs when a transaction cannot proceed for an indefinite period because other transactions continuously block it or cause it to restart. This typically happens to long-running transactions that repeatedly conflict with a stream of shorter, faster transactions."
+  },
+  {
+    "question": "When is a transaction schedule legal?",
+    "choices": [
+      "If it follows the law as stipulated in United Nations bill on data integrity, section 283.5B.",
+      "If it follows the rules of the locking protocol that is in place.",
+      "If it is serializable and recoverable.",
+      "If it is reversible.",
+      "If it is irreversible."
+    ],
+    "correctIndex": 1,
+    "explanation": "A transaction schedule is considered **legal** if it strictly adheres to the rules defined by the database's concurrency control protocols, such as a locking protocol. These rules ensure that the execution order of operations maintains data consistency and integrity."
+  },
+  {
+    "question": "What do you call a system’s main memory or system cache?",
+    "choices": [
+      "Volatile storage",
+      "Non-volatile storage",
+      "Stable storage",
+      "Shadow storage",
+      "Phantom storage"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Volatile storage** refers to memory that requires power to maintain the stored information, such as RAM (main memory) and cache. Data in volatile storage is lost immediately if the system crashes or loses power, unlike non-volatile storage like hard disks."
+  },
+  {
+    "question": "What, in a nutshell, does Thomas’ write rule do?",
+    "choices": [
+      "It helps generate serializable schedules.",
+      "It helps generate conflict free schedules.",
+      "It helps generate schedules that can be aborted without error.",
+      "It helps generate cascadeless schedules.",
+      "It helps generate schedules with no read operations."
+    ],
+    "correctIndex": 0,
+    "explanation": " **Thomas' write rule** is a timestamp-based concurrency control rule that allows certain outdated write operations to be ignored rather than aborted. By doing so, it permits a broader set of schedules to be considered view **serializable**, improving system concurrency."
+  },
+  {
+    "question": "When are two Schedules “conflict equivalent”?",
+    "choices": [
+      "If they cause the same type of conflicts.",
+      "If they do not conflict each other.",
+      "If they are in conflict with each other.",
+      "If they can be transformed from one into the other by reversing the order of instructions.",
+      "If they can be transformed from one into the other by a series of swaps and non-conflicting instructions."
+    ],
+    "correctIndex": 4,
+    "explanation": "Two schedules are **conflict equivalent** if they involve the same set of transactions and the order of any two conflicting operations is the same in both. Practically, this means one schedule can be transformed into the other by swapping adjacent non-conflicting operations."
+  },
+  {
+    "question": "What is the difference between shared-mode and exclusive lock?",
+    "choices": [
+      "When there is a shared-mode lock, the transaction cannot write and read the data item, where in an exclusive lock, the transaction can both write and read the data item.",
+      "When there is a shared-mode lock, the transaction cannot read the data item, where in an exclusive lock, the transaction can write the data item.",
+      "When there is a shared-mode lock, the transaction can write and read the data item, where in an exclusive lock, the transaction can write but not read the data item.",
+      "When there is a shared-mode lock, the transaction can read but not write the data item, where in an exclusive lock, the transaction can both write and read the data item.",
+      "When there is a shared-mode lock, the transaction can write and read the data item, where in an exclusive lock, the transaction can also write and read the data item."
+    ],
+    "correctIndex": 3,
+    "explanation": "A **shared-mode lock (S)** allows a transaction to read a data item but not modify it, permitting other transactions to also hold shared locks. An **exclusive lock (X)** allows a transaction to both read and write the data item, blocking all other transactions from accessing it."
+  },
+  {
+    "question": " A transaction can be…",
+    "choices": [
+      "Hurt",
+      "Killed",
+      "Buried",
+      "Robbed",
+      "Blackmailed"
+    ],
+    "correctIndex": 1,
+    "explanation": "In the context of deadlock prevention schemes like 'Wait-Die' or 'Wound-Wait', a transaction can be **killed** (aborted and rolled back) by the system to resolve a conflict or deadlock scenario."
+  },
+  {
+    "question": "When does a deadlock happen?",
+    "choices": [
+      "If every transaction is waiting for another transaction to finish.",
+      "If a schedule of transactions is rolling itself back without result.",
+      "If there is a transaction in a schedule that has a logical error.",
+      "If a transaction has been corrupted by system failure.",
+      "If the database locks down completely and all data is lost."
+    ],
+    "correctIndex": 0,
+    "explanation": "A **deadlock** occurs when a set of transactions are blocked because each transaction is holding a resource that another transaction in the set needs. This creates a cyclic dependency where every transaction is waiting for another to finish, so none can proceed."
+  },
+  {
+    "question": "What do you call a transaction that is responsible for a deadlock and has been chosen to be rolled back?",
+    "choices": [
+      "A witness",
+      "A hostage",
+      "A criminal",
+      "A victim",
+      "A felon"
+    ],
+    "correctIndex": 3,
+    "explanation": "When a deadlock detection algorithm identifies a deadlock cycle, it must select one transaction to abort to break the cycle. This selected transaction is referred to as the **victim**. The system rolls it back to release its locks."
+  },
+  {
+    "question": "What properties should database transactions ideally have?",
+    "choices": [
+      "Atomicity, Consistency, Isolation, Durability (ACID)",
+      "Automation, Connectivity, Invulnerability, Distribution (ACID)",
+      "Aspectualization, Centricity, Impact, Dependencies (ACID)",
+      "Aggregation, Coordination, Indestructability, Doubling (ACID)",
+      "Attributes, Code, Indices, Data (ACID)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ideal properties of database transactions are known by the acronym **ACID**: **Atomicity** (all or nothing), **Consistency** (data remains valid), **Isolation** (concurrent transactions don't interfere), and **Durability** (committed data is saved permanently)."
+  },
+  {
+    "question": "When can an aborted transaction be restarted?",
+    "choices": [
+      "When the transaction itself is correct but was aborted by a software or hardware error.",
+      "When the transaction was aborted due to an internal error in the transaction logic.",
+      "When the transaction failed because of a division by zero.",
+      "When the transaction would have caused data to be corrupted.",
+      "When the transaction made no sense."
+    ],
+    "correctIndex": 0,
+    "explanation": "A transaction can be safely restarted if it was aborted due to external factors like a **software crash, hardware failure, or concurrency control mechanism** (like deadlock resolution). If the transaction logic itself caused the error (e.g., internal logic error), restarting it would just cause the same error again."
+  },
+  {
+    "question": "What happens if a validation of a transaction fails?",
+    "choices": [
+      "The transaction gets rolled back.",
+      "The transaction fails and enters into a deadlock.",
+      "The transaction gets postponed.",
+      "The transaction gets earmarked as possibly problematic but completes anyway.",
+      "The database gets corrupted and all data is lost."
+    ],
+    "correctIndex": 0,
+    "explanation": "In optimistic concurrency control, the validation phase checks if the transaction's changes conflict with others. If this validation fails, the transaction cannot be allowed to commit, so it is **rolled back** (aborted) and typically restarted."
+  },
+  {
+    "question": "In Databases, collections of operations that form a single logical unit of work are called...",
+    "choices": [
+      "Modifications",
+      "Queries",
+      "Transactions",
+      "Transfers",
+      "Bulk operations"
+    ],
+    "correctIndex": 2,
+    "explanation": "A **transaction** is the fundamental unit of execution in a database management system. It represents a sequence of one or more operations (reads and writes) that are treated as a single, atomic logical unit of work."
+  },
+  {
+    "question": "What happens in the validation phase of a transaction?",
+    "choices": [
+      "It tests for conflicts of any kind.",
+      "It tests for data corruption and aborts the transaction if it finds a problem.",
+      "It creates an additional transaction to check if the transaction can be rolled back.",
+      "It tests whether the transaction causes a violation of serializability.",
+      "It deletes the data modified by the transaction and overwrites them with default values."
+    ],
+    "correctIndex": 3,
+    "explanation": "The validation phase is a crucial step in optimistic concurrency control protocols. During this phase, the system checks if the transaction's execution conflicts with any other concurrent transactions in a way that would violate **serializability**, ensuring data consistency."
+  },
+  {
+    "question": "How can you test a schedule for conflict serializability?",
+    "choices": [
+      "By counting the number of transactions. If the number is odd, the schedule is conflict serializable.",
+      "By counting the number of transactions. If the number is even, the schedule is conflict serializable.",
+      "By drawing a precedence graph. A schedule is conflict serializable if its precedence graph has no cycle.",
+      "By running the schedule. If there is no error, the schedule is conflict serializable.",
+      "By checking if there are the same amount of write as read operations."
+    ],
+    "correctIndex": 2,
+    "explanation": "The standard method to test for conflict serializability is to construct a **precedence graph** (or serialization graph). Nodes represent transactions, and directed edges represent conflicting operations. If the resulting graph contains **no cycles**, the schedule is conflict serializable."
+  },
+  {
+    "question": "What is a transaction identifier?",
+    "choices": [
+      "It is the unique identifier of the transaction that performed the read operation.",
+      "It is the unique identifier of the transaction that performed the write operation.",
+      "It is the unique identifier of the transaction that performed the delete operation.",
+      "It is the unique identifier of the transaction that performed the commit operation.",
+      "It is the unique identifier of the transaction that performed the stop operation."
+    ],
+    "correctIndex": 1,
+    "explanation": "In the context of log records for database recovery, a transaction identifier typically refers to the unique ID associated with the transaction that performed a specific action, such as a **write operation** on a data item."
+  },
+  {
+    "question": "What is needed to achieve Serializability?",
+    "choices": [
+      "A set of operations that run concurrently",
+      "A concurrency-control scheme",
+      "A database schema using recovery management",
+      "A transaction schedule that avoids blind write operations",
+      "A data lock"
+    ],
+    "correctIndex": 1,
+    "explanation": "To ensure that concurrent transactions produce results equivalent to some serial execution (serializability), a database system must implement a **concurrency-control scheme** (or protocol), such as two-phase locking or timestamp ordering."
+  },
+  {
+    "question": "What is an advantage of concurrency?",
+    "choices": [
+      "The CPU generates less heat.",
+      "The security of the database is increased.",
+      "The waiting time is reduced.",
+      "The failure rate of transactions is reduced.",
+      "The throughput is reduced."
+    ],
+    "correctIndex": 2,
+    "explanation": "Concurrency allows multiple transactions to make progress simultaneously. This significantly **reduces the average waiting time** for users and transactions, as short transactions don't have to wait for long ones to complete fully, and it improves overall system throughput."
+  },
+  {
+    "question": "Which of the following is NOT a transaction state?",
+    "choices": [
+      "Committed",
+      "Aborted",
+      "Failed",
+      "Attempted",
+      "Active"
+    ],
+    "correctIndex": 3,
+    "explanation": "The standard states of a database transaction are **Active, Partially Committed, Failed, Aborted, and Committed**. **Attempted** is not a formally defined state in the standard transaction state model."
+  },
+  {
+    "question": "What is a cascadeless schedule?",
+    "choices": [
+      "A schedule where the whole set of instructions takes the shape of only one single cascade.",
+      "A schedule where cascading rollbacks cannot occur.",
+      "A schedule where cascades are avoided by allowing rollbacks.",
+      "A schedule where a cascade is rolled forth and then directly rolled back.",
+      "Cascadeless schedules cannot exist, because every schedule has a cascade."
+    ],
+    "correctIndex": 1,
+    "explanation": "A **cascadeless schedule** ensures that if a transaction $T_j$ reads a data item modified by $T_i$, then $T_i$ must have committed before the read occurs. This prevents **cascading rollbacks**, where the abort of one transaction forces the abort of dependent transactions."
   }
+
 ]
