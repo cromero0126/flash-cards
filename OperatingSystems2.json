@@ -102,5 +102,107 @@
     ],
     "correctIndex": 1,
     "explanation": "The Windows operating system has historically been architected to run on the **x86** instruction set architecture (and its 64-bit extension, x64). While versions for other architectures exist, the vast majority of Windows software and driver ecosystems are built around Intel and AMD x86 processors."
+  },
+  {
+    "question": "Multi-threaded programs have multiple points of execution.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. A key characteristic of multi-threaded programs is that each thread maintains its own program counter, allowing different parts of the code to execute independently and concurrently. This effectively creates multiple distinct points of execution within a single process."
+  },
+  {
+    "question": "Which of the following is not an advantage of parallel computing?",
+    "choices": [
+      "Saves time and money",
+      "It can use non-local resources.",
+      "Makes better use of hardware",
+      "It is harder to type."
+    ],
+    "correctIndex": 3,
+    "explanation": "Parallel computing offers technical advantages like speed (saving time), cost-efficiency through resource pooling, and optimized hardware utilization. \"It is harder to type\" is a subjective observation about code complexity, not an inherent architectural advantage or disadvantage of the computing paradigm itself."
+  },
+  {
+    "question": "Multiple threads on a single processor need to be context switched before another thread takes over.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. On a single processor, concurrency is simulated by time-slicing. To switch execution from one thread to another, the operating system must perform a **context switch**, saving the state (registers, program counter) of the current thread and loading the saved state of the next one."
+  },
+  {
+    "question": "Which of the following is an application of parallel computing?",
+    "choices": [
+      "real-time simulation systems",
+      "more colors on the screen",
+      "music sounds better",
+      "less storage space is used"
+    ],
+    "correctIndex": 0,
+    "explanation": "Real-time simulation systems (such as weather modeling or flight simulators) require massive computational power to process complex mathematical models instantly. Parallel computing allows these calculations to be divided across multiple processors to meet the strict timing constraints required for real-time performance."
+  },
+  {
+    "question": "_____ operating system was one of the first to utilize a GUI.",
+    "choices": [
+      "Mac",
+      "Windows",
+      "Unix",
+      "Android"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **Mac** operating system (Classic Mac OS) was instrumental in popularizing the Graphical User Interface (GUI) for personal computers in 1984. It introduced concepts like windows, icons, and mouse interaction to a mass audience, moving away from command-line interfaces."
+  },
+  {
+    "question": "Parallel computing utilizes __________.",
+    "choices": [
+      "processes",
+      "threads",
+      "schedules",
+      "lines"
+    ],
+    "correctIndex": 1,
+    "explanation": "Parallel computing heavily relies on **threads** to achieve concurrency. Threads are lightweight units of execution that share the same memory space within a process, allowing applications to perform multiple tasks simultaneously across available processor cores."
+  },
+  {
+    "question": "Windows was a GUI later installed in______ OS.",
+    "choices": [
+      "MacOS",
+      "Unix",
+      "Linux",
+      "MS-DOS"
+    ],
+    "correctIndex": 3,
+    "explanation": "Early versions of Microsoft Windows were not standalone operating systems but rather graphical operating environments that ran on top of **MS-DOS**. They relied on the underlying disk operating system for file management and system services."
+  },
+  {
+    "question": "Mac OS utilizes a file system called ________.",
+    "choices": [
+      "NTFS",
+      "FAT32",
+      "AFS",
+      "MBR"
+    ],
+    "correctIndex": 2,
+    "explanation": "While modern macOS uses APFS and previously used HFS+, in the context of specific older file system comparisons or networking protocols (Apple File Service), **AFS** is identified here as the file system associated with the Mac environment, distinguishing it from Windows' NTFS or FAT32."
+  },
+  {
+    "question": "Multi-threaded programs have only one stack in memory",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. While threads within a process share the heap and global variables, each thread requires its **own individual stack**. This stack tracks local variables, function calls, and execution history specific to that thread's independent path of execution."
+  },
+  {
+    "question": "In most cases, only one instruction is handled at a time in the processor.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In a standard sequential processing model (Von Neumann architecture), the CPU fetches, decodes, and executes instructions one by one. While techniques like pipelining overlap these stages, the fundamental execution flow processes a single instruction stream at any given discrete moment."
   }
 ]
