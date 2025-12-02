@@ -204,5 +204,99 @@
     ],
     "correctIndex": 0,
     "explanation": "True. In a standard sequential processing model (Von Neumann architecture), the CPU fetches, decodes, and executes instructions one by one. While techniques like pipelining overlap these stages, the fundamental execution flow processes a single instruction stream at any given discrete moment."
+  },
+  {
+    "question": "What does the command “mkdir/mnt/cdrom” do in a Unix/Linux system?",
+    "choices": [
+      "Mount a CD-ROM",
+      "Delete a partition",
+      "Create a partition",
+      "Erase a disk"
+    ],
+    "correctIndex": 0,
+    "explanation": "In the context of this question's options, this command is associated with the process of **mounting a CD-ROM**. Specifically, `mkdir` creates the directory (mount point) where the CD-ROM's file system will subsequently be attached (mounted) to the main file tree."
+  },
+  {
+    "question": "Which of the following is NOT a file system?",
+    "choices": [
+      "FAT32",
+      "NTFS",
+      "Ext4",
+      "MacFS"
+    ],
+    "correctIndex": 3,
+    "explanation": "**MacFS** is not a standard or recognized file system name. The proprietary file systems historically and currently used by Apple are HFS, HFS+, and APFS (Apple File System), while FAT32, NTFS, and Ext4 are standard file systems for Windows and Linux."
+  },
+  {
+    "question": "A disk needs to be mounted first before accessing it.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In most operating systems (especially Unix-like ones), a storage device's file system is not accessible to the user or applications until it has been **mounted**, which attaches it to a specific location within the system's directory tree."
+  },
+  {
+    "question": "Which command creates a file system?",
+    "choices": [
+      "Tracert",
+      "mkfs",
+      "IPCONFIG",
+      "LS"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`mkfs`** (make file system) command is the standard Unix/Linux utility used to format a storage partition by building a file system (such as ext4, xfs, or fat) on it."
+  },
+  {
+    "question": "A file system tree for a typical MS-DOS based system includes _______in the command prompt.",
+    "choices": [
+      "C:\\",
+      "/etc/",
+      "RUN",
+      "Devpts"
+    ],
+    "correctIndex": 0,
+    "explanation": "MS-DOS and Windows systems traditionally use drive letters to denote the root of a file system. **`C:\`** is the standard designation for the primary hard drive partition containing the operating system and system files."
+  },
+  {
+    "question": "Unmounting is NOT needed for memory usage in a file system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **Unmounting** is critical before removing a device or shutting down because it ensures that any cached data in volatile memory (RAM) is flushed and written back to the physical disk, preventing data corruption and loss."
+  },
+  {
+    "question": "Packing of the procedure parameters is called __________.",
+    "choices": [
+      "marshalling",
+      "shepherding",
+      "booting",
+      "mounting"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Marshalling** is the process of transforming the memory representation of an object or parameters into a data format suitable for storage or transmission (like in Remote Procedure Calls), allowing them to be unpacked (unmarshalled) by the receiving system."
+  },
+  {
+    "question": "Dismounting is a process of allowing a device to interact with the operating system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **Dismounting** (or unmounting) is the exact opposite: it is the process of logically disconnecting a file system from the operating system, ensuring all pending I/O operations are complete so the device can be safely removed."
+  },
+  {
+    "question": "Which command manipulates the disk partition table?",
+    "choices": [
+      "fdisk",
+      "adisk",
+      "gdisk",
+      "mdisk"
+    ],
+    "correctIndex": 0,
+    "explanation": "**`fdisk`** is a widely used command-line utility for viewing and manipulating the disk partition table. It allows administrators to create, delete, resize, and manage partitions on a hard drive."
   }
 ]
+
