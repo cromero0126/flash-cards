@@ -448,6 +448,246 @@
     ],
     "correctIndex": 1,
     "explanation": "A **cascadeless schedule** ensures that if a transaction $T_j$ reads a data item modified by $T_i$, then $T_i$ must have committed before the read occurs. This prevents **cascading rollbacks**, where the abort of one transaction forces the abort of dependent transactions."
+  },
+  {
+    "question": "What can be tuned to increase performance in a database system?",
+    "choices": [
+      "Indices",
+      "Indica",
+      "Inference",
+      "Instances",
+      "Instants"
+    ],
+    "correctIndex": 0,
+    "explanation": "Indices (or indexes) are auxiliary data structures that improve the speed of data retrieval operations on a database table at the cost of additional writes and storage space. Tuning these indices is a primary method for optimizing query performance."
+  },
+  {
+    "question": "What is the ODBC standard?",
+    "choices": [
+      "A database connectivity standard",
+      "A data detection standard for bitcoin mining",
+      "A database correction standard",
+      "A database cooperation standard",
+      "A database standard for data collection"
+    ],
+    "correctIndex": 0,
+    "explanation": "ODBC (Open Database Connectivity) is a standard application programming interface (API) for accessing database management systems (DBMS). It allows applications to connect to various databases using a common interface, regardless of the specific DBMS being used."
+  },
+  {
+    "question": "In databases, what kind of value can you use as placeholder to represent missing values?",
+    "choices": [
+      "All",
+      "Null",
+      "Void",
+      "(you just leave the field blank)",
+      "Default"
+    ],
+    "correctIndex": 1,
+    "explanation": "In relational databases, **Null** is a special marker used to indicate that a data value does not exist in the database. It represents missing, unknown, or inapplicable information, distinct from a zero or an empty string."
+  },
+  {
+    "question": "If there is an older system that is incompatible with current systems, we are talking about a…",
+    "choices": [
+      "Precursor System",
+      "Legacy System",
+      "Oldtimer System",
+      "Heritage System",
+      "Ancestor System"
+    ],
+    "correctIndex": 1,
+    "explanation": "A **legacy system** is an old method, technology, computer system, or application program that relates to a previous or outdated computer system. Despite being outdated or incompatible with modern systems, they are often still used because they perform critical functions."
+  },
+  {
+    "question": "What does the acronym URL stand for?",
+    "choices": [
+      "United Resource Locator",
+      "Universal Resource Locator",
+      "Ubiquitous Resource Locator",
+      "Uniform Resource Locator",
+      "Unique Resource Locator"
+    ],
+    "correctIndex": 3,
+    "explanation": "**URL** stands for **Uniform Resource Locator**. It serves as a reference (an address) to a resource on the Internet, specifying its location on a computer network and a mechanism for retrieving it (like HTTP or FTP)."
+  },
+  {
+    "question": "What is the meaning of the acronym SOAP?",
+    "choices": [
+      "System Object Analysis Pages",
+      "Sales Online Analytics Program",
+      "Security Organization Awareness Protocol",
+      "Software Object Application Profile",
+      "Simple Object Access Protocol"
+    ],
+    "correctIndex": 4,
+    "explanation": "**SOAP** stands for **Simple Object Access Protocol**. It is a protocol specification for exchanging structured information in the implementation of web services in computer networks, typically using XML for message negotiation and transmission."
+  },
+  {
+    "question": "What can be said about the Precedence Graph T1  T2?",
+    "choices": [
+      "Not all T1 Instructions must execute before the first T2 instruction executes.",
+      "All T1 instructions must execute before the first T2 instruction executes.",
+      "Not all T2 Instructions must execute before the first T1 instruction executes.",
+      "All T2 instructions must execute before the first T1 instruction executes.",
+      "It doesn’t matter if T1 or T2 instructions execute first."
+    ],
+    "correctIndex": 1,
+    "explanation": "A precedence graph edge from T1 to T2 indicates a dependency where T1 precedes T2. In the context of serializability or task scheduling, this implies that for the schedule to be valid or equivalent to a serial execution, all operations of T1 effectively happen before T2 starts."
+  },
+  {
+    "question": "What is NOT an example of e-commerce?",
+    "choices": [
+      "Online Shopping",
+      "Online Auctions",
+      "Online Bookstores",
+      "Online Dating",
+      "Open Source Projects"
+    ],
+    "correctIndex": 4,
+    "explanation": "**Open Source Projects** are collaborative software development initiatives where the source code is made freely available. While they exist online, they are primarily about community contribution and code sharing, not the commercial transaction of buying and selling goods or services which defines e-commerce."
+  },
+  {
+    "question": "What is the meaning of the acronym ODBC?",
+    "choices": [
+      "Open Database Center",
+      "Official Database Community",
+      "Open Database Connectivity",
+      "Object Data Byte Cache",
+      "Online Database Cell"
+    ],
+    "correctIndex": 2,
+    "explanation": "**ODBC** stands for **Open Database Connectivity**. It is a standard API that allows applications to access data in database management systems (DBMS) using SQL as a standard for accessing the data."
+  },
+  {
+    "question": "What is the function of the SQL GROUP BY statement?",
+    "choices": [
+      "The SQL GROUP BY clause can be used in a SELECT statement to collect data across multiple records and group the results by one or more columns.",
+      "The SQL GROUP BY clause cannot be used in a SELECT statement.",
+      "The SQL GROUP BY clause can be used in a SELECT statement to form a natural join between relations.",
+      "The SQL GROUP BY clause can be used in a SELECT statement to combine one or more columns.",
+      "The SQL GROUP BY clause can be used in a SELECT statement to avoid data inconsistencies."
+    ],
+    "correctIndex": 0,
+    "explanation": "The `GROUP BY` statement groups rows that have the same values into summary rows, like 'find the number of customers in each country'. It is often used with aggregate functions (`COUNT`, `MAX`, `MIN`, `SUM`, `AVG`) to group the result-set by one or more columns."
+  },
+  {
+    "question": "What happens when you extract patterns and knowledge from large data sets?",
+    "choices": [
+      "Data Collisions",
+      "Data Tracking",
+      "Data Mining",
+      "Data Warehousing",
+      "Data Collapse"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Data Mining** is the process of discovering patterns, correlations, and useful information in large datasets. It involves methods at the intersection of machine learning, statistics, and database systems."
+  },
+  {
+    "question": "What do you call the component of a system that is responsible for limiting its performance?",
+    "choices": [
+      "Riverbend",
+      "Waterfall",
+      "Tombstone",
+      "Bottleneck",
+      "Corkscrew"
+    ],
+    "correctIndex": 3,
+    "explanation": "A **bottleneck** is a point of congestion in a system that occurs when workloads arrive too quickly for the production process to handle. The inefficiencies brought about by the bottleneck often create delays and higher production costs, limiting the overall performance of the system."
+  },
+  {
+    "question": "What do you call a piece of text or other element of a web page that is “marked up” and clickable, directing you to another resource?",
+    "choices": [
+      "Infralink",
+      "Ultralink",
+      "Supralink",
+      "Megalink",
+      "Hyperlink"
+    ],
+    "correctIndex": 4,
+    "explanation": "A **hyperlink** (or simply link) is a reference to data that the user can follow by clicking or tapping. It points to a whole document or to a specific element within a document, forming the fundamental navigation structure of the World Wide Web."
+  },
+  {
+    "question": "Which benchmark for database performance is NOT obsolete?",
+    "choices": [
+      "TPC-A",
+      "TPC-B",
+      "TPC-C",
+      "TPC-D",
+      "TPC-R"
+    ],
+    "correctIndex": 2,
+    "explanation": "**TPC-C** is an active and widely used benchmark from the Transaction Processing Performance Council (TPC). It simulates a complete computing environment where a population of users executes transactions against a database, measuring Online Transaction Processing (OLTP) performance."
+  },
+  {
+    "question": "What do you call the presentation layer of the internet that contains (usually visual) applications that help the user interact with databases and other content?",
+    "choices": [
+      "The Internet",
+      "The Data Highway",
+      "The World Wide Web (WWW)",
+      "Windows",
+      "Usenet"
+    ],
+    "correctIndex": 2,
+    "explanation": "**The World Wide Web (WWW)** is the information system where documents and other web resources are identified by Uniform Resource Locators (URLs) and accessible over the Internet via web browsers. It serves as the visual, interactive interface layer for users."
+  },
+  {
+    "question": "What is it you can do with PHP?",
+    "choices": [
+      "Client side scripting",
+      "Database scripting",
+      "Hypertext scripting",
+      "Server side scripting",
+      "Javascripting"
+    ],
+    "correctIndex": 3,
+    "explanation": "PHP is a general-purpose scripting language that is especially suited to web development. It is fundamentally a **server-side scripting** language, meaning the code is executed on the web server to generate dynamic web page content before it is sent to the client's browser."
+  },
+  {
+    "question": "What trick can be used to improve database performance?",
+    "choices": [
+      "denormalized relation",
+      "derelated normalization",
+      "normalized relation",
+      "relative normalization",
+      "derelanormification"
+    ],
+    "correctIndex": 0,
+    "explanation": "Using a **denormalized relation** involves adding redundant data or grouping data into a single table to speed up complex queries. While normalization organizes data to reduce redundancy, intentional denormalization can improve read performance by avoiding costly join operations."
+  },
+  {
+    "question": "What acronym is commonly used for the “Hypertext Transfer Protocol”?",
+    "choices": [
+      "HTPT",
+      "HPPT",
+      "HYPTP",
+      "HTTP",
+      "HPTP"
+    ],
+    "correctIndex": 3,
+    "explanation": "**HTTP** stands for **Hypertext Transfer Protocol**. It is the foundation of data communication for the World Wide Web, defining how messages are formatted and transmitted between web servers and browsers."
+  },
+  {
+    "question": "What is the function of OLAP (Online Analytic Processing)?",
+    "choices": [
+      "The OLAP methodology provides normalization of data that have been generated in online applications.",
+      "OLAP tools provide interactive analysis of data, for example to help build decision support systems.",
+      "OLAP provides the database programmer with specific debugging routines.",
+      "OLAP is an interface protocol to connect databases with each other, so queries can be cascaded.",
+      "OLAP is the technique used for database system design used on mobile and laptop computers."
+    ],
+    "correctIndex": 1,
+    "explanation": "OLAP (Online Analytical Processing) is a category of software tools that provides analysis of data stored in a database. It enables users to analyze multidimensional data interactively from multiple perspectives, making it essential for business intelligence and decision support systems."
+  },
+  {
+    "question": "What technique can be used if a web site receives high traffic by being accessed billions of times in one short interval?",
+    "choices": [
+      "Caching",
+      "Hacking",
+      "Fracking",
+      "Hyperthreading",
+      "Bittorrents"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Caching** is the technique of storing copies of files or data in a temporary storage location (cache) so that future requests for that data can be served faster. For high-traffic websites, caching static content reduces server load and improves response times significantly."
   }
-
 ]
+
