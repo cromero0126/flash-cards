@@ -256,7 +256,7 @@
       "Devpts"
     ],
     "correctIndex": 0,
-    "explanation": "MS-DOS and Windows systems traditionally use drive letters to denote the root of a file system. **`C:\`** is the standard designation for the primary hard drive partition containing the operating system and system files."
+    "explanation": "MS-DOS and Windows systems traditionally use drive letters to denote the root of a file system. **`C:\\`** is the standard designation for the primary hard drive partition containing the operating system and system files."
   },
   {
     "question": "Unmounting is NOT needed for memory usage in a file system.",
@@ -299,4 +299,5 @@
     "explanation": "**`fdisk`** is a widely used command-line utility for viewing and manipulating the disk partition table. It allows administrators to create, delete, resize, and manage partitions on a hard drive."
   }
 ]
+
 
