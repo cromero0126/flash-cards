@@ -297,7 +297,157 @@
     ],
     "correctIndex": 0,
     "explanation": "**`fdisk`** is a widely used command-line utility for viewing and manipulating the disk partition table. It allows administrators to create, delete, resize, and manage partitions on a hard drive."
+  },
+  {
+    "question": "All of the following are functions of a file system except:",
+    "choices": [
+      "Space management",
+      "Metadata",
+      "Data encryption",
+      "Ordering"
+    ],
+    "correctIndex": 3,
+    "explanation": "While file systems handle space management, metadata, and often encryption, 'ordering' is not a fundamental function. File systems organize data hierarchically or via indexing, but they do not inherently enforce a specific logical order on the file content itself."
+  },
+  {
+    "question": "Identify an advantage of embedded systems.",
+    "choices": [
+      "troubleshooting is harder",
+      "limited memory",
+      "hardware is limited",
+      "low power consumption"
+    ],
+    "correctIndex": 3,
+    "explanation": "Embedded systems are typically designed for specific tasks with optimized hardware. A major advantage is **low power consumption**, which is crucial for battery-operated devices and ensures efficiency in environments where power is constrained."
+  },
+  {
+    "question": "Operating systems manage tasks and resources in the computer.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The primary role of an operating system is to act as a manager for hardware and software resources. It schedules tasks (processes), allocates memory, and manages input/output devices to ensure efficient system operation."
+  },
+  {
+    "question": "Medical equipment use embedded systems.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Medical devices such as pacemakers, MRI machines, and infusion pumps rely heavily on **embedded systems**. These systems provide the precise, reliable, and real-time control necessary for critical healthcare applications."
+  },
+  {
+    "question": "A program that lets you see the assembly code that it compiled from is called a __________.",
+    "choices": [
+      "GUI",
+      "scheduler",
+      "shell",
+      "disassembler"
+    ],
+    "correctIndex": 3,
+    "explanation": "A **disassembler** is a computer program that translates machine language into assembly language—the inverse operation to that of an assembler. It allows developers to inspect the low-level code structure of a compiled program."
+  },
+  {
+    "question": "Operating systems enable multiple uses in most cases.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Modern general-purpose operating systems are designed to be versatile, supporting a wide array of applications ranging from word processing and web browsing to gaming and scientific calculation, often simultaneously."
+  },
+  {
+    "question": "The state of a single thread is similar to a _______.",
+    "choices": [
+      "process",
+      "GUI",
+      "terminal",
+      "CPU"
+    ],
+    "correctIndex": 0,
+    "explanation": "A thread is often described as a **lightweight process**. Like a full process, a thread has its own execution state, including a program counter, register set, and stack, allowing it to execute a sequence of instructions independently."
+  },
+  {
+    "question": "In any memory structure, Heap is always higher in order than a ______.",
+    "choices": [
+      "code",
+      "program",
+      "stack",
+      "RAM"
+    ],
+    "correctIndex": 2,
+    "explanation": "In the standard memory layout of a process, the **stack** typically grows downward from high memory addresses, while the **heap** grows upward from lower memory addresses. Therefore, the stack is located at a 'higher' order in the virtual address space compared to the heap."
+  },
+  {
+    "question": "Some programs are designed for computers with multiple CPUs.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Multithreaded and parallel programs are specifically architected to leverage **multiple CPUs** or multi-core processors. This allows them to execute different parts of the program simultaneously, significantly improving performance and throughput."
+  },
+  {
+    "question": "Real-Time Operating Systems run dependent on clock interrupt requests.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Real-Time Operating Systems (RTOS)** rely heavily on precise timing to meet strict deadlines. Clock interrupts provide the fundamental 'heartbeat' of the system, triggering the scheduler to switch tasks and ensuring that time-critical operations occur exactly when needed."
+  },
+  {
+    "question": "Which system do many embedded systems operate on?",
+    "choices": [
+      "processor",
+      "display",
+      "control loop",
+      "scheduler"
+    ],
+    "correctIndex": 2,
+    "explanation": "Many embedded systems, particularly those in automation and control, operate on a **control loop** architecture (like a PID loop). They continuously read inputs from sensors, process the data, and update outputs/actuators in a cyclical manner."
+  },
+  {
+    "question": "Storage devices need at least two partitions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. A storage device can function perfectly well with just **one single partition** that occupies the entire drive. While multiple partitions are useful for organization or multi-booting, they are not a mandatory requirement for the device to work."
+  },
+  {
+    "question": "Without a file system, the data on the hard drive would be stored back-to-back and files would take longer to search for when needed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Without a **file system** to index and organize data (e.g., using inodes or file allocation tables), data would be a raw, unstructured stream of bits. Locating a specific file would require scanning the entire disk sequentially, which is extremely inefficient."
+  },
+  {
+    "question": "Multi-tasking operating systems run multiple tasks on one processor at the same time.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Multi-tasking operating systems create the illusion of simultaneous execution on a single processor by rapidly switching between tasks (context switching). This allows users to interact with multiple applications essentially 'at the same time'."
+  },
+  {
+    "question": "A splitting of the storage into regions used for certain purposes is called a ________.",
+    "choices": [
+      "partition",
+      "logic",
+      "boot record",
+      "loader"
+    ],
+    "correctIndex": 0,
+    "explanation": "A **partition** is a logical division of a hard disk or other storage device. It creates distinct regions that the operating system treats as separate drives or volumes, allowing for better organization, multiple file systems, or separating the OS from user data."
   }
 ]
+
 
 
