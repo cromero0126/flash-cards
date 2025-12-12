@@ -688,6 +688,245 @@
     ],
     "correctIndex": 0,
     "explanation": "**Caching** is the technique of storing copies of files or data in a temporary storage location (cache) so that future requests for that data can be served faster. For high-traffic websites, caching static content reduces server load and improves response times significantly."
+  },
+  {
+    "question": "LBAC means Label-based Access Control. Regarding databases, an additional and more recent meaning of the same acronym has been established. What is it?",
+    "choices": [
+      "Least Bytes Access Control",
+      "Lossless Bias Access Control",
+      "Lattice-based Access Control",
+      "List-based Access Control",
+      "Least Bad Access Control"
+    ],
+    "correctIndex": 2,
+    "explanation": "In the context of high-security database environments, **Lattice-based Access Control** is a model derived from Mandatory Access Control (MAC). It uses a lattice structure to define relationships between security labels (like Top Secret, Secret, Confidential) to enforce information flow policies."
+  },
+  {
+    "question": "In a three-tier application model, which level is responsible for authentication?",
+    "choices": [
+      "Web server",
+      "Application server",
+      "Database server",
+      "All of the above",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "explanation": "In a standard three-tier architecture (Presentation, Application, Data), the **Application server** (middle tier) typically handles the business logic, including the authentication of users, before identifying itself to the database server on their behalf."
+  },
+  {
+    "question": "What happens if you turn on Native Audit for databases?",
+    "choices": [
+      "Security may be reduced but performance is enhanced.",
+      "Performance may be reduced but security is enhanced.",
+      "Security and performance are both enhanced.",
+      "Security and performance are both reduced.",
+      "None of the above."
+    ],
+    "correctIndex": 1,
+    "explanation": "Enabling native auditing involves logging database activities to a trail (file or table). While this significantly **enhances security** by providing accountability and forensic capabilities, the additional I/O overhead required to write these logs typically causes a **reduction in performance**."
+  },
+  {
+    "question": "What is the meaning of the acronym LBAC?",
+    "choices": [
+      "Logic Based Access Control",
+      "Logic Bound Access Control",
+      "List Based Access Control",
+      "List Bound Access Control",
+      "Label Based Access Control"
+    ],
+    "correctIndex": 4,
+    "explanation": "**Label Based Access Control (LBAC)** is a security feature that allows fine-grained control over individual rows and columns in a database table. It functions by comparing the security label associated with a user against the security label attached to the data."
+  },
+  {
+    "question": "Due to a malfunction in the coffee maker, your company’s data center burns down. Fortunately, everything is safely stored elsewhere in a backup server. Which security objective still gets compromised?",
+    "choices": [
+      "Usability",
+      "Privacy",
+      "Availability",
+      "Atomicity",
+      "Nonrepudiability"
+    ],
+    "correctIndex": 2,
+    "explanation": "Even though the data is safe (Integrity) and secret (Privacy), the physical destruction of the data center prevents users from accessing the system. Therefore, the **Availability** objective of the CIA triad is compromised until the backup server is brought online."
+  },
+  {
+    "question": "What are the three primary rules for RBAC?",
+    "choices": [
+      "Role assignment, role authorization, permission authorization",
+      "Role assignment, role authentication, permission assignment",
+      "Role authorization, database authorization, permission authorization",
+      "Role assignment, role revocation, permission recovery",
+      "Role auditing, data prioritization, permission prioritization"
+    ],
+    "correctIndex": 0,
+    "explanation": "The core mechanics of **Role-Based Access Control (RBAC)** are defined by: **Role assignment** (a subject can execute a transaction only if selected for a role), **Role authorization** (a subject's active role must be authorized for them), and **Permission authorization** (a subject can execute a transaction only if the transaction is authorized for their active role)."
+  },
+  {
+    "question": "In today’s database technology, what is the most common way to authenticate a user for access to a database?",
+    "choices": [
+      "Token-Ring-Authentication",
+      "Retina Scan",
+      "Two-factor-Authentication",
+      "Fingerprint Authentication",
+      "Infrared face scan"
+    ],
+    "correctIndex": 2,
+    "explanation": "While basic passwords are still used, modern secure database environments increasingly rely on **Two-factor Authentication (2FA)**. This requires users to provide two distinct forms of identification (e.g., a password and a mobile token) to gain access, significantly reducing the risk of unauthorized access."
+  },
+  {
+    "question": "What kind of Access Control method can be used instead of RBAC without losing any functionality?",
+    "choices": [
+      "Mnemonic Access Control",
+      "Mannerism Access Control",
+      "Manifested Access Control",
+      "Mandatory Access Control",
+      "Maximal Access Control"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Mandatory Access Control (MAC)** is a strict access control model where access rights are regulated by a central authority based on multiple security levels. It is the primary high-security alternative to RBAC and Discretionary Access Control (DAC), offering rigorous enforcement of security policies."
+  },
+  {
+    "question": "What is the most important thing necessary for a successful disaster recovery (with respect to databases).",
+    "choices": [
+      "Insurance",
+      "Manpower",
+      "Emergency power for Electricity",
+      "Oxygen Supply",
+      "Backup"
+    ],
+    "correctIndex": 4,
+    "explanation": "The fundamental requirement for recovering a database after a disaster (like hardware failure, fire, or corruption) is a valid, recent **backup**. Without a backup copy of the data, restoration to a previous state is technically impossible, regardless of other resources."
+  },
+  {
+    "question": "What do you need to do the following operation: create database.",
+    "choices": [
+      "Object Privileges",
+      "Data Privileges",
+      "System Privileges",
+      "Subject Privileges",
+      "Phantom Privileges"
+    ],
+    "correctIndex": 2,
+    "explanation": "Creating a database is a high-level administrative action that affects the entire system, not just specific data objects. Therefore, it requires **System Privileges** (such as `SYSADM` or specific `CREATE DATABASE` rights), rather than object-level privileges."
+  },
+  {
+    "question": "What is the function of access control?",
+    "choices": [
+      "It provides 100% database security.",
+      "It ensures an error-free data quality.",
+      "It controls the access of the database to the user.",
+      "It enables a regular backup of the database."
+    ],
+    "correctIndex": 2,
+    "explanation": "The primary function of **access control** is to regulate who can interact with the database. It ensures that only authorized users or processes can view or modify specific data, thereby enforcing confidentiality and integrity."
+  },
+  {
+    "question": "If you wish to observe a database to ensure nothing strange happens with user access and the data, what do you best do as a first step?",
+    "choices": [
+      "You shut down the database.",
+      "You delete the data.",
+      "You contact the users.",
+      "You run a database audit.",
+      "You do nothing."
+    ],
+    "correctIndex": 3,
+    "explanation": "To observe and monitor database activity for anomalies, the standard first step is to **run a database audit**. Auditing captures logs of logons, executed queries, and schema changes, providing the visibility needed to detect suspicious behavior."
+  },
+  {
+    "question": "What needs to be done with respect to personnel getting access to the database",
+    "choices": [
+      "Performance monitoring",
+      "Privacy and Protection",
+      "Data integrity routines",
+      "Authorization and Authentication",
+      "Data Normalization"
+    ],
+    "correctIndex": 3,
+    "explanation": "Managing personnel access involves two distinct steps: **Authentication** (verifying who the person is) and **Authorization** (determining what that person is allowed to do). Both are essential to securely grant access."
+  },
+  {
+    "question": "What needs to happen as first step to connect to a database?",
+    "choices": [
+      "Automatization",
+      "Authentication",
+      "Authorization",
+      "Data Dumping",
+      "Enhancement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Before a user or application can perform any actions or even be checked for permissions, they must first establish their identity. **Authentication** (e.g., providing a username and password) is the prerequisite first step to establishing a database connection."
+  },
+  {
+    "question": "What is achieved by restricting values of data and operations on data?",
+    "choices": [
+      "Identity Control",
+      "Integrity Control",
+      "Access Control",
+      "Performance Control",
+      "Control Logic"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Integrity Control** ensures the accuracy and consistency of data. By restricting values (e.g., using constraints like Foreign Keys or Checks) and operations, the database prevents invalid data entry and maintains a reliable state."
+  },
+  {
+    "question": "Which main objectives are relevant for database security?",
+    "choices": [
+      "Atomicity, Consistency, Isolation, Durability",
+      "Content, Satisfaction, Usability",
+      "Economy, Ecology, Empathy",
+      "Privacy, Integrity, Availability",
+      "Security, Security, Security"
+    ],
+    "correctIndex": 3,
+    "explanation": "The three pillars of information security, often called the CIA Triad, are **Privacy** (or Confidentiality), **Integrity**, and **Availability**. These are the primary objectives when securing a database system."
+  },
+  {
+    "question": "When speaking of Role-based Access Control, which Acronym is typically used?",
+    "choices": [
+      "ROBAC",
+      "ROLAC",
+      "RBAC",
+      "ROLBAC"
+    ],
+    "correctIndex": 2,
+    "explanation": "The standard industry acronym for Role-based Access Control is **RBAC**. It is a method of restricting network access based on the roles of individual users within an enterprise."
+  },
+  {
+    "question": "What is LDAP?",
+    "choices": [
+      "Less Data with Active Problems",
+      "Little Density Accumulated Permutation",
+      "Lightweight Directory Access Protocol",
+      "Loss and Discovery Announcement Protocol",
+      "List Doctoring Allure Procedure"
+    ],
+    "correctIndex": 2,
+    "explanation": "**LDAP** stands for **Lightweight Directory Access Protocol**. It is an open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol (IP) network."
+  },
+  {
+    "question": "In Role based access control, what does a role do?",
+    "choices": [
+      "A role controls access to the database according to certain user privileges.",
+      "A role is gives certain responsibilities to the user on a voluntary basis.",
+      "A role always gives the user admin rights.",
+      "A role ensures that the user gets a weekly update on the latest database activities.",
+      "A role ensures that the user can find valuable data by using the element of chance. Each time the user logs on the database the role “rolls” a virtual dice and then the user gets access to a random data entry."
+    ],
+    "correctIndex": 0,
+    "explanation": "In RBAC, a **role** acts as a container for permissions and privileges. Instead of assigning permissions directly to users, permissions are assigned to the role, and users are assigned to the role. This simplifies management by controlling access based on job functions."
+  },
+  {
+    "question": "In DB2, what can the user with the SYSCTRL authority do?",
+    "choices": [
+      "add data",
+      "delete data",
+      "access data from tables",
+      "create, update, start and stop the database",
+      "create and update nested database tables"
+    ],
+    "correctIndex": 3,
+    "explanation": "In IBM DB2, the **SYSCTRL** authority is a system control level that allows a user to perform maintenance and administrative tasks like **creating, updating, starting, and stopping the database**. Crucially, it does *not* grant implicit access to view or modify the data within the tables."
   }
 ]
+
 
