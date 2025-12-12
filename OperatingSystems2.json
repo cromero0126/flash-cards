@@ -446,8 +446,113 @@
     ],
     "correctIndex": 0,
     "explanation": "A **partition** is a logical division of a hard disk or other storage device. It creates distinct regions that the operating system treats as separate drives or volumes, allowing for better organization, multiple file systems, or separating the OS from user data."
+  },
+  {
+    "question": "Integrated developer environments (IDE) are used to ONLY compile programs.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False.  An IDE is a comprehensive software suite that combines tools for source code editing, debugging, and building executables, rather than just performing compilation alone."
+  },
+  {
+    "question": "IDEs can link to collections of premade functions called ________.",
+    "choices": [
+      "repositories",
+      "libraries",
+      "dictionaries",
+      "encyclopedias"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Libraries**  are collections of pre-compiled routines or code modules that a program can use. IDEs facilitate linking these libraries to the project, allowing developers to reuse existing functionality without writing code from scratch."
+  },
+  {
+    "question": "Some IDEs will predict what text and/or functions and other parts you might need to type. This is called _______________.",
+    "choices": [
+      "predictive typing",
+      "helping text",
+      "text autocompletion",
+      "refactoring"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Text autocompletion** (often powered by features like IntelliSense) analyzes the context of the code being written and suggests valid variable names, functions, or keywords,  significantly speeding up development and reducing syntax errors."
+  },
+  {
+    "question": "IDEs can compile and also ___ programs.",
+    "choices": [
+      "delete",
+      "combine",
+      "refactor",
+      "run"
+    ],
+    "correctIndex": 3,
+    "explanation": "Beyond compiling, a core function of an IDE is to **run** (execute) the program.  This allows developers to immediately test the software's behavior and output within the same environment where they wrote the code."
+  },
+  {
+    "question": "Optical character recognition will photograph and then interpret the letters as ASCII.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Optical Character Recognition (OCR)** technology analyzes the shapes of characters in an image (photograph) and translates them into machine-encoded text, such as ASCII or Unicode,  making the text editable and searchable."
+  },
+  {
+    "question": "IDEs using multiple colors to mark kinds of codes and text, this is called ________.",
+    "choices": [
+      "Syntax highlighting",
+      "color codes",
+      "RGB",
+      "ROYGBIV"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Syntax highlighting**  is a feature where the text editor displays source code in different colors and fonts according to the category of terms (e.g., keywords, variables, strings), improving readability and structure visualization."
+  },
+  {
+    "question": "Vim and Emacs are examples of _______.",
+    "choices": [
+      "compilers",
+      "code editors",
+      "browsers",
+      "email"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vim and Emacs are legendary and highly configurable **code editors** (or text editors) used by programmers.  While they are not full IDEs out of the box, they are powerful tools for writing and manipulating source code."
+  },
+  {
+    "question": "A common ASCII file that uses data structure using only commas is ________.",
+    "choices": [
+      "OTP-16",
+      "ASCII chart",
+      "CSV",
+      "txt"
+    ],
+    "correctIndex": 2,
+    "explanation": "**CSV** (Comma-Separated Values) is a simple file format used to store tabular data, such as a spreadsheet or database.  Each line of the file is a data record, and each record consists of one or more fields, separated by commas."
+  },
+  {
+    "question": "Text that an IDE might rewrite to make it more readable, but does not change the code’s function is ___________.",
+    "choices": [
+      "predictive typing",
+      "helping text",
+      "text autocompletion",
+      "refactoring"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Refactoring**  is the process of restructuring existing computer code without changing its external behavior. IDEs often provide automated tools to clean up code, rename variables, or organize structure to improve readability and maintainability."
+  },
+  {
+    "question": "No matter what the file type is, the text inside it is still ASCII.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In the context of basic text files and computing history, text is stored as a sequence of numbers representing characters. **ASCII**  (American Standard Code for Information Interchange) is the foundational standard for this encoding, ensuring basic text is readable across different systems."
   }
 ]
+
 
 
 
