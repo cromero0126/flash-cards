@@ -550,8 +550,115 @@
     ],
     "correctIndex": 0,
     "explanation": "True. In the context of basic text files and computing history, text is stored as a sequence of numbers representing characters. **ASCII**  (American Standard Code for Information Interchange) is the foundational standard for this encoding, ensuring basic text is readable across different systems."
+  },
+  {
+    "question": "The command shell for a Mac OS is called ______",
+    "choices": [
+      "Terminal",
+      "CShell",
+      "VIM",
+      "EMACS"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **Terminal**  is the default terminal emulator included with macOS. It provides text-based access to the operating system, allowing users to interact with the shell (typically Zsh or Bash) to execute commands."
+  },
+  {
+    "question": "The file extension tells the OS what data structure it should expect from the file.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The **file extension** (the suffix after the dot, e.g., `.txt`, `.jpg`) serves as a metadata tag that indicates the file's format. This allows the Operating System to associate the file with the correct application and understand how to interpret its data structure."
+  },
+  {
+    "question": "Moving files utilize ___ command in Unix/Linux.",
+    "choices": [
+      "mv",
+      "ls",
+      "cd",
+      "sudo"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`mv`** (move) command is used to move files or directories from one location to another. It is also the standard command used for **renaming** files, effectively 'moving' them to a new name within the same directory."
+  },
+  {
+    "question": "Shore animated graphics or moving images have the SVG extension.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. While SVG (Scalable Vector Graphics) files can support animation, the file format most commonly associated with \"short animated graphics or moving images\" on the web is the **GIF** (Graphics Interchange Format). SVGs are primarily vector image files."
+  },
+  {
+    "question": "The following will remove an empty directory in Unix.",
+    "choices": [
+      "cd",
+      "rmdir",
+      "mkdir",
+      "sudo"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`rmdir`** (remove directory) command is specifically designed to delete directories that are empty. If a directory contains files, this command will fail, requiring the use of `rm -r` instead."
+  },
+  {
+    "question": "A command in Unix for opening a basic text editor is _______.",
+    "choices": [
+      "ls",
+      "open",
+      "mkdir",
+      "nano"
+    ],
+    "correctIndex": 3,
+    "explanation": "**nano** is a popular, user-friendly command-line text editor for Unix-like systems.  Unlike `vim` or `emacs`, it is known for its simplicity and on-screen key binding instructions, making it ideal for basic text editing tasks."
+  },
+  {
+    "question": "_____ command will display what is in the directory in Unix/Linux.",
+    "choices": [
+      "ls",
+      "cd",
+      "tracert",
+      "ipconfig"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`ls`** (list) command is used to list the contents of a directory. By default, it shows the names of files and subdirectories in the current working directory."
+  },
+  {
+    "question": "Copying a file requires what command in any Unix/Linux environment?",
+    "choices": [
+      "cd",
+      "ls",
+      "cp",
+      "sudo"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`cp`** (copy) command is the standard utility for duplicating files and directories. It requires at least two arguments: the source file to be copied and the destination path."
+  },
+  {
+    "question": "In Mac and Linux/Unix, what command creates a new directory?",
+    "choices": [
+      "ls",
+      "cd",
+      "mkdir",
+      "ipconfig"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **`mkdir`** (make directory) command is used to create new folder structures. Users can specify the name of the new directory they wish to create within the current or a specified path."
+  },
+  {
+    "question": "Filenames are followed by an extension designator. Which of the following is NOT a valid extension?",
+    "choices": [
+      "exe",
+      "jpg",
+      "abc",
+      "txt"
+    ],
+    "correctIndex": 2,
+    "explanation": "Extensions like **.exe** (executable), **.jpg** (image), and **.txt** (text) are standard, recognized file types. **.abc** is not a standard system or application file extension, making it the invalid option in this context."
   }
 ]
+
 
 
 
