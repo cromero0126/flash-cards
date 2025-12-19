@@ -926,7 +926,233 @@
     ],
     "correctIndex": 3,
     "explanation": "In IBM DB2, the **SYSCTRL** authority is a system control level that allows a user to perform maintenance and administrative tasks like **creating, updating, starting, and stopping the database**. Crucially, it does *not* grant implicit access to view or modify the data within the tables."
+  },
+  {
+    "question": "You want to run a full backup of a hard drive in one of your company’s computers. How do you best do that?",
+    "choices": [
+      "You save everything on a pile of floppy disks.",
+      "You mark the data that you think are important and save those on a USB drive.",
+      "You create a mirror image of that hard drive and save it on a reliable storage medium.",
+      "You save all open documents at least once a day.",
+      "You rely on the assumption that the company’s commercial insurance will cover any cost involved with data loss."
+    ],
+    "correctIndex": 2,
+    "explanation": "To perform a complete backup, the best practice is to create a **mirror image** (or disk image) of the hard drive. This captures not just files, but the operating system, boot sectors, and file system structure, allowing for a complete restoration to a reliable medium like an external hard drive or server."
+  },
+  {
+    "question": "True or false? If your hard drive starts failing, it’s best to keep it running as long as possible and try everything you know to save the data.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. If a hard drive is physically failing (e.g., clicking sounds, read errors), keeping it running can cause further physical damage to the platters. The safest course is to power it down immediately to prevent permanent data loss and consult a professional data recovery service."
+  },
+  {
+    "question": "What happens in a Backup Schedule?",
+    "choices": [
+      "A backup is run continuously",
+      "A backup is run in regular intervals",
+      "A backup is run at random intervals",
+      "A backup isn’t run, but the documentation on security is updated.",
+      "If there is no problem, nothing has to happen."
+    ],
+    "correctIndex": 1,
+    "explanation": "A **Backup Schedule** is a predefined timetable that automates the backup process. It ensures that backups occur at **regular intervals** (e.g., daily at 2:00 AM, weekly on Sundays) to maintain recent copies of data without relying on manual intervention."
+  },
+  {
+    "question": "If you just save your data on a heap of CDs, DVDs and unlabeled thumb drives, this is, strictly speaking, also a form of backup. What is it called?",
+    "choices": [
+      "Differential Repository",
+      "Incremental Repository",
+      "Reverse Delta Repository",
+      "Unstructured Repository",
+      "Holographic Repository"
+    ],
+    "correctIndex": 3,
+    "explanation": "An **Unstructured Repository** refers to a disorganized collection of backup media (like a pile of unlabeled discs or drives) lacking a defined strategy or index. While it technically contains copies of data, it makes reliable recovery difficult and inefficient."
+  },
+  {
+    "question": "What is the difference between a full backup and a differential backup?",
+    "choices": [
+      "The full backup backs up all data, while the differential backup only backs up the difference from a previous full backup.",
+      "The full backup fully backs up all differences from a previous full backup, while the differential backup only backs that up partly.",
+      "The full backup backs up fully the previous backup of the full data, while the differential backup differentiates fully the difference of the full differential backup.",
+      "The full backup backs up all data, while the differential backup only backs up the difference from a previous differential backup.",
+      "The full backup backs up all data, while the differential backup only is a backup of the backup for emergency purpose."
+    ],
+    "correctIndex": 0,
+    "explanation": "A **Full Backup** copies every selected file. A **Differential Backup** copies only the files that have changed since the *last full backup*. This means differential backups grow in size over time until the next full backup is run."
+  },
+  {
+    "question": "What is the difference between a differential backup and an incremental backup?",
+    "choices": [
+      "The differential backup backs up the difference between the incremental and the differential backup, while the incremental backup backs up the difference between the incremental and the differential backup.",
+      "The differential backup and the incremental backup are the same.",
+      "The differential backup helps backup data that are difficult to back up, while the incremental backup helps backup data that are increased in size over what is normal capacity.",
+      "The differential backup backs up the data that are different from the previous full backup, while the incremental backup backs up the data that are different from the previous incremental or differential backup.",
+      "The differential backup backs up all data, while the incremental backup backs up only some of the data."
+    ],
+    "correctIndex": 3,
+    "explanation": " A **Differential** backup saves changes made since the last *full* backup. An **Incremental** backup saves changes made since the last backup of *any kind* (full or incremental), making individual incremental files smaller but restoration more complex."
+  },
+  {
+    "question": "In data recovery, often, it can be sufficient to restore the file allocation table (FAT) of a hard drive. Where can you find it?",
+    "choices": [
+      "It’s located in the system cache.",
+      "It’s located in the master boot record (MBR).",
+      "It’s located in the random access memory (RAM).",
+      "It’s located in the BIOS memory.",
+      "It’s located in the data backup."
+    ],
+    "correctIndex": 1,
+    "explanation": "The **Master Boot Record (MBR)** is a special type of boot sector at the very beginning of partitioned computer mass storage devices. It contains the partition table (which describes the layout of the drive) and often references or points to the location of the File Allocation Table structure."
+  },
+  {
+    "question": "What factors are commonly seen as important for finding the right backup solution?",
+    "choices": [
+      "Ergonomics, Security, Accessibility and Usability",
+      "Atomicity, Consistency, Integrity and Durability",
+      "Hardware, Software and Middleware",
+      "Capacity, Reliability, Extensibility, Speed and Cost",
+      "Fail safety, Effectivity and Efficiency"
+    ],
+    "correctIndex": 3,
+    "explanation": "When selecting a backup solution, key metrics include **Capacity** (can it hold the data?), **Reliability** (will it fail?), **Extensibility** (can it grow?), **Speed** (how fast is backup/restore?), and **Cost**. These practical factors determine the feasibility of the solution."
+  },
+  {
+    "question": "What do you need before doing a backup?",
+    "choices": [
+      "Sensitive data to make it worth the effort.",
+      "Enough manpower to get the job done.",
+      "A backup plan.",
+      "A computer with sufficient hardware, as well as enough storage media.A backup plan.",
+      "All of the above."
+    ],
+    "correctIndex": 4,
+    "explanation": "A successful backup operation requires a holistic approach: valid **data** to protect, the **manpower** to manage it, a strategic **backup plan**, and the physical **hardware/media** to store it. All components are necessary for a functional backup system."
+  },
+  {
+    "question": "What should you do to include natural disasters as possible risk to be mitigated by your backup plan?",
+    "choices": [
+      "Buy more storage media.",
+      "Get more security people on your team.",
+      "Store data off-site.",
+      "Earmark at least one third of your data as expendable.",
+      "Nothing, because if a natural disaster strikes, there are more important things to worry about."
+    ],
+    "correctIndex": 2,
+    "explanation": "To mitigate the risk of local disasters (fire, flood, earthquake) destroying both your primary systems and local backups, it is essential to **store copies of data off-site**. This ensures that even if the physical building is destroyed, the data survives in a different location."
+  },
+  {
+    "question": "You are the database admin of your company. Unfortunately, your data center building is on fire. However, you took the best possible precautions and you can calm down your boss. Why?",
+    "choices": [
+      "Due to a smart disaster recovery plan, the data are saved on magnetic tape.",
+      "Disaster recovery plan or not, the data are not that important anyway.",
+      "Due to a smart disaster recovery plan, you stored a mirror version of the data in another building across town.",
+      "Due to a smart disaster recovery plan, you did the latest full backup only a month ago.",
+      "Due to a smart disaster recovery plan, you have UPS (Uninterrupted Power Supply) installed."
+    ],
+    "correctIndex": 2,
+    "explanation": "The key precaution here is **off-site redundancy**. Having a mirror version of the data stored in a separate geographic location (another building across town) ensures business continuity even if the primary data center is physically destroyed by fire."
+  },
+  {
+    "question": "Which is NOT a type of backup storage medium?",
+    "choices": [
+      "Hard Disk",
+      "Magnetic Tape",
+      "Liquid Crystal",
+      "Remote Backup Service (Cloud)",
+      "Optical Storage"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Liquid Crystal** is a material used in display technologies (LCDs), not for data storage. Hard disks, magnetic tape, cloud services, and optical storage (CD/DVD/Blu-ray) are all valid media for storing backup data."
+  },
+  {
+    "question": "Your company’s data services are at risk because of a major power outage. What would be good to have right now?",
+    "choices": [
+      "A Universal Power Saver",
+      "An Uninterrupted Power Supply",
+      "A Ubiquitous Positioning System",
+      "An Unattended Positronic Servant",
+      "An Upward Polarity Safety"
+    ],
+    "correctIndex": 1,
+    "explanation": "An **Uninterrupted Power Supply (UPS)** is a device that provides emergency power to a load when the input power source fails. It bridges the gap during a power outage, allowing systems to save data and shut down gracefully or run until a generator takes over."
+  },
+  {
+    "question": "When is it usually the hardest to recover data?",
+    "choices": [
+      "When you accidentally deleted a file",
+      "When you formatted the storage medium",
+      "When the storage medium got destroyed by fire",
+      "When the storage medium got destroyed by water",
+      "When the storage medium malfunctioned due to age"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physical destruction by **fire** typically melts the magnetic platters or flash memory chips, demagnetizing the surface and physically warping the medium. This makes data recovery extremely difficult, often impossible, compared to water damage or logical errors."
+  },
+  {
+    "question": "Often, even today, tape-based backup solutions are used for backup. What is their key advantage?",
+    "choices": [
+      "Cost effectiveness",
+      "Speed",
+      "Fail safety",
+      "Usability",
+      "Ergonomics"
+    ],
+    "correctIndex": 0,
+    "explanation": "Magnetic tape remains popular for archival and large-scale backups primarily due to its **cost effectiveness**. It offers a very low cost per terabyte for long-term storage compared to hard drives or SSDs, despite being slower to access."
+  },
+  {
+    "question": "Which is NOT a type of backup?",
+    "choices": [
+      "Incremental",
+      "Differential",
+      "Full",
+      "Dry",
+      "Continuous"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Dry** is not a recognized technical term for a data backup methodology. Standard types include Full, Incremental, Differential, and Continuous Data Protection (CDP)."
+  },
+  {
+    "question": "What do you call it if you do a database backup while the database is inactive, i.e. not available to any users?",
+    "choices": [
+      "Iced database backup",
+      "Cold database backup",
+      "Dead database backup",
+      "Hibernated database backup",
+      "Frozen database backup"
+    ],
+    "correctIndex": 1,
+    "explanation": "A **Cold database backup** (or offline backup) is performed when the database is completely shut down and unavailable to users. This ensures data consistency as no changes can occur during the backup process, unlike a 'hot' backup."
+  },
+  {
+    "question": "What is a typical risk that can be covered by a backup strategy?",
+    "choices": [
+      "Accidental loss of user data",
+      "Database corruption",
+      "Hardware failures",
+      "Natural disasters",
+      "All of the above."
+    ],
+    "correctIndex": 4,
+    "explanation": "A comprehensive backup strategy is designed to mitigate a wide range of risks, including human error (**accidental loss**), software faults (**corruption**), physical breakdowns (**hardware failure**), and catastrophic events (**natural disasters**)."
+  },
+  {
+    "question": "What is likely to happen when you back up from multiple sources that may contain duplicate information to one backup file?",
+    "choices": [
+      "Nothing",
+      "Redundancies",
+      "Flash Drive Overheating (FDO)",
+      "Blue Screen",
+      "Data Breach"
+    ],
+    "correctIndex": 1,
+    "explanation": "Backing up from multiple overlapping sources without deduplication leads to **redundancies**. The same files or data blocks are stored multiple times, wasting storage space and potentially complicating restoration versioning."
   }
 ]
+
 
 
