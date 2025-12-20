@@ -656,8 +656,113 @@
     ],
     "correctIndex": 2,
     "explanation": "Extensions like **.exe** (executable), **.jpg** (image), and **.txt** (text) are standard, recognized file types. **.abc** is not a standard system or application file extension, making it the invalid option in this context."
+  },
+  {
+    "question": "The move command on Mac is _________.",
+    "choices": [
+      "mv",
+      "mov",
+      "move",
+      "mo"
+    ],
+    "correctIndex": 0,
+    "explanation": "In macOS (which is Unix-based), the **`mv`** command is used to move files or directories from one location to another. It is also the standard utility used to rename files."
+  },
+  {
+    "question": "Mac uses this command to download from an URL.",
+    "choices": [
+      "curl",
+      "web",
+      "gopher",
+      "comm"
+    ],
+    "correctIndex": 0,
+    "explanation": "**`curl`** (Client URL) is a powerful command-line tool used to transfer data to or from a server.  It supports various protocols including HTTP, HTTPS, and FTP, making it the standard for downloading files via the terminal."
+  },
+  {
+    "question": "Which command helps in finding out the location/name of the folder currently opened in your Mac terminal window?",
+    "choices": [
+      "ditto",
+      "cp",
+      "pwd",
+      "return"
+    ],
+    "correctIndex": 2,
+    "explanation": "**`pwd`** stands for **Print Working Directory**. When executed, it displays the full absolute path of the current directory you are operating in, helping you orient yourself within the file system."
+  },
+  {
+    "question": "A mouse is required for manipulating the shell.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The shell is a **Command Line Interface (CLI)** designed primarily for keyboard input. While a mouse can be used for copying text in the terminal emulator, it is not required to operate the shell or execute commands."
+  },
+  {
+    "question": "Mac’s version of a command line interpreter is called ______.",
+    "choices": [
+      "command",
+      "terminal",
+      "DOS",
+      "ls"
+    ],
+    "correctIndex": 1,
+    "explanation": "The application that provides the command-line interface on macOS is called **Terminal**.  It acts as a terminal emulator, allowing users to interact with the underlying Unix shell (like zsh or bash)."
+  },
+  {
+    "question": "User can use the mouse in the Mac terminal.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. In the context of strictly interacting with the shell interface (executing commands and scripts), the environment is text-based and keyboard-driven. The mouse cursor does not control the command prompt cursor."
+  },
+  {
+    "question": "_____ allows you to enter commands and move around the file system.",
+    "choices": [
+      "Monitor",
+      "Mouse",
+      "Printer",
+      "Command Shell"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **Command Shell** (or simply shell) is the program that interprets text commands from the user and passes them to the operating system. It provides the environment for navigating directories and executing programs."
+  },
+  {
+    "question": "Whitespace doesn’t matter in the Mac terminal.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **Whitespace is critical** in the terminal. Spaces are used to separate commands from their arguments and flags. For example, `cd Documents` works, but `cdDocuments` would be interpreted as a single, non-existent command."
+  },
+  {
+    "question": "Modern Mac OSs can run bash and ____ by default.",
+    "choices": [
+      "csh",
+      "zsh",
+      "ksh",
+      "dos"
+    ],
+    "correctIndex": 1,
+    "explanation": "While older versions of macOS used Bash as the default shell, modern versions (starting with macOS Catalina) use **zsh** (Z shell) by default. It offers improvements over Bash, including better autocompletion and theming."
+  },
+  {
+    "question": "Power Shell commands are called __________.",
+    "choices": [
+      "cmdlets",
+      "commands",
+      "instructions",
+      "bugs"
+    ],
+    "correctIndex": 0,
+    "explanation": "In PowerShell (which can also be installed on macOS), the specialized commands are known as **cmdlets** (pronounced 'command-lets'). They are lightweight commands used to perform specific functions within the PowerShell environment."
   }
 ]
+
 
 
 
