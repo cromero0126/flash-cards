@@ -1151,8 +1151,249 @@
     ],
     "correctIndex": 1,
     "explanation": "Backing up from multiple overlapping sources without deduplication leads to **redundancies**. The same files or data blocks are stored multiple times, wasting storage space and potentially complicating restoration versioning."
+  },
+  {
+    "question": "What is NOT a typical task in a transaction schedule?",
+    "choices": [
+      "Read",
+      "Write",
+      "Abort",
+      "Kill",
+      "Commit"
+    ],
+    "correctIndex": 3,
+    "explanation": "In the standard model of database transactions, the fundamental operations are `Read`, `Write`, `Commit` (successful completion), and `Abort` (rollback).  'Kill' is typically an external administrative action to terminate a process, not a standard internal state or operation within the transaction schedule itself."
+  },
+  {
+    "question": "What is a valid termination state in which a workflow has failed to achieve its objectives?",
+    "choices": [
+      "An aborted acceptable termination state.",
+      "An aborted nonacceptable termination state.",
+      "An aborted incessant termination state.",
+      "An aborted excessive termination state.",
+      "A termination state that has neither been completed or aborted."
+    ],
+    "correctIndex": 0,
+    "explanation": "In workflow management, a workflow can terminate without achieving its primary objective but still end in a controlled, defined state. This is called an **aborted acceptable termination state**, meaning the failure was handled (e.g., via compensation) and the system remains consistent, unlike a 'nonacceptable' state where the system might be left in an undefined or inconsistent state."
+  },
+  {
+    "question": "Which is NOT a Transaction Processing Architecture?",
+    "choices": [
+      "Many-server, single-router model",
+      "Process-per-client model",
+      "Many- process, single client model",
+      "Many-server, many router model",
+      "Single-server model"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard Transaction Processing (TP) architectures include the single-server model, process-per-client, and various distributed server models.  A **'Many-process, single client model'** is not a standard architectural pattern for TP monitors, as clients typically connect to servers, not the other way around in that ratio."
+  },
+  {
+    "question": "What is true for buffer pages in main memory databases?",
+    "choices": [
+      "They are replaced all the time.",
+      "They will never be replaced.",
+      "They are replaced sometimes.",
+      "They are replaced most times.",
+      "They are replaced almost all of the times."
+    ],
+    "correctIndex": 1,
+    "explanation": "In a pure **Main Memory Database (MMDB)** system, the entire database resides in RAM. Unlike disk-based databases that swap pages in and out of a buffer pool, pages in an MMDB **will never be replaced** because the main memory is the primary storage, not a cache."
+  },
+  {
+    "question": "What dependencies can be used as preconditions for executing a task?",
+    "choices": [
+      "Executive privileges, external outputs, values of variables.",
+      "Execution states, output values, external variables.",
+      "Output loops, input blocks, descriptive variables.",
+      "Fast memory, sectors, independent variables.",
+      "Cost, efficiency, effectiveness."
+    ],
+    "correctIndex": 1,
+    "explanation": "In workflow scheduling, task dependencies are defined by three main factors: **Execution states** (e.g., did the previous task commit or abort?), **output values** (data passed from a predecessor task), and **external variables** (conditions outside the workflow, like time of day)."
+  },
+  {
+    "question": "What happens if a human interacts with an active transaction?",
+    "choices": [
+      "The transaction becomes more humane.",
+      "Only odd-numbered transactions allow human access.",
+      "The transaction becomes a speedy transaction.",
+      "The transaction becomes a long-duration transaction.",
+      "The transaction’s result is zero."
+    ],
+    "correctIndex": 3,
+    "explanation": "Human interaction (e.g., a user filling out a form, making a decision) is incredibly slow compared to CPU processing speeds. Therefore, any transaction involving human steps inevitably becomes a **long-duration transaction**, requiring special handling (like Sagas) rather than standard locking mechanisms to avoid blocking resources."
+  },
+  {
+    "question": "What is important for a workflow state?",
+    "choices": [
+      "The state of the workflow does not need any specific factor to be considered.",
+      "The specification of the CORBA model.",
+      "The content of the data that are moved around in the workflow.",
+      "The values of all variables in the workflow specification.",
+      "The fitness or fatigue of the user."
+    ],
+    "correctIndex": 3,
+    "explanation": "The state of a workflow instance is comprehensively defined by the **values of all variables** in the workflow specification, along with the execution status of its constituent tasks.  This state data allows the Workflow Management System to control flow and recover from failures."
+  },
+  {
+    "question": "What is a workflow?",
+    "choices": [
+      "Processing entities execute one common task in a coordinated way.",
+      "Processing entities execute random tasks in a somewhat coordinated way.",
+      "Processing entities execute every other task in a coordinated way.",
+      "Processing entities execute one task multiple times with or without a coordinated way.",
+      "Processing entities execute multiple tasks in a coordinated way."
+    ],
+    "correctIndex": 4,
+    "explanation": "A **workflow** is defined as a collection of tasks organized to accomplish a specific business process. It involves **processing entities executing multiple tasks in a coordinated way**, governed by rules, routes, and roles."
+  },
+  {
+    "question": "What does a transaction processing monitor do?",
+    "choices": [
+      "It is exclusively responsible for backup and recovery.",
+      "It ensures that a database has always enough memory.",
+      "It provides support to distributed transaction processing.",
+      "It deals with transactions that are especially complex.",
+      "It makes sure that each transaction has the same value."
+    ],
+    "correctIndex": 2,
+    "explanation": "A **Transaction Processing (TP) Monitor** is middleware that manages the transfer of data between clients and servers. Its primary role is to **provide support for distributed transaction processing**, ensuring ACID properties across multiple resource managers, load balancing, and process management."
+  },
+  {
+    "question": "What is necessary to enable functions like “redo” and “undo”?",
+    "choices": [
+      "Removal of duplicates.",
+      "The user should always keep a written list of all transactions, so it is possible to recall what has happened.",
+      "Operation logging.",
+      "Data weeding (the process of thinning out the database regularly so it doesn’t run out of memory).",
+      "Data oiling (the process of adding certain empty “bubble” data fields so the data stream flows more smoothly)"
+    ],
+    "correctIndex": 2,
+    "explanation": "To support atomicity and durability (specifically Undo and Redo operations during recovery), the database system relies on **operation logging** (Write-Ahead Logging).  This log records all modifications before they are applied to the database, allowing the system to reconstruct or rollback states after a crash."
+  },
+  {
+    "question": "What is the purpose of a compensating transaction?",
+    "choices": [
+      "It helps to roll back a transaction without the risk of cascading rollbacks.",
+      "It helps to compensate the user for slow database response.",
+      "It helps to achieve a cascading rollback of a transaction.",
+      "It helps to execute a set of subtransactions before they are committed.",
+      "It helps to commit a set of subtransaction before they are executed."
+    ],
+    "correctIndex": 0,
+    "explanation": "In long-running transactions (like Sagas) where resources cannot be locked for the full duration, changes are committed locally. If the global transaction fails later, a **compensating transaction** is executed to logically undo the committed changes, allowing a **rollback without cascading rollbacks** or holding long-term locks. "
+  },
+  {
+    "question": "How does a database server deal with multiple requests from different clients?",
+    "choices": [
+      "Multiplexing",
+      "Multithreading",
+      "Double NOOPs",
+      "Miniaturization",
+      "Hyperthreading"
+    ],
+    "correctIndex": 1,
+    "explanation": "Database servers handle concurrency by using **multithreading**. Each client connection or request is typically assigned to a separate thread (or process), allowing the server to process multiple queries simultaneously on multi-core processors."
+  },
+  {
+    "question": "What do you call systems with deadlines?",
+    "choices": [
+      "Always-in-a-hurry systems",
+      "Running-out-of-time systems",
+      "Real-time systems",
+      "Real-life systems",
+      "Reality systems"
+    ],
+    "correctIndex": 2,
+    "explanation": "Systems that must guarantee a response within a specified time constraint (deadline) are called **Real-time systems**. Failure to meet these deadlines can result in system failure (Hard Real-Time) or degraded quality of service (Soft Real-Time)."
+  },
+  {
+    "question": "Assume you have a workflow consisting of the subtransactions S1 and S2. S1 and S2 do not provide prepared-to-commit states (for a two-phase commit), and further do not have compensating transactions, and it is possible to reach a state where one subtransaction is committed and the other aborted, and there is no way to bring both to the same state. What can be said about such a workflow?",
+    "choices": [
+      "It is fine.",
+      "It is safe.",
+      "It is maybe a bit complicated, but otherwise OK.",
+      "It is unsafe.",
+      "It will lead to disaster."
+    ],
+    "correctIndex": 3,
+    "explanation": "If a workflow lacks both a mechanism for atomic commitment (like 2PC) and a mechanism for logical rollback (compensating transactions), it is **unsafe**. If a failure occurs after S1 commits but before S2 finishes, the system is left in an inconsistent state that cannot be fixed automatically."
+  },
+  {
+    "question": "What is used to automatically control the execution of tasks?",
+    "choices": [
+      "A human controller has to do it, because there is no safe way to control it automatically.",
+      "A ferrite based crystalline data sensor array.",
+      "A workflow-management system.",
+      "A phalanx of radio sensors with an as big as possible detector dish.",
+      "A quantum inference transmission orb (QUITO)."
+    ],
+    "correctIndex": 2,
+    "explanation": "A **Workflow-management system (WFMS)** is the software infrastructure responsible for defining, creating, and managing the execution of workflows. It automatically routes tasks to the appropriate processing entities (users or applications) according to the defined logic."
+  },
+  {
+    "question": "What happens to data if the system crashes?",
+    "choices": [
+      "All memory is lost.",
+      "All of the data that were currently in the main memory are lost.",
+      "All of the data on the hard drive are lost.",
+      "All of the backups are lost.",
+      "The user data are lost."
+    ],
+    "correctIndex": 1,
+    "explanation": "Main memory (RAM) is volatile storage. Therefore, if a system crashes (power loss or OS failure), **all data currently residing in main memory is lost**. Data that has been written to stable storage (Hard Drive/SSD) remains safe."
+  },
+  {
+    "question": "What is the name for a constraint that sets the completion time for a task?",
+    "choices": [
+      "Softline",
+      "Hardline",
+      "Lifeline",
+      "Deadline",
+      "Borderline"
+    ],
+    "correctIndex": 3,
+    "explanation": "A **deadline** is the specific point in time by which a task or transaction must be completed. This is a defining characteristic of real-time transaction processing systems."
+  },
+  {
+    "question": "Why is it important that a transaction schedule should be serializable?",
+    "choices": [
+      "All schedules that preserve consistency of the database are serializable.",
+      "All serializable schedules preserve consistency of the database",
+      "All schedules that conserve the preservation of the database are serializable.",
+      "All serializations that conserve the preservation of the serializable database are able to be",
+      "All consistent schedules can serialize preservable databases."
+    ],
+    "correctIndex": 1,
+    "explanation": "Serializability is the gold standard for concurrency control. It ensures that the outcome of executing transactions concurrently is the same as if they were executed one after another. Therefore, **all serializable schedules preserve the consistency of the database**. "
+  },
+  {
+    "question": "What kind of properties can a deadline have?",
+    "choices": [
+      "Hard",
+      "Firm",
+      "Soft",
+      "All of the above",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "explanation": "Deadlines in real-time systems are categorized by the consequence of missing them: **Hard** (missing is catastrophic), **Firm** (missing makes the result useless but not catastrophic), and **Soft** (missing degrades utility but the result is still useful). Thus, **All of the above** is correct."
+  },
+  {
+    "question": "What can be done to ensure that nearly full blocks are output (written to stable storage) by a transaction?",
+    "choices": [
+      "Using the group commit technique.",
+      "Using the group transaction technique.",
+      "Using the group workflow technique.",
+      "Using the single transaction technique.",
+      "Using the grouped single transaction technique."
+    ],
+    "correctIndex": 0,
+    "explanation": "Writing log records to disk for every single commit is I/O intensive. **Group Commit** delays the write operation slightly to accumulate multiple log records from different transactions into a single block, ensuring that **nearly full blocks are output** to stable storage, which significantly improves throughput."
   }
 ]
+
 
 
 
