@@ -760,8 +760,353 @@
     ],
     "correctIndex": 0,
     "explanation": "In PowerShell (which can also be installed on macOS), the specialized commands are known as **cmdlets** (pronounced 'command-lets'). They are lightweight commands used to perform specific functions within the PowerShell environment."
+  },
+  {
+    "question": "Emacs uses C-g to invoke a _____.",
+    "choices": [
+      "close command",
+      "execute",
+      "panic",
+      "shut down"
+    ],
+    "correctIndex": 2,
+    "explanation": "In Emacs, the key combination **C-g** (Control+G) is the universal 'quit' or **panic** command. It is used to cancel a partially typed command, stop a running process, or escape from a frozen state/loop."
+  },
+  {
+    "question": "The GNU Bourne-Again Shell is known as ____________.",
+    "choices": [
+      "zsh",
+      "csh",
+      "bash",
+      "ksh"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Bash** serves as a pun on the name of its predecessor, the Bourne shell (sh).  It stands for 'Bourne-Again SHell' and is the default shell for many Linux distributions."
+  },
+  {
+    "question": "Echo is used to copy output text in Unix/Linux.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The **`echo`** command is used to **display** a line of text or string to the standard output (screen), not to 'copy' it. To copy files or text, commands like `cp` or piping to `pbcopy`/`xclip` are used."
+  },
+  {
+    "question": "The Alt key in Emacs is a reference to ___ key.",
+    "choices": [
+      "A",
+      "Alt",
+      "C",
+      "M"
+    ],
+    "correctIndex": 3,
+    "explanation": "In Emacs terminology, the **Meta** key (denoted as **M-**) is a modifier key used for many commands. On modern keyboards, the **Alt** (or Option) key is typically mapped to function as the Meta key."
+  },
+  {
+    "question": "The most commonly used command in Unix/Linux is _____.",
+    "choices": [
+      "ls",
+      "bash",
+      "cshell",
+      "PDF"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`ls`** (list) command is arguably the most frequently executed command. Users constantly use it to view directory contents and navigate the file system hierarchy."
+  },
+  {
+    "question": "Commands are always executed in the current location/directory.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Unless a specific absolute path is provided for file arguments, the shell assumes that operations (like creating files or listing contents) apply to the **current working directory** where the user is currently located."
+  },
+  {
+    "question": "The shell can handle ONLY single-line comments.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. While the standard comment character `#` is for single lines, shells like Bash support multi-line commenting techniques, such as using **Here Documents** (e.g., `<< 'COMMENT' ... COMMENT`) to ignore blocks of text."
+  },
+  {
+    "question": "Hot keys can be used with the command shell in the Mac/Unix/Linux system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Terminal emulators and shells support various **hot keys** (keyboard shortcuts). Examples include `Ctrl+C` to interrupt, `Ctrl+R` to search history, and `Tab` for autocompletion."
+  },
+  {
+    "question": "WAV files are audio files that are not compressed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **WAV** (Waveform Audio File Format) is a standard format for storing an audio bitstream on PCs. It typically stores data in an **uncompressed** Pulse Code Modulation (PCM) format, resulting in high quality but large file sizes."
+  },
+  {
+    "question": "A shell is a unique program that provides the user with an interface to interact with the kernel.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The **shell** acts as a command-line interpreter and interface layer. It accepts human-readable commands from the user and translates them into system calls that the operating system **kernel** can understand and execute."
+  },
+  {
+    "question": "_______ is more modern and can have plugins as well as themes installed.",
+    "choices": [
+      "zsh",
+      "csh",
+      "bash",
+      "ksh"
+    ],
+    "correctIndex": 0,
+    "explanation": "**zsh** (Z shell) is an extended Bourne shell with many improvements. It is famous for its robust ecosystem (like **Oh My Zsh**), which allows users to easily install plugins, themes, and advanced autocompletion features."
+  },
+  {
+    "question": "In Unix/Linux, this symbol is the prompt awaiting text commands",
+    "choices": [
+      "#",
+      "@",
+      "$",
+      "%"
+    ],
+    "correctIndex": 2,
+    "explanation": "In most standard Bourne-compatible shells (like Bash and Sh), the dollar sign **$** is the default command prompt symbol for a regular (non-root) user, indicating the shell is ready for input."
+  },
+  {
+    "question": "_____ was designed to have interactive features like the C language and improve the bourne shell.",
+    "choices": [
+      "zsh",
+      "csh",
+      "bash",
+      "ksh"
+    ],
+    "correctIndex": 3,
+    "explanation": "**ksh** (Korn Shell) was developed by David Korn. It was designed to be backward compatible with the Bourne shell (sh) while incorporating many popular interactive features from the C shell (csh), such as command history and job control."
+  },
+  {
+    "question": "Bash programs can run like regular scripting programs similar to Python in Unix?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Bash** is not just an interactive command line; it is a full scripting language. Bash scripts (ending in `.sh`) can contain variables, loops, and logic, allowing them to be executed as programs just like Python or Perl scripts."
+  },
+  {
+    "question": "A compressed image file type named after the Joint Photographic Experts Group is _______?",
+    "choices": [
+      "exe",
+      "jpg",
+      "abc",
+      "txt"
+    ],
+    "correctIndex": 1,
+    "explanation": "**jpg** (or JPEG) stands for **Joint Photographic Experts Group**, the committee that created the standard. It is a widely used lossy compression format for digital images."
+  },
+  {
+    "question": "_______ command in Linux is a downloader for programs and websites.",
+    "choices": [
+      "gopher",
+      "wget",
+      "dwlder",
+      "getstuff"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **`wget`** command is a free utility for non-interactive downloading of files from the web.  It supports HTTP, HTTPS, and FTP protocols and can retrieve files even if the user is not logged in."
+  },
+  {
+    "question": "To establish a secure shell for remote work, you need to use the _______ code in Linux.",
+    "choices": [
+      "shell",
+      "remote",
+      "ssh",
+      "zsh"
+    ],
+    "correctIndex": 2,
+    "explanation": "**`ssh`** (Secure Shell) is the standard cryptographic network protocol for operating network services securely over an unsecured network. It is primarily used for remote login and command-line execution."
+  },
+  {
+    "question": "The Windows command to identify the IP address and DNS settings is ______________.",
+    "choices": [
+      "ipconfig",
+      "con",
+      "fig",
+      "tracert"
+    ],
+    "correctIndex": 0,
+    "explanation": "**`ipconfig`** (Internet Protocol Configuration) is a Windows console application that displays all current TCP/IP network configuration values, including the IP address, subnet mask, and default gateway."
+  },
+  {
+    "question": "_______ is a command to copy files in Linux.",
+    "choices": [
+      "cp",
+      "copy",
+      "mkfile",
+      "gopher"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **`cp`** command is the fundamental utility in Unix/Linux operating systems used for copying files and directories from a source location to a destination."
+  },
+  {
+    "question": "A command to change the local directory is lcd in Linux.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. While `cd` changes directories in a standard shell, **`lcd`** (Local Change Directory) is the specific command used within file transfer clients like **FTP** or **SFTP** to change the working directory on the *local* machine while connected to a remote server."
+  },
+  {
+    "question": "The Windows command that sends a message to a server to echo back to you is ________.",
+    "choices": [
+      "check",
+      "fdisk",
+      "ping",
+      "tracert"
+    ],
+    "correctIndex": 2,
+    "explanation": "**`ping`** is a network administration utility used to test the reachability of a host on an IP network.  It sends ICMP 'Echo Request' messages and waits for 'Echo Reply' messages, measuring the round-trip time."
+  },
+  {
+    "question": "The command to transfer files from one computer to another in Linux is ________.",
+    "choices": [
+      "server",
+      "gopher",
+      "http",
+      "ftp"
+    ],
+    "correctIndex": 3,
+    "explanation": "**`ftp`** (File Transfer Protocol) is a standard network protocol used for the transfer of computer files between a client and server on a computer network. The `ftp` command launches the client interface to initiate these transfers."
+  },
+  {
+    "question": "To release the current IP address you type ipconfig followed by _______.",
+    "choices": [
+      "/new",
+      "/renew",
+      "/flush",
+      "/release"
+    ],
+    "correctIndex": 3,
+    "explanation": "The command **`ipconfig /release`** is used in Windows to release the current IP address obtained from the DHCP server, effectively disconnecting the adapter from the network at the IP level."
+  },
+  {
+    "question": "Traceroute will list each network hop to the intended destination.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Traceroute** (or `tracert` on Windows) is a diagnostic tool that tracks the route packets take to reach a destination.  It lists every router (hop) along the path and measures the transit delays of packets across the network."
+  },
+  {
+    "question": "The window manager helps in providing graphics of buttons, borders, and colors of the background.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In a graphical user interface (especially within the X Window System), the **window manager** is the system software that controls the placement and appearance of windows.  It is responsible for drawing the \"decorations\" (title bars, borders, buttons) and handling user interactions with them."
+  },
+  {
+    "question": "Which is NOT a common desktop environment?",
+    "choices": [
+      "KDE",
+      "Aqua",
+      "GNOME",
+      "XFCE"
+    ],
+    "correctIndex": 1,
+    "explanation": "KDE, GNOME, and XFCE are modular **Desktop Environments** primarily used in Unix/Linux systems running on top of the X Window System. **Aqua**, however, is the proprietary graphical user interface and visual theme built into macOS, rather than a switchable desktop environment."
+  },
+  {
+    "question": "Any window can be resized or minimized in Windows.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. As a general rule in the Microsoft Windows operating system, standard application windows utilize a common framework that supports resizing edges and minimizing to the taskbar. (Note: While developers can technically create fixed-size dialog boxes, the standard window behavior includes these capabilities)."
+  },
+  {
+    "question": "The engine of the X window system to construct and manipulate windows is called ______.",
+    "choices": [
+      "x engine",
+      "x server",
+      "x11",
+      "x window"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **X server** is the core component of the X Window System. It acts as an intermediary between the user's hardware (keyboard, mouse, display) and the client applications, handling the low-level construction and manipulation of window graphics."
+  },
+  {
+    "question": "GNOME is the default desktop environment of Red Hat OS.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **GNOME** (GNU Network Object Model Environment) is the default desktop environment for Red Hat Enterprise Linux (RHEL) and its community counterpart, Fedora. "
+  },
+  {
+    "question": "The original Apple GUI had 10 colors to utilize.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The original Macintosh released in 1984 featured a **1-bit monochrome** (black and white) display, not color. Color capabilities were introduced in later models like the Macintosh II."
+  },
+  {
+    "question": "The X window system is a GUI used for ________ operating system.",
+    "choices": [
+      "Mac",
+      "Windows",
+      "Unix",
+      "Android"
+    ],
+    "correctIndex": 2,
+    "explanation": "The **X Window System** (often just X11 or X) is the standard windowing system for bitmap displays on **Unix** and Unix-like operating systems (including Linux and BSD)."
+  },
+  {
+    "question": "The name of Apple’s (Mac) GUI is:",
+    "choices": [
+      "Quartz",
+      "Cocoa",
+      "GUI",
+      "Aqua"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Aqua** is the name of the graphical user interface and visual theme of macOS.  Introduced with Mac OS X, it is characterized by its water-like elements, droplets, and translucent effects."
+  },
+  {
+    "question": "Every window on Windows has three buttons on the upper right.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Standard application windows in Microsoft Windows feature three control buttons in the top-right corner of the title bar: **Minimize**, **Maximize/Restore**, and **Close**."
+  },
+  {
+    "question": "X Windows system cannot be used with embedded systems.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The X Window System is highly scalable and network-transparent. It (or lighter variants like TinyX) is frequently used in **embedded systems** (such as kiosks, industrial controls, or set-top boxes) that require a graphical interface on Unix-like kernels."
   }
 ]
+
 
 
 
