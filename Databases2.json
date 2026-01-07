@@ -1391,8 +1391,489 @@
     ],
     "correctIndex": 0,
     "explanation": "Writing log records to disk for every single commit is I/O intensive. **Group Commit** delays the write operation slightly to accumulate multiple log records from different transactions into a single block, ensuring that **nearly full blocks are output** to stable storage, which significantly improves throughput."
+  },
+  {
+    "question": "What data types does the time specification of SQL include?",
+    "choices": [
+      "Date",
+      "Time",
+      "Timestamp",
+      "All of the above",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "explanation": "The SQL standard defines several data types for handling temporal data: **DATE** (year, month, day), **TIME** (hour, minute, second), and **TIMESTAMP** (date plus time, often with fractional seconds). Therefore, 'All of the above' is the correct answer."
+  },
+  {
+    "question": "What can be used to measure the performance of a database?",
+    "choices": [
+      "A workbench",
+      "A benchmark",
+      "A jumpstart",
+      "A kickstand",
+      "A catalyst"
+    ],
+    "correctIndex": 1,
+    "explanation": "A **benchmark**  is a standard set of tests (such as TPC-C or TPC-H) used to evaluate and compare the performance of database systems under specific workloads, measuring metrics like transactions per second (TPS)."
+  },
+  {
+    "question": "Database applications can be classified in two main types: Transaction Processing and…",
+    "choices": [
+      "Information Retrieval",
+      "Big Data Analysis",
+      "Semantic Web",
+      "Cryptocurrency Mining",
+      "Decision Support"
+    ],
+    "correctIndex": 4,
+    "explanation": "The two primary categories of database workloads are OLTP (Online Transaction Processing), which handles day-to-day operations, and **Decision Support** (often OLAP), which involves analyzing historical data to support business decision-making."
+  },
+  {
+    "question": "In information retrieval, what can be used to locate a document that contains a certain keyword?",
+    "choices": [
+      "Inverted index",
+      "Indexed inversion",
+      "Transposed index",
+      "Index permutations",
+      "Inverted data queries"
+    ],
+    "correctIndex": 0,
+    "explanation": "An **inverted index**  is the fundamental data structure used in search engines. It maps content (keywords) to its location in a document or a set of documents, allowing for rapid full-text searches."
+  },
+  {
+    "question": "What two important things do association rules have?",
+    "choices": [
+      "Logic and Emotion",
+      "Pride and Prejudice",
+      "Compassion and Belief",
+      "Support and Confidence",
+      "Honor and Strength"
+    ],
+    "correctIndex": 3,
+    "explanation": "In data mining (specifically association rule learning), the strength of a rule is measured by **Support** (how frequently the itemset appears in the dataset) and **Confidence** (how often the rule has been found to be true)."
+  },
+  {
+    "question": "The task of correcting and preprocessing data is called...",
+    "choices": [
+      "Data polishing",
+      "Data grooming",
+      "Data detailing",
+      "Data cleansing",
+      "Data waxing"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Data cleansing** (or data scrubbing) is the process of detecting and correcting (or removing) corrupt, inaccurate, or irrelevant records from a record set, table, or database."
+  },
+  {
+    "question": "In databases, what does the acronym CLI stand for?",
+    "choices": [
+      "Command Line Interface",
+      "Common Language Infrastructure",
+      "Command Line Interpreter",
+      "Calling Line Identifier",
+      "Call Level Interface"
+    ],
+    "correctIndex": 4,
+    "explanation": "In the specific context of SQL standards (SQL/CLI), CLI stands for **Call Level Interface**. It is a standard API (like ODBC) that allows programs to send SQL statements to a database without embedding SQL directly into the source code."
+  },
+  {
+    "question": "What is the meaning of JDBC?",
+    "choices": [
+      "Jiffy Database Companion",
+      "Just Data Binary Container",
+      "Javascript Database Connector",
+      "Java Database Connectivity",
+      "Java Backend for Data Centers"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Java Database Connectivity (JDBC)** is an API for the Java programming language which defines how a client may access a database. It provides methods to query and update data in a database."
+  },
+  {
+    "question": "In information retrieval, what can have an impact on effectiveness?",
+    "choices": [
+      "False negatives and true positives",
+      "True negatives and false positives",
+      "False negatives and false positives",
+      "True negatives and true positives",
+      "True negatives, true positives and true error sets."
+    ],
+    "correctIndex": 2,
+    "explanation": "The effectiveness of an information retrieval system is often degraded by **False Negatives** (failing to retrieve relevant documents, affecting Recall) and **False Positives** (retrieving irrelevant documents, affecting Precision)."
+  },
+  {
+    "question": "What is the use of Cascading Style Sheets (CSS)",
+    "choices": [
+      "They avoid a cascading rollback transaction.",
+      "They enable a cascading rollback transaction.",
+      "CSS is usually program in “applets” or “beans” that make different dynamic procedures transmit data between each other.",
+      "They are responsible to enable the main processor in a computer to do hyperthreading.",
+      "They are used in web design, to visually style a web site consistently."
+    ],
+    "correctIndex": 4,
+    "explanation": "**CSS** is a style sheet language used for describing the presentation of a document written in a markup language like HTML.  It allows developers to control layout, colors, and fonts, ensuring visual consistency across a website."
+  },
+  {
+    "question": "What is a common way to connect a website to a database?",
+    "choices": [
+      "Recursive Pointers can do that.",
+      "Using direct pipeline modeling with DHTML.",
+      "Using PHP and MySQL on a “LAMP” server.",
+      "Dynamic Object JSON Operations (DOJO).",
+      "Mix-in Structures in object oriented scripting languages like XOTcl."
+    ],
+    "correctIndex": 2,
+    "explanation": "A standard and widely used stack for web development is **LAMP** (Linux, Apache, MySQL, PHP).  In this setup, **PHP** acts as the server-side middleware that connects the website frontend to the **MySQL** database backend."
+  },
+  {
+    "question": "In more recent times, mobile applications demand for certain types of data to be processed. Which ones?",
+    "choices": [
+      "Temporal data",
+      "Spatial data",
+      "Multimedia data",
+      "All of the above",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "explanation": "Modern mobile applications are complex and context-aware. They frequently process **Spatial data** (GPS location), **Temporal data** (timestamps/history), and **Multimedia data** (photos/videos), making 'All of the above' correct."
+  },
+  {
+    "question": "What can be used in a SELECT statement to collect data across multiple records and group the results by one or more columns.",
+    "choices": [
+      "The COLLECT statement",
+      "The JOIN statement",
+      "The CASE statement",
+      "The GROUP BY statement",
+      "The WHERE statement"
+    ],
+    "correctIndex": 3,
+    "explanation": "The **GROUP BY** statement in SQL is used to arrange identical data into groups. It is typically used with aggregate functions (like COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns."
+  },
+  {
+    "question": "Regression…",
+    "choices": [
+      "… deals with the prediction of a data query.",
+      "… deals with the prediction of user interaction.",
+      "… deals with the prediction of a value.",
+      "… deals with the prediction of errors.",
+      "… deals with the prediction of join operators."
+    ],
+    "correctIndex": 2,
+    "explanation": "In data mining and statistics, **Regression** analysis involves estimating the relationships among variables. Unlike classification (which predicts a label), regression specifically **deals with the prediction of a continuous value** (e.g., predicting house prices)."
+  },
+  {
+    "question": "In databases, what is an example for a descriptive pattern?",
+    "choices": [
+      "Association",
+      "Amortization",
+      "Anodization",
+      "Aristocracy",
+      "Asphyxiation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Data mining tasks are often categorized as descriptive or predictive. **Association** rule mining (finding patterns like 'people who buy X also buy Y') is a classic example of a **descriptive pattern** that characterizes the general properties of the data."
+  },
+  {
+    "question": "Besides a plain list of numbers, what other format of Indices exist?",
+    "choices": [
+      "Hasbro Indices",
+      "B-Tree Indices",
+      "Z-Tree Indices",
+      "Dominant Indices",
+      "False Binary Indices (FBI)"
+    ],
+    "correctIndex": 1,
+    "explanation": "**B-Tree Indices**  are the most common type of database index. They rely on a balanced tree data structure that keeps data sorted and allows for efficient searches, sequential access, insertions, and deletions."
+  },
+  {
+    "question": "What sort of algorithm do you use to build a decision tree classifier?",
+    "choices": [
+      "Hungry Algorithm",
+      "Greedy Algorithm",
+      "Gluttonous Algorithm",
+      "Thirsty Algorithm",
+      "Starving Algorithm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decision trees are typically built using a **Greedy Algorithm** (such as ID3 or C4.5). At each step, the algorithm makes the locally optimal choice (e.g., splitting the data on the attribute that provides the highest information gain) with the hope of finding a global optimum."
+  },
+  {
+    "question": "Whats is the meaning of RAID?",
+    "choices": [
+      "Redundant Array of Independent Disks",
+      "Redundant Array of Indexed Data",
+      "Reduced Assembly of Inexperienced Desktops",
+      "Reduced Application of Integrated Databases",
+      "Real Augmented Inceptive Dimension"
+    ],
+    "correctIndex": 0,
+    "explanation": "**RAID** stands for **Redundant Array of Independent Disks** (originally 'Inexpensive' Disks).  It is a data storage virtualization technology that combines multiple physical disk drive components into one or more logical units for data redundancy and/or performance improvement."
+  },
+  {
+    "question": "What is a repository (or archive) of information gathered from multiple sources, stored under a unified schema, at a single site?",
+    "choices": [
+      "A data spreadsheet",
+      "A dataset",
+      "A data warehouse",
+      "A data funnel",
+      "Something that doesn’t have anything to do with data"
+    ],
+    "correctIndex": 2,
+    "explanation": "A **Data Warehouse** is a large centralized repository of data accumulated from a wide range of sources within a company. It is designed to support business intelligence (BI) activities, especially analytics."
+  },
+  {
+    "question": "What is PHP?",
+    "choices": [
+      "A client side scripting language",
+      "A server side scripting language",
+      "A programming language for classical application development",
+      "A markup language",
+      "A data query language"
+    ],
+    "correctIndex": 1,
+    "explanation": "PHP is a popular general-purpose scripting language that is especially widely used for web development. It is a **server-side scripting language**, meaning the code runs on the web server (like Apache or Nginx) to generate the HTML sent to the client."
+  },
+  {
+    "question": "When dealing with XML, what does DTD stand for?",
+    "choices": [
+      "Dynamic Testing Development",
+      "Dynamic Type Detection",
+      "Document Type Definition",
+      "Direct to Disk",
+      "Digital Topographic Data"
+    ],
+    "correctIndex": 2,
+    "explanation": "DTD stands for **Document Type Definition**.  It is one of the original schema languages used to define the legal building blocks of an XML document, specifying the document structure with a list of legal elements and attributes."
+  },
+  {
+    "question": "What is a simple rule to determining what are the “markup” elements of a document?",
+    "choices": [
+      "Everything that is intended for printing is called markup",
+      "Everything that is purely decorative is called markup.",
+      "Everything within a comment is the markup.",
+      "Everything that is only intended for machine-reading and not for printing, is markup.",
+      "Everything that needs to be marked for importance with a text-marker after printing, is markup."
+    ],
+    "correctIndex": 3,
+    "explanation": "In XML and HTML, **markup** consists of the tags (like `<title>`) and instructions that define the structure and presentation of the text.  These are interpreted by the software (machine-reading) to process the document, whereas the text between the tags is the content intended for human reading or printing."
+  },
+  {
+    "question": "Which of the following is true?",
+    "choices": [
+      "Transaction-server systems allow clients to interact with the servers by making requests to read or update data, in units such as files or pages.",
+      "Data-server systems provide an interface to which clients can send requests to perform an action, in response to which they execute the action and send back results to the client",
+      "Data-server systems allow clients to interact with the servers by making requests to read or update data, in units such as files or pages.",
+      "Both Data-server systems and Transaction-server systems allow clients to interact with the servers by making requests to read or update data, in units such as files or pages.",
+      "Neither Data-server systems nor Transaction-server systems provide an interface to which clients can send requests to perform an action, in response to which they execute the action and send back results to the client."
+    ],
+    "correctIndex": 2,
+    "explanation": "In a **Data-server system** (like a file server architecture), the server provides basic storage, and clients request data in physical units like files or blocks (pages) to process locally.  In contrast, a Transaction-server (like a standard RDBMS) executes the query logic on the server side and returns only the result."
+  },
+  {
+    "question": "What does the acronym XML stand for?",
+    "choices": [
+      "Extensive Markup Language",
+      "Expansive Math Language",
+      "Extensible Markup Language",
+      "Expert Metadata Listing",
+      "External Media Library"
+    ],
+    "correctIndex": 2,
+    "explanation": "**XML** stands for **Extensible Markup Language**. It is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable, allowing users to define their own custom tags."
+  },
+  {
+    "question": "Sometimes, a distributed database has to be constructed by linking together multiple already-existing database systems, each with its own schema and possibly running different database management software. What do you call this?",
+    "choices": [
+      "homogeneous distributed database system",
+      "A heterogeneous distributed database system",
+      "A patched-up distributed database system",
+      "A frizzled distributed database system",
+      "A demonstration database system"
+    ],
+    "correctIndex": 1,
+    "explanation": "A **Heterogeneous Distributed Database System** integrates distinct databases that may run on different operating systems, use different data models, or be managed by different DBMS software (e.g., linking an Oracle DB with a MySQL DB). "
+  },
+  {
+    "question": "Which of the following is an example for valid XML code?",
+    "choices": [
+      "<name> Humphrey Bogart </name>",
+      "<name> Humphrey Bogart <name>",
+      "<name> Humphrey Bogart </eman>",
+      "<name> Humphrey Bogart <eman>",
+      "<?name> Humphrey Bogart <!name>"
+    ],
+    "correctIndex": 0,
+    "explanation": "Valid XML requires proper nesting and closing of tags. `<name> Humphrey Bogart </name>` is correct because the start tag `<name>` is perfectly matched by the closing tag `</name>`. The other options have mismatched tags or incorrect syntax."
+  },
+  {
+    "question": "What two main architectures are used in parallel processing?",
+    "choices": [
+      "Salt and sugar parallel machines",
+      "High pressure and Vacuum parallel machines",
+      "Coarse-grain and fine-grain parallel machines",
+      "Tooth and Claw parallel machines",
+      "Nanotube and Macroscopic parallel machines"
+    ],
+    "correctIndex": 2,
+    "explanation": "Parallel processing architectures are often categorized by the granularity of their parallelism: **Coarse-grain** machines use a small number of powerful processors (like a cluster of servers), while **fine-grain** machines use a massive number of smaller processors (like massive parallel supercomputers)."
+  },
+  {
+    "question": "What does the shared memory contain?",
+    "choices": [
+      "Buffer pool",
+      "Lock table",
+      "Log buffer",
+      "Cached query plans",
+      "All of the above"
+    ],
+    "correctIndex": 4,
+    "explanation": "In a shared-memory database architecture, the system memory is accessible by all processors. It typically holds the **buffer pool** (cached data pages), **lock table** (concurrency control), **log buffer** (recovery data), and **cached query plans** so that all processes can coordinate effectively."
+  },
+  {
+    "question": "What is DOM?",
+    "choices": [
+      "Domain Object Model",
+      "Document Object Model",
+      "Dominant Object Model",
+      "Distributed Object Model",
+      "Direct Object Model"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **Document Object Model (DOM)** is a programming interface for HTML and XML documents.  It treats the document as a tree structure where each node is an object representing a part of the document (like an element or attribute)."
+  },
+  {
+    "question": "In XML, what is an element?",
+    "choices": [
+      "An element can be anything that is part of a set.",
+      "An element is a small piece of XML, bigger pieces are called group.",
+      "An element is a piece of code that is used for data cleansing.",
+      "An element is only the piece of information that is between the start and end tags.",
+      "An element is a pair of matching start and end tags and what is between them."
+    ],
+    "correctIndex": 4,
+    "explanation": "In XML terminology, an **element** is the full logical unit including the **start tag**, any **attributes**, the **content** (text or child elements) between the tags, and the **end tag**."
+  },
+  {
+    "question": "Which is an architectural model in parallel database architectures?",
+    "choices": [
+      "Shared everything",
+      "Shared something",
+      "Shared nothing",
+      "Shared byte",
+      "Shared power plug"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Shared nothing** is a primary parallel architecture where each node has its own private memory and disk storage.  Nodes communicate solely by passing messages through a network, offering high scalability."
+  },
+  {
+    "question": "Which of the following is a factor that can impact negatively on efficient parallel operations at the cost of speedup and scaleup?",
+    "choices": [
+      "Slew",
+      "Fluke",
+      "Slash",
+      "Skew",
+      "Mash"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Skew** (or data skew) occurs when data or workload is not distributed evenly across processors.  If one node ends up with significantly more work than others, the entire parallel system must wait for the slowest node, severely reducing efficiency."
+  },
+  {
+    "question": "What does a “process monitor process” do?",
+    "choices": [
+      "It monitors itself and takes recovery actions if it fails.",
+      "It monitors other processes, and if any of them fails, it terminates them.",
+      "It monitors other processes and logs them, other actions are not necessary.",
+      "It monitors other processes, and if any of them fails, it takes recovery actions for the process.",
+      "It monitors other processes, and if any recovery fails, it shuts down."
+    ],
+    "correctIndex": 3,
+    "explanation": "In database systems (like Oracle's PMON), the **Process Monitor** is a background daemon that watches user and system processes. If a process fails or disconnects abnormally, the monitor cleans up its resources (locks, memory) and attempts **recovery actions**."
+  },
+  {
+    "question": "What does an XML schema do?",
+    "choices": [
+      "It is a concept that is necessary for data abstraction, and to avoid loss of data.",
+      "It is a construct that enables the constant extension of the XML language.",
+      "It ensures that there are no constraints with respect of data values and types in a document.",
+      "It constrains the values and data types of information present in a document.",
+      "It is only necessary for emergencies, for example if data loss has occurred and recovery is needed."
+    ],
+    "correctIndex": 3,
+    "explanation": "An **XML Schema** (XSD) is a description of the structure of an XML document. Unlike DTDs, Schemas are written in XML and provide a rich way to **constrain data types** (e.g., integers, dates) and valid values for elements and attributes."
+  },
+  {
+    "question": "Which of the following is a commonly used type of interconnection system in parallel systems?",
+    "choices": [
+      "Cyberdyne",
+      "Ultrasquare",
+      "Supradome",
+      "Infrasphere",
+      "Hypercube"
+    ],
+    "correctIndex": 4,
+    "explanation": "A **Hypercube** is a network topology used to interconnect processors in parallel systems.  In a hypercube of dimension *n*, each node is connected to *n* other nodes, balancing the cost of connections with communication speed."
+  },
+  {
+    "question": "What two techniques for scaleup are used?",
+    "choices": [
+      "Batch scaleup and transaction scaleup",
+      "Linear scaleup and nonlinear scaleup",
+      "Direct scaleup and indirect scaleup",
+      "Query scaleup and search scaleup",
+      "Compressed scaleup and uncompressed scaleup"
+    ],
+    "correctIndex": 0,
+    "explanation": "Scaleup measures a system's ability to handle larger tasks by adding more resources. **Batch scaleup** refers to running a larger job in the same amount of time, while **transaction scaleup** refers to processing a higher rate of independent transactions in the same amount of time. "
+  },
+  {
+    "question": "What do you call a process that implements lock manager functionality, which includes lock grant, lock release, and deadlock detection?",
+    "choices": [
+      "Key management process",
+      "Lock manager process",
+      "Security management process",
+      "Vault manager process",
+      "Safety manager process"
+    ],
+    "correctIndex": 1,
+    "explanation": "The **Lock manager process** is a specialized system component responsible for concurrency control. It tracks which transactions hold which locks, grants new locks, releases them upon completion, and periodically scans for and resolves deadlocks."
+  },
+  {
+    "question": "In order to transform XML data into HTML, a transformation language has been invented. Which of the following is it?",
+    "choices": [
+      "CORBA",
+      "JFORMS",
+      "XSLT",
+      "XMLT",
+      "XPAL"
+    ],
+    "correctIndex": 2,
+    "explanation": "**XSLT** (Extensible Stylesheet Language Transformations) is a language designed specifically for transforming XML documents into other XML documents, or other formats like HTML for web display or PDF for printing. "
+  },
+  {
+    "question": "What is a namespace used for?",
+    "choices": [
+      "To specify a common name to be used as element tag in documents.",
+      "To specify a globally unique name to be used as element tag in documents.",
+      "To specify a name to be used as element tag in documents, either in a global or local way.",
+      "To allocate enough space for tag names in XML (a maximum of 255 characters).",
+      "To ensure that there are enough tags that get repeated."
+    ],
+    "correctIndex": 1,
+    "explanation": "An XML **Namespace** (xmlns) provides a method to avoid element name conflicts. By associating tags with a unique URI (Uniform Resource Identifier), it creates a **globally unique name** scope, allowing elements with the same name (e.g., `<table>` for furniture vs. `<table>` for HTML) to coexist."
+  },
+  {
+    "question": "What can attributes of the type IDREF do?",
+    "choices": [
+      "They can store a list of IDs",
+      "They can store a list of data volume restrictions.",
+      "They can’t store anything, they are just attributes, not data.",
+      "They can store a list of references.",
+      "They can coexist both as deleted and saved items."
+    ],
+    "correctIndex": 3,
+    "explanation": "In XML DTDs, an attribute of type **IDREF** allows an element to point to another element that has a corresponding **ID** attribute. This mechanism creates logical links or **references** between elements within the document."
   }
 ]
+
 
 
 
