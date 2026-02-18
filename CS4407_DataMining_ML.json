@@ -1,0 +1,306 @@
+[
+  {
+    "question": "Regression analysis involves developing a model where one or more inputs are used to predict an output variable. Regression, in this context, represents what kind of learning.",
+    "choices": [
+      "Reinforcement learning",
+      "Supervised learning",
+      "Unsupervised learning",
+      "Hybrid Learning"
+    ],
+    "correctIndex": 1,
+    "explanation": "Regression is a classic example of **Supervised Learning**. In this paradigm, the algorithm is trained on a labeled dataset (input-output pairs), learning a mapping function to predict continuous output variables based on input features."
+  },
+  {
+    "question": "Assuming that we have a data set that includes sales data for every customer over the course of several years and we wanted to use this data to predict future sales which would be the most appropriate technique to investigate?",
+    "choices": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "Decision Trees"
+    ],
+    "correctIndex": 1,
+    "explanation": "Because \"sales\" is a continuous numerical value (e.g., $10,500.50), predicting it requires **Regression** techniques. Classification is used for categorical outcomes (Yes/No), and Clustering is for finding groups, not predicting values."
+  },
+  {
+    "question": "True or False: A predication outcome variable must be categorical?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. A prediction outcome can be **categorical** (in Classification problems, e.g., \"Spam\" or \"Not Spam\") or **continuous/numerical** (in Regression problems, e.g., \"Temperature\" or \"Price\")."
+  },
+  {
+    "question": "Which of the following is an example of an unsupervised learning algorithm?",
+    "choices": [
+      "Linear Regression",
+      "ID3 Decision Tree",
+      "K-Means",
+      "K-Nearest Neighbors"
+    ],
+    "correctIndex": 2,
+    "explanation": "**K-Means** is a clustering algorithm used in **Unsupervised Learning**.  It groups data points into clusters based on similarity without having any prior labels. The other options (Regression, Decision Trees, KNN) typically rely on labeled training data (Supervised)."
+  },
+  {
+    "question": "The objective of _______ is to identify valid novel and potentially useful, and understandable correlations and patterns in existing data.",
+    "choices": [
+      "data mining"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is the standard definition of **Data Mining**. It involves exploring large datasets to discover meaningful patterns, anomalies, and correlations that were previously unknown."
+  },
+  {
+    "question": "True or False: In a supervised learning model, Bias refers to the error that is introduced from the assumptions of the data analyst.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. In machine learning theory (the Bias-Variance Tradeoff), **Bias** refers to the error introduced by approximating a real-world problem (which may be complex) by a simplified model (e.g., assuming data is linear when it is curved). It is an inherent property of the model's assumptions, not necessarily the analyst's personal bias."
+  },
+  {
+    "question": "Which of the following is NOT a machine learning technique?",
+    "choices": [
+      "Regression",
+      "Clustering",
+      "Linear Components Analytics",
+      "Neural Networks"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Linear Components Analytics** is not a standard term in machine learning. The correct term is likely \"Principal Component Analysis\" (PCA) or \"Linear Discriminant Analysis\" (LDA). Regression, Clustering, and Neural Networks are all fundamental ML techniques."
+  },
+  {
+    "question": "True or False: Data Mining can be said to be a process designed to detect patterns in data sets.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Data Mining** (often called Knowledge Discovery in Databases, or KDD) is explicitly the process of analyzing data from different perspectives and summarizing it into useful information—specifically patterns and relationships."
+  },
+  {
+    "question": "True or False: In unsupervised learning, the learning algorithm must be trained using data attributes that have been paired with an outcome variable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Using data attributes paired with an outcome variable (labeled data) is the definition of **Supervised Learning**. Unsupervised learning deals with unlabeled data where the system tries to learn the patterns and structure from the data itself."
+  },
+  {
+    "question": "True or False: Unsupervised learning involves building a statistical model for predicting, or estimating an output based upon one or more inputs.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Building a model to predict specific outputs based on inputs is **Supervised Learning**. Unsupervised learning focuses on finding the underlying structure or distribution in the data (like grouping similar items) rather than predicting a specific target."
+  },
+  {
+    "question": "Assume that you had a variety of data including medical history, diet, heredity factors on individuals who developed cancer and you wanted to use this data to determine whether a person is likely to develop cancer. Which technique would be the most promising to start with?",
+    "choices": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "Estimation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since the goal is to determine a binary outcome (likely to develop cancer: **Yes** or **No**), this is a **Classification** problem.  Regression would be used if you were predicting a continuous number (like the *probability percentage* or *days until onset*), but \"determining whether\" implies a category."
+  },
+  {
+    "question": "True or False: In a data warehouse, unidimensional data is stored in a star schema format.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. A **Star Schema** is explicitly designed for **multidimensional** data modeling. It consists of a central fact table referencing multiple dimension tables, allowing data to be analyzed from various perspectives (dimensions), not just a single one."
+  },
+  {
+    "question": "The term OLAP stands for?",
+    "choices": [
+      "Online Applications Processing",
+      "Online Analytical Processing",
+      "Online Transactional Processing",
+      "Online Limited Analytics Processing"
+    ],
+    "correctIndex": 1,
+    "explanation": "**OLAP** stands for **Online Analytical Processing**.  It is a computing method that enables users to easily and selectively extract and view data from different points of view, facilitating complex analysis (like slice and dice) on multidimensional data."
+  },
+  {
+    "question": "True or False: Map/Reduce refers to an optimized approach to process SQL queries.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **MapReduce**  is a programming model and processing technique for distributed computing on massive datasets (like in Hadoop). While some tools (like Hive) compile SQL into MapReduce jobs, MapReduce itself is a lower-level framework for processing arbitrary data, not just an SQL optimizer."
+  },
+  {
+    "question": "Which of the following is an example of a NOSQL Analytics database?",
+    "choices": [
+      "IBM DB2",
+      "Oracle",
+      "Cassandra",
+      "Greenplum"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Cassandra** is a widely used **NoSQL** database (specifically a wide-column store) designed to handle large amounts of data across many commodity servers. IBM DB2, Oracle, and Greenplum are primarily relational (SQL) database systems."
+  },
+  {
+    "question": "True or False: Information Retrieval or text analytics is NOT a form of data mining.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **Information Retrieval** (IR) and text analytics are core components of unstructured data mining. They involve extracting meaningful patterns, topics, and knowledge from text documents, which is a fundamental data mining activity."
+  },
+  {
+    "question": "True or False: The snowflake schema differs from the star schema in that the table holding the dimensional data are normalized.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In a **Snowflake Schema**, the dimension tables are **normalized** (split into multiple related tables) to eliminate redundancy.  In a Star Schema, dimension tables are denormalized (kept as single tables) to improve query performance at the cost of some data redundancy."
+  },
+  {
+    "question": "What does ETL stand for?",
+    "choices": [
+      "Extract transform load"
+    ],
+    "correctIndex": 0,
+    "explanation": "**ETL** stands for **Extract, Transform, Load**. It is the general procedure of copying data from one or more sources into a destination system (like a data warehouse) which represents a different context from the source."
+  },
+  {
+    "question": "Which of the following is NOT a statistical processing software package?",
+    "choices": [
+      "SAS",
+      "Minitab",
+      "Vertica",
+      "Mahout"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Vertica** is a column-oriented, analytical database platform, not a statistical software package. SAS and Minitab are dedicated statistical analysis tools, and Apache Mahout is a library for scalable machine learning algorithms."
+  },
+  {
+    "question": "True or False: NoSQL databases provide greater performance at the expense of availability.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Many NoSQL databases (like Cassandra and DynamoDB) are specifically designed to prioritize **Availability** and Partition Tolerance (AP in the CAP theorem) over immediate Consistency. They often provide *better* availability than traditional relational systems, not worse."
+  },
+  {
+    "question": "A database where all of the values for a particular column are stored contiguously is called?",
+    "choices": [
+      "Column-oriented storage",
+      "In memory database",
+      "Partitioning",
+      "Data Compression"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Column-oriented storage**  stores data tables by column rather than by row. This is highly efficient for analytical queries (OLAP) where aggregates are computed over large numbers of similar data items."
+  },
+  {
+    "question": "True or False: A regression model has a R2 statistic of .95. This indicates that the regression model is NOT a good fit and does a poor job of predicting the outcome based upon the input variables.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The **R-squared (R²)** statistic measures the proportion of the variance in the dependent variable that is predictable from the independent variable(s). An R² of **0.95** indicates a very strong correlation and a good fit, meaning the model explains 95% of the variance."
+  },
+  {
+    "question": "True or False: The following data plot represents data that is linearly separable?",
+    "image": "linearly_separable.JPG",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Data is **linearly separable** only if a single straight line (or hyperplane in higher dimensions) can perfectly divide the data points into their respective classes. If the classes overlap or require a curved boundary to separate, the data is not linearly separable."
+  },
+  {
+    "question": "You have a dataset which produces the following plot and you need to create a predictive model. Which of the following techniques are you most likely to use?",
+    "image": "likely_to_use.JPG",
+    "choices": [
+      "Linear Regression",
+      "Curvilinear Regression",
+      "K-Nearest Neighbors",
+      "Logistic Regression"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Linear Regression** is the appropriate technique when the relationship between the independent and dependent variables follows a straight line trend. It models the relationship as y = mx + b."
+  },
+  {
+    "question": "Assuming you have a linear model in which the value of m is .05 and the value of b is 10 that explains the relationship between income and credit extended. If income is 50,000, what credit will be extended?",
+    "choices": [
+      "500",
+      "5,010",
+      "2,050",
+      "2,510"
+    ],
+    "correctIndex": 3,
+    "explanation": "Using the linear equation y = mx + b, where m = 0.05, x = 50,000, and b = 10: y = (0.05 * 50,000) + 10, y = 2,500 + 10, y = 2,510."
+  },
+  {
+    "question": "Assume that you have a data set which produces the following data plot. You wish to predict if a new case would be a ‘red’ case as opposed to a ‘blue’ case based upon the input attribute data. Which technique should you use?",
+    "image": "should_you_use.JPG",
+    "choices": [
+      "Linear Regression",
+      "Curvilinear Regression",
+      "Spline Regression",
+      "Logistic Regression"
+    ],
+    "correctIndex": 3,
+    "explanation": "When the goal is to predict a **categorical** outcome (like Red vs. Blue, or Yes vs. No) based on input variables, **Logistic Regression** is the standard statistical technique used for binary classification."
+  },
+  {
+    "question": "The following diagram represents which technique?",
+    "image": "which_technique.JPG",
+    "choices": [
+      "Linear Regression",
+      "Curvilinear Regression",
+      "Spline Regression",
+      "Polynomial curve fitting"
+    ],
+    "correctIndex": 1,
+    "explanation": "**Curvilinear Regression** is used when the relationship between variables is not linear (a straight line) but follows a curve. It fits a curved line to the data points to minimize error."
+  },
+  {
+    "question": "You are given a data set with information from 1,000 high school students (of which the following is a part of the data) and asked to build a machine learning solution that can predict the success of a student in completing a college degree. Which technique would be the best to use?",
+    "image": "TABLE_1000_STUDENTS_best_to_use.JPG",
+    "choices": [
+      "Clustering",
+      "Text Analytics",
+      "Regression",
+      "Classification"
+    ],
+    "correctIndex": 3,
+    "explanation": "Predicting whether a student will complete a degree (a binary outcome: Success/Failure or Yes/No) is a **Classification** problem. Regression is for continuous values, and Clustering is for grouping without predefined labels."
+  },
+  {
+    "question": "True or False: Logistics regression can be used to predict a continuous variable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **Logistic Regression** is specifically designed for predicting categorical (discrete) outcomes, usually binary (0 or 1). For predicting continuous variables (like price or temperature), Linear Regression is used."
+  },
+  {
+    "question": "As a new data scientist for the Moogle corporation, you are asked to develop an algorithm that can detect spam emails and deliver them into a spam folder instead of an inbox. After looking at a plot of the data it looks like the following. Which technique would you use for your algorithm?",
+    "image": "MOOGLE_your_algorithm.JPG",
+    "choices": [
+      "Linear Regression",
+      "Curvilinear Regression",
+      "Spline Regression",
+      "Logistic Regression"
+    ],
+    "correctIndex": 3,
+    "explanation": "Spam detection is a classic binary classification problem (Spam vs. Not Spam). **Logistic Regression** is a standard algorithm used to estimate the probability that a given instance belongs to a specific class."
+  }
+]

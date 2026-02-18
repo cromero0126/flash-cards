@@ -1,0 +1,24 @@
+[
+  {
+    "question": "Relations in Databases are usually visualized as...",
+    "choices": [
+      "Boxes",
+      "Tables",
+      "Hexagons",
+      "Circles"
+    ],
+    "correctIndex": 1,
+    "explanation": "In the relational model, data is organized into relations, which are intuitively visualized and implemented as **tables**. Each table consists of rows (tuples) and columns (attributes) representing the data and its relationships."
+  },
+  {
+    "question": "What subsystems does a DBMS have?",
+    "choices": [
+      "A transaction manager, a query processor and a storage manager.",
+      "A query processor and a storage manager",
+      "A transaction manager and a query processor",
+      "A schema operator and a dynamic ODBC interface"
+    ],
+    "correctIndex": 0,
+    "explanation": "A standard Database Management System (DBMS) is composed of three core subsystems: the **query processor** (interprets and optimizes queries), the **transaction manager** (ensures data integrity and consistency), and the **storage manager** (handles data storage and retrieval from physical media)."
+  }
+]
