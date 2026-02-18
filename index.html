@@ -143,6 +143,16 @@
         <div class="flashcard bg-gradient-to-br from-red-800 via-rose-900 to-gray-900 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard(false, this.textContent.trim())">
             CS 3307 - Operating Systems 2
         </div>
+        <!-- REFINED FLASHCARDS Added 2/17/2026 -->
+        <!-- Option: The Midnight Slate (Neutral Contrast) -->
+        <div class="flashcard bg-gradient-to-br from-slate-600 via-zinc-700 to-gray-900 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard(false, this.textContent.trim())">
+            CS 4402 - Comparative Programming Languages
+        </div>
+        <!-- Existing Green Accent -->
+        <div class="flashcard bg-gradient-to-br from-lime-400 via-emerald-500 to-green-700 text-white rounded-3xl shadow-2xl p-10 text-center cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center text-2xl font-bold tracking-wide hover:scale-[1.02] hover:shadow-3xl active:scale-[0.98]" onclick="openFlashcard(false, this.textContent.trim())">
+            CS 4407 - Data Mining and Machine Learning
+        </div>
+        <!-- End Added 2/17/2026 -->
     </div>
 
     <div class="popup fixed inset-0 bg-gradient-to-br from-gray-900/80 to-black/80 flex justify-center z-50 transition-opacity duration-300 ease-in-out py-8 overflow-y-auto" id="popup" style="display: none;">
@@ -185,9 +195,24 @@
                 <button class="block w-full px-5 py-3 text-left text-base font-medium text-gray-700 cursor-pointer hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200" onclick="startOver()">Start Over</button>
             </div>
 
-            <!-- Main Content Area -->
-            <div id="questionScreen" class="flex-grow overflow-y-auto px-8 sm:px-12 py-6">
+            <!-- Main Content Area (Rollback to this if one below does not work-->
+            <!-- <div id="questionScreen" class="flex-grow overflow-y-auto px-8 sm:px-12 py-6">
                 <p id="questionText" class="mb-6 font-bold text-xl leading-relaxed">Here goes the question...</p> 
+                <div id="choices" class="space-y-4"></div>
+                <div id="explanation" class="mt-8 p-5 rounded-xl font-normal text-amber-800 bg-amber-50 border border-amber-200 hidden shadow-inner"></div>
+            </div> -->
+
+            <!-- Main Content Area 2/17/2026-->
+            <div id="questionScreen" class="flex-grow overflow-y-auto px-8 sm:px-12 py-6">
+                <!-- 1. QUESTION TEXT (Displays First) -->
+                <p id="questionText" class="mb-6 font-bold text-xl leading-relaxed">Here goes the question...</p> 
+                
+                <!-- 2. IMAGE CONTAINER (Moved here to display after the question but before choices) -->
+                <div id="questionImageContainer" class="mb-4 hidden">
+                    <img id="questionImage" src="" alt="Question Image" class="w-full h-auto max-h-64 object-contain rounded-xl shadow-md border border-gray-200">
+                </div>
+
+                <!-- 3. CHOICES (Displays Last) -->
                 <div id="choices" class="space-y-4"></div>
                 <div id="explanation" class="mt-8 p-5 rounded-xl font-normal text-amber-800 bg-amber-50 border border-amber-200 hidden shadow-inner"></div>
             </div>
@@ -250,7 +275,10 @@
             "CS 4405 - Mobile Applications": "MobileApplications.json",
             // NEW ENTRIES BELOW (11/21/2025):
             "CS 3306 - Databases 2": "Databases2.json",
-            "CS 3307 - Operating Systems 2": "OperatingSystems2.json"
+            "CS 3307 - Operating Systems 2": "OperatingSystems2.json",
+            // NEW ENTRIES BELOW (2/17/2026):
+            "CS 4402 - Comparative Programming Languages": "CS4402_CompProgLang.json",
+            "CS 4407 - Data Mining and Machine Learning": "CS4407_DataMining_ML.json"
             // Ensure you have these JSON files in the same directory as your HTML file
         };
 
@@ -509,28 +537,159 @@
          * Loads and displays a question based on its index.
          * @param {number} index - The index of the question to load.
          */
+        // Rool back to this function if update below dont work
+        // function loadQuestion(index) {
+        //     console.log('loadQuestion called with index:', index);
+        //     if (index < 0 || index >= shuffledQuestions.length) {
+        //         console.error('Invalid question index:', index);
+        //         // Consider handling this case more gracefully, e.g., closing popup or showing an error.
+        //         return;
+        //     }
+
+        //     const q = shuffledQuestions[index];
+            
+        //     //questionText.textContent = `${index + 1}. ${q.question}`;
+        //     // Proposed structure to show total count:
+        //     questionText.textContent = `${index + 1} / ${shuffledQuestions.length}. ${q.question}`;
+        //     console.log('Question text updated:', questionText.textContent);
+
+        //     explanationDiv.classList.add('hidden'); // Ensure explanation is hidden by default
+        //     explanationDiv.textContent = ''; // Clear previous explanation content
+            
+        //     // Set 'answered' flag based on whether this question was previously answered
+        //     answered = (q.userAnsweredIndex !== -1); 
+        //     choicesDiv.innerHTML = ''; // Clear previous choices
+
+        //     q.choices.forEach((choice, i) => {
+        //         const container = document.createElement('div');
+        //         container.className = 'choice-container flex items-center mb-4 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 cursor-pointer';
+
+        //         const checkbox = document.createElement('input');
+        //         checkbox.type = 'checkbox';
+        //         checkbox.name = 'choice';
+        //         checkbox.id = 'choice' + i;
+        //         // Disable checkbox if question is answered OR if in review mode
+        //         checkbox.disabled = answered || reviewMode; 
+        //         checkbox.className = 'mr-4 transform scale-150 cursor-pointer accent-blue-600 focus:ring-2 focus:ring-blue-500';
+
+        //         const label = document.createElement('label');
+        //         label.htmlFor = 'choice' + i;
+        //         label.textContent = `${String.fromCharCode(97 + i)}. ${choice}`;
+        //         label.className = 'text-lg cursor-pointer flex-grow text-gray-700';
+
+        //         const iconCorrect = document.createElement('span');
+        //         iconCorrect.className = 'icon correct ml-4 text-2xl hidden'; 
+        //         iconCorrect.textContent = '✔';
+
+        //         const iconWrong = document.createElement('span');
+        //         iconWrong.className = 'icon wrong ml-4 text-2xl font-bold hidden'; 
+        //         iconWrong.textContent = 'X';
+
+        //         // Re-apply visual state if question was previously answered OR if in review mode
+        //         if (answered || reviewMode) {
+        //             checkbox.checked = (i === q.userAnsweredIndex); // Check the user's previous answer
+                    
+        //             // Apply styling for user's selected answer
+        //             if (i === q.userAnsweredIndex) { 
+        //                 if (q.isCorrectlyAnswered) {
+        //                     container.classList.add('bg-green-100', 'border-green-300');
+        //                     iconCorrect.classList.remove('hidden');
+        //                     iconCorrect.style.setProperty('color', 'green', 'important');
+        //                 } else {
+        //                     container.classList.add('bg-red-100', 'border-red-300');
+        //                     iconWrong.classList.remove('hidden');
+        //                     iconWrong.style.setProperty('color', 'red', 'important');
+        //                 }
+        //             }
+
+        //             // Only show the correct answer's highlight if in review mode OR if explanation was shown for an incorrect answer
+        //             if (i === q.correctIndex && (reviewMode || (answered && !q.isCorrectlyAnswered && q.explanationShown))) {
+        //                 container.classList.add('bg-green-100', 'border-green-300');
+        //                 iconCorrect.classList.remove('hidden');
+        //                 iconCorrect.style.setProperty('color', 'green', 'important');
+        //             }
+        //         }
+
+        //         container.addEventListener('click', () => { // Changed to click listener on container
+        //             if (answered || reviewMode) return; // Prevent re-answering or answering in review mode
+                    
+        //             answered = true; 
+        //             q.userAnsweredIndex = i; 
+        //             q.isCorrectlyAnswered = (i === q.correctIndex);
+
+        //             console.log('Choice selected:', i, 'Answered:', answered);
+
+        //             document.querySelectorAll('.choice-container input[type="checkbox"]').forEach(cb => cb.disabled = true);
+                    
+        //             // Directly update the checkbox state visually
+        //             checkbox.checked = true;
+
+        //             if (q.isCorrectlyAnswered) {
+        //                 container.classList.add('bg-green-100', 'border-green-300');
+        //                 iconCorrect.classList.remove('hidden');
+        //                 iconCorrect.style.setProperty('color', 'green', 'important'); 
+        //                 correctAnswersCount++;
+        //                 console.log(`Correct answer! Current score: Correct=${correctAnswersCount}, Incorrect=${incorrectAnswersCount}`);
+        //             } else {
+        //                 container.classList.add('bg-red-100', 'border-red-300');
+        //                 iconWrong.classList.remove('hidden');
+        //                 iconWrong.style.setProperty('color', 'red', 'important');
+        //                 incorrectAnswersCount++;
+        //                 console.log(`Incorrect answer! Current score: Correct=${incorrectAnswersCount}, Incorrect=${incorrectAnswersCount}`);
+        //             }
+        //             updateScoreDisplay(); 
+        //             updateProgressBar(); 
+        //             saveProgress(flashcardTitleDisplay.textContent); 
+                    
+        //             // Automatic Summary Generation
+        //             if (allQuestionsAnswered()) {
+        //                 console.log("All questions answered. Showing summary.");
+        //                 showEndSessionSummary();
+        //             }
+        //         });
+
+        //         container.appendChild(checkbox);
+        //         container.appendChild(label);
+        //         container.appendChild(iconCorrect);
+        //         container.appendChild(iconWrong);
+        //         choicesDiv.appendChild(container);
+        //     });
+
+        //     // Re-apply explanation if previously shown OR if in review mode
+        //     if (q.explanationShown || reviewMode) {
+        //         explanationDiv.textContent = q.explanation;
+        //         explanationDiv.classList.remove('hidden');
+        //     }
+
+        //     updateProgressBar();
+        // }
+
         function loadQuestion(index) {
-            console.log('loadQuestion called with index:', index);
-            if (index < 0 || index >= shuffledQuestions.length) {
-                console.error('Invalid question index:', index);
-                // Consider handling this case more gracefully, e.g., closing popup or showing an error.
-                return;
+            const q = shuffledQuestions[index];
+            if (!q) return;
+            
+            // 1. Update the textual question content
+            questionText.textContent = `${index + 1} / ${shuffledQuestions.length}. ${q.question}`;
+            
+            // 2. Logic to detect and render an optional image
+            // We verify if the current question object contains the 'image' key
+            if (q.image) {
+                // Assign the image path to the source attribute of the img element
+                questionImage.src = q.image;
+                // Reveal the container by removing the 'hidden' utility class
+                questionImageContainer.classList.remove('hidden');
+            } else {
+                // Clear the source and hide the container if no image is present
+                questionImage.src = "";
+                questionImageContainer.classList.add('hidden');
             }
 
-            const q = shuffledQuestions[index];
-            
-            //questionText.textContent = `${index + 1}. ${q.question}`;
-            // Proposed structure to show total count:
-            questionText.textContent = `${index + 1} / ${shuffledQuestions.length}. ${q.question}`;
-            console.log('Question text updated:', questionText.textContent);
+            explanationDiv.classList.add('hidden');
+            explanationDiv.textContent = '';
+            answered = (q.userAnsweredIndex !== -1);
+            choicesDiv.innerHTML = '';
 
-            explanationDiv.classList.add('hidden'); // Ensure explanation is hidden by default
-            explanationDiv.textContent = ''; // Clear previous explanation content
-            
-            // Set 'answered' flag based on whether this question was previously answered
-            answered = (q.userAnsweredIndex !== -1); 
-            choicesDiv.innerHTML = ''; // Clear previous choices
-
+            // 3. Render the multiple choice options
             q.choices.forEach((choice, i) => {
                 const container = document.createElement('div');
                 container.className = 'choice-container flex items-center mb-4 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 cursor-pointer';
@@ -539,8 +698,7 @@
                 checkbox.type = 'checkbox';
                 checkbox.name = 'choice';
                 checkbox.id = 'choice' + i;
-                // Disable checkbox if question is answered OR if in review mode
-                checkbox.disabled = answered || reviewMode; 
+                checkbox.disabled = answered || reviewMode;
                 checkbox.className = 'mr-4 transform scale-150 cursor-pointer accent-blue-600 focus:ring-2 focus:ring-blue-500';
 
                 const label = document.createElement('label');
@@ -549,74 +707,51 @@
                 label.className = 'text-lg cursor-pointer flex-grow text-gray-700';
 
                 const iconCorrect = document.createElement('span');
-                iconCorrect.className = 'icon correct ml-4 text-2xl hidden'; 
+                iconCorrect.className = 'icon correct ml-4 text-2xl hidden text-green-600';
                 iconCorrect.textContent = '✔';
 
                 const iconWrong = document.createElement('span');
-                iconWrong.className = 'icon wrong ml-4 text-2xl font-bold hidden'; 
+                iconWrong.className = 'icon wrong ml-4 text-2xl font-bold hidden text-red-600';
                 iconWrong.textContent = 'X';
 
-                // Re-apply visual state if question was previously answered OR if in review mode
                 if (answered || reviewMode) {
-                    checkbox.checked = (i === q.userAnsweredIndex); // Check the user's previous answer
-                    
-                    // Apply styling for user's selected answer
-                    if (i === q.userAnsweredIndex) { 
+                    checkbox.checked = (i === q.userAnsweredIndex);
+                    if (i === q.userAnsweredIndex) {
                         if (q.isCorrectlyAnswered) {
                             container.classList.add('bg-green-100', 'border-green-300');
                             iconCorrect.classList.remove('hidden');
-                            iconCorrect.style.setProperty('color', 'green', 'important');
                         } else {
                             container.classList.add('bg-red-100', 'border-red-300');
                             iconWrong.classList.remove('hidden');
-                            iconWrong.style.setProperty('color', 'red', 'important');
                         }
                     }
-
-                    // Only show the correct answer's highlight if in review mode OR if explanation was shown for an incorrect answer
                     if (i === q.correctIndex && (reviewMode || (answered && !q.isCorrectlyAnswered && q.explanationShown))) {
                         container.classList.add('bg-green-100', 'border-green-300');
                         iconCorrect.classList.remove('hidden');
-                        iconCorrect.style.setProperty('color', 'green', 'important');
                     }
                 }
 
-                container.addEventListener('click', () => { // Changed to click listener on container
-                    if (answered || reviewMode) return; // Prevent re-answering or answering in review mode
-                    
-                    answered = true; 
-                    q.userAnsweredIndex = i; 
+                container.addEventListener('click', () => {
+                    if (answered || reviewMode) return;
+                    answered = true;
+                    q.userAnsweredIndex = i;
                     q.isCorrectlyAnswered = (i === q.correctIndex);
-
-                    console.log('Choice selected:', i, 'Answered:', answered);
-
                     document.querySelectorAll('.choice-container input[type="checkbox"]').forEach(cb => cb.disabled = true);
-                    
-                    // Directly update the checkbox state visually
                     checkbox.checked = true;
 
                     if (q.isCorrectlyAnswered) {
                         container.classList.add('bg-green-100', 'border-green-300');
                         iconCorrect.classList.remove('hidden');
-                        iconCorrect.style.setProperty('color', 'green', 'important'); 
                         correctAnswersCount++;
-                        console.log(`Correct answer! Current score: Correct=${correctAnswersCount}, Incorrect=${incorrectAnswersCount}`);
                     } else {
                         container.classList.add('bg-red-100', 'border-red-300');
                         iconWrong.classList.remove('hidden');
-                        iconWrong.style.setProperty('color', 'red', 'important');
                         incorrectAnswersCount++;
-                        console.log(`Incorrect answer! Current score: Correct=${incorrectAnswersCount}, Incorrect=${incorrectAnswersCount}`);
                     }
-                    updateScoreDisplay(); 
-                    updateProgressBar(); 
-                    saveProgress(flashcardTitleDisplay.textContent); 
-                    
-                    // Automatic Summary Generation
-                    if (allQuestionsAnswered()) {
-                        console.log("All questions answered. Showing summary.");
-                        showEndSessionSummary();
-                    }
+                    updateScoreDisplay();
+                    updateProgressBar();
+                    saveProgress(flashcardTitleDisplay.textContent);
+                    if (allQuestionsAnswered()) showEndSessionSummary();
                 });
 
                 container.appendChild(checkbox);
@@ -626,14 +761,16 @@
                 choicesDiv.appendChild(container);
             });
 
-            // Re-apply explanation if previously shown OR if in review mode
             if (q.explanationShown || reviewMode) {
                 explanationDiv.textContent = q.explanation;
                 explanationDiv.classList.remove('hidden');
             }
-
             updateProgressBar();
         }
+
+
+
+
 
         /**
          * Navigates to the previous question.
