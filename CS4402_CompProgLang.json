@@ -1,24 +1,1035 @@
 [
   {
-    "question": "Relations in Databases are usually visualized as...",
+    "question": "Pascal was developed by which of the following:",
     "choices": [
-      "Boxes",
-      "Tables",
-      "Hexagons",
-      "Circles"
-    ],
-    "correctIndex": 1,
-    "explanation": "In the relational model, data is organized into relations, which are intuitively visualized and implemented as **tables**. Each table consists of rows (tuples) and columns (attributes) representing the data and its relationships."
-  },
-  {
-    "question": "What subsystems does a DBMS have?",
-    "choices": [
-      "A transaction manager, a query processor and a storage manager.",
-      "A query processor and a storage manager",
-      "A transaction manager and a query processor",
-      "A schema operator and a dynamic ODBC interface"
+      "Niklaus Wirth",
+      "Grace Hopper",
+      "John Backus",
+      "John von Neumann"
     ],
     "correctIndex": 0,
-    "explanation": "A standard Database Management System (DBMS) is composed of three core subsystems: the **query processor** (interprets and optimizes queries), the **transaction manager** (ensures data integrity and consistency), and the **storage manager** (handles data storage and retrieval from physical media)."
+    "explanation": "Pascal was developed by **Niklaus Wirth** in the late 1960s and early 1970s. It was designed primarily to encourage good programming practices using structured programming and data structuring."
+  },
+  {
+    "question": "The Cobol language was developed primarily for which of the following:",
+    "choices": [
+      "Scientific Programming",
+      "Education and Training in Computer Science",
+      "business data processing",
+      "reporting applications"
+    ],
+    "correctIndex": 2,
+    "explanation": "COBOL (COmmon Business-Oriented Language) was designed specifically for **business data processing**. Its syntax was intended to be readable and self-documenting, resembling ordinary English, which suited corporate and government administrative needs."
+  },
+  {
+    "question": "The C language was developed at Bell Laboratories by Dennis Ritchie during:",
+    "choices": [
+      "The late 1950's",
+      "The early 1960's",
+      "At the same time as Pascal",
+      "In the early 1970's along with Unix"
+    ],
+    "correctIndex": 3,
+    "explanation": "C was developed by Dennis Ritchie at Bell Labs starting in the **early 1970s**. It is inextricably linked with the development of the **Unix** operating system, as C was created to rewrite the Unix kernel in a high-level language."
+  },
+  {
+    "question": "The Fortran language was developed in 1957 by a team led by the following:",
+    "choices": [
+      "John Backus",
+      "Peter Naur",
+      "Thomas E. Kurtz",
+      "Grace Hopper"
+    ],
+    "correctIndex": 0,
+    "explanation": "FORTRAN (Formula Translation) was developed by a team at IBM led by **John Backus**. It was the first widely used high-level programming language, designed for numeric computation and scientific computing."
+  },
+  {
+    "question": "Professors John G. Kemeny and Thomas E. Kurtz of Dartmouth University developed which language?",
+    "choices": [
+      "BASIC",
+      "PASCAL",
+      "Ada",
+      "Algol"
+    ],
+    "correctIndex": 0,
+    "explanation": "**BASIC** (Beginner's All-purpose Symbolic Instruction Code) was developed by Kemeny and Kurtz in 1964. Their goal was to enable students in fields other than science and mathematics to use computers."
+  },
+  {
+    "question": "Programming languages offer abstraction from the details of the computer hardware. This abstraction resulted in less programming effort but also some loss of 'detail' that could potentially result in less efficient code?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Abstraction** moves the programmer away from direct hardware control (like memory addresses and CPU registers). While this makes coding faster and safer, it can prevent manual optimizations that might be possible in lower-level languages like Assembly."
+  },
+  {
+    "question": "True/False: Algol has influenced programming language design more than any other single programming language?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **ALGOL** (Algorithmic Language) introduced block structure, scope, and nested functions. It became the standard for describing algorithms for decades and is the ancestor of most modern imperative languages (Pascal, C, Java, etc.)."
+  },
+  {
+    "question": "True/False: The Assembler language was an early step towards abstraction that allowed programmers to use symbols for machine instructions and not binary numbers?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Assembly language** provides a symbolic representation (mnemonics like `MOV`, `ADD`) of the machine code instructions, replacing the raw binary patterns required by the hardware."
+  },
+  {
+    "question": "True/False: The development of the C language is associated with the development of the Unix operating system?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. C was essentially created to facilitate the development of **Unix**. It provided the necessary low-level access to memory and hardware while offering high-level syntax, making the OS portable to different hardware architectures."
+  },
+  {
+    "question": "True/False: The benefit of the C language was that it was high level and ensured that the user had no access to the lower level capabilities of assembly language eliminating the potential for many programming bugs.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. One of C's defining features is that it **does** provide access to low-level capabilities (like pointers and direct memory manipulation). While powerful, this actually *increases* the potential for bugs (like buffer overflows) compared to safer high-level languages."
+  },
+  {
+    "question": "Which of the following is NOT an example of an imperative programming language?",
+    "choices": [
+      "Cobol",
+      "Java",
+      "Prolog",
+      "Fortran"
+    ],
+    "correctIndex": 2,
+    "explanation": "**Prolog** is a **Declarative** (specifically Logic) programming language.  In Prolog, you define facts and rules, and the system figures out how to satisfy the query, whereas imperative languages (Cobol, Java, Fortran) describe *how* to calculate the result step-by-step."
+  },
+  {
+    "question": "Which of the following is NOT a component of the von Neuman architecture?",
+    "choices": [
+      "Central Arithmetic or Arithmetic Logic Unit",
+      "Memory",
+      "Control Unit",
+      "Graphics Adapter"
+    ],
+    "correctIndex": 3,
+    "explanation": "The classic **von Neumann architecture** consists of the CPU (Control Unit + ALU), Memory (storing both data and instructions), and I/O mechanisms. A **Graphics Adapter** (GPU) is a modern peripheral component, not a fundamental part of the original theoretical model."
+  },
+  {
+    "question": "What feature of the von Neumann architecture was unique at the time and is an element of virtually every modern computer today?",
+    "choices": [
+      "Programs and data are stored in memory to facilitate general purpose computing.",
+      "The use of a bus to move data between the components of the architecture",
+      "The use of registers in the arithmetic logic unit",
+      "The introduction of a control unit"
+    ],
+    "correctIndex": 0,
+    "explanation": "The revolutionary concept was the **Stored-Program concept**: treating instructions (code) as data and storing both in the same readable/writable random-access memory."
+  },
+  {
+    "question": "True/False: In a Turing machine the only operations that are possible on the ribbon are the read and write of one bit.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. A standard **Turing Machine**  operates on an infinite tape (ribbon). The head can read the symbol (bit) at the current position, write a new symbol, and move left or right one step."
+  },
+  {
+    "question": "True/False: The Turing-Church Thesis states that any computing problem that cannot be solved with a Turning machine can be solved with Lambda Calculus.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The **Church-Turing Thesis** states that Turing machines and Lambda Calculus are **equivalent** in power. If a problem cannot be solved by a Turing machine, it cannot be solved by Lambda Calculus (or any other known computational model) either."
+  },
+  {
+    "question": "True/False: The model of computing introduced by Alonzo Church was known as the Church Thesis.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The formal model of computing introduced by Alonzo Church is called **Lambda Calculus**. The \"thesis\" is the hypothesis regarding the nature of computability derived from that model."
+  },
+  {
+    "question": "True/False: A computer architecture that stores program instructions on an external device such as a tape or drum and not in memory is consistent with the von Neumann architecture?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The definition of the **von Neumann architecture** requires that program instructions be stored in the **same internal memory** as the data to allow for rapid access and modification, not just on external storage."
+  },
+  {
+    "question": "True/False: In the von Neumann architecture, the bus describes the connections between the components in the architecture that is used to move data between them.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The **system bus**  serves as the communication backbone, transferring data, addresses, and control signals between the CPU, memory, and I/O devices."
+  },
+  {
+    "question": "True/False: A bus with less bits has an advantage because it operates faster and can move more data.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. A bus with **fewer bits** (narrower width) can transmit less data per clock cycle. A wider bus (more bits) generally provides higher throughput (bandwidth) because it can move more data simultaneously."
+  },
+  {
+    "question": "True/False: Turing's concept of the turing machine was based upon the concepts and rules of mathematical functions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Turing's model was based on a **mechanical** abstraction of a human computer performing calculations on paper (states and tape). Alonzo Church's model (Lambda Calculus) was the one based on mathematical functions."
+  },
+  {
+    "question": "True/False: The revolutionary innovation that von Neumann introduced in his computer architecture was the use of registers within the Arithmetic Logic Unit.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. While registers are part of the architecture, the *revolutionary innovation* attributed to von Neumann is the **stored-program concept** (storing instructions and data in the same memory), not specifically the use of registers."
+  },
+  {
+    "question": "Which of the following is a characteristic of a non-imperative programming language.",
+    "choices": [
+      "Based upon assignment and state",
+      "Programmer determines the steps of computing",
+      "Suffers from side effects",
+      "Is Referentially Transparent"
+    ],
+    "correctIndex": 3,
+    "explanation": "Non-imperative (Declarative/Functional) languages strive for **Referential Transparency**. This means an expression can be replaced by its value without changing the program's behavior, because the functions depend only on their arguments and have no side effects (no hidden state)."
+  },
+  {
+    "question": "Which of the following is NOT a feature or characteristic of imperative programming languages.",
+    "choices": [
+      "Not Referentially Transparent",
+      "Programming specifies the result not the steps",
+      "Based upon assignment",
+      "Is dependent on state"
+    ],
+    "correctIndex": 1,
+    "explanation": "In **Imperative** programming, the programmer explicitly specifies the **steps** (control flow) to change the state. Specifying the *result* (what you want) without specifying the steps (how to get it) is a feature of **Declarative** languages."
+  },
+  {
+    "question": "True/False: One of the features of imperative programming languages is that the programmer specifies results and input but lets the compiler determine the computation steps necessary to solve the computing problem.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. This describes **Declarative** programming (like SQL or Prolog). In **Imperative** programming, the programmer must explicitly define the algorithmic steps."
+  },
+  {
+    "question": "True/False: Java is an example of a functional programming language.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **Java** is primarily an **Object-Oriented** and **Imperative** language. While modern Java (8+) has introduced some functional features (like lambdas), it is not classified as a functional language in the same way as Haskell or Lisp."
+  },
+  {
+    "question": "True/False: non-imperative languages are referentially transparent which means that a particular state is not required for successful and consistent computation.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Because they avoid mutable state and side effects, **non-imperative** (functional) functions will always produce the same output for the same input, regardless of the system's external state."
+  },
+  {
+    "question": "True/False: In imperative programming languages assignment is the core operation that is performed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The **assignment statement** (changing the value of a variable in memory) is the fundamental operation that drives the progress of an imperative program."
+  },
+  {
+    "question": "Which of the following is an example of a imperative programming language.",
+    "choices": [
+      "Standard ML",
+      "Haskell",
+      "Prolog",
+      "Algol"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Algol** is a classic **Imperative** language. Standard ML and Haskell are Functional languages, and Prolog is a Logic language."
+  },
+  {
+    "question": "The extensions to BNF were designed to provide a shorthand to simplify the grammar. The * symbol was one such extension used in EBNF and indicated:",
+    "choices": [
+      "something can be repeated any number of times (or be skipped altogether)",
+      "something can appear one or more times",
+      "something could occur only 1 time",
+      "a range of items such as digits or letters"
+    ],
+    "correctIndex": 0,
+    "explanation": "In **Extended Backus-Naur Form (EBNF)**, the asterisk `*` (or braces `{}`) is a repetition symbol indicating that the preceding element can occur **zero or more times**.  This allows for concise definitions of lists or optional repeated sequences."
+  },
+  {
+    "question": "In the following example EBNF grammar, what does the symbol <expr> describe?\n<expr> := '-'? <digit>+ ('.' <digit>+)?\n<digit> := '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'",
+    "choices": [
+      "An Integer",
+      "A real number",
+      "A character",
+      "A string"
+    ],
+    "correctIndex": 1,
+    "explanation": "The grammar defines an optional negative sign `'-'?`, followed by one or more digits `<digit>+`, followed by an optional decimal part `('.' <digit>+)?`. This structure describes the format of a **real number** (or floating-point number)."
+  },
+  {
+    "question": "The step in the compilation process where EBNF or BNF are used to determine if the structure of programming language statements are valid is called.",
+    "choices": [
+      "Syntactical analysis",
+      "Lexical analysis",
+      "Type Checking",
+      "Semantic Analysis"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Syntactical analysis** (or parsing) is the phase where the compiler checks the stream of tokens against the grammatical rules of the language (defined in BNF or EBNF) to ensure the structure is valid."
+  },
+  {
+    "question": "Consider the following grammar, which of the following is a terminal symbol?\nstatement: whileStatement | ifStatement | ‘{’ statementSequence ‘}’\nwhileStatement: ‘while’ ‘(‘ expression ‘)’ statement\nifStatement: 'if' '(' expression ')' statement\nstatementSequence: | statement ‘;’ statementSequence\nexpression:",
+    "choices": [
+      "statement",
+      "whileStatement",
+      "ifStatement",
+      "while"
+    ],
+    "correctIndex": 3,
+    "explanation": "In a grammar, **terminal symbols** are the literal characters or keywords that appear in the source code and cannot be broken down further. Here, **‘while’** is a keyword literal. The other options (`statement`, `whileStatement`, `ifStatement`) are non-terminal symbols defined by production rules."
+  },
+  {
+    "question": "Consider the following grammar, which of the following is a non-terminal symbol?\nstatement: whileStatement | ifStatement | ‘{’ statementSequence ‘}’\nwhileStatement: ‘while’ ‘(‘ expression ‘)’ statement\nifStatement: 'if' '(' expression ')' statement\nstatementSequence: | statement ‘;’ statementSequence\nexpression:",
+    "choices": [
+      "(",
+      "if",
+      "while",
+      "statement"
+    ],
+    "correctIndex": 3,
+    "explanation": "A **non-terminal symbol** represents a variable in the grammar that can be replaced by a sequence of other symbols. **`statement`** appears on the left side of a production rule (`statement: ...`), marking it as a non-terminal. The others (`(`, `if`, `while`) are terminals."
+  },
+  {
+    "question": "True/False: In syntactical analysis the bottom-up parsing approach is referred to LL analysis?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **LL analysis** (Left-to-right, Leftmost derivation) is a **Top-Down** parsing approach. **Bottom-Up** parsing is typically referred to as **LR analysis** (Left-to-right, Rightmost derivation). "
+  },
+  {
+    "question": "True/False: The EBNF (or Extended BNF) approach to grammar specification was a rewrite of the original BNF developed by John Backus designed to 'normalize' grammar specification?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **EBNF** was not designed to \"normalize\" grammar (like database normalization) but to **simplify and condense** it. It introduced shorthand notations for repetition and optionality, making the grammar easier to read and shorter than standard BNF."
+  },
+  {
+    "question": "In the following BNF example, the symboil <sentence> is considered to be a terminal symbol?\n<sentence> := <subject> <predicate>\n<subject> := 'John' | ' Mary'\n<predicate> := 'eats' | 'talks'",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. `<sentence>` is defined by the rule `<sentence> := <subject> <predicate>`. Since it expands into other symbols, it is a **non-terminal**. The actual words ('John', 'eats') are the terminals."
+  },
+  {
+    "question": "True/False: According to EBNF the | character means 'or'.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In both BNF and EBNF, the vertical bar **`|`** is the standard symbol for **alternation**, indicating a choice between multiple options (logical OR)."
+  },
+  {
+    "question": "True/False: Lexical analysis is the step in the compilation process where tokens are extracted from the programming language statements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Lexical analysis** (scanning) is the first phase of a compiler. It reads the raw stream of characters from the source code and groups them into meaningful sequences called **tokens** (keywords, identifiers, literals)."
+  },
+  {
+    "question": "True/False: In syntactical analysis the top-down parsing approach is referred to LL analysis?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **LL parsers** build the parse tree from the top (root) down to the leaves, matching the input string from left to right."
+  },
+  {
+    "question": "The term compiler was coined in the 1950's by which of the following?",
+    "choices": [
+      "Grace Hopper",
+      "Alan Turing",
+      "John von Neumann",
+      "John Backus"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Grace Hopper** developed the first compiler (the A-0 System) in 1952 and is credited with coining the term \"compiler\" to describe the system of gathering subroutines."
+  },
+  {
+    "question": "Which of the following is NOT one of the steps or 'phases' of the compilation process.",
+    "choices": [
+      "Code Generation",
+      "Syntax Analysis",
+      "Lexical Analysis",
+      "Error Checking"
+    ],
+    "correctIndex": 3,
+    "explanation": "While **Error Checking** happens *throughout* the process, it is not typically listed as a distinct, sequential **phase** in the standard compiler model (which consists of Lexical Analysis, Syntax Analysis, Semantic Analysis, Intermediate Code Generation, Optimization, and Code Generation)."
+  },
+  {
+    "question": "The lexical analysis phase of the compilation process is also known as:",
+    "choices": [
+      "Tokenizing",
+      "Optimization",
+      "Preprocessing",
+      "Assembling"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lexical analysis is frequently referred to as **Tokenizing** or Scanning, as its primary job is to convert the character stream into a stream of tokens."
+  },
+  {
+    "question": "Which of the following expressions can be evaluated as syntactically correct by the following grammar?\nE = N | E \"+\" E.\nN = \"1\" | \"2\" | \"3\" | \"4\" .",
+    "choices": [
+      "X = 1 + 2",
+      "6 + 3 + 1",
+      "4 + 2 + 1",
+      "= 4 + 2 + 1"
+    ],
+    "correctIndex": 2,
+    "explanation": "The grammar defines an expression `E` as a number `N` (1, 2, 3, or 4) or an addition of expressions `E + E`. \n* `4 + 2 + 1` consists only of allowed numbers and follows the `E + E` structure.\n* `X` and `=` are not in the grammar.\n* `6` is not defined in `N`."
+  },
+  {
+    "question": "Which of the following is NOT a function supported by debuggers?",
+    "choices": [
+      "Tracing",
+      "Breakpoints",
+      "Examine/modify data",
+      "Assemble code"
+    ],
+    "correctIndex": 3,
+    "explanation": "Debuggers are tools for testing and finding errors. They support **Tracing** (stepping through code), **Breakpoints** (pausing execution), and **Modifying data**. **Assembling code** is the job of an Assembler, not a debugger."
+  },
+  {
+    "question": "True/False: Real time, every time is a way of describing the role of a compiler as opposed to an interpreter.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Compilers translate code **once** before execution (Ahead-of-Time). Interpreters translate code **every time** it is run (at runtime), making the description \"real time, every time\" more applicable to an interpreter (or JIT compiler) than a standard compiler."
+  },
+  {
+    "question": "True/False: The front end of a compiler is language-dependent and the back-end is computer dependent.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The **Front End** analyzes the source code (Lexical/Syntax/Semantic) and is specific to the programming language. The **Back End** generates the machine code and is specific to the target computer architecture (CPU)."
+  },
+  {
+    "question": "True/False: A compiler is a program that translates one language to another.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. At its core, a **compiler** is a translator that converts source code written in one language (high-level) into another language (low-level machine code or intermediate code)."
+  },
+  {
+    "question": "True/False: Assembler Language was developed before Machine Language.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **Machine Language** (binary) is the native language of the processor and existed first. **Assembler Language** was created later as a human-readable representation (mnemonics) of that machine code."
+  },
+  {
+    "question": "True/False: The loader compiles a program and performs type checking on it.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The **Loader** is responsible for loading the already-compiled executable file into memory and preparing it for execution. Compilation and type checking are performed by the **Compiler** well before the loader is involved."
+  },
+  {
+    "question": "Which of the following programming languages is an example of a programming language with strong type checking.",
+    "choices": [
+      "Java",
+      "Perl",
+      "PHP",
+      "Shell script"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Java** is a statically and strongly typed language.  This means variable types must be declared explicitly (or inferred strictly) at compile time, and the compiler enforces strict rules preventing type mismatches (like assigning a string to an integer variable)."
+  },
+  {
+    "question": "Which of the following is an example of a dynamic typed programming language?",
+    "choices": [
+      "Perl",
+      "C",
+      "Pascal",
+      "Java"
+    ],
+    "correctIndex": 0,
+    "explanation": "**Perl** is dynamically typed. In dynamic languages, type checking is performed at runtime, and variables do not need explicit type declarations before use."
+  },
+  {
+    "question": "Which of the following is NOT an example of a dynamic typed programming language?",
+    "choices": [
+      "C++",
+      "Perl",
+      "PHP",
+      "Python"
+    ],
+    "correctIndex": 0,
+    "explanation": "**C++** is a statically typed language. Variables must be declared with a type before they are used, and type checking occurs during compilation. Perl, PHP, and Python are all dynamically typed."
+  },
+  {
+    "question": "True/False: Perl is an example of a static typed programming language.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Perl is **dynamically typed**. The interpreter determines the type of a variable based on the context in which it is used at runtime."
+  },
+  {
+    "question": "True/False: An advantage to a weak typed programming language is that it eliminates type issues that can cause hard to find bugs in a program.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Weak typing (or loose typing) typically **increases** the risk of hard-to-find bugs. Because the language implicitly converts types (e.g., treating the string \"5\" as the number 5), unintended behavior can occur silently without throwing errors."
+  },
+  {
+    "question": "True/False: Type checking is a part of the compilation process that occurs in step 2 syntax analysis.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **Syntax Analysis** (parsing) verifies the grammatical structure. **Type Checking** typically occurs during the subsequent phase, **Semantic Analysis**, where the compiler ensures that the operations are logically valid for the types involved."
+  },
+  {
+    "question": "True/False: Type checking will validate, strongly typed programming languages, that the type of an expression is consistent with the type of a target variable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The primary goal of type checking in strongly typed languages is to ensure **type consistency**. For example, it validates that if a variable is declared as an Integer, the expression assigned to it also evaluates to an Integer."
+  },
+  {
+    "question": "True/False: In imperative programming languages, the assignment statement is the only statement that does anything.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In the strict context of the Von Neumann model for imperative programming, the **assignment statement** is the fundamental operation that changes the **state** of the machine (memory). All other constructs (loops, conditionals) effectively control the flow of assignments."
+  },
+  {
+    "question": "True/False: in Perl, the pragma 'strict' simulates static typing.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. While Perl is dynamic, enabling `use strict;` enforces disciplined coding practices, such as requiring explicit variable declarations (using `my`), which mimics the rigor of static typing and helps catch errors early."
+  },
+  {
+    "question": "True/False: In a dynamic typed language the programmer is not required to declare and initialize variable before its use.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In dynamic languages (like Python or Ruby), variables are typically created and typed automatically the moment a value is assigned to them, without a prior declaration statement."
+  },
+  {
+    "question": "Which of the following best describes a Type 1 hypervisor.",
+    "choices": [
+      "It runs as a process within the the operating system.",
+      "It generates an idealized computer that programs are developed for",
+      "It runs on bare metal",
+      "It generates the shells within the Unix operating system"
+    ],
+    "correctIndex": 2,
+    "explanation": "A **Type 1 Hypervisor** (or Bare Metal Hypervisor) installs directly on the physical server hardware without a host operating system.  Examples include VMware ESXi and Microsoft Hyper-V."
+  },
+  {
+    "question": "True/False: The IBM model of virtualization evolved from mainframe technology and was based upon the mapping of instructions from the virtual machine to physical machine.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Hardware virtualization originated with IBM mainframes (like the CP/CMS system) in the 1960s. It relied on trapping privileged instructions from the guest OS and mapping them to the physical hardware."
+  },
+  {
+    "question": "True/False: The java compiler generates machine instructions for the target computing using a compiler program known as the JRE.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The Java compiler (`javac`) generates **Bytecode** (.class files), not machine instructions.  This bytecode is then interpreted or compiled (JIT) by the **JVM** (part of the JRE) at runtime, not by the JRE during the initial compilation."
+  },
+  {
+    "question": "True/False: The design of the Java Virtual Machine is primarily intended to enhance the portability of Java applications.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. The core philosophy of Java is \"Write Once, Run Anywhere.\" The **JVM** acts as an abstraction layer; code is compiled for the JVM rather than a specific physical machine, allowing it to run on any device that has a compatible JVM."
+  },
+  {
+    "question": "True/False: Java's unique design has achieved 100% portability.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. While Java is highly portable, \"100% portability\" is virtually impossible to achieve in practice due to differences in JVM implementations, version inconsistencies, and reliance on native libraries (JNI) or specific OS features in complex applications."
+  },
+  {
+    "question": "True/False: The Unix virtual machine model implements virtualization through the use of process shells.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. While Unix uses shells and processes, its virtualization model (historically) is not defined by \"process shells.\" Modern virtualization relies on hypervisors or containerization (like Docker/LXC), which is different from simple shell processes."
+  },
+  {
+    "question": "True/False: The type 2 hypervisor is designed to run directly on bare metal.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. A **Type 2 Hypervisor** (Hosted Hypervisor) runs as an application *inside* a conventional operating system (like Windows or macOS). Examples include VMware Workstation and Oracle VirtualBox."
+  },
+  {
+    "question": "Which option is the 2's complement of the following binary number: 00011100",
+    "choices": [
+      "11100100",
+      "01111100",
+      "10011100",
+      "None of these answers"
+    ],
+    "correctIndex": 0,
+    "explanation": "To find the 2's complement: \n1. Start with the original number: `00011100`\n2. Invert the bits (1s complement): `11100011`\n3. Add 1: `11100011 + 1 = 11100100`"
+  },
+  {
+    "question": "Which of the following image file formats was developed using a Little-Endian format?",
+    "choices": [
+      "GIF",
+      "IMG",
+      "JPEG",
+      "TIFF"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **GIF** (Graphics Interchange Format) specification defines that multi-byte values are stored in **Little-Endian** order (least significant byte first)."
+  },
+  {
+    "question": "Convert -32 into a 2's complement binary number:",
+    "choices": [
+      "11100000",
+      "00100000",
+      "01000000",
+      "11011111"
+    ],
+    "correctIndex": 0,
+    "explanation": "To convert -32:\n1. Find binary for +32: `00100000`\n2. Invert bits: `11011111`\n3. Add 1: `11100000`"
+  },
+  {
+    "question": "What is the binary equivalent of decimal 25 in 2's complement?",
+    "choices": [
+      "00011001",
+      "10011001",
+      "11100111",
+      "None of these answers"
+    ],
+    "correctIndex": 2,
+    "explanation": "*Note: Based on standard binary math, +25 is `00011001`. The provided answer `11100111` actually corresponds to decimal **-25** in 2's complement. However, this JSON reflects the correct answer marked in the source text.*"
+  },
+  {
+    "question": "Which of the following computer systems used a Little-Endian architecture.",
+    "choices": [
+      "DEC Alpha",
+      "Java virtual machine",
+      "Sun SPARC",
+      "MIPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "The **DEC Alpha** architecture was designed to operate primarily in **Little-Endian** mode. In contrast, the JVM and Sun SPARC are Big-Endian."
+  },
+  {
+    "question": "True/False: A negative number is represented in 2's complement by a leading 0 bit followed by the binary representation of the value.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. In 2's complement (and signed magnitude), a negative number is indicated by a **leading 1** (the Most Significant Bit), not a 0."
+  },
+  {
+    "question": "True/False: The following operation in binary will generate the 2's complement binary equivalent of 128?\n01111111 + 00000001",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. `01111111` (127) + `1` = `10000000`. In an 8-bit 2's complement system, `10000000` represents **-128**, not +128. Positive 128 cannot be represented in 8-bit signed binary (max is +127)."
+  },
+  {
+    "question": "True/False: They key limitation of ASCII was that it could only represent 255 characters ?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Standard ASCII is 7-bit (128 characters). Extended ASCII uses 8 bits, allowing for **255 characters**. This limitation made it insufficient for representing global languages, leading to the development of Unicode."
+  },
+  {
+    "question": "True/False: The high order byte refers to a byte with a value greater than 256.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The **High Order Byte** (or Most Significant Byte) refers to the byte containing the most significant bits in a multi-byte word (the position), not the numerical value contained within it."
+  },
+  {
+    "question": "True/False: Big Endian architectures store the most significant byte first (which is the lowest memory address in the range) in memory.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True.  In **Big Endian**, the \"Big End\" (Most Significant Byte) is stored at the lowest memory address (first)."
+  },
+  {
+    "question": "Which of the following is NOT an elementary data type.",
+    "choices": [
+      "integer",
+      "boolean",
+      "character",
+      "string"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integers, booleans, and characters are typically **primitive** (elementary) types supported directly by hardware. A **String** is usually a composite data structure (an array of characters) or a reference type."
+  },
+  {
+    "question": "A variable of type byte will have what number of bits?",
+    "choices": [
+      "8",
+      "16",
+      "1",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "In standard computer science and most modern architectures, a **byte** is defined as **8 bits**."
+  },
+  {
+    "question": "True/False: Integer numbers include the set of all positive whole numbers and zero.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The set of **Integers** (Z) includes positive whole numbers, zero, **and negative whole numbers**."
+  },
+  {
+    "question": "True/False: The type char is always 8 bits in length.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. While `char` is 8 bits in C/C++, in modern languages like Java or C#, the `char` type is often **16 bits** to support the Unicode standard (UTF-16)."
+  },
+  {
+    "question": "True/False: An advantage to using an unsigned integer is that a larger positive number can be stored than can be stored with a signed integer.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. By eliminating the need to store a sign bit, an **unsigned integer** can use all bits for magnitude, effectively doubling the maximum positive value compared to a signed integer of the same width."
+  },
+  {
+    "question": "True/False: An enumeration data type is an abstraction mechanism that allows labels such on/off or high, medium, and low to be associated with simple data types.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. An **enumeration** (enum) maps a set of human-readable labels (symbolic names) to underlying integral values, making code more readable and maintainable."
+  },
+  {
+    "question": "True/False: All imperative programming languages support enumeration data types.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. While common in modern languages, not *all* imperative languages support enums natively. For example, early versions of standard C did not have enums, nor do some scripting languages or assembly dialects."
+  },
+  {
+    "question": "True/False: In 'C', the char is essentially a small integer and supports the ability to readily convert between char and integer.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In C, a `char` is stored as a standard integer value (ASCII code). You can perform arithmetic on characters (e.g., `'A' + 1`) effectively treating them as small integers."
+  },
+  {
+    "question": "True/False: In many programming languages such as Java and 'C' the evaluation of an expression that employs operators such as greater than, less than, and, or and not (employing the proper syntax) returns a type of boolean.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. Relational and logical operators are designed to evaluate truth conditions, resulting in a **boolean** value (True/False, or 1/0 in C)."
+  },
+  {
+    "question": "True/False: A variable of type long will require 16 bits of memory.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. A `long` integer is typically **32 bits** or **64 bits** depending on the architecture and language. 16 bits is usually the size of a `short` or an older `int`."
+  },
+  {
+    "question": "The RECORD type is implemented in different ways in programming languages. Which option best describes the record implementation in 'C'.",
+    "choices": [
+      "struct",
+      "field",
+      "component",
+      "member"
+    ],
+    "correctIndex": 0,
+    "explanation": "In the C programming language, the **record** data type—a composite data structure that allows you to group variables of different types under a single name—is implemented using the keyword **struct** (short for structure)."
+  },
+  {
+    "question": "Specific data elements in an array are accessed using an:",
+    "choices": [
+      "index",
+      "hash",
+      "key",
+      "pointer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrays are contiguous memory blocks where specific elements are accessed via an **index** (or subscript), which represents the offset from the beginning of the array."
+  },
+  {
+    "question": "True/False: An array is comprised of a collection of elementary data types which can all be of different types.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. A fundamental characteristic of a standard **array** is that it is a **homogeneous** data structure, meaning all elements stored within it must be of the **same data type** (e.g., all integers)."
+  },
+  {
+    "question": "True/False: An advantage of the array is that is ensures that all values are always in sorted order.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. An array stores elements in the order they are inserted or assigned (index order). It does **not** automatically sort the data; sorting requires an explicit algorithm (like Quicksort or Bubblesort)."
+  },
+  {
+    "question": "True/False: The string type is essentially implemented as an array of characters.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. In many languages (especially C and C++), a **string** is fundamentally implemented as a contiguous **array of characters** (often terminated by a null character `\\0`)."
+  },
+  {
+    "question": "True/False: Arrays are flexible data structures as the length of the array can be dynamically changed at any time.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Standard arrays are **static** data structures; their size is fixed at the time of allocation. While dynamic array implementations (like Java's ArrayList or C++'s std::vector) exist, the basic array primitive cannot change its length once defined."
+  },
+  {
+    "question": "True/False: Arrays are limited to having either one or two dimensions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Arrays can be **multi-dimensional** (e.g., 3D arrays for volumetric data, 4D, etc.), limited primarily by system memory rather than a hard architectural constraint on the number of dimensions."
+  },
+  {
+    "question": "The following are expressed in what format: 123. 45x103 1.2345x10-8 0.00012345x107 12345000.0x104 :",
+    "choices": [
+      "Scientific Notation",
+      "Exponential Notation",
+      "Floating Point Format",
+      "Binary Coded Decimal Format"
+    ],
+    "correctIndex": 0,
+    "explanation": "The format $N \\times 10^x$ is the standard definition of **Scientific Notation**, used to express numbers that are too large or too small to be conveniently written in decimal form."
+  },
+  {
+    "question": "Which of the following is NOT a component required to express a floating point number in binary using scientific notation.",
+    "choices": [
+      "Mantissa",
+      "Sign",
+      "Exponent",
+      "fixed-point"
+    ],
+    "correctIndex": 3,
+    "explanation": "A floating-point number consists of three parts: the **Sign**, the **Exponent**, and the **Mantissa** (or Significand). **Fixed-point**  is a completely different method of representing fractional numbers where the decimal point is in a specific, static position."
+  },
+  {
+    "question": "True/False: The advantage of fixed-point numbers is that the accuracy,that is the absolute error, is variable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. In **fixed-point** representation, the gap between representable numbers is constant, meaning the absolute error (precision) is **fixed**. It is floating-point representation that has variable absolute error (but constant relative error)."
+  },
+  {
+    "question": "True/False: Decimal numbers represented directly by assigning four bits to each decimal is callled binary-coded decimal (BCD).",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **BCD** (Binary-Coded Decimal) is a class of binary encodings where each decimal digit (0-9) is represented by a fixed number of binary bits, usually four (a nibble). For example, decimal 9 is `1001`."
+  },
+  {
+    "question": "Dynamic binding occurs _______: Select the one best answer.",
+    "choices": [
+      "During translation",
+      "During type checking",
+      "Only during loading",
+      "During execution"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Dynamic binding** refers to the association of attributes (like types or values) to entities (like variables) during program **execution** (runtime), as opposed to static binding which happens at compile time."
+  },
+  {
+    "question": "Which of the following cannot be dynamically bound:",
+    "choices": [
+      "variable",
+      "function",
+      "expression",
+      "language reserved keyword"
+    ],
+    "correctIndex": 3,
+    "explanation": "**Language reserved keywords** (like `if`, `while`, `class`) have their meanings fixed by the language definition itself. They cannot be rebound or changed dynamically at runtime."
+  },
+  {
+    "question": "Which of the following is NOT one of the attributes of a variable.",
+    "choices": [
+      "scope",
+      "lifetime",
+      "r-value",
+      "Name",
+      "All of these choices are attributes of a variable"
+    ],
+    "correctIndex": 2,
+    "explanation": "In the context of binding time analysis, the standard attributes of a variable include its **Name**, **Type**, **Scope**, **Lifetime**, and **Location** (L-value). The **r-value** refers to the variable's current *contents* (data), which is generally considered the *state* of the variable rather than a binding attribute."
+  },
+  {
+    "question": "True/False: binding refers only to variables. The association of a function name or the output of an expression is not a binding.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. **Binding** is a general concept in computer science referring to the association of any attribute with an entity. This includes binding functions to code bodies, symbols to operations, and types to classes, not just variables to values."
+  },
+  {
+    "question": "True/False: The statement x+=1; below is binding the variable x.\nint x;\nx=1;\nx+=1;",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The statement `int x;` is a binding (binding the name `x` to a type and location). The statement `x+=1;` is an **operation** or assignment that modifies the value stored at that location, but it does not change the binding of the variable itself."
+  },
+  {
+    "question": "True/False: Early binding supports compilation, late binding supports interpreters.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Early binding** (static) happens at compile-time, allowing compilers to optimize code efficiency. **Late binding** (dynamic) happens at runtime, which is naturally supported by interpreters that process code on the fly."
+  },
+  {
+    "question": "True/False: Statically bound variables can be used as arguments in recursive functions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. While recursion relies on stack-dynamic local variables to maintain separate states for each call, **statically bound variables** (like global variables) can still be accessed and passed as arguments within recursive functions."
+  },
+  {
+    "question": "True/False: The r-value refers to the location or reference.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. The **l-value** (Locator Value) refers to the memory address. The **r-value** refers to the actual **data or content** stored at that address."
+  },
+  {
+    "question": "True/False: The Scope of a variable refers to the domain where a specific binding refers to the same location in memory.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "True. **Scope** defines the region of the program text in which a specific binding (name-to-entity association) is active and visible."
   }
 ]
