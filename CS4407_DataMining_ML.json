@@ -302,5 +302,387 @@
     ],
     "correctIndex": 3,
     "explanation": "Spam detection is a classic binary classification problem (Spam vs. Not Spam). **Logistic Regression** is a standard algorithm used to estimate the probability that a given instance belongs to a specific class."
+  },
+  {
+    "question": "Which of the following is an example of a parametric approach.",
+    "choices": [
+      "KNN Classifier",
+      "Bayes Classifier",
+      "Linear Regression",
+      "Principle Components Analysis"
+    ],
+    "correctIndex": 2,
+    "explanation": "Linear regression establishes a predefined functional form to model the relationship between independent predictors and a dependent response variable, and this characteristic defines the algorithm as a parametric approach.  The algorithm assumes a specific structural equation, so it reduces the complex problem of estimating an arbitrary function down to estimating a finite set of discrete mathematical parameters."
+  },
+  {
+    "question": "Which of the following functions is used to generate a linear regression model within R?",
+    "choices": [
+      "lredict()",
+      "lm()",
+      "lstat()",
+      "glm()"
+    ],
+    "correctIndex": 1,
+    "explanation": "The R programming environment utilizes the lm() function to fit linear models to datasets. This function carries out ordinary least squares regression to calculate the optimal coefficients that minimize the residual sum of squares between observed data points and predicted data points."
+  },
+  {
+    "question": "True or False: Colinearity refers to a situation in which two or more predictor variables are closely related to each other.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Colinearity materializes when two or more independent variables within a multiple regression model exhibit a strong linear correlation, because this phenomenon inflates the variance of the estimated regression coefficients. High correlation between predictors undermines the statistical significance of individual variables while it destabilizes the overall predictive integrity of the model."
+  },
+  {
+    "question": "The names() function within R:",
+    "choices": [
+      "Lists all of the column names in the data frame provided as an argument to the function.",
+      "Attaches the names to make the variables in the data frame available by name.",
+      "Displays the names of the classes identified by the K means clustering algorithm.",
+      "None of these answers"
+    ],
+    "correctIndex": 0,
+    "explanation": "The names() function serves as an introspection tool within the R language structure to extract or assign identifiers to a data object. Invoking this function on a data frame yields a character vector containing all column headers, so developers can effectively verify dataset structures and access specific variables by their string identifiers."
+  },
+  {
+    "question": "True or False: Residual plots are a useful tool for identifying non-linearity.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Residual plots provide a visual diagnostic mechanism to evaluate the appropriateness of a linear regression model.  Graphing the model residuals against the fitted values reveals underlying structural patterns, and a discernible curve or systematic deviation indicates that the true relationship exhibits non-linearity."
+  },
+  {
+    "question": "Residual plots are a useful tool for identifying:",
+    "choices": [
+      "Non-linearity",
+      "Linearity",
+      "Polynomial relationships",
+      "Non-parametric relationships"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plotting residuals against predicted values exposes heteroscedasticity and uncaptured curvature within a dataset. The presence of a funnel shape or a distinct polynomial curve demonstrates that a standard linear approach is insufficient, so analysts utilize these visualizations specifically for identifying non-linearity before applying corrective transformations."
+  },
+  {
+    "question": "True or False: Linear regression is considered a non-parametric approach.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Linear regression constitutes a strictly parametric methodology because it requires an explicit assumption regarding the functional form of the underlying data distribution. The technique models the expected value of the response variable as a linear combination of parameters, whereas non-parametric approaches make no strict assumptions about the geometric shape of the mapping function."
+  },
+  {
+    "question": "True or False: The fix() function identifies values that contain data within a data frame that are inconsistent and automatically corrects these values.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "The fix() function invokes a graphical data editor to permit manual modifications of an R object. The utility does not possess an algorithmic capability to automatically identify or correct inconsistent data values, so analysts must actively intervene to clean and standardize the dataset through manual entry or programmatic data wrangling functions."
+  },
+  {
+    "question": "The values of x and their corresponding values of y are shown in the table below, identify the linear regression model in the form y=mx+b and report the values of m(slope) and b(intercept) as well as the estimated value of y when the value of x is 10.",
+    "image": "value_of_x_is_10.JPG",
+    "choices": [
+      "b = 2.2, m = 0.9, y = 11.2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The original text omits the data table necessary to compute the slope and intercept parameters. Statistical evaluation requires concrete coordinate points to calculate the least squares regression line, and without these empirical inputs, formulating the exact linear model remains a mathematical impossibility."
+  },
+  {
+    "question": "What R command could we use to generate a scatterplot diagram of our data to determine if it forms a linear pattern that would be suitable for linear regression or a non-linear pattern that would require some other technique?",
+    "choices": [
+      "plot()",
+      "hist()",
+      "matrix()",
+      "summary()"
+    ],
+    "correctIndex": 0,
+    "explanation": "The plot() function acts as the primary graphical workhorse in the R programming environment for generating two-dimensional visualizations.  Feeding two continuous numeric vectors into this function produces a scatterplot diagram, and this visual representation allows statisticians to inspect the data distribution for linear or non-linear trends before they apply predictive models."
+  },
+  {
+    "question": "A linear regression model is expressed as y ≈ β0+ β1x where β0 is the intercept and β1 is the slope of the line. Using the following set of data, find the coefficients β0 and β1 rounded to the nearest thousandths place and the predicted value of y when x is 10.\n\n {(-1 , 0), (0 , 2), (1 , 4), (2 , 5)}\n\nThe following equations can be used to compute the value of the coefficients β0 and β1.",
+    "image": "when_x_is_10.JPG",
+    "choices": [
+      "β0 = 1.900, β1 = 1.700, y = 18.900"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ordinary least squares method calculates the optimal slope and intercept coefficients to minimize the sum of squared residuals. Processing the provided coordinate points yields a slope coefficient of 1.700 and an intercept of 1.900, so substituting an input value of 10 into this resulting equation produces a predicted output of 18.900."
+  },
+  {
+    "question": "The income of a company that produces disaster equipment has been expressed as a linear regression model based upon the input variable which is the number of hurricanes projected for the upcoming hurricane season. The model is express as Y = mX + b where Y is the estimated sales in millions of dollars, m = .76 and b = 5. Assuming that the weather service is predicting 6 hurricanes during the season what are the sales in millions of dollars expected to be?",
+    "choices": [
+      "9.56"
+    ],
+    "correctIndex": 0,
+    "explanation": "The linear regression equation models the predicted sales volume based upon the projected frequency of severe weather events. Inserting the forecast of 6 hurricanes into the independent variable position of the specified formula yields a calculation of 0.76 multiplied by 6 plus 5, and this arithmetic operation results in a final estimation of 9.56 million dollars."
+  },
+  {
+    "question": "Assuming K=3, how would the point X be classified using KNN (6 data)?",
+    "image": "K_3_6_KNN.JPG",
+    "choices": [
+      "Red",
+      "Blue"
+    ],
+    "correctIndex": 0,
+    "explanation": "The source text omits the visual diagram required to identify the spatial coordinates of the unclassified point alongside the existing data points.  The algorithm calculates the distance metric between the target instance and all predefined cases so that it can assign the category prevalent among the three nearest neighbors."
+  },
+  {
+    "question": "The value of K should typically be an odd number for what reason?",
+    "choices": [
+      "It ensures that when classifying a solution there will not be a tie",
+      "It makes iterative process of the algorithm more efficient",
+      "It enables the algorithm to be implemented using recursion",
+      "None of these answers"
+    ],
+    "correctIndex": 0,
+    "explanation": "Selecting an odd integer for the tuning parameter prevents tiebreaker scenarios during the classification phase of binary categorization problems. The voting mechanism relies on a strict majority to determine the final class designation, and an even parameter could yield an equal split between competing categories."
+  },
+  {
+    "question": "Assuming K=5, how would the point X be classified using KNN (6 data)?",
+    "image": "K_5_6_KNN.JPG",
+    "choices": [
+      "Red",
+      "Blue"
+    ],
+    "correctIndex": 0,
+    "explanation": "Evaluating this problem demands the original scatter plot to assess the geometrical proximity of the data cluster. The procedure examines the five closest reference nodes to compute the dominant class label, and the provided correct answer signifies that the red category constitutes the statistical majority within that specific localized region."
+  },
+  {
+    "question": "Assuming K=3 how would the point X be classified using KNN (4 data)?",
+    "image": "K_3_4_KNN.JPG",
+    "choices": [
+      "Red",
+      "Blue"
+    ],
+    "correctIndex": 0,
+    "explanation": "Determining the proper classification without the corresponding coordinate plane remains structurally impossible. The calculation engine processes the nearest three data instances to execute a majority vote, which designates the red cluster as the predominant surrounding feature according to the validated solution."
+  },
+  {
+    "question": "Which of the following is NOT a classification technique?",
+    "choices": [
+      "Logistic regression",
+      "Linear discriminant analysis",
+      "K-nearest neighbors",
+      "Principle components analysis"
+    ],
+    "correctIndex": 3,
+    "explanation": "Principal Components Analysis operates as an unsupervised dimensionality reduction technique rather than a supervised classification algorithm.  The mathematical procedure transforms correlated variables into a smaller set of uncorrelated principal components to capture the maximum variance within the dataset without assigning discrete categorical labels."
+  },
+  {
+    "question": "True or False: Bayes theorem classifies cases by calculating the probability that the case belongs to each class and then selecting the one with the highest probability.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Naive Bayes algorithmic framework utilizes conditional probability rules to evaluate the likelihood of specific events occurring given prior knowledge of related conditions. The statistical model calculates the posterior probability for each available class and subsequently assigns the unknown instance to the category exhibiting the maximum computed probability."
+  },
+  {
+    "question": "Assuming K=1 how would the point X be classified using KNN (4 data)?",
+    "image": "K_1_4_KNN.JPG",
+    "choices": [
+      "Red",
+      "Blue"
+    ],
+    "correctIndex": 1,
+    "explanation": "The absence of the source visual graphic prevents a definitive spatial analysis of the problem space. Specifying a parameter of one instructs the algorithm to locate the single absolute closest neighbor to the target coordinate, and this sole reference point dictates the classification outcome entirely."
+  },
+  {
+    "question": "Assuming you have the following data values (4,6,9,20,8,7), what is the min-max normalized value for 6. X* = (X_v - min(X)) / (max(X) - min(X)): Where X is the set of data values and Xv is the value to score. Provide your response rounded to the thousandths place:",
+    "choices": [
+      "0.125"
+    ],
+    "correctIndex": 0,
+    "explanation": "The min-max normalization formula rescales numerical features into a standardized range between zero and one. Extracting the minimum value of four and the maximum value of twenty from the designated set allows analysts to compute the transformed value by subtracting the minimum from the target input and dividing that result by the total statistical range."
+  },
+  {
+    "question": "Assume that you are the data scientist for the GreatFoods! Supermarket chain. In an effort to increase sales of locally produced food such as eggs, milk, and bread, your manager asks you to develop a data mining solution that can identify the probability that a customer will purchase eggs when they purchase milk and vice versa. Which technique are you most likely to use?",
+    "choices": [
+      "Linear Regression",
+      "K-nearest neighbor’s classification",
+      "Bayes Classifier",
+      "Hierarchical clustering"
+    ],
+    "correctIndex": 2,
+    "explanation": "Analyzing the probability of sequential purchasing events requires a statistical methodology capable of evaluating conditional dependencies between distinct categorical variables. The Bayes classifier excels at calculating the likelihood of a specific customer action based upon the prior occurrence of an associated event, making it the optimal analytical framework for market basket analysis."
+  },
+  {
+    "question": "Assuming you have the following data values (3,6,9,14,2), what is the Z-Score normalized value for 5. X* = (X_v - mean(X)) / SD(X): Where X is the set of data values and Xv is the value to score. Provide your response rounded to the thousandths place:",
+    "choices": [
+      "-0.37"
+    ],
+    "correctIndex": 0,
+    "explanation": "The standard score transformation requires calculating both the mathematical mean and the sample standard deviation of the provided numerical array. The normalization process subtracts the computed mean from the target variable to determine the absolute deviation, and dividing this intermediate result by the standard deviation produces the final standardized metric."
+  },
+  {
+    "question": "True or False: Qualitative variables are often referred to as categorical.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Statistical frameworks systematically divide data elements into quantitative variables that represent measurable numeric quantities and qualitative variables that denote descriptive characteristics. Researchers frequently classify qualitative attributes as categorical data because these variables sort individual observations into discrete groups or distinct semantic categories."
+  },
+  {
+    "question": "Assuming a data set with 1000 training outcomes of which 332 are positive, what is the Entropy? Round your answer to the nearest thousandths place.\n\n\t E(v) = -(vₚ/v log₂ vₚ/v) - (vₙ/v log₂ vₙ/v)\n",
+    "choices": [
+      "0.917"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mathematical derivation of the entropy for a dataset relies upon the strict evaluation of positive instances alongside negative instances to quantify inherent randomness. Processing the provided parameters requires establishing the total volume as 1000 events so that the algorithm can determine the constituent probabilities. The system calculates the positive ratio as 332/1000 and the negative ratio as 668/1000, and inserting these proportional fractions into the foundational formula $E(v) = - \\left( \\frac{v_p}{v} \\log_2 \\frac{v_p}{v} \\right) - \\left( \\frac{v_n}{v} \\log_2 \\frac{v_n}{v} \\right)$ produces a final bounded output of approximately 0.917."
+  },
+  {
+    "question": "Assuming a data set with 20 training outcomes of which 12 are positive, what is the Entropy? Round your answer to the nearest thousandths place.\n\n\t E(v) = -(vₚ/v log₂ vₚ/v) - (vₙ/v log₂ vₙ/v)\n",
+    "choices": [
+      "0.971"
+    ],
+    "correctIndex": 0,
+    "explanation": "Evaluating a binary classification space with a reduced sample size demands the identical application of logarithmic transformations to ascertain the magnitude of structural disorder.  Since the dataset contains exactly 20 total observations and 12 positive occurrences, the remaining 8 instances represent the negative class. Substituting the respective probability values of 0.60 and 0.40 into the standard informational equation evaluates to a highly uncertain state because the distribution closely approaches a perfectly uniform split, and this arithmetic operation yields an entropy metric of 0.971."
+  },
+  {
+    "question": "True or False: Assuming we have 30,000,000 species and we eliminate one of them we can say that this decision has a large information gain?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Information gain quantifies the exact reduction in systemic uncertainty after a dataset undergoes a partitioning event based upon a specific attribute test. Eliminating a single biological species from a massive pool of thirty million candidates barely alters the fundamental probability distribution of the entire population. The resulting calculation yields a minuscule differential between the prior entropy and the posterior entropy, so analysts cannot characterize this specific exclusionary decision as producing a large informational advantage."
+  },
+  {
+    "question": "Assuming a data set with 512 training outcomes of which 292 are negatives, what is the Entropy? Round your answer to the nearest thousandths place.\n\n\t E(v) = -(vₚ/v log₂ vₚ/v) - (vₙ/v log₂ vₙ/v)\n",
+    "choices": [
+      "0.986"
+    ],
+    "correctIndex": 0,
+    "explanation": "Executing the quantitative measurement of impurity for this designated collection requires isolating the precise quantities of both classifications before applying the base-two logarithmic function. The environment contains 512 absolute outcomes encompassing 292 negative results, which mathematically dictates the presence of 220 positive events. Processing these fractional components through the mathematical expression $E(v) = - \\left( \\frac{v_p}{v} \\log_2 \\frac{v_p}{v} \\right) - \\left( \\frac{v_n}{v} \\log_2 \\frac{v_n}{v} \\right)$ computes the localized impurity level, and this computation ultimately evaluates to an index of 0.986 due to the relatively balanced ratio between the two competing categorical variables."
+  },
+  {
+    "question": "True or False: Entropy is a measure of the uncertainty or variability in a decision or choice within a decision tree.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Information theory defines entropy as the primary statistical parameter utilized to quantify the amount of disorder or unpredictability existing within a specific data segment. Decision tree algorithms rely heavily on this fundamental concept to evaluate the homogeneity of discrete nodes, because an environment containing an equal distribution of alternating classes manifests maximum variability and returns a maximum entropy value of one. An absolutely pure node containing only identical classifications exhibits zero variability and returns an entropy measurement of exactly zero."
+  },
+  {
+    "question": "True or False: Information gain is the reduction of entropy.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The algorithmic process of constructing a decision tree fundamentally depends upon identifying the optimal attributes that separate mixed data distributions into highly homogeneous subsets.  Information gain represents the mathematical difference between the original entropy of a parent node and the weighted average entropy belonging to the newly created child nodes. Selecting a feature that maximizes this calculated differential ensures the greatest possible reduction in systemic uncertainty while the structural depth of the predictive model increases."
+  },
+  {
+    "question": "What type of network does the following diagram illustrate?",
+    "image": "self_organizing.PNG",
+    "choices": [
+      "Kohonen (self-organizing) Network",
+      "Feed-forward network",
+      "Perceptron",
+      "Distributed Neuron network"
+    ],
+    "correctIndex": 0,
+    "explanation": "The provided question relies on an absent diagram, yet self-organizing maps utilize competitive learning paradigms to project high-dimensional data onto a lower-dimensional grid.  The architecture lacks hidden layers, and the neurons compete for the right to respond to the input data so that only the winning node adjusts the corresponding weight vectors."
+  },
+  {
+    "question": "True or False: Weights in the artificial neuron are adjusted to ensure that the inputs will produce the output while training.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "During the training phase of an artificial neural network, the learning algorithm systematically modifies the synaptic weights.  This iterative optimization process minimizes the error between the actual output and the desired target value so that the model can learn to map input patterns to the correct classifications."
+  },
+  {
+    "question": "True or False: An artificial neuron, like a biological neuron can have multiple inputs and multiple outputs.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "While biological neurons transmit signals through extensive branching structures to influence numerous downstream cells, an artificial neuron processes a vector of multiple input signals to compute a single scalar output value.  The mathematical model passes the weighted sum of the inputs through an activation function, and this computation yields exactly one numerical result that the network can distribute to subsequent layers."
+  },
+  {
+    "question": "What type of network does the following diagram illustrate?",
+    "image": "feedback_network.PNG",
+    "choices": [
+      "Feed-forward network",
+      "Feedback network",
+      "Perceptron",
+      "Distributed Neuron network"
+    ],
+    "correctIndex": 1,
+    "explanation": "The problem references a missing visual representation of a feedback network, which engineers design to incorporate cycles or loops within the connection pathways.  These recurrent connections allow information to flow backward through the system, and this structural characteristic provides the network with a dynamic memory mechanism that is highly effective for processing sequential data streams."
+  },
+  {
+    "question": "True or False: In a biological neuron, signals are received through the axon to the synapses where an activation decision is made.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Biological neurons receive incoming chemical and electrical signals through dendritic trees rather than the axon.  The cell body integrates these diverse inputs to determine an activation state, and if the electrical potential exceeds a specific threshold, the cell transmits an action potential down the axon toward the synaptic terminals to communicate with target cells."
+  },
+  {
+    "question": "______________ wrote a book in 1969 describing the limitations of the perceptron which led to a drop in interest in neural networks for many years.",
+    "choices": [
+      "Minsky and Papert",
+      "Frank Rosenblatt",
+      "McCulloch and Pitts",
+      "Rumelhart and McClelland"
+    ],
+    "correctIndex": 0,
+    "explanation": "Marvin Minsky and Seymour Papert published a highly influential mathematical analysis detailing the computational boundaries of simple neural models. The researchers proved that single-layer perceptrons cannot solve non-linearly separable problems like the XOR logic gate, and this foundational critique directly precipitated the first major reduction in funding and research focus for the field of artificial intelligence."
+  },
+  {
+    "question": "Which of the following is not a category of transfer function in neural networks?",
+    "choices": [
+      "Linear",
+      "Threshold",
+      "Sigmoid",
+      "Correlation"
+    ],
+    "correctIndex": 3,
+    "explanation": "Neural networks rely on transfer functions to define the activation state of a node given an input or set of inputs, and standard mathematical forms include linear, threshold, and sigmoid curves.  Correlation represents a statistical metric used to evaluate the linear relationship between two distinct variables rather than a function designed to map inputs to an activation state within a machine learning model."
+  },
+  {
+    "question": "The concept of the perceptron was developed in the 1960’s by:",
+    "choices": [
+      "Frank Rosenblatt",
+      "McCulloch and Pitts",
+      "Rumelhart and McClelland",
+      "Bar and Yam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Frank Rosenblatt conceptualized the perceptron at the Cornell Aeronautical Laboratory to model biological visual processing systems. The researcher designed this early artificial neural network to perform binary classification tasks, and the algorithmic structure laid the essential groundwork for modern deep learning architectures."
+  },
+  {
+    "question": "Assume that you have the following perceptron with the assigned weights and the input values as shown. Further assuming that your perceptron will use an activation function based upon a simple step function with a threshold value of .5(summation of weighted inputs must exceed .5), will the neuron fire and output a value and if so what value?",
+    "image": "perceptron_weighed_0101.PNG",
+    "choices": [
+      "Will not fire / no value",
+      ".10",
+      ".38",
+      ".11"
+    ],
+    "correctIndex": 0,
+    "explanation": "The original prompt omits the diagram detailing the specific input values and the associated synaptic weights. Calculating the activation state of a perceptron requires computing the dot product of the input vector and the weight vector, and the neuron will solely fire if this resulting summation strictly exceeds the defined threshold parameter of 0.5. "
+  },
+  {
+    "question": "The first artificial neural network model was developed by:",
+    "choices": [
+      "McCulloch and Pitts",
+      "Rumelhart and McClelland",
+      "Bar and Yam",
+      "Kauffman"
+    ],
+    "correctIndex": 0,
+    "explanation": "Warren McCulloch and Walter Pitts introduced the first mathematical model of a simplified biological neuron to demonstrate that networks of artificial cells could compute any computable function. The researchers based the theoretical framework on propositional logic, and this pioneering publication established the foundational principles linking neurobiology with digital computation."
   }
 ]
