@@ -84,6 +84,18 @@
                This works effectively because auto-fit columns won't always consume 100% width if there's extra space. */
             justify-content: center;
         }
+
+        /* --- ENHANCED CODE AND WHITE SPACE FORMATTING --- */
+        /* This rule preserves newlines (\n), tabs (\t), and 
+           consecutive spaces, which is essential for code 
+           and BNF notation. 'pre-wrap' also ensures the text 
+           wraps correctly on mobile screens. */
+        #questionText, #explanation {
+            white-space: pre-wrap;
+            tab-size: 4; /* Ensures tabs are a consistent width */
+            -moz-tab-size: 4; /* Compatibility for Firefox */
+        }
+        /* ------------------------------------------------ */
     </style>
 </head>
 <body class="font-sans flex flex-col items-center p-6 min-h-screen overflow-y-auto">
@@ -930,3 +942,4 @@
     </script>
 </body>
 </html>
+
