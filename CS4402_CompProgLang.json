@@ -1031,5 +1031,841 @@
     ],
     "correctIndex": 0,
     "explanation": "True. **Scope** defines the region of the program text in which a specific binding (name-to-entity association) is active and visible."
+  },
+  {
+    "question": "True/False: The stored-program computer architecture was a significant innovation by storing the program and data in memory.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The stored-program concept represents a foundational shift in computational design because the architecture houses both the executable instructions and the operational data within the same physical memory space. This structural consolidation eliminates the necessity to physically rewire the hardware for different tasks, and it establishes the fundamental operational paradigm for virtually all modern computing systems."
+  },
+  {
+    "question": "A program that translates or implements a computation specified in an abstract form into the detailed form needed for execution on a computer is called a:",
+    "choices": [
+      "compiler"
+    ],
+    "correctIndex": 0,
+    "explanation": "The process of software translation relies upon a specialized program known as a compiler to convert high-level abstractions into machine-executable directives.  The translation engine parses the syntax of the source code while it simultaneously generates the precise binary sequences required by the target processor architecture."
+  },
+  {
+    "question": "Using your knowledge of binding, lifetime, and scope rules, determine what the following code will produce as output  ... assume that the code in in the Java language:\npublic class test {\n    public static void main(String[] args) {\n        int x,y;\n        x=1;\n        y=my_int(x);       \n        System.out.println(x);\n    }\n\n    static int my_int(x) {\n        x = 5;\n        return(x+x);\n    }\n}",
+    "choices": [
+      "5",
+      "10",
+      "1",
+      "None of these answers"
+    ],
+    "correctIndex": 2,
+    "explanation": "The execution of this program demonstrates the principle of pass-by-value parameter binding within the Java programming environment.  The main method allocates a distinct memory location for the integer variable, and the subsequent function call merely transmits a duplicate copy of the numeric value to the parameter of the secondary method. The local modification within the subroutine exclusively affects the isolated parameter variable, so the original variable within the main execution scope retains the initial value of one."
+  },
+  {
+    "question": "The most famous descendent of Algo is ____ which was developed in the 1960's by Niklaus Wirth.",
+    "choices": [
+      "pascal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The evolution of programming paradigms heavily features the Algol family tree, and Niklaus Wirth designed Pascal to serve as a highly structured successor to these early algorithmic languages.  The inventor specifically engineered this new syntax to facilitate the teaching of structured programming methodologies, and the resulting language enforces rigorous data typing along with clear control flow structures."
+  },
+  {
+    "question": "Select the only best answer.  The function of the symbolic assembler is to.",
+    "choices": [
+      "translate the symbols for instructions into binary bit sequences",
+      "generate assembly language",
+      "optimize machine language code",
+      "provide high level level language abstraction for programmers"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hardware execution strictly requires numeric binary sequences, and the symbolic assembler functions as the critical translation bridge between human-readable mnemonics and these machine-level instructions.  The software maps each textual operation code directly to the corresponding processor directive while it simultaneously resolves memory addresses for all declared structural labels."
+  },
+  {
+    "question": "A programming language developed in the 1950's for business data processing.",
+    "choices": [
+      "cobol"
+    ],
+    "correctIndex": 0,
+    "explanation": "Corporate and administrative sectors demanded a specialized tool for extensive record keeping, and a dedicated committee introduced COBOL to address these specific commercial requirements. The architecture of the language emphasizes English-like syntax along with robust file manipulation capabilities, and this foundational design ensures long-term viability for massive financial data processing systems."
+  },
+  {
+    "question": "The Fortran programming language was developed by a team led by _______ who later developed a method of describing programming languages syntax.",
+    "choices": [
+      "John Backus",
+      "Peter Naur",
+      "Niklaus Wirth",
+      "Dennis Ritchie"
+    ],
+    "correctIndex": 0,
+    "explanation": "John Backus spearheaded the creation of FORTRAN at IBM to revolutionize scientific and engineering computation.  The computer scientist subsequently collaborated with Peter Naur to formulate the Backus-Naur Form, and this formal metasyntax provides the universal standard for specifying the grammatical rules of context-free languages."
+  },
+  {
+    "question": "Which of the following is NOT a programming structure?",
+    "choices": [
+      "sequence",
+      "selection",
+      "object oriented programming",
+      "repetition"
+    ],
+    "correctIndex": 2,
+    "explanation": "The foundational theorems of computer science establish that any computable algorithm requires only sequence, selection, and repetition structural elements. Object-oriented programming represents a broader architectural paradigm rather than a primitive control flow structure."
+  },
+  {
+    "question": "Given that n and count are both of type int, which statement is true about the following code segments?\n\nI\tfor (count=1; count <= n; count++)\n\t\tSystem.out.println(count);\n\nII\tcount = 1;\n\twhile (count <= n)\n\t{\n\t\tSystem.out.println(count);\n\t\tcount++;\n\t}",
+    "choices": [
+      "I and II are exactly equivalent for all input values of n.",
+      "I and II are exactly equivalent for all input values n>= 1, but differ when n<= 0.",
+      "I and II are exactly equivalent only when n = 0.",
+      "I and II are exactly equivalent only when n is even.",
+      "I and II are not equivalent for any input values of n."
+    ],
+    "correctIndex": 0,
+    "explanation": "The execution paths of both iteration constructs yield identical results regardless of the integer input provided.  The initialization, termination condition, and increment operations strictly mirror each other, and consequently, the processor executes the exact same sequence of instructions within the loop bodies."
+  },
+  {
+    "question": "Consider the following code segment:\n\nfor (int k=0; k<20; k=k+2)\n{\n    if (k%3 == 1)\n        System.out.print(k+\"  \");\n}\n\nWhat is printed when this code is executed?",
+    "choices": [
+      "4  16",
+      "4  10  16",
+      "0  6  12  18",
+      "1  4  7  10  13  16  19",
+      "0  2  4  6  8  10  12  14  16  18"
+    ],
+    "correctIndex": 1,
+    "explanation": "The iterative structure increments the integer variable by two during each cycle while the modulo operator evaluates the remainder of the division by three. The conditional statement strictly selects the values four, ten, and sixteen because these specific integers satisfy both the even progression and the specified remainder constraint."
+  },
+  {
+    "question": "What will the output of the following code be?\n\nc=1;\nswitch (c) {\n    case 1:\n        print '1';\n    case 2:\n        print '2';\n        break;\n    case 3:\n        print '3';\n        break;\n}",
+    "choices": [
+      "1 2 3",
+      "1",
+      "1 2",
+      "2 3"
+    ],
+    "correctIndex": 2,
+    "explanation": "The absence of a break command within the initial case block initiates a computational phenomenon known as fall-through execution. The control flow matches the first condition to print the character one, and furthermore, the processor continues to execute the subsequent block to print the character two before it encounters the explicit termination directive."
+  },
+  {
+    "question": "Consider the following code segment\nif (n != 0 && n / n > 1000)\n    statement1;\nelse\n    statement2;\n\nif n is of type int and has a value of 0 when the segment is executed, what will happen?",
+    "choices": [
+      "Neither statement1 nor statement2 will be executed; control will pass to the first statement following the if statement",
+      "A syntax error will occur",
+      "statement1, but not statement2, will be executed",
+      "statement2, but not statement1 will be executed"
+    ],
+    "correctIndex": 3,
+    "explanation": "The logical AND operator implements short-circuit evaluation, and therefore, the processor immediately aborts the condition verification when the first expression evaluates to false. This mechanism successfully prevents a mathematical division by zero exception from occurring, whereas the control flow subsequently bypasses the primary statement to execute the alternative branch."
+  },
+  {
+    "question": "What will the output be for the following poorly formatted program segment, if the input value for num is 22?\n\nint num = call to a method that reads an integer;\nif(num>0)\nif(num%5 ==0)\nSystem.out.println(num);\nelse System.out.println(num+\" is negative\");",
+    "choices": [
+      "22",
+      "4",
+      "22 is negative",
+      "2 is negative"
+    ],
+    "correctIndex": 2,
+    "explanation": "Compilers rigidly associate an alternative clause with the closest preceding unclosed conditional statement despite any misleading visual indentation.  Since the input value equals twenty-two, the primary condition evaluates to true, but the secondary modulo evaluation fails; consequently, the processor executes the alternative branch to print an inaccurate message."
+  },
+  {
+    "question": "The output of compilation is code generation which typically translates a language construct into assembly language and from there into machine executable code. What language construct was the following segment of assembler code generated from?\n\n        compute        R1,expression\n        jump.eq        R1,L1\n        statement-1\n        jump           L2\nL1:     statement-2\nL2:",
+    "choices": [
+      "while statement",
+      "for loop statement",
+      "case statement",
+      "if statement"
+    ],
+    "correctIndex": 3,
+    "explanation": "The provided assembly sequence evaluates a condition and conditionally bypasses an instruction block to execute an alternative segment based upon the processor flags. This exact branching pattern implements the standard conditional logic of a high-level selection construct."
+  },
+  {
+    "question": "The correct looping statement to use when the number of iterations is known is:",
+    "choices": [
+      "The for loop",
+      "The while loop",
+      "The do .. while loop",
+      "None of these answers"
+    ],
+    "correctIndex": 0,
+    "explanation": "Software engineering principles dictate the utilization of this specific loop variant when developers can predetermine the exact iteration count. The control structure encapsulates the initialization, condition testing, and incremental steps within a single concise declaration to guarantee predictable execution flow."
+  },
+  {
+    "question": "The ___ statement implements a pre-test loop that is used when the number of iterations is NOT known.",
+    "choices": [
+      "while"
+    ],
+    "correctIndex": 0,
+    "explanation": "This specific statement provides the optimal semantic structure for executing an indefinite iterative sequence. The processor evaluates the logical condition prior to every execution cycle, and this pre-test mechanism ensures that the inner block might never execute if the initial prerequisite remains unsatisfied."
+  },
+  {
+    "question": "True/False: The switch/case statement is an example of the sequence structure implemented within a programming language?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "The structural architecture of a selection construct represents a multi-way branching paradigm rather than a linear sequence. The compiler evaluates a designated expression to transfer execution control to a specific matching path, thereby deviating from strict sequential processing."
+  },
+  {
+    "question": "True/False: Loop statements are the most difficult statements to program.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Constructing robust iterative structures demands significant analytical rigor to ensure proper initialization, accurate condition testing, and guaranteed termination. Programmers frequently encounter complex logic errors, including off-by-one defects and infinite cycles, which establishes these structures as inherently challenging elements of software development."
+  },
+  {
+    "question": "What type of programming approach represents the combination of imperative programming with subprograms?",
+    "choices": [
+      "structured programming",
+      "symbolic programming",
+      "sequential programming",
+      "procedural programming"
+    ],
+    "correctIndex": 0,
+    "explanation": "The integration of procedural abstractions into imperative logic forms the foundation of this paradigm. The methodology relies upon subroutines and block structures to enhance code readability while it significantly mitigates the structural chaos associated with unrestricted jump instructions."
+  },
+  {
+    "question": "Which of the following is NOT a component of a subprogram?",
+    "choices": [
+      "A declaration which defines the interface to the subprogram",
+      "Local declarations which are accessible only within the body of the subprogram",
+      "A sequence of executable statements",
+      "Global variables that can be used within the subprogram"
+    ],
+    "correctIndex": 3,
+    "explanation": "A robust subprogram encapsulates local declarations, an explicit sequence of statements, and a defined interface to process data securely. Entities existing outside the scope boundary of the subroutine violate the principles of strict encapsulation, and consequently, they do not constitute an internal architectural component."
+  },
+  {
+    "question": "In the following code segment, the variable A is a:\n\nint B=1;\nint Z;\nZ = myfunc(B);\n\nint myFunc( int A ) {\n    return (A+1);\n}",
+    "choices": [
+      "Formal parameter",
+      "Actual Parameter",
+      "Return Type",
+      "Global variable"
+    ],
+    "correctIndex": 0,
+    "explanation": "The identifier declared within the definition of the function header serves as the receiving placeholder variable.  This distinct element accepts the transmitted value during the subroutine invocation so that the internal logic can execute computations seamlessly."
+  },
+  {
+    "question": "In the following code segment, the variable B is an:\n\nint B=1;\nint Z;\nZ = myfunc(B);\n\nint myFunc( int A ) {\n    return (A+1);\n}",
+    "choices": [
+      "Formal Parameter",
+      "Actual Parameter",
+      "Return Type",
+      "Local Variabe"
+    ],
+    "correctIndex": 1,
+    "explanation": "The variable specified within the parentheses during the subroutine invocation represents the transmitted element. The runtime environment evaluates this specific identifier to pass the underlying data value directly into the receiving function structure."
+  },
+  {
+    "question": "True/Flase: For complex computations functions may be specified to return multiple values.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Advanced language architectures frequently support mechanisms to transmit multiple discrete values back to the calling scope. Developers implement complex objects, tuple structures, or reference parameters to bypass the traditional scalar return limitations entirely."
+  },
+  {
+    "question": "True/False: The real disadvantage of call-by-reference is that the mechanism is inherently unsafe.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Transmitting memory addresses directly exposes the original data structures to unintended modifications from within the invoked subroutine.  This unrestricted access introduces severe vulnerabilities, and erroneous code execution can corrupt the external state permanently."
+  },
+  {
+    "question": "True/False: a subprogram is an object within a program that can be invoked from elsewhere within the program.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "A subprogram operates as a discrete sequence of executable instructions rather than an instantiated entity. While functional programming paradigms might treat subroutines as first-class citizens, standard procedural implementations fundamentally lack the state-holding data structures that characterize true objects."
+  },
+  {
+    "question": "True/False: Subprograms that return a value are called procedures.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Computer science terminology rigorously defines a subroutine that calculates and returns a value as a function. Conversely, the alternative structural variant executes a designated sequence of actions without transmitting any data back to the originating caller."
+  },
+  {
+    "question": "True/False: The semantics of a procedure call are as follows: the current sequence of instructions are executed in parallel; the sequence of instructions within the procedure body is executed; upon completing the procedure body, the procedure is garbage collected.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard procedure invocations follow a strictly synchronous and sequential execution model rather than parallel execution. The primary thread suspends operation while the subroutine processes the instructions, and parallel execution requires specialized concurrent programming constructs instead of basic procedural calls."
+  },
+  {
+    "question": "True/False: Actual parameters can only be specified as variables",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "The syntax of modern programming languages permits developers to supply literal constants, mathematical expressions, or the results of nested function calls as the transmitted arguments. The compiler evaluates these diverse expressions to generate a concrete value prior to the subroutine transfer."
+  },
+  {
+    "question": "True/False: The semantics in which the address of a variable is bound to the name of the formal parameter variable is known as copy-in semantics or call-by-value.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Binding the precise memory address of an argument to the receiving parameter designates the call-by-reference semantic model. The copy-in mechanism strictly duplicates the underlying data content rather than sharing the memory location across execution scopes."
+  },
+  {
+    "question": "Which of the following is NOT cloned when a recursive call is made?",
+    "choices": [
+      "Code",
+      "Local variables",
+      "Parameters",
+      "Static variables in the program"
+    ],
+    "correctIndex": 3,
+    "explanation": "The runtime environment allocates independent stack frames to preserve the local variables and parameters for each iterative depth level. However, persistent global entities reside within a specialized memory segment, and therefore, the system accesses the singular instance of this data without executing any duplication processes."
+  },
+  {
+    "question": "The following code segment is an example of:\n\nvoid f() {\n   ... f() ... \n}",
+    "choices": [
+      "direct recursive call",
+      "indirect recursive call",
+      "an Iterative program",
+      "an Object instantiation"
+    ],
+    "correctIndex": 0,
+    "explanation": "The subroutine explicitly invokes its own identifier within the internal instruction block. This structural pattern defines an immediate self-referential cycle, wherein the function initiates a continuous loop of execution until a specific condition terminates the sequence."
+  },
+  {
+    "question": "The following code segment is an example of:\n\nvoid f() {\n    ... g() ...\n}\nvoid g() {\n   ... f() ...\n}",
+    "choices": [
+      "a direct recursive call",
+      "an indirect recursive call",
+      "a nested function call",
+      "functional programming"
+    ],
+    "correctIndex": 1,
+    "explanation": "The initial function invokes a secondary subroutine, and this subsequent process then triggers the original function in a continuous circuit.  This cyclical dependency creates an indirect execution loop, which requires careful architectural planning to prevent infinite recursion chains."
+  },
+  {
+    "question": "In the following code segment, the statement if (k < 0) return; is called the what?\n\nvoid badPrint2( int k ) {\n    if (k < 0) return;\n    System.out.println(k);\n    badPrint2( k+1 );\n}",
+    "choices": [
+      "base case"
+    ],
+    "correctIndex": 0,
+    "explanation": "The conditional statement that strictly terminates the self-referential execution cycle represents the boundary threshold. This critical mathematical mechanism prevents stack overflow exceptions by ensuring that the computational descent eventually halts when the specified logical condition evaluates to true."
+  },
+  {
+    "question": "True/False: Using recursion always makes your code faster.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Self-referential algorithms consistently generate significant computational overhead due to the continuous allocation of memory for execution stack frames. While the methodology often produces highly elegant and readable code, the corresponding iterative loops frequently execute with superior speed and systemic efficiency."
+  },
+  {
+    "question": "True/False: An algorithm can often be implemented with either recursion or iteration, however iteration typically takes less memory.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Iterative control structures maintain computational state by utilizing a finite set of localized variables. Conversely, the alternative methodology demands a new activation record upon the call stack for every sequential depth level, and consequently, the iterative approach invariably consumes substantially less dynamic memory."
+  },
+  {
+    "question": "True/False: An algorithm can often be implemented with either recursion or iteration, however recursion is typically faster.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "The architectural mechanics of self-referential invocations require the processor to manage context switching, parameter passing, and return address tracking continuously. These extensive systemic operations introduce severe latency, whereas iterative loops process instructions linearly with negligible administrative overhead."
+  },
+  {
+    "question": "Which of the following is NOT an example of a system programming language?",
+    "choices": [
+      "Algol",
+      "PL/1",
+      "Pascal",
+      "Tcl"
+    ],
+    "correctIndex": 3,
+    "explanation": "Systems programming languages explicitly manage hardware resources and system software layers, requiring strict typing and low-level memory control. Conversely, Tcl (Tool Command Language) operates as a high-level scripting language primarily designed for rapid prototyping, GUI development, and automating administrative tasks rather than constructing foundational operating system kernels."
+  },
+  {
+    "question": "Which of the following is NOT an example of a scripting language?",
+    "choices": [
+      "Perl",
+      "Python",
+      "Rexx",
+      "Haskell"
+    ],
+    "correctIndex": 3,
+    "explanation": "Scripting languages typically execute instructions dynamically via interpreters and facilitate the integration of diverse software components.  Haskell represents a purely functional, statically typed, and compiled programming language renowned for its rigorous mathematical foundations, which sharply contrasts with the dynamic and pragmatic nature of conventional scripting environments."
+  },
+  {
+    "question": "Which of the following is NOT an example of a markup language?",
+    "choices": [
+      "HTML",
+      "SGML",
+      "XML",
+      "Tex",
+      "Tcl"
+    ],
+    "correctIndex": 4,
+    "explanation": "Markup languages utilize tags and structural annotations to dictate the formatting, presentation, or semantic categorization of text documents. Tcl functions strictly as an executable scripting language capable of controlling applications and processing logic, completely lacking the structural annotation capabilities inherent to HTML, XML, or TeX."
+  },
+  {
+    "question": "The Tool Command Language with the widget Toolkit (Tcl/Tk) was developed by ______.",
+    "choices": [
+      "John Ousterhout",
+      "Bjarne Stroustrup",
+      "Larry Wall",
+      "Guido van Rossum"
+    ],
+    "correctIndex": 0,
+    "explanation": "John Ousterhout engineered the Tcl language and its accompanying Tk graphical toolkit in the late 1980s while working at the University of California, Berkeley. He specifically designed the framework to provide an easily embeddable command language that could seamlessly bind C libraries and generate cross-platform graphical user interfaces."
+  },
+  {
+    "question": "The Python language was developed by _____ in 1991 while he was working for the research institute CWI in the Netherlands.",
+    "choices": [
+      "Guido van Rossum",
+      "Linus Torvald",
+      "Dennis Richie",
+      "John Backus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Guido van Rossum conceived Python during the late 1980s and released the first official iteration in 1991. He designed the language as a successor to the ABC programming environment, prioritizing extreme code readability, expressive syntax, and comprehensive standard library support."
+  },
+  {
+    "question": "In scripting languages, memory management is done by a ____ and not by the programmer.",
+    "choices": [
+      "garbage collector"
+    ],
+    "correctIndex": 0,
+    "explanation": "Modern scripting architectures liberate developers from manual memory allocation and deallocation routines to accelerate the software development lifecycle.  The runtime environment employs an automated garbage collector that continuously monitors memory usage, identifying and reclaiming unreferenced objects to prevent memory leaks and optimize system resources automatically."
+  },
+  {
+    "question": "True/False: Perl was originally developed by Linus Trovalds as a scripting language for Windows.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Larry Wall developed Perl in 1987 as a highly capable text processing and report generation language explicitly for Unix operating systems, not Windows. Linus Torvalds is the principal architect of the Linux kernel and the Git version control system."
+  },
+  {
+    "question": "True/False: Most scripting languages are interpreted.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The traditional execution model for scripting languages relies upon an interpreter that reads, parses, and executes the source code sequentially at runtime. This dynamic execution eliminates the necessity for a distinct pre-compilation phase, thereby enabling rapid iteration and immediate execution of scripts."
+  },
+  {
+    "question": "True/False: Python is an older language than either Tcl/Tk and Perl.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "The historical timeline of programming languages indicates that Larry Wall released Perl in 1987, and John Ousterhout introduced Tcl in 1988. Guido van Rossum officially published the first version of Python several years later, in 1991, making it the youngest language among the three."
+  },
+  {
+    "question": "True/False: Python is a programming language that has the diverse characteristics of being interpreted, byte-compiled, interactive, and object-oriented.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Python features a highly versatile architectural design that compiles source code into intermediate bytecode before an integrated virtual machine interprets and executes it. The environment inherently supports robust object-oriented paradigms, while its interactive Read-Eval-Print Loop (REPL) allows developers to execute commands dynamically and inspect results instantaneously."
+  },
+  {
+    "question": "The following segment of code in Perl produces the ouput 2. This indicates that Perl is:\n\nprint 1+\"1\"",
+    "choices": [
+      "weakly typed",
+      "strongly typed",
+      "dynamically scoped",
+      "compiled"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perl exhibits weak typing (or loose typing) characteristics because the interpreter automatically coerces data types to facilitate the requested operation.  When the arithmetic addition operator encounters a string literal containing a numeric character, the system implicitly converts the string into an integer to complete the mathematical calculation successfully."
+  },
+  {
+    "question": "The following segment of code in Python will produce an error. This indicates that Python tends to be more:\n\nprint 1+\"1\"",
+    "choices": [
+      "strongly typed",
+      "weakly typed",
+      "statically scoped",
+      "dynamically compiled"
+    ],
+    "correctIndex": 0,
+    "explanation": "Python strictly enforces data type integrity during execution, thereby classifying it as a strongly typed language. The runtime environment vehemently refuses to implicitly concatenate or add an integer to a string, and consequently, it throws a Type Error requiring the developer to implement an explicit conversion function before proceeding."
+  },
+  {
+    "question": "What elements will the Perl language @a array consist of?\n$_ = ' a b c ';\n\nmy @a = split();",
+    "choices": [
+      "' ', 'a', ' ', 'b', ' ', 'c', ' '",
+      "undef, 'a', 'b', 'c', undef",
+      "'a', 'b', 'c'",
+      "' ', 'a', 'b', 'c'"
+    ],
+    "correctIndex": 2,
+    "explanation": "Executing the `split()` function without explicit arguments inside Perl triggers a specialized default behavior targeting the `$_` variable. The algorithm automatically trims all leading whitespace from the target string and subsequently tokenizes the remaining characters using any internal contiguous whitespace as the delimiter, effectively isolating the alphanumeric characters into a clean array."
+  },
+  {
+    "question": "What output will the following segment of Perl code produce?\nmy @a = (0, 1, 2);\nmy $b = @a;\n\nprint $b;",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "0 1 2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Assigning an array structure directly into a scalar variable forces the Perl interpreter to evaluate the array within a scalar context. Under these specific conditions, the runtime environment computes and returns the absolute number of elements contained within the array, which precisely equals three."
+  },
+  {
+    "question": "In Perl, to test if the variable $str contains the word “abc” you would use:",
+    "choices": [
+      "if ($str = ~/abc/)",
+      "if ($str == “abc”)",
+      "if ($str = “abc”)",
+      "if ($str contains “abc”)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perl utilizes a highly specialized binding operator `=~` to apply regular expression pattern matching against target variables.  The syntax `~/abc/` instructs the engine to scan the scalar variable `$str` to verify if the specific character sequence \"abc\" exists anywhere within the string boundaries."
+  },
+  {
+    "question": "In Perl, given the following code, the statement if($var) will evaluate to:\n$var = “False”",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Perl boolean evaluation system operates under very strict definitions regarding false values: only the number zero, the string \"0\", the empty string \"\", and undefined variables evaluate to false. Since the string literal \"False\" constitutes a non-empty string that is not specifically \"0\", the interpreter categorically evaluates the condition as true."
+  },
+  {
+    "question": "In Perl, a scalar variable can hold:",
+    "choices": [
+      "256 characters",
+      "1024 characters",
+      "32768 characters",
+      "Depends on system specifications"
+    ],
+    "correctIndex": 3,
+    "explanation": "The memory architecture of Perl dynamically allocates resources for scalar variables to accommodate data of virtually any size. The ultimate capacity of a string or numeric scalar is bounded entirely by the available physical RAM and the virtual memory limits imposed by the underlying hardware and operating system architecture."
+  },
+  {
+    "question": "When Perl evaluates  $expr = 1 + 2 * 3 – 4  the value of $expr will contain:",
+    "choices": [
+      "5",
+      "-3",
+      "3",
+      "None of these answers"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Perl mathematical execution engine strictly adheres to the standard algebraic order of operations (PEMDAS/BODMAS). The processor calculates the multiplication segment first ($2 * 3 = 6$), proceeds to the addition ($1 + 6 = 7$), and concludes with the subtraction ($7 - 4 = 3$) to yield the final correct result."
+  },
+  {
+    "question": "True/False: JavaScript was derived from the Java language.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Netscape originally developed JavaScript (initially named Mocha, then LiveScript) to provide lightweight scripting capabilities within web browsers. The creators adopted the \"Java\" nomenclature strictly as a marketing strategy to capitalize on the soaring popularity of Sun Microsystems' Java language, despite the two languages possessing completely distinct structural architectures, typing systems, and execution models."
+  },
+  {
+    "question": "True/False:  The following segment of JavaScript code is valid.\nif (how == \"reverse\") \n{\n    parent.page1.location.href=\"page2.html\"\n}\nelse\n{\n    parent.page2.location.href=\"page2.html\"\n}",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "The provided code snippet exhibits a critical syntax violation because standard JavaScript statements must terminate with a semicolon. The absence of semicolons after the href assignment declarations renders the block technically invalid according to strict parsing rules, even though some modern browser engines might attempt to aggressively auto-insert semicolons to prevent catastrophic execution failures."
+  },
+  {
+    "question": "True/False:  The following code segment represents a valid declaration of a variable in JavaScript.\n\nvar KeepVar;",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The `var` keyword represents the traditional, syntactically correct method for declaring variables within the JavaScript programming environment. When the engine executes this statement, it allocates memory for the identifier `KeepVar` and automatically initializes it with the standard `undefined` state until a concrete value is explicitly assigned."
+  },
+  {
+    "question": "Assuming the source text below, what will the following regular expression (in red)  match to?\n..stage\nSource Text:\nAll the world's a stage, And all the men and women merely players. They have their exits and their entrances; And one man in his time plays many parts...",
+    "choices": [
+      "stage",
+      "_stage",
+      "a stage",
+      "No matches"
+    ],
+    "correctIndex": 2,
+    "explanation": "The dot `.` character within regular expression syntax operates as a universal wildcard capable of matching any single character except line breaks.  The pattern requires exactly two arbitrary characters directly preceding the literal string \"stage\", and traversing the source text reveals that the sequence \"a \" (the letter 'a' followed by a space) fulfills this precise structural requirement."
+  },
+  {
+    "question": "Assuming the source text below, what will the following regular expression (in red) match to?\n[ ]\\w{7,7}[.]\nSource Text:\nAll the world's a stage, And all the men and women merely players. They have their exits and their entrances; And one man in his time plays many parts...",
+    "choices": [
+      "world's",
+      "world's players.",
+      "players.",
+      "entranc"
+    ],
+    "correctIndex": 2,
+    "explanation": "This specific regex pattern demands a precise architectural sequence: an explicit space character `[ ]`, followed by exactly seven word characters `\\w{7,7}`, and terminating with a literal period `[.]`. Scanning the provided literature, the exact sequence \" players.\" perfectly satisfies this rigorous geometric constraint."
+  },
+  {
+    "question": "The expression {4,8} will match:",
+    "choices": [
+      "The numbers 4,5,6,7,8",
+      "Numbers between 4 and 8 (5,6,7)",
+      "Numbers 4 and 8",
+      "Doesn't match numbers but positions 4-8 in a string."
+    ],
+    "correctIndex": 0,
+    "explanation": "In the context of regular expression quantification, curly braces define a specific range of repetition for the preceding character or group.  The notation `{4,8}` explicitly instructs the matching engine to accept occurrences that repeat between a minimum of four times and a maximum of eight times, inclusive."
+  },
+  {
+    "question": "Which of the following regex expressions would match the following:  MyDogIs12 ",
+    "choices": [
+      "{a-z}{A-Z}{0-9}",
+      "[a-zA-Z]",
+      "[a-z0-9]",
+      "[a-zA-Z0-9]"
+    ],
+    "correctIndex": 3,
+    "explanation": "The target string \"MyDogIs12\" comprises a heterogeneous mixture of uppercase letters, lowercase letters, and numeric digits. To successfully capture this entire lexical diversity, the regular expression requires a comprehensive character class `[a-zA-Z0-9]` that explicitly includes the full alphabetical spectrum alongside all standard decimal integers."
+  },
+  {
+    "question": "What will the following regular expresssion match to?  \n([\\w]+[-._+&])*[\\w]+@([-\\w]+[.])+[a-zA-Z]{2,6}",
+    "choices": [
+      "A strong password",
+      "A phone number field",
+      "An email address",
+      "The URL of a web site"
+    ],
+    "correctIndex": 2,
+    "explanation": "This complex string processing pattern meticulously defines the standard architectural format of electronic mail addresses.  It requires an initial alphanumeric string sequence containing permitted special characters, the mandatory central `@` symbol, a subsequent domain name string, a literal period delimiter, and a concluding top-level domain designation comprising two to six alphabetical characters."
+  },
+  {
+    "question": "True/False:  The basic regular expression is pattern matching? ",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The fundamental mathematical purpose of regular expressions (regex) is to facilitate advanced pattern matching within text strings. The technology utilizes a specialized formal syntax to define precise search criteria, enabling developers to execute highly complex validation, extraction, and string replacement operations efficiently."
+  },
+  {
+    "question": "Real world objects contain what two things?",
+    "choices": [
+      "state and behavior",
+      "methods  and attributes",
+      "variables and behaviors",
+      "instances and allocations"
+    ],
+    "correctIndex": 0,
+    "explanation": "Entities in the physical realm inherently possess specific conditions alongside observable actions, and software engineering paradigms model these entities by defining state and behavior. The state encapsulates the current values of internal attributes, while the behavior dictates the operational capabilities that manipulate those internal data structures. "
+  },
+  {
+    "question": "The class that inherits attributes and behaviors from the base class is called the:",
+    "choices": [
+      "super class",
+      "derived class",
+      "abstract class",
+      "concrete class"
+    ],
+    "correctIndex": 1,
+    "explanation": "Object-oriented architectures establish hierarchical relationships between distinct components to promote code reuse and structural organization. A derived class extends a fundamental base class by inheriting existing properties while introducing specialized methods to refine the computational capabilities of the specific software module. "
+  },
+  {
+    "question": "The unit of encapsulation and abstraction in object oriented programming that defines data types and subprogram declarations is called a?",
+    "choices": [
+      "object",
+      "application programming interface",
+      "class",
+      "interface"
+    ],
+    "correctIndex": 2,
+    "explanation": "A class functions as the foundational blueprint for constructing software entities because it systematically binds internal data representations with the necessary operational procedures. This cohesive unit of abstraction restricts unauthorized access to sensitive information while providing a rigorously defined interface for external interactions."
+  },
+  {
+    "question": "The abstraction of data and the implementation of behaviors in object oriented programming is known as:",
+    "choices": [
+      "Polymorphism",
+      "Information Encapsulation",
+      "Information Hiding",
+      "Implementation Abstraction"
+    ],
+    "correctIndex": 2,
+    "explanation": "Software designers frequently separate the visible interfaces of a system from the intricate internal logic to protect the integrity of underlying data structures. Information hiding deliberately conceals complex implementation details from external components so that developers can modify the internal mechanisms without disrupting the overarching application architecture. "
+  },
+  {
+    "question": "A programming language is said to support object oriented programming if it includes all of the following constructs EXCEPT:",
+    "choices": [
+      "Encapsulation and data abstraction",
+      "Inheritance",
+      "Dynamic polymorphism",
+      "Data Abstraction"
+    ],
+    "correctIndex": 3,
+    "explanation": "While pure object-oriented languages mandate the inclusion of inheritance and dynamic polymorphism alongside encapsulation, the mere presence of data abstraction independently does not fulfill the complete paradigm requirements. Earlier programming languages supported abstract data types without offering inheritance mechanisms, which categorizes those specific environments as object-based rather than fully object-oriented."
+  },
+  {
+    "question": "A software object's behavior is exposed through its ____________?",
+    "choices": [
+      "method"
+    ],
+    "correctIndex": 0,
+    "explanation": "The internal logic of a software entity becomes accessible to external components exclusively through defined subroutines. A method serves as the executable procedure that exposes the operational capabilities of the entity so that the broader application can invoke specific actions and manipulate the encapsulated data securely."
+  },
+  {
+    "question": "When an object is created from a class, we refer to it as an ____________ of the class?",
+    "choices": [
+      "instance"
+    ],
+    "correctIndex": 0,
+    "explanation": "Allocating memory for a concrete representation of a structural blueprint generates a distinct operational entity within the system. Developers characterize this newly created entity as an instance because it occupies a unique memory location and maintains an independent state separate from other objects derived from the identical class definition."
+  },
+  {
+    "question": "The ability to select the appropriate subprogram at run-time based upon an evaluation of types is known as?   (NOTE: there are 4 possible answers and you can specify any of the 4).",
+    "choices": [
+      "dynamic polymorphism"
+    ],
+    "correctIndex": 0,
+    "explanation": "Systems that evaluate object types during active execution utilize late binding mechanisms to determine the precise function required for a specific operation. Dynamic polymorphism empowers the runtime environment to resolve method overrides dynamically so that the program executes the most specialized behavior belonging to the exact instantiated type. "
+  },
+  {
+    "question": "True/False:  In dynamic polymorphism, the appropriate type / method is selected during the compile process.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Static evaluation occurs strictly during the initial compilation phase to resolve overloaded functions based upon explicit parameter signatures. Dynamic polymorphism fundamentally requires the execution environment to defer method resolution until runtime, and this deferred binding process ensures the system invokes the correct behavior for polymorphic references."
+  },
+  {
+    "question": "True/False: The ability of the compiler to select, at compile time, the most appropriate data type or method to use based upon data type is known as dynamic polymorphism?",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Resolving method invocations during the translation phase constitutes static polymorphism rather than dynamic dispatch. The compiler analyzes the explicit type declarations and the parameter profiles to establish early bindings, whereas dynamic polymorphism strictly delays these critical resolutions until the actual execution period."
+  },
+  {
+    "question": "True/False: A superclass contains all of the attributes and behaviors of its subclasses.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Architectural hierarchies dictate that the parent entity defines only the generalized characteristics shared across multiple derivative components. The subclasses actively extend the fundamental template by introducing specialized attributes and unique operations that do not exist within the original superclass definition."
+  },
+  {
+    "question": "Which of the following is NOT an advantage of Generics?",
+    "choices": [
+      "Reusability",
+      "Writeability",
+      "Maintainability",
+      "Reliability"
+    ],
+    "correctIndex": 2,
+    "explanation": "Parametric polymorphism introduces robust type safety and maximizes code reusability because developers can construct flexible algorithms that operate across diverse data types. Generics inherently improve reliability by catching type mismatch errors during the compilation phase, while maintainability represents a broader software engineering metric that extends far beyond the strict application of generic programming constructs."
+  },
+  {
+    "question": "True/False: The main purpose of an abstract class is to be inherited by other classes.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Abstract structural definitions deliberately omit concrete implementations for specific methods to mandate that derivative entities provide the necessary operational logic. These incomplete templates cannot undergo direct instantiation, and they exist exclusively to establish a standardized contractual interface for subsequent inheritance hierarchies. "
+  },
+  {
+    "question": "True/False: In Java, the programmer is responsible for initiating the garbage collection process when an object has been de-referenced.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "The runtime environment of the Java platform autonomously manages memory reclamation through an integrated background process. The garbage collection mechanism continuously monitors the memory heap to identify unreferenced allocations, and it automatically deconstructs these orphaned entities without requiring any explicit intervention from the software developer."
+  },
+  {
+    "question": "True/False: A derived class is limited to the characteristics and behaviors inherited from the base class.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "The primary utility of inheritance lies within the ability of the programmer to augment existing functionality seamlessly. A derived class inherits the fundamental traits of the base component while simultaneously declaring novel fields and defining advanced operational procedures that expand the original capabilities significantly."
+  },
+  {
+    "question": "True/False: In object oriented programming languages such as Java, polymorphism refers to the ability of a class to have more than one method of the same name where the appropriate method is invoked based upon the number and type of arguments and/or the return type.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Declaring multiple functions sharing an identical identifier within a single execution scope establishes method overloading. The compiler distinguishes between these overloaded procedures by analyzing the unique parameter signatures, and this specific practice exemplifies static polymorphism through early binding mechanisms."
+  },
+  {
+    "question": "True/False: An object can inherit data members and functions from one or more based classes.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The conceptual framework of object-oriented programming explicitly supports multiple inheritance to permit a singular entity to acquire traits from several distinct parent lineages. Some specific languages restrict class-based multiple inheritance to prevent structural ambiguities, while the general theoretical paradigm fully embraces the derivation of features from multiple distinct base classes. "
+  },
+  {
+    "question": "True/False: The object of a derived class can perform all the tasks that an object of base class can perform.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The principle of structural substitutability guarantees that an extended entity retains the complete functional repertoire of the parent archetype. The derived instance seamlessly executes the inherited procedures alongside any newly defined operations, and the overarching application can safely treat the specialized instance as a valid representation of the base type."
+  },
+  {
+    "question": "True/False: The Instantiation of an object uses memory that was pre-allocated for the program.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "Constructing a new concrete entity necessitates the dynamic allocation of system resources during active execution rather than relying upon static compilation assignments. The virtual machine allocates discrete segments of the memory heap on demand to accommodate the structural requirements of the newly instantiated software component."
+  },
+  {
+    "question": "True/False: Garbage collection is the process of ‘deconstructing’ objects to release the memory back to the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Continuous software operation generates numerous temporary data structures that eventually lose all active programmatic references. The automated memory management subsystem systematically identifies these inaccessible segments and initiates a deconstruction sequence to reclaim the physical memory for subsequent computational tasks. "
+  },
+  {
+    "question": "When the proper method is selected during run-time and executed, this represents an example of:",
+    "choices": [
+      "Static Polymorphism",
+      "Dynamic Polymorphism",
+      "early binding",
+      "static dispatching"
+    ],
+    "correctIndex": 1,
+    "explanation": "Deferring the resolution of function invocations until the precise moment of execution constitutes late binding. Dynamic polymorphism leverages this late binding architecture to analyze the actual instantiated type of the referenced entity, and the processor subsequently routes the execution flow to the exact overridden subroutine required by that specific polymorphic shape."
   }
 ]
+
