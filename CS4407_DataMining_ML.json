@@ -443,7 +443,7 @@
   },
   {
     "question": "Assuming K=5, how would the point X be classified using KNN (6 data)?",
-    "image": "K_5_6_KNN.JPG",
+    "image": "k_5_6_KNN.JPG",
     "choices": [
       "Red",
       "Blue"
@@ -686,3 +686,4 @@
     "explanation": "Warren McCulloch and Walter Pitts introduced the first mathematical model of a simplified biological neuron to demonstrate that networks of artificial cells could compute any computable function. The researchers based the theoretical framework on propositional logic, and this pioneering publication established the foundational principles linking neurobiology with digital computation."
   }
 ]
+
