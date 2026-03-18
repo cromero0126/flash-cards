@@ -1866,6 +1866,203 @@
     ],
     "correctIndex": 1,
     "explanation": "Deferring the resolution of function invocations until the precise moment of execution constitutes late binding. Dynamic polymorphism leverages this late binding architecture to analyze the actual instantiated type of the referenced entity, and the processor subsequently routes the execution flow to the exact overridden subroutine required by that specific polymorphic shape."
+  },
+  {
+    "question": "The output of the following Haskell code will be which of the following options when fac is called with an argument of 5.\n\nfac :: Integer -> Integer\nfac n | n == 0 = 0\nfac n | n > 0  = n + fac(n-1)",
+    "choices": [
+      "5",
+      "15",
+      "10",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "Step 1: Evaluate fac 5 recursively:\n\tfac 5 = 5 + fac 4\n\tfac 4 = 4 + fac 3\n\tfac 3 = 3 + fac 2\n\tfac 2 = 2 + fac 1\n\tfac 1 = 1 + fac 0\n\tfac 0 = 0\nStep 2: Sum = 5 + 4 + 3 + 2 + 1 + 0 = 15"
+  },
+  {
+    "question": "In a functional programming language such as Haskell or Standard ML select the most accurate statement from the following list of statements.",
+    "choices": [
+      "Functions can process only 1 piece of information.",
+      "Functions can take only 1 argument which can be a primative data type or a compound data type.",
+      "A function must take in (argument) and return the same data type.",
+      "Functions can take in any number of arguments but return only 1."
+    ],
+    "correctIndex": 1,
+    "explanation": "In Haskell, each function technically takes one argument, which can be a primitive type or a compound type (like a tuple or list). Multiple parameters are handled via currying or tuples."
+  },
+  {
+    "question": "What can we say about the following Haskell function definition:\n\nreverse :: [a] -> [a]\nreverse x | x==0 = 0\n          | x>0  = reverse[x-1]",
+    "choices": [
+      "It will recursively count down the value of a to 0.",
+      "The function will take in an argument of type a and return an argument of type a",
+      "It will not compile because the compiler will not allow a generic type (a) when integer operations are being used.",
+      "The routine can pattern match both integers and floating point numbers."
+    ],
+    "correctIndex": 2,
+    "explanation": "This function will not compile because it tries to perform integer operations (x-1) on a generic type 'a', which could be anything, and the compiler rejects this."
+  },
+  {
+    "question": "The following code is an example of what functional programming language concept:\n(f(x)+f(x))-f(x)  is equivalent to  2(f(x))-f(x)",
+    "choices": [
+      "referential transparency",
+      "polymorphism",
+      "the multiplicative property",
+      "type mapping"
+    ],
+    "correctIndex": 0,
+    "explanation": "This illustrates referential transparency: expressions can be replaced by their values without changing program behavior."
+  },
+  {
+    "question": "Recursion is important in functional programming. Recursion implements the idea of divide and conquer where a problem is divided into smaller problems until the smallest possible case is found. This smallest case is called the",
+    "choices": [
+      "base case"
+    ],
+    "correctIndex": 0,
+    "explanation": "The smallest case in a recursive function for which the solution is known is called the base case."
+  },
+  {
+    "question": "The symbol [ ] in a functional programming language such as Haskell stands for the",
+    "choices": [
+      "empty list"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Haskell, [ ] represents an empty list."
+  },
+  {
+    "question": "True/False: Functional Programming Languages were designed to mimic mathematical functions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "Functional programming languages are designed to behave like mathematical functions, meaning no side effects and deterministic outputs."
+  },
+  {
+    "question": "True/False: The management of variables is a constant concern and source of complexity for functional programming languages.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Functional languages emphasize immutability, so variable management is less complex than in imperative languages."
+  },
+  {
+    "question": "True/False: A tuple in functional programming is any pair of items passed into a function.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. A tuple is a fixed-size collection of values, possibly of different types, not just any pair passed to a function."
+  },
+  {
+    "question": "True/False: The advantage of lists in functional programming languages is that they can be used to pass in any number of data items with multiple data types.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "False. Lists in Haskell are homogeneous: all elements must have the same type, even though a list can have any number of items."
+  },
+  {
+    "question": "The functional programming technique that optimizes away recursive calls such that only a single run-time stack frame is required is called.",
+    "choices": [
+      "tail recursion",
+      "head recursion",
+      "lazy evaluation",
+      "normal order execution"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is: tail recursion. Tail recursion allows the compiler to optimize recursive calls so that only a single stack frame is used, avoiding stack overflow."
+  },
+  {
+    "question": "The map function in a functional programming language such as Haskell will:",
+    "choices": [
+      "Apply a function to every element of the input list.",
+      "Apply each argument of a list to the specified function such that each function returns a function that takes the next element in the list as argument",
+      "Filter each item of an input list using the map function to evaluate each input item as true or false",
+      "None of these answers"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is: Apply a function to every element of the input list. Map applies a function to each item of a list, producing a new list of results."
+  },
+  {
+    "question": "True/False: The ability to 'share' replicated expressions to avoid needless computations is known as eager evaluation.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 1,
+    "explanation": "The correct answer is 'False'. Sharing of replicated expressions is a feature of lazy evaluation, not eager evaluation."
+  },
+  {
+    "question": "True/False: A function that treats another function as a variable is known as a higher order function.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 'True'. Higher order functions can take other functions as arguments or return functions as results."
+  },
+  {
+    "question": "True/False: A curried function is a function that takes in and applies its arguments one at a time.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 'True'. Currying transforms a function with multiple arguments into a sequence of functions each taking a single argument."
+  },
+  {
+    "question": "In Haskell, the following code demonstrates what feature of functional programming:\n\n(max 4) 5",
+    "choices": [
+      "A curried function",
+      "A recursive function",
+      "Mapping",
+      "Filtering"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is: A curried function. Here, 'max' is partially applied to 4, returning a new function that takes another argument."
+  },
+  {
+    "question": "In the following code, what are the contents of the argument?\n\nboomBangs [7..13]",
+    "choices": [
+      "7 and 13",
+      "7,8,9,10,11,12, and 13",
+      "The numbers between 7 and 13 (8,9,10,11,12)",
+      "None of these responses"
+    ],
+    "correctIndex": 1,
+    "explanation": "The correct answer is: 7,8,9,10,11,12, and 13. The range notation [7..13] generates all integers from 7 to 13 inclusive."
+  },
+  {
+    "question": "Is the following Haskell code valid?\n\ncircumference :: [a] -> [a]\ncircumference r = 2 * pi * r",
+    "choices": [
+      "Yes this code will compile and execute correctly",
+      "No. The function cannot process a list",
+      "No. A generic data type cannot be used because of the mathematical evaluation within the function",
+      "No. Neither the use of a list or a generic data type is valid.  An explicit declaration of the appropriate data type is required"
+    ],
+    "correctIndex": 3,
+    "explanation": "The correct answer is: No. Neither the use of a list or a generic data type is valid. An explicit declaration of the appropriate numeric type (like Double) is required for arithmetic operations."
+  },
+  {
+    "question": "In the following code, what data type is the function returning?\n\nquicksort :: (Ord a) => [a] -> [a]\nquicksort [] = []\nquicksort (x:xs) =  \n      let smallerSorted = quicksort (filter (<=x) xs)\n          biggerSorted  = quicksort (filter (>x) xs) \n      in  smallerSorted ++ [x] ++ biggerSorted",
+    "choices": [
+      "A list of integers",
+      "The empty list",
+      "A list of elements with the generic type a",
+      "An integer value"
+    ],
+    "correctIndex": 2,
+    "explanation": "The correct answer is: A list of elements with the generic type a. The function is polymorphic over any type 'a' that implements the Ord interface."
+  },
+  {
+    "question": "In functional programming, a higher order function is a function that returns a ________.",
+    "choices": [
+      "function"
+    ],
+    "correctIndex": 1,
+    "explanation": "The correct answer is: function. A higher order function can take functions as arguments and/or return a function as a result."
   }
 ]
 
